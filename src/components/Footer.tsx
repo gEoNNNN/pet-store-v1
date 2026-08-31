@@ -25,18 +25,32 @@ const categoryLinks = [
 ];
 
 const socials = [
-  { icon: FacebookIcon, label: "NovaVet pe Facebook", href: "#" },
-  { icon: InstagramIcon, label: "NovaVet pe Instagram", href: "#" },
-  { icon: XSocialIcon, label: "NovaVet pe X", href: "#" },
+  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "#" },
+  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "#" },
+  { icon: XSocialIcon, label: "Farmavet pe X", href: "#" },
 ];
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className="container">
+        <Reveal className={styles.cta}>
+          <div>
+            <p className={styles.ctaKicker}>Suntem aici pentru tine</p>
+            <h2 className={styles.ctaTitle}>Ai nevoie de o recomandare?</h2>
+          </div>
+          <a href="#contact" className={styles.ctaButton}>
+            Vorbește cu un specialist
+          </a>
+        </Reveal>
+      </div>
+
       <div className={`container ${styles.top}`}>
         <Reveal>
           <div className={styles.brand}>
-            <Logo variant="light" />
+            <span className={styles.logoPlate}>
+              <Logo />
+            </span>
             <p className={styles.brandText}>
               O farmacie veterinară modernă ce oferă produse certificate,
               consultanță profesională și servicii pline de grijă pentru
@@ -114,7 +128,7 @@ export default function Footer() {
 
       <div className={styles.bottomBar}>
         <div className={`container ${styles.bottom}`}>
-          <p>© 2026 NovaVet. Toate drepturile rezervate.</p>
+          <p>© 2026 Farmavet. Toate drepturile rezervate.</p>
           <div className={styles.legal}>
             <a href="#" className={styles.link}>
               Politica de Confidențialitate

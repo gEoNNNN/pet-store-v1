@@ -21,7 +21,7 @@ export const productCategories: ProductCategory[] = [
     href: "/produse",
   },
   {
-    title: "Păsări",
+    title: "Pasari",
     image: "/cards/pasari.jpeg",
     href: "/produse",
   },

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import buburuza from "../img/buburuza.jpg";
 import Reveal from "./Reveal";
 import { CheckCircleIcon } from "./icons";
 import styles from "./WhyUs.module.css";
@@ -38,11 +40,11 @@ export default function WhyUs() {
 
           <Reveal className={styles.stampWrap} delay={120}>
             <figure className={styles.stamp}>
-              <img
-                src="/stamp.jpg"
-                alt="Ilustrație pictată cu o buburuză pe o creangă, în lumina soarelui"
+              <Image
+                src={buburuza}
+                alt="Buburuză pictată pe frunze verzi"
                 className={styles.stampImg}
-                loading="lazy"
+                sizes="(max-width: 960px) 70vw, 340px"
               />
             </figure>
           </Reveal>
