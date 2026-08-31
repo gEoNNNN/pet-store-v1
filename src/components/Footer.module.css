@@ -99,10 +99,11 @@
 
 .logoPlate {
   display: inline-flex;
-  padding: 11px 16px;
-  border-radius: 14px;
-  background: #f7f6f2;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+}
+
+.logoPlate img {
+  height: 58px;
 }
 
 .brandText {
@@ -179,6 +180,11 @@
   color: rgba(255, 255, 255, 0.76);
   font-size: 0.92rem;
   line-height: 1.5;
+}
+
+.contactList .link {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .contactIcon {

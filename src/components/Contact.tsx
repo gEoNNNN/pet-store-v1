@@ -15,19 +15,19 @@ const contactDetails = [
   {
     icon: MapPinIcon,
     label: "Adresă",
-    value: "Bulevardul Muncii 124, Cluj-Napoca",
+    value: "Petricani 198, Chișinău, Moldova",
   },
   {
     icon: PhoneIcon,
     label: "Telefon",
-    value: "+40 745 123 456",
-    href: "tel:+40745123456",
+    value: "0795 36 508",
+    href: "tel:+37379536508",
   },
   {
     icon: MailIcon,
     label: "Email",
-    value: "hello@novavet.com",
-    href: "mailto:hello@novavet.com",
+    value: "farmavet.mariana@yahoo.com",
+    href: "mailto:farmavet.mariana@yahoo.com",
   },
   {
     icon: ClockIcon,

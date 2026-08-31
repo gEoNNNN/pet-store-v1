@@ -189,3 +189,37 @@ export function XSocialIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function SearchIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-4-4" />
+    </StrokeIcon>
+  );
+}
+
+export function ShoppingBagIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className}>
+      <path d="M6 8h12l1 13H5L6 8Z" />
+      <path d="M9 9V6a3 3 0 0 1 6 0v3" />
+    </StrokeIcon>
+  );
+}
+
+export function StarIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="m12 2.7 2.8 5.7 6.3.9-4.6 4.5 1.1 6.3-5.6-3-5.6 3 1.1-6.3-4.6-4.5 6.3-.9L12 2.7Z" />
+    </svg>
+  );
+}

@@ -4,6 +4,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1"],
+  images: {
+    unoptimized: true,
+  },
   turbopack: {
     root: path.dirname(fileURLToPath(import.meta.url)),
   },

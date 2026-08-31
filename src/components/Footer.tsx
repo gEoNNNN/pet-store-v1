@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 import Reveal from "./Reveal";
 import {
@@ -11,17 +12,17 @@ import {
 import styles from "./Footer.module.css";
 
 const exploreLinks = [
-  { label: "Acasă", href: "#home" },
-  { label: "Produse", href: "#products" },
-  { label: "Despre Noi", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Acasă", href: "/#home" },
+  { label: "Produse", href: "/produse" },
+  { label: "Despre Noi", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const categoryLinks = [
-  { label: "Nutriție pentru Animale", href: "#products" },
-  { label: "Îngrijire Veterinară", href: "#products" },
-  { label: "Suplimente pentru Animale", href: "#products" },
-  { label: "Toate Produsele", href: "#products" },
+  { label: "Nutriție pentru Animale", href: "/produse" },
+  { label: "Îngrijire Veterinară", href: "/produse" },
+  { label: "Suplimente pentru Animale", href: "/produse" },
+  { label: "Toate Produsele", href: "/produse" },
 ];
 
 const socials = [
@@ -39,9 +40,9 @@ export default function Footer() {
             <p className={styles.ctaKicker}>Suntem aici pentru tine</p>
             <h2 className={styles.ctaTitle}>Ai nevoie de o recomandare?</h2>
           </div>
-          <a href="#contact" className={styles.ctaButton}>
+          <Link href="/#contact" className={styles.ctaButton}>
             Vorbește cu un specialist
-          </a>
+          </Link>
         </Reveal>
       </div>
 
@@ -107,18 +108,18 @@ export default function Footer() {
             <ul className={styles.contactList}>
               <li>
                 <MapPinIcon className={styles.contactIcon} />
-                <span>Bulevardul Muncii 124, Cluj-Napoca</span>
+                <span>Petricani 198, Chișinău, Moldova</span>
               </li>
               <li>
                 <PhoneIcon className={styles.contactIcon} />
-                <a href="tel:+40745123456" className={styles.link}>
-                  +40 745 123 456
+                <a href="tel:+37379536508" className={styles.link}>
+                  0795 36 508
                 </a>
               </li>
               <li>
                 <MailIcon className={styles.contactIcon} />
-                <a href="mailto:hello@novavet.com" className={styles.link}>
-                  hello@novavet.com
+                <a href="mailto:farmavet.mariana@yahoo.com" className={styles.link}>
+                  farmavet.mariana@yahoo.com
                 </a>
               </li>
             </ul>

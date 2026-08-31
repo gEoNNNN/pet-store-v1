@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import GooeyNav from "./GooeyNav";
 import Logo from "./Logo";
@@ -7,13 +8,17 @@ import { CloseIcon, MenuIcon } from "./icons";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
-  { label: "Acasă", href: "#home" },
-  { label: "Produse", href: "#products" },
-  { label: "Despre Noi", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Acasă", href: "/#home" },
+  { label: "Produse", href: "/produse" },
+  { label: "Despre Noi", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
-export default function Navbar() {
+type NavbarProps = {
+  activeItem?: "home" | "products";
+};
+
+export default function Navbar({ activeItem = "home" }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -48,9 +53,9 @@ export default function Navbar() {
       </a>
       <header className={`${styles.navbar} ${scrolled || menuOpen ? styles.scrolled : ""}`}>
         <div className={`container ${styles.inner}`}>
-          <a href="#home" className={styles.brand} aria-label="Farmavet — pagina principală" onClick={closeMenu}>
+          <Link href="/#home" className={styles.brand} aria-label="Farmavet — pagina principală" onClick={closeMenu}>
             <Logo />
-          </a>
+          </Link>
 
           <div className={styles.desktopNav}>
             <GooeyNav
@@ -58,7 +63,7 @@ export default function Navbar() {
               particleCount={15}
               particleDistances={[90, 10]}
               particleR={100}
-              initialActiveIndex={0}
+              initialActiveIndex={activeItem === "products" ? 1 : 0}
               animationTime={600}
               timeVariance={300}
               colors={[1, 2, 3, 1, 2, 3, 1, 4]}
@@ -66,9 +71,9 @@ export default function Navbar() {
             />
           </div>
 
-          <a href="#products" className={styles.cta}>
+          <Link href="/produse" className={styles.cta}>
             Vezi Produsele
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -93,9 +98,9 @@ export default function Navbar() {
                 </li>
               ))}
               <li>
-                <a href="#products" className={styles.mobileCta} onClick={closeMenu}>
+                <Link href="/produse" className={styles.mobileCta} onClick={closeMenu}>
                   Vezi Produsele
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
