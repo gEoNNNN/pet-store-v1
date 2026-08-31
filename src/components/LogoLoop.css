@@ -1,0 +1,104 @@
+.logoloop {
+  position: relative;
+  /* overflow-x alone forces overflow-y to auto, which showed a scrollbar
+     on hover scale — clip both axes and pad vertically instead. */
+  overflow: hidden;
+  padding-block: 14px;
+  --logoloop-gap: 32px;
+  --logoloop-logoHeight: 28px;
+  --logoloop-fadeColor: #f7f6f2;
+}
+
+.logoloop__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.logoloop__item {
+  flex: 0 0 auto;
+  margin-right: var(--logoloop-gap);
+  display: flex;
+  align-items: center;
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--logoloop-logoHeight);
+}
+
+.logoloop__image {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.75;
+}
+
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  width: clamp(56px, 12%, 128px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logoloop--fade::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--logoloop-fadeColor) 0%,
+    color-mix(in srgb, var(--logoloop-fadeColor) 0%, transparent) 100%
+  );
+}
+
+.logoloop--fade::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--logoloop-fadeColor) 0%,
+    color-mix(in srgb, var(--logoloop-fadeColor) 0%, transparent) 100%
+  );
+}
+
+.logoloop--scale-hover .logoloop__item {
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.logoloop--scale-hover .logoloop__item:hover {
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoloop--scale-hover .logoloop__item {
+    transition: none;
+  }
+
+  .logoloop--scale-hover .logoloop__item:hover {
+    transform: none;
+  }
+}

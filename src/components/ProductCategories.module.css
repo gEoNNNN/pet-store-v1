@@ -1,0 +1,158 @@
+.section {
+  background: #efedd3;
+  padding-block: var(--section-space);
+}
+
+/* Sky image panel floating on the beige section, 3% gutters each side.
+   The img itself sizes the panel — full width and height, no crop, no filter. */
+.panel {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.panelBg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.panelInner {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(24px, 3.5vw, 44px);
+  padding: clamp(28px, 4.5vw, 56px) clamp(20px, 4vw, 56px);
+}
+
+.header {
+  max-width: 620px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--foreground);
+}
+
+.title em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.sub {
+  margin: 18px auto 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-muted-strong);
+  max-width: 56ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(16px, 2vw, 26px);
+}
+
+/* ---------- Card ---------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardImage {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 14px 28px -14px rgba(23, 59, 92, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 36px -14px rgba(23, 59, 92, 0.4);
+}
+
+.cardTitle {
+  margin-top: 18px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--foreground);
+}
+
+.cardCta {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 22px;
+  border-radius: 100vw;
+  background: #efedd3;
+  border: 1px solid rgba(23, 59, 92, 0.14);
+  color: var(--foreground);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.cardCta:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+  .panel {
+    width: calc(100% - 48px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  /* Stacked cards need more height than the wide sky image has —
+     let the content size the panel and stretch the sky behind it. */
+  .panel {
+    width: calc(100% - 32px);
+  }
+
+  .panelBg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .panelInner {
+    position: relative;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
