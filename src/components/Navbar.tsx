@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import GooeyNav from "./GooeyNav";
 import Logo from "./Logo";
 import { CloseIcon, MenuIcon } from "./icons";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
-  { label: "Acasă", href: "/#home" },
+  { label: "Despre noi", href: "/#about" },
   { label: "Produse", href: "/produse" },
-  { label: "Despre Noi", href: "/#about" },
+  { label: "Branduri", href: "/#brands" },
+  { label: "Profesioniști", href: "/#professionals" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -57,22 +57,27 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
             <Logo />
           </Link>
 
-          <div className={styles.desktopNav}>
-            <GooeyNav
-              items={navLinks}
-              particleCount={15}
-              particleDistances={[90, 10]}
-              particleR={100}
-              initialActiveIndex={activeItem === "products" ? 1 : 0}
-              animationTime={600}
-              timeVariance={300}
-              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-              ariaLabel="Navigare principală"
-            />
-          </div>
+          <nav className={styles.desktopNav} aria-label="Navigare principală">
+            <ul>
+              {navLinks.map((link) => {
+                const isActive = activeItem === "products" && link.href === "/produse";
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`${styles.navLink} ${isActive ? styles.navLinkActive : ""}`}
+                      aria-current={isActive ? "page" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
 
-          <Link href="/produse" className={styles.cta}>
-            Vezi Produsele
+          <Link href="/#contact" className={styles.cta}>
+            Contactează-ne
           </Link>
 
           <button
@@ -98,8 +103,8 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
                 </li>
               ))}
               <li>
-                <Link href="/produse" className={styles.mobileCta} onClick={closeMenu}>
-                  Vezi Produsele
+                <Link href="/#contact" className={styles.mobileCta} onClick={closeMenu}>
+                  Contactează-ne
                 </Link>
               </li>
             </ul>

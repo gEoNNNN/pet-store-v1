@@ -1,69 +1,85 @@
 import Image from "next/image";
+import Link from "next/link";
 import buburuza from "../img/buburuza.jpg";
 import Reveal from "./Reveal";
-import { CheckCircleIcon } from "./icons";
+import { ArrowRightIcon, CheckCircleIcon } from "./icons";
 import styles from "./WhyUs.module.css";
+
+const stats = [
+  { value: "5", label: "game specializate" },
+  { value: "7", label: "branduri partenere" },
+  { value: "24–48h", label: "livrare națională" },
+];
 
 export default function WhyUs() {
   return (
-    <section className={styles.whyUs} aria-labelledby="whyus-heading">
-      <div className="container">
-        <Reveal className={styles.head}>
-          <h2 className={styles.title} id="whyus-heading">
-            Grijă expertă,
-            <br />
-            <em>la fiecare pas</em>
-          </h2>
-          <p className={styles.lede}>
-            Farmavet simplifică achiziția produselor veterinare — tu te
-            concentrezi pe animalele din grija ta, noi ne ocupăm de restul.
-          </p>
+    <section className={styles.whyUs} id="about" aria-labelledby="whyus-heading">
+      <div className={`container ${styles.layout}`}>
+        <Reveal className={styles.visual}>
+          <figure className={styles.mainImage}>
+            <Image
+              src="/footer.png"
+              alt="Peisaj rural și sediu Farmavet"
+              fill
+              sizes="(max-width: 840px) 100vw, 52vw"
+              className={styles.mainImageAsset}
+            />
+          </figure>
+          <figure className={styles.stamp}>
+            <Image
+              src={buburuza}
+              alt="Buburuză pictată pe frunze verzi"
+              className={styles.stampImg}
+              sizes="160px"
+            />
+          </figure>
+          <div className={styles.visualLabel}>
+            <span>Farmavet</span>
+            <strong>Grijă expertă, la fiecare pas.</strong>
+          </div>
         </Reveal>
 
-        <div className={styles.grid}>
-          <Reveal className={styles.col}>
-            <h3 className={styles.colTitle}>
-              Fiecare produs, verificat
-              <br />
-              <em>de un medic veterinar</em>
-            </h3>
-            <p className={styles.colText}>
-              Colaborăm direct cu medici veterinari licențiați. Fiecare lot
-              este verificat înainte de a ajunge pe raft — tu primești doar
-              produse sigure și certificate.
-            </p>
-            <p className={styles.colStat}>
-              <CheckCircleIcon className={styles.statIcon} />
-              100% produse certificate
-            </p>
-          </Reveal>
+        <Reveal className={styles.content} delay={120}>
+          <p className={styles.kicker}>Despre Farmavet</p>
+          <h2 className={styles.title} id="whyus-heading">
+            Încredere construită prin
+            <em> grijă și profesionalism</em>
+          </h2>
+          <p className={styles.lede}>
+            Farmavet simplifică achiziția produselor veterinare — tu te concentrezi pe animalele
+            din grija ta, noi ne ocupăm de restul.
+          </p>
 
-          <Reveal className={styles.stampWrap} delay={120}>
-            <figure className={styles.stamp}>
-              <Image
-                src={buburuza}
-                alt="Buburuză pictată pe frunze verzi"
-                className={styles.stampImg}
-                sizes="(max-width: 960px) 70vw, 340px"
-              />
-            </figure>
-          </Reveal>
+          <div className={styles.assurances}>
+            <div>
+              <CheckCircleIcon className={styles.assuranceIcon} />
+              <span>
+                <strong>Produse verificate</strong>
+                Colaborăm cu medici veterinari și furnizori de încredere.
+              </span>
+            </div>
+            <div>
+              <CheckCircleIcon className={styles.assuranceIcon} />
+              <span>
+                <strong>Livrare sigură</strong>
+                Ambalaje adecvate și curieri parteneri pentru produse sensibile.
+              </span>
+            </div>
+          </div>
 
-          <Reveal className={styles.col} delay={200}>
-            <h3 className={styles.colTitle}>
-              Livrare rapidă,
-              <br />
-              <em>fără bătăi de cap</em>
-            </h3>
-            <p className={styles.colText}>
-              Ambalaje cu protecție termică și curieri parteneri de încredere —
-              comanda ta ajunge intactă, chiar și cele mai sensibile produse.
-            </p>
-            <p className={styles.colStat}>
-              <CheckCircleIcon className={styles.statIcon} />
-              Livrare în 24–48h, oriunde în țară
-            </p>
-          </Reveal>
+          <Link href="/#contact" className={styles.cta}>
+            Discută cu echipa noastră
+            <ArrowRightIcon className={styles.ctaIcon} />
+          </Link>
+        </Reveal>
+
+        <div className={styles.stats}>
+          {stats.map((stat, index) => (
+            <Reveal className={styles.stat} delay={index * 80} key={stat.label}>
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

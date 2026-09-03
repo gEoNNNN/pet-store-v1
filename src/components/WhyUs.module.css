@@ -1,130 +1,267 @@
 .whyUs {
-  background: #efedd3;
-  padding-block: clamp(72px, 10vw, 120px);
+  padding-block: var(--section-space);
   overflow: hidden;
+  background: var(--color-softer);
 }
 
-.head {
-  display: flex;
-  flex-direction: column;
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.85fr);
   align-items: center;
-  text-align: center;
-  max-width: 640px;
-  margin-inline: auto;
+  gap: clamp(48px, 8vw, 110px);
+}
+
+.visual {
+  position: relative;
+  min-width: 0;
+  padding: 0 58px 54px 0;
+}
+
+.mainImage {
+  position: relative;
+  min-height: 560px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-soft);
+}
+
+.mainImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 58%, rgba(6, 29, 54, 0.28));
+}
+
+.mainImageAsset {
+  object-fit: cover;
+  object-position: 66% center;
+  filter: saturate(0.82) contrast(1.02);
+}
+
+/* Clean image presentation without a decorative frame. */
+.stamp {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 176px;
+  margin: 0;
+  border: 9px solid #ffffff;
+  box-shadow: var(--shadow-lg);
+}
+
+.stampImg {
+  width: 100%;
+  height: auto;
+}
+
+.visualLabel {
+  position: absolute;
+  bottom: 82px;
+  left: 26px;
+  z-index: 2;
+  width: min(260px, 58%);
+  padding: 21px 22px;
+  background: var(--color-primary-deep);
+  color: #ffffff;
+}
+
+.visualLabel span {
+  display: block;
+  margin-bottom: 8px;
+  color: #6eb4e8;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.visualLabel strong {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.28;
+}
+
+.content {
+  padding-block: 24px;
+}
+
+.kicker {
+  margin-bottom: 16px;
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .title {
-  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  max-width: 13ch;
+  color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.65rem, 4.5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
 }
 
 .title em {
-  font-style: italic;
   font-weight: 500;
 }
 
 .lede {
-  margin-top: 18px;
-  font-size: 1.02rem;
-  line-height: 1.65;
-  color: var(--color-muted-strong);
   max-width: 52ch;
-}
-
-.grid {
-  margin-top: clamp(48px, 6vw, 72px);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: clamp(32px, 5vw, 64px);
-}
-
-.col {
-  max-width: 300px;
-}
-
-.grid .col:first-child {
-  justify-self: end;
-}
-
-.grid .col:last-child {
-  justify-self: start;
-}
-
-.colTitle {
-  font-size: clamp(1.35rem, 1.9vw, 1.7rem);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-}
-
-.colTitle em {
-  font-style: italic;
-  font-weight: 500;
-}
-
-.colText {
-  margin-top: 16px;
-  font-size: 0.92rem;
-  line-height: 1.7;
+  margin-top: 24px;
   color: var(--color-muted-strong);
+  font-size: 1rem;
+  line-height: 1.72;
 }
 
-.colStat {
-  margin-top: 22px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--foreground);
+.assurances {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+  padding-block: 25px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.statIcon {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
+.assurances > div {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 13px;
+}
+
+.assuranceIcon {
+  width: 21px;
+  height: 21px;
+  color: var(--color-accent);
+}
+
+.assurances span {
   color: var(--color-muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
 }
 
-/* Clean image presentation without a decorative frame. */
-.stampWrap {
-  display: flex;
-  justify-content: center;
-}
-
-.stamp {
-  margin: 0;
-  filter: drop-shadow(0 18px 36px rgba(23, 59, 92, 0.16));
-}
-
-.stampImg {
+.assurances strong {
   display: block;
-  width: clamp(240px, 26vw, 340px);
-  height: auto;
+  margin-bottom: 3px;
+  color: var(--foreground);
+  font-size: 0.92rem;
 }
 
-@media (max-width: 960px) {
-  .grid {
+.cta {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-inline: 20px;
+  border-radius: var(--radius-sm);
+  background: var(--color-secondary);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 900;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.ctaIcon {
+  width: 17px;
+  height: 17px;
+}
+
+.stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(20px, 4vw, 48px);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 25px clamp(18px, 3vw, 34px);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: #ffffff;
+}
+
+.stat strong {
+  color: var(--color-primary);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+}
+
+.stat span {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .layout {
     grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
   }
 
-  .grid .col:first-child,
-  .grid .col:last-child {
-    justify-self: center;
+  .visual {
+    max-width: 720px;
   }
 
-  .col {
-    max-width: 420px;
+  .mainImage {
+    min-height: 480px;
   }
 
-  .colStat {
-    justify-content: center;
+  .content {
+    padding-top: 0;
   }
 
-  .stampWrap {
-    order: -1;
+  .title {
+    max-width: 16ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .visual {
+    padding: 0 28px 34px 0;
+  }
+
+  .mainImage {
+    min-height: 390px;
+  }
+
+  .stamp {
+    width: 126px;
+    border-width: 6px;
+  }
+
+  .visualLabel {
+    bottom: 55px;
+    left: 16px;
+    padding: 16px;
+  }
+
+  .visualLabel strong {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2.55rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    justify-content: space-between;
   }
 }

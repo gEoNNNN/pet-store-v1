@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import NewsletterForm from "./NewsletterForm";
 import Reveal from "./Reveal";
 import {
   FacebookIcon,
@@ -11,18 +12,20 @@ import {
 } from "./icons";
 import styles from "./Footer.module.css";
 
-const exploreLinks = [
-  { label: "Acasă", href: "/#home" },
-  { label: "Produse", href: "/produse" },
-  { label: "Despre Noi", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
+const productLinks = [
+  "Produse veterinare",
+  "Nutriție animală",
+  "Suplimente",
+  "Îngrijire și prevenție",
 ];
 
-const categoryLinks = [
-  { label: "Nutriție pentru Animale", href: "/produse" },
-  { label: "Îngrijire Veterinară", href: "/produse" },
-  { label: "Suplimente pentru Animale", href: "/produse" },
-  { label: "Toate Produsele", href: "/produse" },
+const speciesLinks = ["Animale de companie", "Bovine", "Ovine", "Păsări", "Porcine"];
+
+const informationLinks = [
+  { label: "Despre noi", href: "/#about" },
+  { label: "Branduri", href: "/#brands" },
+  { label: "Profesioniști", href: "/#professionals" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const socials = [
@@ -35,27 +38,22 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Reveal className={styles.cta}>
+        <Reveal className={styles.newsletter}>
           <div>
-            <p className={styles.ctaKicker}>Suntem aici pentru tine</p>
-            <h2 className={styles.ctaTitle}>Ai nevoie de o recomandare?</h2>
+            <p className={styles.newsletterKicker}>Rămâi informat</p>
+            <h2>Informații utile pentru sănătatea animalelor.</h2>
           </div>
-          <Link href="/#contact" className={styles.ctaButton}>
-            Vorbește cu un specialist
-          </Link>
+          <NewsletterForm />
         </Reveal>
-      </div>
 
-      <div className={`container ${styles.top}`}>
-        <Reveal>
-          <div className={styles.brand}>
-            <span className={styles.logoPlate}>
-              <Logo />
-            </span>
+        <div className={styles.top}>
+          <Reveal className={styles.brand}>
+            <Link href="/#home" aria-label="Farmavet — pagina principală">
+              <Logo variant="light" />
+            </Link>
             <p className={styles.brandText}>
-              O farmacie veterinară modernă ce oferă produse certificate,
-              consultanță profesională și servicii pline de grijă pentru
-              animale și oamenii care le iubesc.
+              Produse veterinare certificate, consultanță profesională și servicii construite în
+              jurul sănătății animalelor.
             </p>
             <div className={styles.socials}>
               {socials.map((social) => (
@@ -69,62 +67,77 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
 
-        <Reveal delay={120}>
-          <nav className={styles.col} aria-label="Navigare subsol">
-            <h2 className={styles.colTitle}>Explorează</h2>
-            <ul className={styles.linkList}>
-              {exploreLinks.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className={styles.link}>
-                    {link.label}
+          <Reveal delay={80}>
+            <nav className={styles.col} aria-label="Produse">
+              <h2 className={styles.colTitle}>Produse</h2>
+              <ul className={styles.linkList}>
+                {productLinks.map((label) => (
+                  <li key={label}>
+                    <Link href="/produse" className={styles.link}>
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </Reveal>
+
+          <Reveal delay={140}>
+            <nav className={styles.col} aria-label="Specii animale">
+              <h2 className={styles.colTitle}>Specii animale</h2>
+              <ul className={styles.linkList}>
+                {speciesLinks.map((label) => (
+                  <li key={label}>
+                    <Link href="/produse" className={styles.link}>
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <nav className={styles.col} aria-label="Informații">
+              <h2 className={styles.colTitle}>Informații</h2>
+              <ul className={styles.linkList}>
+                {informationLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className={styles.link}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </Reveal>
+
+          <Reveal delay={260}>
+            <div className={styles.col}>
+              <h2 className={styles.colTitle}>Contact</h2>
+              <ul className={styles.contactList}>
+                <li>
+                  <MapPinIcon className={styles.contactIcon} />
+                  <span>Petricani 198, Chișinău, Moldova</span>
+                </li>
+                <li>
+                  <PhoneIcon className={styles.contactIcon} />
+                  <a href="tel:+37379536508" className={styles.link}>
+                    0795 36 508
                   </a>
                 </li>
-              ))}
-            </ul>
-          </nav>
-        </Reveal>
-
-        <Reveal delay={200}>
-          <nav className={styles.col} aria-label="Categorii de produse">
-            <h2 className={styles.colTitle}>Produse</h2>
-            <ul className={styles.linkList}>
-              {categoryLinks.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className={styles.link}>
-                    {link.label}
+                <li>
+                  <MailIcon className={styles.contactIcon} />
+                  <a href="mailto:farmavet.mariana@yahoo.com" className={styles.link}>
+                    farmavet.mariana@yahoo.com
                   </a>
                 </li>
-              ))}
-            </ul>
-          </nav>
-        </Reveal>
-
-        <Reveal delay={280}>
-          <div className={styles.col}>
-            <h2 className={styles.colTitle}>Contact</h2>
-            <ul className={styles.contactList}>
-              <li>
-                <MapPinIcon className={styles.contactIcon} />
-                <span>Petricani 198, Chișinău, Moldova</span>
-              </li>
-              <li>
-                <PhoneIcon className={styles.contactIcon} />
-                <a href="tel:+37379536508" className={styles.link}>
-                  0795 36 508
-                </a>
-              </li>
-              <li>
-                <MailIcon className={styles.contactIcon} />
-                <a href="mailto:farmavet.mariana@yahoo.com" className={styles.link}>
-                  farmavet.mariana@yahoo.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        </Reveal>
+              </ul>
+            </div>
+          </Reveal>
+        </div>
       </div>
 
       <div className={styles.bottomBar}>
@@ -132,10 +145,10 @@ export default function Footer() {
           <p>© 2026 Farmavet. Toate drepturile rezervate.</p>
           <div className={styles.legal}>
             <a href="#" className={styles.link}>
-              Politica de Confidențialitate
+              Politica de confidențialitate
             </a>
             <a href="#" className={styles.link}>
-              Termeni și Condiții
+              Termeni și condiții
             </a>
           </div>
         </div>

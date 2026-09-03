@@ -1,14 +1,61 @@
 .logo {
   display: inline-flex;
   align-items: center;
+  gap: 11px;
 }
 
 .image {
-  height: 40px;
-  width: auto;
+  width: 44px;
+  height: 44px;
   display: block;
+  object-fit: contain;
+}
+
+.wordmark {
+  display: grid;
+  line-height: 1;
+}
+
+.wordmark strong {
+  color: var(--foreground);
+  font-size: 1.22rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.wordmark small {
+  margin-top: 5px;
+  color: var(--color-accent);
+  font-size: 0.57rem;
+  font-weight: 900;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
 }
 
 .light .image {
-  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.light .wordmark strong {
+  color: #ffffff;
+}
+
+.light .wordmark small {
+  color: #82c7a2;
+}
+
+@media (max-width: 420px) {
+  .image {
+    width: 39px;
+    height: 39px;
+  }
+
+  .wordmark strong {
+    font-size: 1.05rem;
+  }
+
+  .wordmark small {
+    font-size: 0.5rem;
+  }
 }

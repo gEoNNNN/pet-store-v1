@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 import {
@@ -37,9 +38,9 @@ const contactDetails = [
 ];
 
 const socials = [
-  { icon: FacebookIcon, label: "NovaVet pe Facebook", href: "#" },
-  { icon: InstagramIcon, label: "NovaVet pe Instagram", href: "#" },
-  { icon: XSocialIcon, label: "NovaVet pe X", href: "#" },
+  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "#" },
+  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "#" },
+  { icon: XSocialIcon, label: "Farmavet pe X", href: "#" },
 ];
 
 export default function Contact() {
@@ -47,8 +48,9 @@ export default function Contact() {
     <section className={styles.contact} id="contact" aria-labelledby="contact-heading">
       <div className="container">
         <Reveal className={styles.head}>
+          <p className={styles.kicker}>Contact & consultanță</p>
           <h2 className={styles.title} id="contact-heading">
-            Hai să <em>vorbim</em>
+            Discută cu echipa <em>Farmavet</em>
           </h2>
           <p className={styles.sub}>
             Ai întrebări despre un produs, o comandă sau dieta potrivită
@@ -94,11 +96,12 @@ export default function Contact() {
               </div>
             </div>
             <div className={styles.imageSide}>
-              <img
+              <Image
                 src="/left.jpg"
-                alt="Copac batran la marginea unei pajisti insorite"
+                alt="Peisaj rural într-o zi însorită"
+                fill
+                sizes="(max-width: 980px) 100vw, 55vw"
                 className={styles.cardImage}
-                loading="lazy"
               />
             </div>
           </div>

@@ -9,19 +9,23 @@ const partnerLogos: LogoItem[] = Array.from({ length: 7 }, (_, i) => ({
 
 export default function Partners() {
   return (
-    <section className={styles.partners} aria-label="Parteneri Farmavet">
-      <div className={`container ${styles.inner}`}>
-        <Reveal className={styles.loopReveal}>
+    <section className={styles.partners} id="brands" aria-labelledby="brands-heading">
+      <div className="container">
+        <Reveal className={styles.header}>
+          <p>Partenerii noștri</p>
+          <h2 id="brands-heading">Branduri internaționale, selectate cu încredere</h2>
+        </Reveal>
+        <Reveal className={styles.loopReveal} delay={100}>
           <div className={styles.loopWrap}>
             <LogoLoop
               logos={partnerLogos}
-              speed={45}
+              speed={38}
               direction="left"
-              logoHeight={64}
-              gap={72}
+              logoHeight={50}
+              gap={68}
               pauseOnHover
               fadeOut
-              fadeOutColor="#EFEDD3"
+              fadeOutColor="#ffffff"
               scaleOnHover
               ariaLabel="Branduri partenere de încredere"
             />

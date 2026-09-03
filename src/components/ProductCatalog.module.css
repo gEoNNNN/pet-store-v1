@@ -9,7 +9,7 @@
   background:
     radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.75), transparent 28%),
     radial-gradient(circle at 8% 90%, rgba(197, 200, 173, 0.3), transparent 30%),
-    #efedd3;
+    var(--color-softer);
 }
 
 .hero::before,
@@ -102,7 +102,7 @@
 
 .heroCard {
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   background:
     radial-gradient(circle at 88% 0%, rgba(197, 200, 173, 0.2), transparent 35%),
@@ -172,7 +172,7 @@
   margin-top: -45px;
   padding: 15px;
   border: 1px solid rgba(23, 59, 92, 0.1);
-  border-radius: 22px;
+  border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 22px 55px -30px rgba(23, 59, 92, 0.32);
   backdrop-filter: blur(12px);
@@ -186,7 +186,7 @@
   gap: 12px;
   padding-inline: 18px 10px;
   border: 1px solid var(--color-border);
-  border-radius: 15px;
+  border-radius: var(--radius-sm);
   background: var(--color-softer);
   transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -253,7 +253,7 @@
   gap: 10px;
   padding-inline: 16px;
   border: 1px solid var(--color-border);
-  border-radius: 15px;
+  border-radius: var(--radius-sm);
   background: #ffffff;
   color: var(--color-muted-strong);
   white-space: nowrap;
@@ -284,7 +284,7 @@
   align-items: center;
   gap: 11px;
   padding-inline: 14px;
-  border-radius: 15px;
+  border-radius: var(--radius-sm);
   background: var(--color-primary);
   color: #ffffff;
 }
@@ -316,7 +316,7 @@
   padding-inline: 4px;
   border: 2px solid var(--color-primary);
   border-radius: 999px;
-  background: #efedd3;
+  background: var(--color-soft);
   color: var(--foreground);
   font-size: 0.66rem;
   font-weight: 900;
@@ -436,7 +436,7 @@
   flex-direction: column;
   overflow: hidden;
   border: 1px solid rgba(23, 59, 92, 0.09);
-  border-radius: 22px;
+  border-radius: var(--radius-md);
   background: #ffffff;
   box-shadow: 0 8px 30px rgba(23, 59, 92, 0.055);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
@@ -486,7 +486,7 @@
   top: 14px;
   left: 14px;
   padding: 7px 10px;
-  background: #efedd3;
+  background: var(--color-soft);
   color: var(--foreground);
   box-shadow: 0 5px 16px rgba(8, 29, 44, 0.15);
 }
@@ -648,7 +648,7 @@
   min-height: 360px;
   padding: clamp(52px, 8vw, 90px) 24px;
   border: 1px dashed rgba(23, 59, 92, 0.2);
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   background: #ffffff;
   text-align: center;
 }
@@ -805,7 +805,7 @@
 
   .controls {
     padding: 10px;
-    border-radius: 18px;
+    border-radius: var(--radius-md);
   }
 
   .searchField,

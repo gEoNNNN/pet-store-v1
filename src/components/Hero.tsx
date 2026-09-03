@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import { ArrowRightIcon, ChevronRightIcon } from "./icons";
 import styles from "./Hero.module.css";
@@ -6,6 +7,7 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="home" aria-labelledby="hero-heading">
       <div className={styles.bg} aria-hidden="true" />
+      <div className={styles.geometry} aria-hidden="true" />
 
       <div className={`container ${styles.inner}`}>
         <div className={styles.content}>
@@ -15,11 +17,13 @@ export default function Hero() {
 
           <Reveal delay={120}>
             <h1 className={styles.title} id="hero-heading">
-              Sănătatea animalelor tale începe <em>aici</em>
+              Excelență în
+              <br />
+              <em>sănătatea animalelor.</em>
             </h1>
           </Reveal>
 
-          <Reveal delay={260}>
+          <Reveal delay={240}>
             <p className={styles.lede}>
               Produse veterinare certificate, nutriție echilibrată și
               consultanță reală — pentru animalele de fermă și companionii
@@ -27,14 +31,14 @@ export default function Hero() {
             </p>
           </Reveal>
 
-          <Reveal delay={400}>
+          <Reveal delay={360}>
             <div className={styles.actions}>
-              <a href="#products" className={styles.btnPrimary}>
-                Vezi produsele
+              <Link href="/produse" className={styles.btnPrimary}>
+                Descoperă portofoliul
                 <ArrowRightIcon className={styles.btnIcon} />
-              </a>
-              <a href="#contact" className={styles.btnLink}>
-                Contactează-ne
+              </Link>
+              <a href="#about" className={styles.btnLink}>
+                Despre Farmavet
                 <ChevronRightIcon className={styles.btnLinkIcon} />
               </a>
             </div>

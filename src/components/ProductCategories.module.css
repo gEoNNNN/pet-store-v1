@@ -1,158 +1,229 @@
 .section {
-  background: #efedd3;
   padding-block: var(--section-space);
+  background: #ffffff;
 }
 
-/* Sky image panel floating on the beige section, 3% gutters each side.
-   The img itself sizes the panel — full width and height, no crop, no filter. */
-.panel {
-  position: relative;
-  width: 90%;
-  margin-inline: auto;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.panelBg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.panelInner {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: clamp(24px, 3.5vw, 44px);
-  padding: clamp(28px, 4.5vw, 56px) clamp(20px, 4vw, 56px);
-}
-
+/* Editorial product section with a clean corporate grid. */
 .header {
-  max-width: 620px;
-  margin-inline: auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.72fr);
+  align-items: end;
+  gap: clamp(40px, 8vw, 110px);
+  margin-bottom: clamp(40px, 5vw, 64px);
+}
+
+.kicker {
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .title {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(2.1rem, 3.8vw, 3.1rem);
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -0.015em;
   color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.6rem, 4.8vw, 4.25rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
 }
 
 .title em {
-  font-style: italic;
   font-weight: 500;
 }
 
+.headerAside {
+  padding-bottom: 5px;
+}
+
 .sub {
-  margin: 18px auto 0;
-  font-family: var(--font-display), Georgia, serif;
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: var(--color-muted-strong);
-  max-width: 56ch;
+  max-width: 52ch;
+  color: var(--color-muted);
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.allProducts {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding-inline: 18px;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius-sm);
+  color: var(--color-secondary);
+  font-size: 0.82rem;
+  font-weight: 900;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.allProducts:hover {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+
+.allProductsIcon {
+  width: 17px;
+  height: 17px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: clamp(16px, 2vw, 26px);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.grid > * {
+  min-width: 0;
 }
 
 /* ---------- Card ---------- */
-
 .card {
+  height: 100%;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: #ffffff;
+}
+
+.cardLink {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 1.15 / 1;
+  overflow: hidden;
+  background: var(--color-soft);
 }
 
 .cardImage {
-  width: 100%;
-  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 14px 28px -14px rgba(23, 59, 92, 0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.3s ease;
 }
 
 .card:hover .cardImage {
-  transform: translateY(-5px);
-  box-shadow: 0 22px 36px -14px rgba(23, 59, 92, 0.4);
+  transform: scale(1.055);
+  filter: saturate(0.92) contrast(1.03);
+}
+
+.cardNumber {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  min-width: 34px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+  font-size: 0.69rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 20px 24px;
+}
+
+.cardRule {
+  width: 34px;
+  height: 2px;
+  margin-bottom: 16px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.card:hover .cardRule {
+  width: 54px;
 }
 
 .cardTitle {
-  margin-top: 18px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
   color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cardDescription {
+  margin-top: 10px;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
 }
 
 .cardCta {
-  margin-top: 12px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 0 22px;
-  border-radius: 100vw;
-  background: #efedd3;
-  border: 1px solid rgba(23, 59, 92, 0.14);
-  color: var(--foreground);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--color-secondary);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.cardCta:hover {
-  background: var(--color-primary);
-  color: #ffffff;
-  transform: translateY(-2px);
+.cardCtaIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .cardCtaIcon {
+  transform: translateX(4px);
 }
 
 @media (max-width: 1100px) {
-  .panel {
-    width: calc(100% - 48px);
-  }
-
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 900px) {
-  /* Stacked cards need more height than the wide sky image has —
-     let the content size the panel and stretch the sky behind it. */
-  .panel {
-    width: calc(100% - 32px);
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 24px;
   }
 
-  .panelBg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .title br {
+    display: none;
   }
 
-  .panelInner {
-    position: relative;
-  }
-
+  /* Cards become a horizontally scrollable editorial rail on mobile. */
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% + 20px);
+    display: flex;
+    overflow-x: auto;
+    border-left: 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+
+  .grid > * {
+    width: min(82vw, 330px);
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .card {
+    border-left: 1px solid var(--color-border);
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.45rem;
   }
 }

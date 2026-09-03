@@ -15,9 +15,9 @@ const bodyFont = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "NovaVet — Produse Veterinare & Îngrijire pentru Animale",
+  title: "Farmavet — Produse veterinare și sănătate animală",
   description:
-    "NovaVet este o farmacie veterinară modernă ce oferă produse veterinare certificate, nutriție pentru animale, suplimente și produse profesionale de îngrijire.",
+    "Farmavet oferă produse veterinare certificate, nutriție pentru animale, suplimente și consultanță profesională în Republica Moldova.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

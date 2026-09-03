@@ -1,28 +1,69 @@
 .partners {
-  background: #efedd3;
-  padding-block: clamp(56px, 7vw, 84px) clamp(64px, 8vw, 96px);
+  padding-block: clamp(62px, 7vw, 88px);
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  align-items: end;
+  gap: 36px;
+  margin-bottom: 40px;
 }
 
-.loopReveal {
-  width: 100%;
+.header p {
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
+.header h2 {
+  max-width: 24ch;
+  color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.loopReveal,
 .loopWrap {
   width: 100%;
 }
 
-/* Logo images on white chips so transparent/colored marks read on beige. */
+.loopWrap {
+  padding-block: 27px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Logo images remain unboxed for a cleaner corporate brand strip. */
 .loopWrap :global(.logoloop__image) {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 8px 16px;
   box-sizing: content-box;
-  box-shadow: 0 2px 8px rgba(23, 59, 92, 0.08);
+  padding: 4px 10px;
   object-fit: contain;
+  filter: saturate(0.85);
+  opacity: 0.82;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+.loopWrap :global(.logoloop__item:hover .logoloop__image) {
+  filter: none;
+  opacity: 1;
+}
+
+@media (max-width: 680px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
 }

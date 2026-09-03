@@ -58,7 +58,7 @@ export default function ContactForm() {
             name="phone"
             type="tel"
             autoComplete="tel"
-            placeholder="+40 700 000 000"
+            placeholder="+373 79 000 000"
           />
         </div>
         <div className={styles.field}>
