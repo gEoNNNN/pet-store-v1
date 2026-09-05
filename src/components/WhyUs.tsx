@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import buburuza from "../img/buburuza.jpg";
 import Reveal from "./Reveal";
 import { ArrowRightIcon, CheckCircleIcon } from "./icons";
 import styles from "./WhyUs.module.css";
@@ -23,14 +22,6 @@ export default function WhyUs() {
               fill
               sizes="(max-width: 840px) 100vw, 52vw"
               className={styles.mainImageAsset}
-            />
-          </figure>
-          <figure className={styles.stamp}>
-            <Image
-              src={buburuza}
-              alt="Buburuză pictată pe frunze verzi"
-              className={styles.stampImg}
-              sizes="160px"
             />
           </figure>
           <div className={styles.visualLabel}>

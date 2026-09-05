@@ -9,7 +9,7 @@ export const productCategories: ProductCategory[] = [
   {
     title: "Animale de companie",
     description: "Nutriție, suplimente și îngrijire pentru câini și pisici.",
-    image: "/cards/animale-de-companie.jpeg",
+    image: "/cards/animale decomponie.jpeg",
     href: "/produse",
   },
   {
@@ -21,7 +21,7 @@ export const productCategories: ProductCategory[] = [
   {
     title: "Ovine",
     description: "Soluții dedicate îngrijirii și bunăstării efectivelor.",
-    image: "/cards/ovine.jpg",
+    image: "/cards/ovine.jpeg",
     href: "/produse",
   },
   {
@@ -33,7 +33,7 @@ export const productCategories: ProductCategory[] = [
   {
     title: "Porcine",
     description: "Îngrijire completă pentru fiecare etapă de creștere.",
-    image: "/cards/porcine.jpg",
+    image: "/cards/porcine.jpeg",
     href: "/produse",
   },
 ];

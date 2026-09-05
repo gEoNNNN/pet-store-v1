@@ -9,19 +9,19 @@ const articles = [
     tag: "Expertiză",
     title: "Cum alegi produsele veterinare potrivite",
     description: "Repere simple pentru alegeri responsabile, adaptate fiecărei specii.",
-    image: "/cards/animale-de-companie.jpeg",
+    image: "/news1.jpg",
   },
   {
     tag: "Nutriție",
     title: "O alimentație echilibrată începe cu nevoile reale",
     description: "Descoperă ce contează atunci când construiești o rutină de nutriție.",
-    image: "/cards/bovine.jpeg",
+    image: "/news2.jpg",
   },
   {
     tag: "Prevenție",
     title: "Îngrijirea constantă susține sănătatea pe termen lung",
     description: "Prevenția și monitorizarea atentă fac diferența în fiecare etapă.",
-    image: "/cards/pasari.jpeg",
+    image: "/news3.jpg",
   },
 ];
 

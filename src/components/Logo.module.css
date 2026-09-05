@@ -34,15 +34,17 @@
 }
 
 .light .image {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 .light .wordmark strong {
   color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .light .wordmark small {
-  color: #82c7a2;
+  color: #82c9a6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 420px) {
