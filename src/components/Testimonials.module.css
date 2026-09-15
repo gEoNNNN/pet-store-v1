@@ -1,0 +1,144 @@
+.section {
+  padding-block: var(--section-space);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.header {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.kicker {
+  margin-bottom: 14px;
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.5rem, 4.8vw, 4.15rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.header h2 em {
+  font-weight: 500;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 12px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.ratingScore {
+  color: var(--foreground);
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ratingStars {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.ratingStars svg {
+  width: 18px;
+  height: 18px;
+  fill: #f5a623;
+}
+
+.ratingLabel {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin-top: 18px;
+  color: var(--color-muted-strong);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.googleLink {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-inline: 16px;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius-sm);
+  color: var(--color-secondary);
+  font-size: 0.76rem;
+  font-weight: 900;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.googleLink:hover {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+
+.columns {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-height: 720px;
+  margin-top: clamp(42px, 6vw, 70px);
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+
+@media (max-width: 980px) {
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .thirdColumn {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .header h2 {
+    font-size: 2.45rem;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+    max-height: 650px;
+  }
+
+  .secondColumn {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .columns {
+    max-height: none;
+    overflow: visible;
+    mask-image: none;
+  }
+}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 import {
@@ -8,15 +7,19 @@ import {
   MailIcon,
   MapPinIcon,
   PhoneIcon,
-  XSocialIcon,
 } from "./icons";
 import styles from "./Contact.module.css";
+
+const MAPS_LINK = "https://maps.app.goo.gl/zbrmi44MwjviSwvc6";
+const MAPS_EMBED =
+  "https://www.google.com/maps?q=Farmavet+SA,Petricani+198,Chi%C8%99in%C4%83u&output=embed";
 
 const contactDetails = [
   {
     icon: MapPinIcon,
     label: "Adresă",
     value: "Petricani 198, Chișinău, Moldova",
+    href: MAPS_LINK,
   },
   {
     icon: PhoneIcon,
@@ -38,9 +41,8 @@ const contactDetails = [
 ];
 
 const socials = [
-  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "#" },
-  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "#" },
-  { icon: XSocialIcon, label: "Farmavet pe X", href: "#" },
+  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "https://www.facebook.com/farmavet.md/about/" },
+  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "https://www.instagram.com/farmavet_moldova/" },
 ];
 
 export default function Contact() {
@@ -48,14 +50,13 @@ export default function Contact() {
     <section className={styles.contact} id="contact" aria-labelledby="contact-heading">
       <div className="container">
         <Reveal className={styles.head}>
-          <p className={styles.kicker}>Contact & consultanță</p>
           <h2 className={styles.title} id="contact-heading">
             Discută cu echipa <em>Farmavet</em>
           </h2>
           <p className={styles.sub}>
-            Ai întrebări despre un produs, o comandă sau dieta potrivită
-            pentru animalul tău? Specialiștii noștri veterinari îți stau la
-            dispoziție.
+            Ai întrebări despre un produs sau dieta potrivită
+            pentru animalul tău? Echipa noastră îți stă la
+            dispoziție cu informații și recomandări.
           </p>
           <ul className={styles.details}>
             {contactDetails.map((item) => (
@@ -96,12 +97,13 @@ export default function Contact() {
               </div>
             </div>
             <div className={styles.imageSide}>
-              <Image
-                src="/left.jpg"
-                alt="Peisaj rural într-o zi însorită"
-                fill
-                sizes="(max-width: 980px) 100vw, 55vw"
-                className={styles.cardImage}
+              <iframe
+                src={MAPS_EMBED}
+                title="Locația Farmavet pe Google Maps"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className={styles.mapFrame}
               />
             </div>
           </div>

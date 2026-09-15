@@ -7,14 +7,9 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="home" aria-labelledby="hero-heading">
       <div className={styles.bg} aria-hidden="true" />
-      <div className={styles.geometry} aria-hidden="true" />
 
       <div className={`container ${styles.inner}`}>
         <div className={styles.content}>
-          <Reveal>
-            <p className={styles.overline}>Farmavet · Sănătate animală</p>
-          </Reveal>
-
           <Reveal delay={120}>
             <h1 className={styles.title} id="hero-heading">
               Excelență în
@@ -25,9 +20,10 @@ export default function Hero() {
 
           <Reveal delay={240}>
             <p className={styles.lede}>
-              Produse veterinare certificate, nutriție echilibrată și
-              consultanță reală — pentru animalele de fermă și companionii
-              de acasă. Totul într-un singur loc, aproape de tine.
+              Catalog online cu produse veterinare certificate și nutriție
+              echilibrată — pentru animalele de fermă și companionii de acasă.
+              Răsfoiește portofoliul complet de branduri internaționale, cu
+              informații detaliate pentru fiecare produs.
             </p>
           </Reveal>
 

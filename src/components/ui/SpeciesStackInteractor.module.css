@@ -1,0 +1,179 @@
+.interactor {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: clamp(52px, 9vw, 128px);
+  min-height: 580px;
+  padding: clamp(30px, 5vw, 64px);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-softer);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 2.4vw, 30px);
+  list-style: none;
+}
+
+.menuItem {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  color: var(--color-muted);
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.menuItem:hover,
+.menuItem:focus-visible,
+.active {
+  color: var(--foreground);
+  transform: translateX(10px);
+}
+
+.number {
+  padding-top: 4px;
+  color: #a4b0bb;
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.active .number,
+.menuItem:hover .number,
+.menuItem:focus-visible .number {
+  color: var(--color-accent);
+  transform: scale(1.08);
+}
+
+.itemCopy {
+  display: block;
+  min-width: 0;
+}
+
+.itemCopy strong {
+  display: block;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 3.15rem);
+  font-weight: 650;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  opacity: 0.32;
+  transition: opacity 0.35s ease, color 0.35s ease;
+}
+
+.active .itemCopy strong,
+.menuItem:hover .itemCopy strong,
+.menuItem:focus-visible .itemCopy strong {
+  color: var(--foreground);
+  opacity: 1;
+}
+
+.itemCopy small {
+  display: block;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0;
+  transition: max-height 0.35s ease, margin-top 0.35s ease, opacity 0.35s ease;
+}
+
+.active .itemCopy small,
+.menuItem:hover .itemCopy small,
+.menuItem:focus-visible .itemCopy small {
+  max-height: 50px;
+  margin-top: 8px;
+  opacity: 1;
+}
+
+.visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.visual svg {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  height: auto;
+  filter: drop-shadow(0 28px 36px rgba(8, 38, 66, 0.18));
+}
+
+.path {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.glow {
+  position: absolute;
+  width: 84%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(29, 103, 165, 0.12);
+  filter: blur(80px);
+}
+
+@media (max-width: 900px) {
+  .interactor {
+    grid-template-columns: 1fr;
+    gap: 46px;
+    min-height: 0;
+  }
+
+  .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .visual {
+    width: min(100%, 620px);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .interactor {
+    gap: 34px;
+    padding: 24px 18px;
+  }
+
+  .menu ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .menuItem {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .menuItem:hover,
+  .menuItem:focus-visible,
+  .active {
+    transform: translateX(5px);
+  }
+
+  .itemCopy strong {
+    font-size: 1.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menuItem,
+  .number,
+  .itemCopy strong,
+  .itemCopy small {
+    transition: none;
+  }
+}

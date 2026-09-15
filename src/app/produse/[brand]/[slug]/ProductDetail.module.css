@@ -1,0 +1,473 @@
+.page {
+  padding-block: calc(var(--nav-height) + 34px) clamp(72px, 9vw, 120px);
+  background:
+    radial-gradient(circle at 94% 8%, rgba(217, 229, 222, 0.62), transparent 22%),
+    var(--background);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.breadcrumbs a {
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span {
+  overflow: hidden;
+  color: var(--color-muted-strong);
+  text-overflow: ellipsis;
+}
+
+.breadcrumbIcon {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+  gap: clamp(38px, 6vw, 88px);
+  align-items: center;
+}
+
+.imagePanel {
+  position: relative;
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 50% 44%, #ffffff 0 34%, transparent 68%),
+    var(--color-softer);
+  box-shadow: var(--shadow-md);
+}
+
+.mainImage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.mainImage img {
+  object-fit: contain;
+  padding: clamp(30px, 5vw, 76px);
+}
+
+.imageBrand {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 13px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroContent {
+  min-width: 0;
+}
+
+.tags,
+.labelList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span,
+.labelList span {
+  padding: 7px 11px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-muted-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.tags .brandTag {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.heroContent h1 {
+  max-width: 17ch;
+  margin-top: 21px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.35rem, 4.7vw, 4.6rem);
+  font-weight: 600;
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+}
+
+.description {
+  max-width: 65ch;
+  margin-top: 22px;
+  color: var(--color-muted-strong);
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  line-height: 1.75;
+}
+
+.description p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+.labelList {
+  margin-top: 20px;
+}
+
+.labelList span {
+  background: var(--color-soft);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 28px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-border);
+}
+
+.facts div {
+  min-width: 0;
+  padding: 15px 17px;
+  background: #ffffff;
+}
+
+.facts dt {
+  color: var(--color-muted);
+  font-size: 0.67rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  margin-top: 3px;
+  overflow-wrap: anywhere;
+  color: var(--foreground);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.sourceButton,
+.backLink {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding-inline: 22px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 900;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sourceButton {
+  margin-top: 26px;
+}
+
+.sourceButton:hover,
+.backLink:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary-dark);
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 72px);
+  margin-top: clamp(62px, 8vw, 104px);
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-deep);
+  color: #ffffff;
+}
+
+.kicker {
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.highlights h2,
+.sectionHeading h2 {
+  margin-top: 6px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.highlights ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  list-style: none;
+}
+
+.highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.checkIcon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #9fcbb3;
+}
+
+.information,
+.ingredients,
+.gallery {
+  margin-top: clamp(72px, 9vw, 118px);
+}
+
+.sectionHeading {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.sectionHeading > p:last-child {
+  margin-top: 10px;
+  color: var(--color-muted);
+}
+
+.sectionList {
+  display: grid;
+  gap: 16px;
+}
+
+.infoCard {
+  padding: clamp(24px, 3.5vw, 42px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.infoCard h3 {
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.2;
+}
+
+.infoCard > p {
+  margin-top: 18px;
+  color: var(--color-muted-strong);
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+.tableWrap {
+  margin-top: 24px;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.tableWrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.tableWrap th,
+.tableWrap td {
+  min-width: 110px;
+  padding: 12px 14px;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.tableWrap th {
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.tableWrap tr:last-child td {
+  border-bottom: 0;
+}
+
+.tableWrap th:last-child,
+.tableWrap td:last-child {
+  border-right: 0;
+}
+
+.ingredientGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ingredientCard {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.ingredientImage {
+  position: relative;
+  aspect-ratio: 1.45 / 1;
+  background: var(--color-soft);
+}
+
+.ingredientImage img {
+  object-fit: cover;
+}
+
+.ingredientCard > div:last-child {
+  padding: 20px;
+}
+
+.ingredientCard h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.ingredientCard p {
+  margin-top: 8px;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.galleryImage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-softer);
+}
+
+.galleryImage img {
+  object-fit: contain;
+  padding: 16px;
+}
+
+.backLinkWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(58px, 8vw, 92px);
+}
+
+.backLink .buttonIcon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 940px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .imagePanel {
+    max-width: 720px;
+  }
+
+  .heroContent h1 {
+    max-width: 21ch;
+  }
+
+  .ingredientGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    padding-top: calc(var(--nav-height) + 20px);
+  }
+
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    gap: 30px;
+  }
+
+  .mainImage img {
+    padding: 30px;
+  }
+
+  .facts,
+  .highlights,
+  .highlights ul,
+  .ingredientGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights {
+    padding: 27px 22px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .infoCard {
+    padding: 22px 18px;
+  }
+
+  .sourceButton {
+    width: 100%;
+  }
+}

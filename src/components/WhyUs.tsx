@@ -4,12 +4,6 @@ import Reveal from "./Reveal";
 import { ArrowRightIcon, CheckCircleIcon } from "./icons";
 import styles from "./WhyUs.module.css";
 
-const stats = [
-  { value: "5", label: "game specializate" },
-  { value: "7", label: "branduri partenere" },
-  { value: "24–48h", label: "livrare națională" },
-];
-
 export default function WhyUs() {
   return (
     <section className={styles.whyUs} id="about" aria-labelledby="whyus-heading">
@@ -17,8 +11,8 @@ export default function WhyUs() {
         <Reveal className={styles.visual}>
           <figure className={styles.mainImage}>
             <Image
-              src="/footer.png"
-              alt="Peisaj rural și sediu Farmavet"
+              src="/magazin.jpeg"
+              alt="Magazin Farmavet"
               fill
               sizes="(max-width: 840px) 100vw, 52vw"
               className={styles.mainImageAsset}
@@ -31,14 +25,15 @@ export default function WhyUs() {
         </Reveal>
 
         <Reveal className={styles.content} delay={120}>
-          <p className={styles.kicker}>Despre Farmavet</p>
           <h2 className={styles.title} id="whyus-heading">
             Încredere construită prin
             <em> grijă și profesionalism</em>
           </h2>
           <p className={styles.lede}>
-            Farmavet simplifică achiziția produselor veterinare — tu te concentrezi pe animalele
-            din grija ta, noi ne ocupăm de restul.
+            Farmavet pune la dispoziția ta un catalog online cu produse
+            veterinare certificate — tu răsfoiești și alegi cu încredere,
+            noi îți oferim informațiile de care ai nevoie pentru fiecare
+            produs în parte.
           </p>
 
           <div className={styles.assurances}>
@@ -46,14 +41,14 @@ export default function WhyUs() {
               <CheckCircleIcon className={styles.assuranceIcon} />
               <span>
                 <strong>Produse verificate</strong>
-                Colaborăm cu medici veterinari și furnizori de încredere.
+                Colaborăm cu furnizori de încredere și branduri internaționale.
               </span>
             </div>
             <div>
               <CheckCircleIcon className={styles.assuranceIcon} />
               <span>
-                <strong>Livrare sigură</strong>
-                Ambalaje adecvate și curieri parteneri pentru produse sensibile.
+                <strong>Informații complete</strong>
+                Ingrediente, valori nutriționale, gramaje și ghiduri de hrănire pentru fiecare produs.
               </span>
             </div>
           </div>
@@ -63,15 +58,6 @@ export default function WhyUs() {
             <ArrowRightIcon className={styles.ctaIcon} />
           </Link>
         </Reveal>
-
-        <div className={styles.stats}>
-          {stats.map((stat, index) => (
-            <Reveal className={styles.stat} delay={index * 80} key={stat.label}>
-              <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );

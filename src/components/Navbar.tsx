@@ -7,15 +7,14 @@ import { CloseIcon, MenuIcon } from "./icons";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
+  { label: "Acasa", href: "/#home" },
   { label: "Despre noi", href: "/#about" },
   { label: "Produse", href: "/produse" },
-  { label: "Branduri", href: "/#brands" },
-  { label: "Profesioniști", href: "/#professionals" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Instrumente", href: "/instrumente" },
 ];
 
 type NavbarProps = {
-  activeItem?: "home" | "products";
+  activeItem?: "home" | "products" | "tools";
 };
 
 export default function Navbar({ activeItem = "home" }: NavbarProps) {
@@ -60,7 +59,9 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
           <nav className={styles.desktopNav} aria-label="Navigare principală">
             <ul>
               {navLinks.map((link) => {
-                const isActive = activeItem === "products" && link.href === "/produse";
+                const isActive =
+                  (activeItem === "products" && link.href === "/produse") ||
+                  (activeItem === "tools" && link.href === "/instrumente");
                 return (
                   <li key={link.href}>
                     <Link

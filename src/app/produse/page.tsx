@@ -2,19 +2,22 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProductCatalog from "@/components/ProductCatalog";
+import { getProductSummaries } from "@/data/productCatalog.server";
 
 export const metadata: Metadata = {
-  title: "Catalog produse veterinare | Farmavet",
+  title: "Produse Brit și Carnilove | Farmavet",
   description:
-    "Descoperă produse veterinare certificate, hrană și suplimente pentru animale de companie, bovine, ovine, păsări și porcine.",
+    "Descoperă catalogul complet de hrană Brit și Carnilove pentru câini, pisici și rozătoare, cu ingrediente și informații nutriționale.",
 };
 
 export default function ProductsPage() {
+  const products = getProductSummaries();
+
   return (
     <>
       <Navbar activeItem="products" />
       <main id="main">
-        <ProductCatalog />
+        <ProductCatalog products={products} />
       </main>
       <Footer />
     </>

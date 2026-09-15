@@ -1,182 +1,55 @@
-export const productCategoryNames = [
-  "Toate",
-  "Animale de companie",
-  "Bovine",
-  "Ovine",
-  "Păsări",
-  "Porcine",
-] as const;
+export const productCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare"] as const;
+
+export const productBrandNames = ["Toate", "Brit", "Carnilove"] as const;
 
 export type ProductCategoryName = (typeof productCategoryNames)[number];
+export type ProductBrandName = (typeof productBrandNames)[number];
+export type ProductCategory = Exclude<ProductCategoryName, "Toate">;
+export type ProductBrand = Exclude<ProductBrandName, "Toate">;
+export type ProductBrandSlug = "brit" | "carnilove";
 
-export type Product = {
-  id: number;
-  name: string;
-  category: Exclude<ProductCategoryName, "Toate">;
-  description: string;
-  image: string;
-  price: number;
-  oldPrice?: number;
-  badge?: string;
-  rating: number;
-  reviews: number;
-  popularity: number;
-  createdAt: string;
+export type ProductImage = {
+  url: string;
+  alt: string;
+  role: string;
 };
 
-export const products: Product[] = [
-  {
-    id: 1,
-    name: "Hrană Premium Adult cu Miel",
-    category: "Animale de companie",
-    description: "Rețetă completă pentru câini adulți, cu proteine ușor digerabile.",
-    image: "/catanddog.jpg",
-    price: 149.9,
-    oldPrice: 169.9,
-    badge: "-12%",
-    rating: 4.9,
-    reviews: 128,
-    popularity: 99,
-    createdAt: "2026-08-15",
-  },
-  {
-    id: 2,
-    name: "Ulei de Somon Omega 3",
-    category: "Animale de companie",
-    description: "Suport natural pentru piele, blană și vitalitate zilnică.",
-    image: "/catanddog.jpg",
-    price: 59.9,
-    badge: "Bestseller",
-    rating: 4.8,
-    reviews: 94,
-    popularity: 96,
-    createdAt: "2026-07-22",
-  },
-  {
-    id: 3,
-    name: "Complex Mineral pentru Bovine",
-    category: "Bovine",
-    description: "Aport echilibrat de minerale pentru susținerea producției și imunității.",
-    image: "/catanddog.jpg",
-    price: 129,
-    rating: 4.7,
-    reviews: 61,
-    popularity: 88,
-    createdAt: "2026-08-20",
-  },
-  {
-    id: 4,
-    name: "Electroliți pentru Viței",
-    category: "Bovine",
-    description: "Formulă solubilă pentru rehidratare rapidă și recuperare eficientă.",
-    image: "/catanddog.jpg",
-    price: 74.9,
-    oldPrice: 84.9,
-    badge: "Ofertă",
-    rating: 4.8,
-    reviews: 47,
-    popularity: 91,
-    createdAt: "2026-06-14",
-  },
-  {
-    id: 5,
-    name: "Bloc Mineral pentru Ovine",
-    category: "Ovine",
-    description: "Minerale esențiale pentru consum liber, în orice etapă de creștere.",
-    image: "/catanddog.jpg",
-    price: 48.9,
-    rating: 4.6,
-    reviews: 39,
-    popularity: 79,
-    createdAt: "2026-05-28",
-  },
-  {
-    id: 6,
-    name: "Suport Ruminal OviCare",
-    category: "Ovine",
-    description: "Amestec complementar pentru digestie optimă și un rumen sănătos.",
-    image: "/catanddog.jpg",
-    price: 83,
-    badge: "Nou",
-    rating: 4.8,
-    reviews: 22,
-    popularity: 83,
-    createdAt: "2026-08-27",
-  },
-  {
-    id: 7,
-    name: "Premix Vitamine pentru Păsări",
-    category: "Păsări",
-    description: "Complex concentrat pentru creștere uniformă și penaj sănătos.",
-    image: "/catanddog.jpg",
-    price: 37.9,
-    rating: 4.7,
-    reviews: 72,
-    popularity: 90,
-    createdAt: "2026-04-18",
-  },
-  {
-    id: 8,
-    name: "Calciu Lichid AviPlus",
-    category: "Păsări",
-    description: "Supliment cu absorbție rapidă pentru găini ouătoare și păsări tinere.",
-    image: "/catanddog.jpg",
-    price: 44.5,
-    oldPrice: 49.9,
-    badge: "-10%",
-    rating: 4.9,
-    reviews: 105,
-    popularity: 97,
-    createdAt: "2026-07-31",
-  },
-  {
-    id: 9,
-    name: "Complex de Fier pentru Purcei",
-    category: "Porcine",
-    description: "Formulă profesională pentru dezvoltare armonioasă în primele săptămâni.",
-    image: "/catanddog.jpg",
-    price: 56,
-    badge: "Recomandat",
-    rating: 4.8,
-    reviews: 54,
-    popularity: 92,
-    createdAt: "2026-08-09",
-  },
-  {
-    id: 10,
-    name: "Furaj Starter ProPig",
-    category: "Porcine",
-    description: "Nutriție completă, formulată pentru un start sănătos și eficient.",
-    image: "/catanddog.jpg",
-    price: 119,
-    rating: 4.6,
-    reviews: 34,
-    popularity: 81,
-    createdAt: "2026-03-12",
-  },
-  {
-    id: 11,
-    name: "Șampon Dermatologic Calm",
-    category: "Animale de companie",
-    description: "Curățare delicată pentru piele sensibilă, fără parfumuri agresive.",
-    image: "/catanddog.jpg",
-    price: 42.5,
-    badge: "Nou",
-    rating: 4.7,
-    reviews: 18,
-    popularity: 76,
-    createdAt: "2026-08-29",
-  },
-  {
-    id: 12,
-    name: "Dezinfectant pentru Adăposturi",
-    category: "Bovine",
-    description: "Soluție concentrată pentru igienizarea sigură a spațiilor zootehnice.",
-    image: "/catanddog.jpg",
-    price: 64.5,
-    rating: 4.9,
-    reviews: 83,
-    popularity: 95,
-    createdAt: "2026-06-26",
-  },
-];
+export type ProductSection = {
+  title: string;
+  text: string;
+  tables: string[][][];
+};
+
+export type FreshIngredient = {
+  name: string | null;
+  description: string;
+  image: string | null;
+};
+
+export type ProductSummary = {
+  id: string;
+  brand: ProductBrand;
+  brandSlug: ProductBrandSlug;
+  slug: string;
+  href: string;
+  name: string;
+  category: ProductCategory;
+  description: string;
+  image: string;
+  labels: string[];
+  packageSizes: string[];
+};
+
+export type Product = ProductSummary & {
+  sourceUrl: string;
+  productType: string | null;
+  breadcrumbs: string[];
+  features: string[];
+  ingredientTags: string[];
+  images: ProductImage[];
+  videos: string[];
+  sections: ProductSection[];
+  freshIngredients: FreshIngredient[];
+  metabolizableEnergy: string | null;
+  rawText: string;
+};

@@ -1,28 +1,24 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
-import { products, productCategoryNames, type ProductCategoryName } from "@/data/products";
 import {
-  CheckCircleIcon,
+  productBrandNames,
+  productCategoryNames,
+  type ProductBrandName,
+  type ProductCategoryName,
+  type ProductSummary,
+} from "@/data/products";
+import {
+  ArrowRightIcon,
   CloseIcon,
   SearchIcon,
-  ShieldCheckIcon,
-  ShoppingBagIcon,
-  StarIcon,
-  StethoscopeIcon,
-  TruckIcon,
 } from "./icons";
 import styles from "./ProductCatalog.module.css";
 
-const INITIAL_VISIBLE_PRODUCTS = 8;
-const LOAD_MORE_COUNT = 4;
-
-const priceFormatter = new Intl.NumberFormat("ro-RO", {
-  style: "currency",
-  currency: "RON",
-  minimumFractionDigits: 2,
-});
+const INITIAL_VISIBLE_PRODUCTS = 12;
+const LOAD_MORE_COUNT = 12;
 
 function normalizeText(value: string) {
   return value
@@ -31,57 +27,48 @@ function normalizeText(value: string) {
     .toLocaleLowerCase("ro-RO");
 }
 
-export default function ProductCatalog() {
+type ProductCatalogProps = {
+  products: ProductSummary[];
+};
+
+export default function ProductCatalog({ products }: ProductCatalogProps) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<ProductCategoryName>("Toate");
-  const [sortBy, setSortBy] = useState("popular");
+  const [brand, setBrand] = useState<ProductBrandName>("Toate");
+  const [sortBy, setSortBy] = useState("name-asc");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_PRODUCTS);
-  const [addedProducts, setAddedProducts] = useState<Set<number>>(new Set());
 
   const filteredProducts = useMemo(() => {
     const normalizedQuery = normalizeText(query.trim());
     const matchingProducts = products.filter((product) => {
       const matchesCategory = category === "Toate" || product.category === category;
+      const matchesBrand = brand === "Toate" || product.brand === brand;
       const searchableText = normalizeText(
-        `${product.name} ${product.category} ${product.description}`,
+        `${product.name} ${product.brand} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}`,
       );
-      return matchesCategory && (!normalizedQuery || searchableText.includes(normalizedQuery));
+      return matchesCategory && matchesBrand && (!normalizedQuery || searchableText.includes(normalizedQuery));
     });
 
-    return [...matchingProducts].sort((a, b) => {
-      if (sortBy === "price-asc") return a.price - b.price;
-      if (sortBy === "price-desc") return b.price - a.price;
-      if (sortBy === "newest") return Date.parse(b.createdAt) - Date.parse(a.createdAt);
-      return b.popularity - a.popularity;
+    return [...matchingProducts].sort((first, second) => {
+      if (sortBy === "name-desc") return second.name.localeCompare(first.name, "ro");
+      if (sortBy === "brand") {
+        return first.brand.localeCompare(second.brand, "ro") || first.name.localeCompare(second.name, "ro");
+      }
+      return first.name.localeCompare(second.name, "ro");
     });
-  }, [category, query, sortBy]);
+  }, [brand, category, products, query, sortBy]);
 
   const visibleProducts = filteredProducts.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProducts.length;
 
-  const selectCategory = (nextCategory: ProductCategoryName) => {
-    setCategory(nextCategory);
-    setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
-  };
-
-  const updateQuery = (nextQuery: string) => {
-    setQuery(nextQuery);
-    setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
-  };
+  const resetVisibleProducts = () => setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
 
   const clearFilters = () => {
     setQuery("");
     setCategory("Toate");
-    setSortBy("popular");
-    setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
-  };
-
-  const addToCart = (productId: number) => {
-    setAddedProducts((current) => {
-      const next = new Set(current);
-      next.add(productId);
-      return next;
-    });
+    setBrand("Toate");
+    setSortBy("name-asc");
+    resetVisibleProducts();
   };
 
   return (
@@ -89,37 +76,15 @@ export default function ProductCatalog() {
       <header className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>Farmavet · Magazin online</p>
             <h1 className={styles.title}>
-              Produse alese cu grijă,
+              Nutriție premium,
               <br />
-              <em>pentru fiecare animal</em>
+              <em>pentru câini și pisici</em>
             </h1>
             <p className={styles.intro}>
-              Descoperă soluții veterinare certificate, hrană și suplimente atent selecționate
-              de specialiști pentru sănătatea animalelor tale.
+              Descoperă gamele complete Brit și Carnilove, cu ingrediente, valori nutriționale,
+              gramaje și ghiduri de hrănire pentru fiecare produs în parte.
             </p>
-          </div>
-
-          <div className={styles.heroCard} aria-label="Beneficiile magazinului">
-            <div className={styles.heroCardTop}>
-              <span className={styles.heroCardNumber}>{products.length}</span>
-              <span>produse selectate</span>
-            </div>
-            <ul className={styles.benefits}>
-              <li>
-                <ShieldCheckIcon className={styles.benefitIcon} />
-                Produse certificate
-              </li>
-              <li>
-                <TruckIcon className={styles.benefitIcon} />
-                Livrare în 24–48h
-              </li>
-              <li>
-                <StethoscopeIcon className={styles.benefitIcon} />
-                Recomandări specializate
-              </li>
-            </ul>
           </div>
         </div>
       </header>
@@ -133,14 +98,20 @@ export default function ProductCatalog() {
               <input
                 type="search"
                 value={query}
-                onChange={(event) => updateQuery(event.target.value)}
-                placeholder="Caută după nume, categorie..."
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  resetVisibleProducts();
+                }}
+                placeholder="Caută după nume, ingredient, gramaj..."
               />
               {query && (
                 <button
                   type="button"
                   className={styles.clearSearch}
-                  onClick={() => updateQuery("")}
+                  onClick={() => {
+                    setQuery("");
+                    resetVisibleProducts();
+                  }}
                   aria-label="Șterge căutarea"
                 >
                   <CloseIcon className={styles.clearIcon} />
@@ -149,35 +120,36 @@ export default function ProductCatalog() {
             </label>
 
             <label className={styles.sortField}>
+              <span>Brand</span>
+              <select
+                value={brand}
+                onChange={(event) => {
+                  setBrand(event.target.value as ProductBrandName);
+                  resetVisibleProducts();
+                }}
+              >
+                {productBrandNames.map((brandName) => (
+                  <option value={brandName} key={brandName}>
+                    {brandName === "Toate" ? "Toate brandurile" : brandName}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className={styles.sortField}>
               <span>Sortează</span>
               <select
                 value={sortBy}
                 onChange={(event) => {
                   setSortBy(event.target.value);
-                  setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
+                  resetVisibleProducts();
                 }}
               >
-                <option value="popular">Cele mai populare</option>
-                <option value="newest">Cele mai noi</option>
-                <option value="price-asc">Preț: crescător</option>
-                <option value="price-desc">Preț: descrescător</option>
+                <option value="name-asc">Nume: A–Z</option>
+                <option value="name-desc">Nume: Z–A</option>
+                <option value="brand">După brand</option>
               </select>
             </label>
-
-            <div className={styles.cartSummary} aria-live="polite">
-              <span className={styles.cartIconWrap}>
-                <ShoppingBagIcon className={styles.cartIcon} />
-                {addedProducts.size > 0 && (
-                  <span className={styles.cartCount}>{addedProducts.size}</span>
-                )}
-              </span>
-              <span>
-                <strong>Coșul tău</strong>
-                {addedProducts.size === 0
-                  ? "Niciun produs"
-                  : `${addedProducts.size} ${addedProducts.size === 1 ? "produs" : "produse"}`}
-              </span>
-            </div>
           </div>
 
           <div className={styles.categoryFilter} aria-label="Filtrează după categorie">
@@ -186,7 +158,10 @@ export default function ProductCatalog() {
                 key={item}
                 type="button"
                 className={`${styles.categoryButton} ${category === item ? styles.categoryButtonActive : ""}`}
-                onClick={() => selectCategory(item)}
+                onClick={() => {
+                  setCategory(item);
+                  resetVisibleProducts();
+                }}
                 aria-pressed={category === item}
               >
                 {item}
@@ -201,9 +176,9 @@ export default function ProductCatalog() {
 
           <div className={styles.resultsHeader}>
             <div>
-              <p className={styles.resultsKicker}>Selecția Farmavet</p>
+              <p className={styles.resultsKicker}>{brand === "Toate" ? "Brit + Carnilove" : brand}</p>
               <h2 className={styles.resultsTitle} id="catalog-heading">
-                {category === "Toate" ? "Toate produsele" : category}
+                {category === "Toate" ? "Toate produsele" : `Produse pentru ${category.toLowerCase()}`}
               </h2>
             </div>
             <p className={styles.resultsCount}>
@@ -214,56 +189,45 @@ export default function ProductCatalog() {
           {visibleProducts.length > 0 ? (
             <>
               <div className={styles.productGrid}>
-                {visibleProducts.map((product) => {
-                  const isAdded = addedProducts.has(product.id);
-                  return (
-                    <article className={styles.productCard} key={product.id}>
-                      <div className={styles.imageWrap}>
-                        <Image
-                          src={product.image}
-                          alt={product.name}
-                          fill
-                          sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, (max-width: 1180px) 33vw, 25vw"
-                          className={styles.productImage}
-                        />
-                        {product.badge && <span className={styles.badge}>{product.badge}</span>}
-                        <span className={styles.quickCategory}>{product.category}</span>
-                      </div>
+                {visibleProducts.map((product) => (
+                  <article className={styles.productCard} key={product.id}>
+                    <Link href={product.href} className={styles.imageWrap} aria-label={`Vezi ${product.name}`}>
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, (max-width: 1180px) 33vw, 25vw"
+                        className={styles.productImage}
+                      />
+                      <span className={styles.badge}>{product.brand}</span>
+                      <span className={styles.quickCategory}>{product.category}</span>
+                    </Link>
 
-                      <div className={styles.cardBody}>
-                        <div className={styles.rating} aria-label={`${product.rating} din 5 stele`}>
-                          <StarIcon className={styles.starIcon} />
-                          <strong>{product.rating}</strong>
-                          <span>({product.reviews})</span>
-                        </div>
-                        <h3 className={styles.productName}>{product.name}</h3>
-                        <p className={styles.productDescription}>{product.description}</p>
+                    <div className={styles.cardBody}>
+                      <p className={styles.cardMeta}>
+                        <span>{product.brand}</span>
+                        <span aria-hidden="true">·</span>
+                        <span>{product.category}</span>
+                      </p>
+                      <h3 className={styles.productName}>
+                        <Link href={product.href}>{product.name}</Link>
+                      </h3>
+                      <p className={styles.productDescription}>{product.description}</p>
 
-                        <div className={styles.cardFooter}>
-                          <div className={styles.priceBlock}>
-                            <span className={styles.price}>{priceFormatter.format(product.price)}</span>
-                            {product.oldPrice && (
-                              <span className={styles.oldPrice}>{priceFormatter.format(product.oldPrice)}</span>
-                            )}
-                          </div>
-                          <button
-                            type="button"
-                            className={`${styles.addButton} ${isAdded ? styles.addButtonSuccess : ""}`}
-                            onClick={() => addToCart(product.id)}
-                            disabled={isAdded}
-                          >
-                            {isAdded ? (
-                              <CheckCircleIcon className={styles.addButtonIcon} />
-                            ) : (
-                              <ShoppingBagIcon className={styles.addButtonIcon} />
-                            )}
-                            {isAdded ? "Adăugat" : "Adaugă"}
-                          </button>
-                        </div>
+                      <div className={styles.cardFooter}>
+                        <span className={styles.sizeInfo}>
+                          {product.packageSizes.length
+                            ? product.packageSizes.slice(0, 2).join(" · ")
+                            : "Detalii complete"}
+                        </span>
+                        <Link href={product.href} className={styles.detailsButton}>
+                          Vezi produsul
+                          <ArrowRightIcon className={styles.addButtonIcon} />
+                        </Link>
                       </div>
-                    </article>
-                  );
-                })}
+                    </div>
+                  </article>
+                ))}
               </div>
 
               {hasMore && (

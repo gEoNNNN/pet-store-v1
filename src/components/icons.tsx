@@ -223,3 +223,33 @@ export function StarIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function BowlFoodIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className} viewBox="0 0 24 24">
+      <path d="M3 11h18a0 0 0 0 1 0 0 9 9 0 0 1-18 0Z" />
+      <path d="M3 11a9 9 0 0 1 9-9 9 9 0 0 1 9 9" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+      <path d="M7 20h10" />
+    </StrokeIcon>
+  );
+}
+
+export function HeartPulseIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className} viewBox="0 0 24 24">
+      <path d="M3.5 12.5 8 8l3 3 4-5 5.5 6.5" />
+      <path d="M19 14c-1.5 3-4.5 5.5-7 6.5-2.5-1-5.5-3.5-7-6.5" />
+    </StrokeIcon>
+  );
+}
+
+export function CompassIcon({ className }: IconProps) {
+  return (
+    <StrokeIcon className={className} viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9.5" />
+      <path d="m15.5 8.5-2 5.5-5 2 2-5.5 5-2Z" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
+    </StrokeIcon>
+  );
+}

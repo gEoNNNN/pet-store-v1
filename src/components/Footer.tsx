@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import NewsletterForm from "./NewsletterForm";
 import Reveal from "./Reveal";
 import {
   FacebookIcon,
@@ -8,7 +7,6 @@ import {
   MailIcon,
   MapPinIcon,
   PhoneIcon,
-  XSocialIcon,
 } from "./icons";
 import styles from "./Footer.module.css";
 
@@ -24,28 +22,19 @@ const speciesLinks = ["Animale de companie", "Bovine", "Ovine", "Păsări", "Por
 const informationLinks = [
   { label: "Despre noi", href: "/#about" },
   { label: "Branduri", href: "/#brands" },
-  { label: "Profesioniști", href: "/#professionals" },
+  { label: "Instrumente", href: "/instrumente" },
   { label: "Contact", href: "/#contact" },
 ];
 
 const socials = [
-  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "#" },
-  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "#" },
-  { icon: XSocialIcon, label: "Farmavet pe X", href: "#" },
+  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "https://www.facebook.com/farmavet.md/about/" },
+  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "https://www.instagram.com/farmavet_moldova/" },
 ];
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Reveal className={styles.newsletter}>
-          <div>
-            <p className={styles.newsletterKicker}>Rămâi informat</p>
-            <h2>Informații utile pentru sănătatea animalelor.</h2>
-          </div>
-          <NewsletterForm />
-        </Reveal>
-
         <div className={styles.top}>
           <Reveal className={styles.brand}>
             <Link href="/#home" aria-label="Farmavet — pagina principală">

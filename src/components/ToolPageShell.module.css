@@ -1,0 +1,61 @@
+.main {
+  min-height: 100vh;
+  background: var(--color-softer);
+}
+
+.hero {
+  padding-block: calc(var(--nav-height) + clamp(44px, 7vw, 80px)) clamp(44px, 6vw, 72px);
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 30px;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-secondary);
+}
+
+.breadcrumbs svg {
+  width: 12px;
+  height: 12px;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-secondary);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 16ch;
+  color: var(--foreground);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 62ch;
+  margin-top: 20px;
+  color: var(--color-muted-strong);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.workspace {
+  padding-block: clamp(46px, 7vw, 84px);
+}

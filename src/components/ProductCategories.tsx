@@ -1,9 +1,22 @@
 import Link from "next/link";
 import { productCategories } from "@/data/categories";
-import ProductCategoryCard from "./ProductCategoryCard";
 import Reveal from "./Reveal";
+import SpeciesStackInteractor from "./ui/SpeciesStackInteractor";
 import { ArrowRightIcon } from "./icons";
 import styles from "./ProductCategories.module.css";
+
+const clipIds = [
+  "species-strips",
+  "species-mosaic",
+  "species-pixels",
+  "species-columns",
+  "species-focus",
+];
+
+const speciesItems = productCategories.map((category, index) => ({
+  ...category,
+  clipId: clipIds[index],
+}));
 
 export default function ProductCategories() {
   return (
@@ -11,7 +24,6 @@ export default function ProductCategories() {
       <div className="container">
         <Reveal className={styles.header}>
           <div>
-            <p className={styles.kicker}>Portofoliul Farmavet</p>
             <h2 className={styles.title} id="products-heading">
               Soluții veterinare
               <br />
@@ -20,8 +32,8 @@ export default function ProductCategories() {
           </div>
           <div className={styles.headerAside}>
             <p className={styles.sub}>
-              Cinci game specializate, selectate pentru nevoile reale ale animalelor și ale
-              profesioniștilor care le îngrijesc.
+              Explorează categoriile disponibile și descoperă informațiile complete pentru
+              produsele din catalogul Farmavet.
             </p>
             <Link href="/produse" className={styles.allProducts}>
               Vezi toate produsele
@@ -30,13 +42,9 @@ export default function ProductCategories() {
           </div>
         </Reveal>
 
-        <div className={styles.grid}>
-          {productCategories.map((category, index) => (
-            <Reveal key={category.title} delay={index * 90}>
-              <ProductCategoryCard category={category} index={index} />
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={100}>
+          <SpeciesStackInteractor items={speciesItems} />
+        </Reveal>
       </div>
     </section>
   );
