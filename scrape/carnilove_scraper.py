@@ -2,9 +2,13 @@ import argparse
 import json
 import random
 import re
+import sys
 import threading
 import time
 import xml.etree.ElementTree as ET
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path

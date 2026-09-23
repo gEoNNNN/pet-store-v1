@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, Bone, Compass, HeartPulse, LayoutGrid } from "lucide-react";
+import { ArrowRight, Bone, Compass, HeartPulse } from "lucide-react";
 import styles from "./category-list.module.css";
 
 export interface Category {
@@ -36,9 +36,6 @@ export function CategoryList({ title, subtitle, categories, headingLevel = "h2",
     <div className={`${styles.wrapper} ${isPage ? styles.pageWrapper : ""}`}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <span className={styles.headerIcon} aria-hidden="true">
-            <LayoutGrid />
-          </span>
           <Heading className={styles.title}>{title}</Heading>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         </div>

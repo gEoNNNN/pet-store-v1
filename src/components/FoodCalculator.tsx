@@ -62,16 +62,18 @@ export default function FoodCalculator() {
             ))}
           </fieldset>
 
-          <label className={styles.field}>
-            <span>Greutate (kg)</span>
-            <input type="number" min="0.5" max="120" step="0.1" value={weight} onChange={(event) => setWeight(Number(event.target.value))} />
-          </label>
+          <div className={styles.row}>
+            <label className={styles.field}>
+              <span>Greutate (kg)</span>
+              <input type="number" min="0.5" max="120" step="0.1" value={weight} onChange={(event) => setWeight(Number(event.target.value))} />
+            </label>
 
-          <label className={styles.field}>
-            <span>Vârstă (ani)</span>
-            <input type="number" min="0.1" max="25" step="0.1" value={age} onChange={(event) => setAge(Number(event.target.value))} />
-            <small className={styles.hint}>Pentru 6 luni introdu 0,5 ani.</small>
-          </label>
+            <label className={styles.field}>
+              <span>Vârstă (ani)</span>
+              <input type="number" min="0.1" max="25" step="0.1" value={age} onChange={(event) => setAge(Number(event.target.value))} />
+              <small className={styles.hint}>Ex: 0,5 ani pentru 6 luni</small>
+            </label>
+          </div>
 
           <fieldset className={`${styles.field} ${styles.options}`}>
             <legend>Nivel de activitate</legend>

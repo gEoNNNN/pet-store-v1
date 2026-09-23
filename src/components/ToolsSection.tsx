@@ -25,14 +25,37 @@ const tools: Category[] = [
   },
 ];
 
-export default function ToolsSection({ headingLevel = "home" }: { headingLevel?: "home" | "page" }) {
+export default function ToolsSection({
+  headingLevel = "home",
+  isPage,
+  useAnchorLinks = false,
+}: {
+  headingLevel?: "home" | "page";
+  isPage?: boolean;
+  useAnchorLinks?: boolean;
+}) {
+  const categories = useAnchorLinks
+    ? tools.map((t) => ({
+        ...t,
+        href: `#${
+          t.id === "food"
+            ? "calculator-hrana"
+            : t.id === "health"
+            ? "nivel-sanatate"
+            : "recomandare-produse"
+        }`,
+      }))
+    : tools;
+
+  const shouldUsePageWrapper = isPage !== undefined ? isPage : headingLevel === "page";
+
   return (
     <CategoryList
       title="Alegeri mai simple"
       subtitle="pentru îngrijirea animalului tău"
-      categories={tools}
-      headingLevel={headingLevel === "page" ? "h1" : "h2"}
-      isPage={headingLevel === "page"}
+      categories={categories}
+      headingLevel="h2"
+      isPage={shouldUsePageWrapper}
     />
   );
 }

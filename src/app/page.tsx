@@ -4,6 +4,7 @@ import Partners from "@/components/Partners";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import ProductCategories from "@/components/ProductCategories";
+import VeterinaryCategoriesCarousel from "@/components/VeterinaryCategoriesCarousel";
 import ToolsSection from "@/components/ToolsSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -15,11 +16,12 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Partners />
+        <VeterinaryCategoriesCarousel />
         <ProductCategories />
-        <ToolsSection />
         <WhyUs />
         <Testimonials />
         <Contact />
+        <ToolsSection />
       </main>
       <Footer />
     </>

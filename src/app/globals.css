@@ -1,3 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--color-muted);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #0b2a4a;

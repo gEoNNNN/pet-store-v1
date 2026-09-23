@@ -1,4 +1,23 @@
-export const productCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare"] as const;
+export const petCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare"] as const;
+
+export const veterinaryCategoryNames = [
+  "Antibacteriene și antifungice",
+  "Antiparazitare interne și externe",
+  "Antiinflamatoare și analgezice",
+  "Antiseptice și produse pentru îngrijirea rănilor",
+  "Tonice și produse pentru rehidratare",
+  "Produse pentru reproducție și sănătatea glandei mamare",
+  "Vaccinuri și alte produse biologice",
+  "Imunostimulatoare",
+  "Vitamine, minerale și premixuri",
+  "Curățare, igienă și dezinfecție",
+  "Dezinsecție și deratizare",
+] as const;
+
+export const productCategoryNames = [
+  ...petCategoryNames,
+  ...veterinaryCategoryNames,
+] as const;
 
 export const productBrandNames = ["Toate", "Brit", "Carnilove"] as const;
 

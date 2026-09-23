@@ -4,8 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
+  petCategoryNames,
   productBrandNames,
   productCategoryNames,
+  veterinaryCategoryNames,
   type ProductBrandName,
   type ProductCategoryName,
   type ProductSummary,
@@ -13,12 +15,27 @@ import {
 import {
   ArrowRightIcon,
   CloseIcon,
+  PhoneIcon,
   SearchIcon,
 } from "./icons";
 import styles from "./ProductCatalog.module.css";
 
 const INITIAL_VISIBLE_PRODUCTS = 12;
 const LOAD_MORE_COUNT = 12;
+
+const veterinaryCategoryKeywords: Record<string, string[]> = {
+  "Antibacteriene și antifungice": ["antibacterian", "antifungic", "sensitiv", "piele", "digestiv", "hypoallergenic"],
+  "Antiparazitare interne și externe": ["antiparazitar", "parazit", "blana", "skin", "coat", "protectie", "flea"],
+  "Antiinflamatoare și analgezice": ["antiinflamator", "analgezic", "articulatii", "joint", "mobility", "durere"],
+  "Antiseptice și produse pentru îngrijirea rănilor": ["antiseptic", "rana", "cicatrizant", "piele", "sensitiv", "skin"],
+  "Tonice și produse pentru rehidratare": ["tonic", "rehidratare", "energie", "energy", "active", "performance", "vitality"],
+  "Produse pentru reproducție și sănătatea glandei mamare": ["reproductie", "lactatie", "matern", "puppy", "kitten", "mother"],
+  "Vaccinuri și alte produse biologice": ["vaccin", "biologic", "imun", "imunologie", "preventie"],
+  "Imunostimulatoare": ["imunostimulator", "imun", "immunity", "probiotic", "aparare", "rezistenta"],
+  "Vitamine, minerale și premixuri": ["vitamina", "mineral", "premix", "supliment", "snack", "calciu"],
+  "Curățare, igienă și dezinfecție": ["curatare", "igiena", "dezinfectie", "dental", "clean", "care", "dinti"],
+  "Dezinsecție și deratizare": ["dezinsectie", "deratizare", "daunatori", "biosecuritate", "protectie"],
+};
 
 function normalizeText(value: string) {
   return value
@@ -38,14 +55,33 @@ export default function ProductCatalog({ products }: ProductCatalogProps) {
   const [sortBy, setSortBy] = useState("name-asc");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_PRODUCTS);
 
+  const isVetCategory = (veterinaryCategoryNames as readonly string[]).includes(category);
+
+  const getVetMatchCount = (vetCat: string) => {
+    const kws = veterinaryCategoryKeywords[vetCat] || [];
+    return products.filter((p) => {
+      const text = normalizeText(`${p.name} ${p.brand} ${p.description} ${p.labels.join(" ")}`);
+      return kws.some((kw) => text.includes(kw));
+    }).length;
+  };
+
   const filteredProducts = useMemo(() => {
     const normalizedQuery = normalizeText(query.trim());
     const matchingProducts = products.filter((product) => {
-      const matchesCategory = category === "Toate" || product.category === category;
-      const matchesBrand = brand === "Toate" || product.brand === brand;
       const searchableText = normalizeText(
         `${product.name} ${product.brand} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}`,
       );
+
+      const matchesCategory =
+        category === "Toate"
+          ? true
+          : isVetCategory
+          ? veterinaryCategoryKeywords[category]?.some((kw) =>
+              searchableText.includes(kw)
+            ) || false
+          : product.category === category;
+
+      const matchesBrand = brand === "Toate" || product.brand === brand;
       return matchesCategory && matchesBrand && (!normalizedQuery || searchableText.includes(normalizedQuery));
     });
 
@@ -56,7 +92,7 @@ export default function ProductCatalog({ products }: ProductCatalogProps) {
       }
       return first.name.localeCompare(second.name, "ro");
     });
-  }, [brand, category, products, query, sortBy]);
+  }, [brand, category, isVetCategory, products, query, sortBy]);
 
   const visibleProducts = filteredProducts.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProducts.length;
@@ -152,39 +188,91 @@ export default function ProductCatalog({ products }: ProductCatalogProps) {
             </label>
           </div>
 
-          <div className={styles.categoryFilter} aria-label="Filtrează după categorie">
-            {productCategoryNames.map((item) => (
-              <button
-                key={item}
-                type="button"
-                className={`${styles.categoryButton} ${category === item ? styles.categoryButtonActive : ""}`}
-                onClick={() => {
-                  setCategory(item);
-                  resetVisibleProducts();
-                }}
-                aria-pressed={category === item}
-              >
-                {item}
-                <span>
-                  {item === "Toate"
-                    ? products.length
-                    : products.filter((product) => product.category === item).length}
-                </span>
-              </button>
-            ))}
+          <div className={styles.categoryFilterSection}>
+            <div className={styles.categoryGroupTitle}>Specii & Nutriție</div>
+            <div className={styles.categoryFilter} aria-label="Filtrează după specie">
+              {petCategoryNames.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  className={`${styles.categoryButton} ${category === item ? styles.categoryButtonActive : ""}`}
+                  onClick={() => {
+                    setCategory(item);
+                    resetVisibleProducts();
+                  }}
+                  aria-pressed={category === item}
+                >
+                  {item}
+                  <span>
+                    {item === "Toate"
+                      ? products.length
+                      : products.filter((product) => product.category === item).length}
+                  </span>
+                </button>
+              ))}
+            </div>
+
+            <div className={styles.categoryGroupTitle} style={{ marginTop: "14px" }}>
+              Farmacie & Tratamente Veterinare (11 categorii)
+            </div>
+            <div className={styles.categoryFilter} aria-label="Filtrează după categorie veterinară">
+              {veterinaryCategoryNames.map((item) => {
+                const count = getVetMatchCount(item);
+                return (
+                  <button
+                    key={item}
+                    type="button"
+                    className={`${styles.categoryButton} ${category === item ? styles.categoryButtonActive : ""}`}
+                    onClick={() => {
+                      setCategory(item);
+                      resetVisibleProducts();
+                    }}
+                    aria-pressed={category === item}
+                  >
+                    {item}
+                    {count > 0 && <span>{count}</span>}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className={styles.resultsHeader}>
             <div>
-              <p className={styles.resultsKicker}>{brand === "Toate" ? "Brit + Carnilove" : brand}</p>
+              <p className={styles.resultsKicker}>
+                {isVetCategory ? "Farmacie Veterinară" : brand === "Toate" ? "Brit + Carnilove" : brand}
+              </p>
               <h2 className={styles.resultsTitle} id="catalog-heading">
-                {category === "Toate" ? "Toate produsele" : `Produse pentru ${category.toLowerCase()}`}
+                {category === "Toate"
+                  ? "Toate produsele"
+                  : isVetCategory
+                  ? category
+                  : `Produse pentru ${category.toLowerCase()}`}
               </h2>
             </div>
             <p className={styles.resultsCount}>
               {filteredProducts.length} {filteredProducts.length === 1 ? "produs găsit" : "produse găsite"}
             </p>
           </div>
+
+          {isVetCategory && (
+            <div className={styles.vetNoticeCard}>
+              <span className={styles.vetNoticeBadge}>Farmacie Veterinară Farmavet</span>
+              <h3 className={styles.vetNoticeTitle}>{category}</h3>
+              <p className={styles.vetNoticeText}>
+                Gama completă de medicamente, tratamente și produse autorizate pentru <strong>{category}</strong> este disponibilă direct în farmacia fizică Farmavet din Chișinău (str. Petricani 198). Pentru comenzi, verificarea stocurilor sau recomandarea unui medic veterinar, contactați-ne telefonic sau lăsați-ne un mesaj.
+              </p>
+              <div className={styles.vetNoticeActions}>
+                <a href="tel:+37379536508" className={styles.vetNoticeCall}>
+                  <PhoneIcon className={styles.vetNoticeIcon} />
+                  Comandă telefonic: 0795 36 508
+                </a>
+                <Link href="/#contact" className={styles.vetNoticeContact}>
+                  Solicită informații stoc
+                </Link>
+              </div>
+            </div>
+          )}
 
           {visibleProducts.length > 0 ? (
             <>

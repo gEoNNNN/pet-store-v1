@@ -2,8 +2,12 @@ import argparse
 import json
 import random
 import re
+import sys
 import threading
 import time
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,9 +19,18 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 BASE_URL = "https://brit-petfood.com"
-CATALOG_URL = f"{BASE_URL}/en/products"
+CATALOG_URL = f"{BASE_URL}/ro/products"
 USER_AGENT = "BritProductCatalogScraper/1.0 (+local catalog export)"
 _thread_local = threading.local()
+
+CAT_MAP = {
+    "dogs": "Câini",
+    "cats": "Pisici",
+    "rodents": "Rozătoare",
+    "caini": "Câini",
+    "pisici": "Pisici",
+    "rozatoare": "Rozătoare",
+}
 
 
 def clean(value):
@@ -178,15 +191,20 @@ def parse_product(url, timeout, delay):
     )
     breadcrumbs = unique(clean(item.get_text(" ", strip=True)) for item in soup.select("#menu-breadcrumb a, #menu-breadcrumb strong"))
     parsed_path = [part for part in urlparse(url).path.split("/") if part]
-    category = parsed_path[2] if len(parsed_path) > 3 and parsed_path[2] in {"dogs", "cats", "rodents"} else None
+    category = None
+    for part in parsed_path:
+        if part in CAT_MAP:
+            category = CAT_MAP[part]
+            break
     if not category:
-        related_categories = []
         for link in soup.select(".crossroad-products a[href]"):
             link_parts = [part for part in urlparse(link.get("href", "")).path.split("/") if part]
-            if len(link_parts) > 2 and link_parts[2] in {"dogs", "cats", "rodents"}:
-                related_categories.append(link_parts[2])
-        if related_categories:
-            category = max(sorted(set(related_categories)), key=related_categories.count)
+            for part in link_parts:
+                if part in CAT_MAP:
+                    category = CAT_MAP[part]
+                    break
+            if category:
+                break
     product_slug = parsed_path[-1]
     product_id_match = re.match(r"(\d+)(?:-|$)", product_slug)
     description_meta = soup.select_one('meta[name="description"]')
@@ -209,11 +227,11 @@ def parse_product(url, timeout, delay):
         "image": main_image,
         "images": images,
         "videos": videos,
-        "composition": section_value(sections, ("composition",)),
-        "analytical_ingredients": section_value(sections, ("analytical",)),
-        "nutritional_composition": section_value(sections, ("nutritional",)),
-        "feeding_guide": section_value(sections, ("feeding",)),
-        "metabolizable_energy": section_value(sections, ("metabolizable", "metabolisable")),
+        "composition": section_value(sections, ("compoziție", "compozitie", "composition")),
+        "analytical_ingredients": section_value(sections, ("compuși analitici", "compusi analitici", "ingrediente analitice", "analytical")),
+        "nutritional_composition": section_value(sections, ("compoziție nutrițională", "compozitie nutritionala", "nutritional")),
+        "feeding_guide": section_value(sections, ("ghid de hrănire", "ghid de hranire", "hrănire", "hranire", "feeding")),
+        "metabolizable_energy": section_value(sections, ("energie metabolizabilă", "energie metabolizabila", "metabolizable", "metabolisable")),
         "sections": sections,
         "all_information": all_information,
         "raw_text": clean(detail.get_text(" ", strip=True)),
