@@ -33,6 +33,24 @@
   text-transform: uppercase;
 }
 
+.lg {
+  gap: 14px;
+}
+
+.lg .image {
+  width: 58px;
+  height: 58px;
+}
+
+.lg .wordmark strong {
+  font-size: 1.5rem;
+}
+
+.lg .wordmark small {
+  margin-top: 6px;
+  font-size: 0.66rem;
+}
+
 .light .image {
   filter: none;
 }
@@ -53,11 +71,24 @@
     height: 39px;
   }
 
+  .lg .image {
+    width: 46px;
+    height: 46px;
+  }
+
   .wordmark strong {
     font-size: 1.05rem;
   }
 
+  .lg .wordmark strong {
+    font-size: 1.22rem;
+  }
+
   .wordmark small {
     font-size: 0.5rem;
+  }
+
+  .lg .wordmark small {
+    font-size: 0.55rem;
   }
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, Bone, Compass, HeartPulse } from "lucide-react";
+import Reveal from "@/components/Reveal";
 import styles from "./category-list.module.css";
 
 export interface Category {
@@ -35,40 +36,41 @@ export function CategoryList({ title, subtitle, categories, headingLevel = "h2",
   return (
     <div className={`${styles.wrapper} ${isPage ? styles.pageWrapper : ""}`}>
       <div className={styles.inner}>
-        <div className={styles.header}>
+        <Reveal className={styles.header}>
           <Heading className={styles.title}>{title}</Heading>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        </div>
+        </Reveal>
 
         <div className={styles.list}>
-          {categories.map((category) => {
+          {categories.map((category, index) => {
             const Icon = category.icon ? iconMap[category.icon] : ArrowRight;
             const isHovered = hoveredItem === category.id;
             return (
-              <Link
-                key={category.id}
-                href={category.href}
-                className={`${styles.item} ${isHovered ? styles.itemHovered : ""} ${category.featured ? styles.itemFeatured : ""}`}
-                onMouseEnter={() => setHoveredItem(category.id)}
-                onMouseLeave={() => setHoveredItem(null)}
-                onFocus={() => setHoveredItem(category.id)}
-              >
-                {isHovered && (
-                  <>
-                    <span className={`${styles.bracket} ${styles.bracketTopLeft}`} aria-hidden="true" />
-                    <span className={`${styles.bracket} ${styles.bracketBottomRight}`} aria-hidden="true" />
-                  </>
-                )}
-                <span className={styles.itemContent}>
-                  <span className={styles.itemCopy}>
-                    <span className={styles.itemTitle}>{category.title}</span>
-                    <span className={styles.itemSubtitle}>{category.subtitle}</span>
+              <Reveal key={category.id} delay={index * 80}>
+                <Link
+                  href={category.href}
+                  className={`${styles.item} ${isHovered ? styles.itemHovered : ""} ${category.featured ? styles.itemFeatured : ""}`}
+                  onMouseEnter={() => setHoveredItem(category.id)}
+                  onMouseLeave={() => setHoveredItem(null)}
+                  onFocus={() => setHoveredItem(category.id)}
+                >
+                  {isHovered && (
+                    <>
+                      <span className={`${styles.bracket} ${styles.bracketTopLeft}`} aria-hidden="true" />
+                      <span className={`${styles.bracket} ${styles.bracketBottomRight}`} aria-hidden="true" />
+                    </>
+                  )}
+                  <span className={styles.itemContent}>
+                    <span className={styles.itemCopy}>
+                      <span className={styles.itemTitle}>{category.title}</span>
+                      <span className={styles.itemSubtitle}>{category.subtitle}</span>
+                    </span>
+                    <span className={`${styles.itemIcon} ${isHovered ? styles.itemIconVisible : ""}`} aria-hidden="true">
+                      <Icon />
+                    </span>
                   </span>
-                  <span className={`${styles.itemIcon} ${isHovered ? styles.itemIconVisible : ""}`} aria-hidden="true">
-                    <Icon />
-                  </span>
-                </span>
-              </Link>
+                </Link>
+              </Reveal>
             );
           })}
         </div>

@@ -2,6 +2,7 @@ import "server-only";
 
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import { veterinaryCategoryNames } from "./products";
 import type {
   FreshIngredient,
   Product,
@@ -58,9 +59,14 @@ function readCatalog(filename: string) {
 
 function normalizeCategory(value: unknown, name: string): ProductCategory {
   const category = toStringValue(value).toLowerCase();
-  if (category === "cats") return "Pisici";
-  if (category === "rodents") return "Rozătoare";
-  if (category === "dogs") return "Câini";
+  const vetCategory = veterinaryCategoryNames.find(
+    (item) => item.toLowerCase() === category,
+  );
+  if (vetCategory) return vetCategory;
+  if (category === "cats" || category === "pisici") return "Pisici";
+  if (category === "rodents" || category === "rozătoare") return "Rozătoare";
+  if (category === "poultry" || category === "păsări") return "Păsări";
+  if (category === "dogs" || category === "câini") return "Câini";
   return /\b(cat|kitten|pisic)/i.test(name) ? "Pisici" : "Câini";
 }
 
@@ -148,7 +154,33 @@ export function getProducts(): Product[] {
     const carniloveProducts = readCatalog("carnilove_products.json").map((product) =>
       normalizeProduct(product, "Carnilove", "carnilove"),
     );
-    productCache = [...britProducts, ...carniloveProducts].filter(
+    const ekopromBrands: Record<string, [ProductBrand, ProductBrandSlug]> = {
+      "neoterica-insektal": ["Neoterica Insektal", "neoterica-insektal"],
+      "neoterica-gelmintal": ["Neoterica Gelmintal", "neoterica-gelmintal"],
+      "neoterica-unitabs": ["Neoterica Unitabs", "neoterica-unitabs"],
+      "neoterica-rolfclub-3d": ["Neoterica RolfClub 3D", "neoterica-rolfclub-3d"],
+      "chistotel": ["Chistotel", "chistotel"],
+    };
+    const naturaProducts = readCatalog("natura_products.json").map((product) =>
+      normalizeProduct(product, "Natura", "natura"),
+    );
+    const ecoNaturaProducts = readCatalog("econatura_products.json").map((product) =>
+      normalizeProduct(product, "Eco Natura Pet", "eco-natura"),
+    );
+    const ekopromProducts = readCatalog("ekoprom_products.json").map((product) => {
+      const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
+        "Neoterica Inspector",
+        "neoterica-inspector",
+      ] as [ProductBrand, ProductBrandSlug];
+      return normalizeProduct(product, brand, slug);
+    });
+    productCache = [
+      ...britProducts,
+      ...carniloveProducts,
+      ...ekopromProducts,
+      ...naturaProducts,
+      ...ecoNaturaProducts,
+    ].filter(
       (product) => product.slug && product.name && product.image,
     );
   }
@@ -168,6 +200,7 @@ export function getProductSummaries(): ProductSummary[] {
     image: product.image,
     labels: product.labels,
     packageSizes: product.packageSizes,
+    productType: product.productType,
   }));
 }
 

@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { CloseIcon, MenuIcon } from "./icons";
+import { vetCategories } from "@/data/vetCategories";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
@@ -20,6 +22,7 @@ type NavbarProps = {
 export default function Navbar({ activeItem = "home" }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     let idleTimer: ReturnType<typeof setTimeout> | null = null;
@@ -53,7 +56,7 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
       <header className={`${styles.navbar} ${scrolled || menuOpen ? styles.scrolled : ""}`}>
         <div className={`container ${styles.inner}`}>
           <Link href="/#home" className={styles.brand} aria-label="Farmavet — pagina principală" onClick={closeMenu}>
-            <Logo />
+            <Logo size="lg" />
           </Link>
 
           <nav className={styles.desktopNav} aria-label="Navigare principală">
@@ -68,9 +71,42 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
                       href={link.href}
                       className={`${styles.navLink} ${isActive ? styles.navLinkActive : ""}`}
                       aria-current={isActive ? "page" : undefined}
+                      onClick={(event) => {
+                        // Suntem deja pe pagina asta fara filtre — du-te sus in loc sa ramai jos.
+                        if (link.href === pathname && window.location.search === "") {
+                          event.preventDefault();
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }
+                      }}
                     >
                       {link.label}
                     </Link>
+                    {link.href === "/produse" && (
+                      <div className={styles.dropdown}>
+                        <div className={styles.dropdownPanel}>
+                          <span className={styles.dropdownLabel}>Categorii de produse</span>
+                          <div className={styles.dropdownGrid}>
+                            {vetCategories.map((cat) => {
+                              const Icon = cat.icon;
+                              return (
+                                <Link key={cat.id} href={cat.href} className={styles.dropdownItem}>
+                                  <span className={styles.dropdownIcon} aria-hidden="true">
+                                    <Icon />
+                                  </span>
+                                  <span className={styles.dropdownText}>
+                                    <strong>{cat.title}</strong>
+                                    <small>{cat.tag}</small>
+                                  </span>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                          <Link href="/produse" className={styles.dropdownAll}>
+                            Vezi toate produsele
+                          </Link>
+                        </div>
+                      </div>
+                    )}
                   </li>
                 );
               })}

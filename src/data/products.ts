@@ -1,4 +1,4 @@
-export const petCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare"] as const;
+export const petCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare", "Păsări"] as const;
 
 export const veterinaryCategoryNames = [
   "Antibacteriene și antifungice",
@@ -19,13 +19,79 @@ export const productCategoryNames = [
   ...veterinaryCategoryNames,
 ] as const;
 
-export const productBrandNames = ["Toate", "Brit", "Carnilove"] as const;
+// Grupe de filtre dupa tipul produsului (product_type / labels din cataloage)
+export const productTypeFilterGroups = [
+  {
+    title: "Hrană & Recompense",
+    items: [
+      "Hrană uscată câini",
+      "Hrană uscată pisici",
+      "Plicuri câini",
+      "Plicuri pisici",
+      "Conserve câini",
+      "Conserve pisici",
+      "Recompense câini",
+      "Recompense pisici",
+    ],
+  },
+  {
+    title: "Accesorii & Plimbare",
+    items: [
+      "Zgărzi pentru câini",
+      "Zgărzi pentru pisici",
+      "Hamuri pentru câini",
+      "Hamuri pentru pisici",
+      "Lese pentru câini",
+      "Paturi și culușuri",
+      "Castroane și boluri",
+      "Accesorii din plastic",
+      "Jucării pentru pisici",
+      "Cuști de transport",
+      "Târcuri și parcuri de joacă",
+      "Așternut pentru rozătoare",
+    ],
+  },
+  {
+    title: "Igienă & Îngrijire",
+    items: [
+      "Perii, piepteni și îngrijirea blănii",
+      "Cosmetice și îngrijire",
+      "Nisip pentru pisici",
+      "Litieră și accesorii",
+      "Îngrijire și igienă",
+    ],
+  },
+] as const;
+
+export const productBrandNames = [
+  "Toate",
+  "Brit",
+  "Carnilove",
+  "Neoterica Inspector",
+  "Neoterica Insektal",
+  "Neoterica Gelmintal",
+  "Neoterica Unitabs",
+  "Neoterica RolfClub 3D",
+  "Chistotel",
+  "Natura",
+  "Eco Natura Pet",
+] as const;
 
 export type ProductCategoryName = (typeof productCategoryNames)[number];
 export type ProductBrandName = (typeof productBrandNames)[number];
 export type ProductCategory = Exclude<ProductCategoryName, "Toate">;
 export type ProductBrand = Exclude<ProductBrandName, "Toate">;
-export type ProductBrandSlug = "brit" | "carnilove";
+export type ProductBrandSlug =
+  | "brit"
+  | "carnilove"
+  | "neoterica-inspector"
+  | "neoterica-insektal"
+  | "neoterica-gelmintal"
+  | "neoterica-unitabs"
+  | "neoterica-rolfclub-3d"
+  | "chistotel"
+  | "natura"
+  | "eco-natura";
 
 export type ProductImage = {
   url: string;
@@ -57,6 +123,7 @@ export type ProductSummary = {
   image: string;
   labels: string[];
   packageSizes: string[];
+  productType: string | null;
 };
 
 export type Product = ProductSummary & {

@@ -12,6 +12,41 @@ type ProductPageProps = {
   params: Promise<{ brand: string; slug: string }>;
 };
 
+function ProductSectionText({ title, text }: { title: string; text: string }) {
+  const chunks = text.split(/(?=CARNILOVE\b)/g).map((chunk) => chunk.trim()).filter(Boolean);
+  if (chunks.length < 2) return <p className={styles.sectionText}>{text}</p>;
+
+  const isNutrition = /nutri|analitic/i.test(title);
+
+  return (
+    <div className={styles.productTextGroups}>
+      {chunks.map((chunk, index) => {
+        const headingMatch = chunk.match(/^(.+?\d+(?:[.,]\d+)?\s*(?:kg|g)\b)\s*/i);
+        const heading = headingMatch?.[1] || `Produs ${index + 1}`;
+        const content = headingMatch ? chunk.slice(headingMatch[0].length).trim() : chunk;
+        const items = isNutrition
+          ? content.split(/,\s+(?=[A-Za-zĂÂÎȘȚăâîșț])/).map((item) => item.trim()).filter(Boolean)
+          : [];
+
+        return (
+          <section className={styles.productTextGroup} key={`${heading}-${index}`}>
+            <h4>{heading}</h4>
+            {items.length > 1 ? (
+              <ul className={styles.nutritionGrid}>
+                {items.map((item, itemIndex) => (
+                  <li key={`${item}-${itemIndex}`}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{content}</p>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  );
+}
+
 export function generateStaticParams() {
   return getProducts().map((product) => ({ brand: product.brandSlug, slug: product.slug }));
 }
@@ -150,7 +185,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {product.sections.map((section, sectionIndex) => (
                   <article className={styles.infoCard} key={`${section.title}-${sectionIndex}`}>
                     <h3>{section.title}</h3>
-                    {section.text && <p>{section.text}</p>}
+                    {section.text && !(/hrănire/i.test(section.title) && section.tables.length > 0) && (
+                      <ProductSectionText title={section.title} text={section.text} />
+                    )}
+                    {/hrănire/i.test(section.title) && section.tables.length > 0 && (
+                      <p className={styles.feedingIntro}>
+                        Cantitățile sunt orientative. Ajustați porția în funcție de vârstă, greutate și nivelul de activitate și asigurați permanent apă proaspătă.
+                      </p>
+                    )}
                     {section.tables.map((table, tableIndex) => (
                       <div className={styles.tableWrap} key={`${section.title}-table-${tableIndex}`}>
                         <table>

@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# chei api locale pentru scripturile de scrape
+scrape/.api_key
+
+# python cache
+__pycache__/

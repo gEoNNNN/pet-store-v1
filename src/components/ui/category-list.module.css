@@ -70,7 +70,7 @@
   border-radius: var(--radius-md);
   background: #ffffff;
   box-shadow: var(--shadow-sm);
-  transition: height 0.3s cubic-bezier(0.22, 0.61, 0.36, 1),
+  transition: height 0.3s cubic-bezier(0.23, 1, 0.32, 1),
     border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -97,7 +97,7 @@
   width: 24px;
   height: 24px;
   pointer-events: none;
-  animation: bracketIn 0.3s ease;
+  animation: bracketIn 0.22s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .bracketTopLeft {
@@ -115,7 +115,7 @@
 }
 
 @keyframes bracketIn {
-  from { opacity: 0; transform: scale(0.6); }
+  from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
 }
 
@@ -176,7 +176,7 @@
   color: #ffffff;
   opacity: 0;
   transform: translateX(8px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .itemIcon svg {

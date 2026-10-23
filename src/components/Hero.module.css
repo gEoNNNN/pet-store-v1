@@ -9,17 +9,32 @@
 .bg {
   position: absolute;
   inset: var(--nav-height) 0 0 43%;
-  background-image: url("/catanddog.jpg");
+  clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bgSlide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: 69% center;
   background-repeat: no-repeat;
-  clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity;
+}
+
+.bgSlideActive {
+  opacity: 1;
 }
 
 .bg::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 2;
+  pointer-events: none;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.16), transparent 28%),
     linear-gradient(180deg, transparent 72%, rgba(6, 29, 54, 0.1));
@@ -117,6 +132,13 @@
 .btnIcon {
   width: 18px;
   height: 18px;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btnPrimary:hover .btnIcon {
+    transform: translateX(4px);
+  }
 }
 
 .btnLink {
@@ -168,8 +190,11 @@
     inset: auto;
     width: 100%;
     height: clamp(300px, 72vw, 470px);
-    background-position: 68% center;
     clip-path: none;
+  }
+
+  .bgSlide {
+    background-position: 68% center;
   }
 
   .bg::after {
@@ -235,5 +260,19 @@
   .btnLink {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bgSlide {
+    transition: opacity 200ms ease !important;
+  }
+
+  .btnPrimary,
+  .btnLink,
+  .btnLinkIcon,
+  .btnIcon {
+    transition: opacity 150ms ease, background-color 150ms ease !important;
+    transform: none !important;
   }
 }

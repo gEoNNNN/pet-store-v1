@@ -36,6 +36,12 @@
   object-fit: cover;
   object-position: 66% center;
   filter: saturate(0.82) contrast(1.02);
+  transform: scale(1.06);
+  transition: transform 1.1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.reveal--visible .mainImageAsset {
+  transform: scale(1);
 }
 
 /* Clean image presentation without a decorative frame. */
@@ -173,6 +179,13 @@
 .ctaIcon {
   width: 17px;
   height: 17px;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cta:hover .ctaIcon {
+    transform: translateX(4px);
+  }
 }
 
 @media (max-width: 900px) {
