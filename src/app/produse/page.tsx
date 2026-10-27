@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 type ProductsPageProps = {
-  searchParams?: Promise<{ cat?: string; brand?: string }>;
+  searchParams?: Promise<{ cat?: string; brand?: string; q?: string }>;
 };
 
 export default async function ProductsPage({ searchParams }: ProductsPageProps) {
@@ -26,6 +26,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
           products={products}
           initialCategory={(resolved.cat as any) || "Toate"}
           initialBrand={(resolved.brand as any) || "Toate"}
+          initialQuery={resolved.q || ""}
         />
       </main>
       <Footer />

@@ -220,14 +220,16 @@ type ProductCatalogProps = {
   products: ProductSummary[];
   initialCategory?: string;
   initialBrand?: string;
+  initialQuery?: string;
 };
 
 export default function ProductCatalog({
   products,
   initialCategory = "Toate",
   initialBrand = "Toate",
+  initialQuery = "",
 }: ProductCatalogProps) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
   const [category, setCategory] = useState<string>(initialCategory);
   const [brand, setBrand] = useState<string>(initialBrand);
   const [sortBy, setSortBy] = useState("name-asc");
@@ -243,6 +245,7 @@ export default function ProductCatalog({
     lastAppliedParams.current = current;
     setCategory(searchParams.get("cat") ?? "Toate");
     setBrand(searchParams.get("brand") ?? "Toate");
+    setQuery(searchParams.get("q") ?? "");
     setVisibleCount(INITIAL_VISIBLE_PRODUCTS);
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   }, [searchParams]);

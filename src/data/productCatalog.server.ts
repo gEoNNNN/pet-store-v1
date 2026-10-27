@@ -150,8 +150,7 @@ export function getProducts(): Product[] {
   if (!productCache) {
     const britProducts = readCatalog("products.json").map((product) =>
       normalizeProduct(product, "Brit", "brit"),
-    );
-    const carniloveProducts = readCatalog("carnilove_products.json").map((product) =>
+    );    const carniloveProducts = readCatalog("carnilove_products.json").map((product) =>
       normalizeProduct(product, "Carnilove", "carnilove"),
     );
     const ekopromBrands: Record<string, [ProductBrand, ProductBrandSlug]> = {
@@ -185,6 +184,14 @@ export function getProducts(): Product[] {
     );
   }
   return productCache;
+}
+
+/**
+ * Resetează cache-ul de module al catalogului, ca scrierile din panoul de
+ * administrare să ajungă imediat în paginile publice.
+ */
+export function invalidateProductCache(): void {
+  productCache = undefined;
 }
 
 export function getProductSummaries(): ProductSummary[] {

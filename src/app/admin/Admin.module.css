@@ -1,0 +1,593 @@
+/* ============================================================
+   Panou de administrare Farmavet — stiluri partajate
+   ============================================================ */
+
+/* ---------- pagina de autentificare ---------- */
+
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #eaf1f6 0%, rgba(234, 241, 246, 0) 60%),
+    radial-gradient(900px 500px at 110% 110%, #d9e5de 0%, rgba(217, 229, 222, 0) 55%),
+    var(--background);
+}
+
+.authCard {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 36px 36px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.brandName {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+.brandTag {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+
+.authHint {
+  margin-top: 18px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-muted);
+  background: var(--color-softer);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.authHint code {
+  font-size: 12.5px;
+  background: var(--color-soft);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- formulare ---------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-muted-strong);
+  text-transform: uppercase;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 15px;
+  color: var(--foreground);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.textarea {
+  min-height: 110px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(29, 103, 165, 0.14);
+}
+
+.errorBox {
+  background: #fdf0f0;
+  color: #a13232;
+  border: 1px solid #f2cfce;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
+}
+
+.formGridWide {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 720px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.actionsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btnPrimary {
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 11px 26px;
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+
+.btnGhost {
+  font: inherit;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.btnGhost:hover {
+  background: var(--color-softer);
+}
+
+.btnDanger {
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #a13232;
+  background: transparent;
+  border: 1px solid #f2cfce;
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.btnDanger:hover {
+  background: #fdf0f0;
+}
+
+/* ---------- cocheta panoului ---------- */
+
+.topbar {
+  background: var(--color-primary-deep);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.topbarInner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 64px;
+}
+
+.brandSign {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.brandSign strong {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 21px;
+  letter-spacing: 0.01em;
+}
+
+.brandSign span {
+  font-size: 12.5px;
+  color: #9db8d6;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.navLink {
+  font-size: 14.5px;
+  color: #cfe0f2;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.navLinkActive {
+  color: #ffffff;
+  background: var(--color-secondary);
+}
+
+.logoutBtn {
+  font: inherit;
+  font-size: 13.5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-pill);
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.logoutBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 24px 72px;
+  width: 100%;
+}
+
+.pageHeader {
+  margin-bottom: 26px;
+}
+
+.title {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 15.5px;
+  color: var(--color-muted);
+}
+
+/* ---------- dashboard ---------- */
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.statCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 20px;
+}
+
+.statValue {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 6px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.panelTitle {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.tipsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--color-muted-strong);
+}
+
+.tipsList code {
+  background: var(--color-soft);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+}
+
+/* ---------- tabel produse ---------- */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  flex: 1 1 260px;
+  max-width: 380px;
+}
+
+.brandSelect {
+  width: auto;
+  min-width: 170px;
+}
+
+.rowBanner {
+  border-radius: var(--radius-md);
+  border: 1px solid;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  margin-bottom: 16px;
+}
+
+.bannerSuccess {
+  background: #eef8f2;
+  border-color: #cfe8da;
+  color: #226644;
+}
+
+.bannerError {
+  background: #fdf0f0;
+  border-color: #f2cfce;
+  color: #a13232;
+}
+
+.tableWrap {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  background: var(--color-softer);
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px 14px;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.thumbCell {
+  width: 58px;
+}
+
+.thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background: var(--color-soft);
+  border: 1px solid var(--color-border);
+}
+
+.nameCell strong {
+  display: block;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.nameCell small {
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-muted-strong);
+  background: var(--color-soft);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+.actionsCell {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.actionsCell a,
+.actionsCell form {
+  margin-left: 6px;
+}
+
+.editLink {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.editLink:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.pageButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.pageButton {
+  font: inherit;
+  font-size: 13.5px;
+  color: var(--color-primary);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.pageButtonCurrent {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  cursor: default;
+}
+
+.pageButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.emptyRow {
+  text-align: center;
+  color: var(--color-muted);
+  padding: 28px 14px !important;
+}
+
+/* ---------- formular produs ---------- */
+
+.formCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 26px 28px;
+}
+
+.formCardTitle {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 18px;
+}
+
+.imagePreviewRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.imagePreview {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-soft);
+  flex-shrink: 0;
+}
+
+.backLink {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.helper {
+  font-size: 12.5px;
+  color: var(--color-muted);
+  line-height: 1.45;
+}
