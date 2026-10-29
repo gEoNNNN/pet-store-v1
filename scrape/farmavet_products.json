@@ -1,0 +1,3871 @@
+{
+  "brand": "Farmavet",
+  "source": "SAIT FARMAVET 2026",
+  "scraped_at": "2026-10-29",
+  "product_count": 125,
+  "products": [
+    {
+      "id": "400000",
+      "name": "Tilozină 20% pulbere",
+      "slug": "tilozina-20-pulbere",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic macrolidic pe bază de tilozină pentru bovine, ovine, porcine, câini, pisici și găini. Tratamentul infecțiilor respiratorii, genito-urinare și ale glandei mamare produse de bacterii sensibile la tilozină.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Păsări",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-tilozin.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Tilozină 20% pulbere",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Tilozină 20% pulbere"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400001",
+      "name": "Amoxacilin — amoxicilină injectabilă",
+      "slug": "amoxacilin-amoxicilina-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic cu amoxicilină pentru tratamentul la bovine, ovine, caprine, porcine, câini și pisici al bolilor tractului digestiv și respirator, ale sistemului urogenital, precum și a infecțiilor de plagă.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-amoxacilin.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Amoxacilin — amoxicilină injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Amoxacilin — amoxicilină injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400002",
+      "name": "Biovit 80 — clortetraciclină 8% pulbere",
+      "slug": "biovit-80-clortetraciclina-8-pulbere",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic pulbere pe bază de clortetraciclină pentru viței, purcei, animale de blană și păsări de curte. Tratament împotriva pasteurelozei, colibacteriozei, salmonelozei, listeriozei și infecțiilor respiratorii.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Porcine",
+        "Păsări",
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-biovit-80.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Biovit 80 — clortetraciclină 8% pulbere",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Biovit 80 — clortetraciclină 8% pulbere"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400003",
+      "name": "Biținovet-5 — pulbere pentru suspensie injectabilă",
+      "slug": "bitinovet-5-pulbere-pentru-suspensie-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic injectabil pentru câini și nurci. Tratamentul necrobacteriozei, pasteurelozei, pneumoniei, mastitei, metritei, otitei și infecțiilor de plagă cauzate de microorganisme sensibile.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bitinovet-5.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Biținovet-5 — pulbere pentru suspensie injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Biținovet-5 — pulbere pentru suspensie injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400004",
+      "name": "Ceftiofur — suspensie injectabilă",
+      "slug": "ceftiofur-suspensie-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic cefalosporinic injectabil pentru porcine și bovine. Tratamentul bolilor respiratorii bacteriene, metrită-magaliță-agalactie (MMA) și infecțiilor produse de bacterii sensibile la ceftiofur.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine",
+        "Bovine",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-ceftiofur.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Ceftiofur — suspensie injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Ceftiofur — suspensie injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400005",
+      "name": "Colivetoprim — pulbere hidrosolubilă",
+      "slug": "colivetoprim-pulbere-hidrosolubila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Asociație de sulfadimidină și trimetoprim pentru viței, miei, iezi, suine, iepuri și păsări. Tratamentul infecțiilor gastro-intestinale determinate de germeni sensibili.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Iepuri",
+        "Păsări",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-colivetoprim.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Colivetoprim — pulbere hidrosolubilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Colivetoprim — pulbere hidrosolubilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400006",
+      "name": "Enrofloxacină 10% soluție injectabilă",
+      "slug": "enrofloxacina-10-solutie-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic injectabil cu enrofloxacină, spectru larg, pentru bovine, suine, păsări, câini și pisici. Infecții respiratorii, digestive, urogenitale și ale pielii cauzate de bacterii sensibile la fluoroquinolone.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Porcine",
+        "Păsări",
+        "Câini",
+        "Pisici",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-enroflacina-injecta.doc",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Enrofloxacină 10% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Enrofloxacină 10% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400007",
+      "name": "Farazin — pulbere orală",
+      "slug": "farazin-pulbere-orala",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic pulbere pentru păsări (pui broiler, pui de găină și de curcan) în enterite, artrită infecțioasă, vibrioză și spirochetoză, precum și pentru alte specii de ferme.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-farmazin.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Farazin — pulbere orală",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Farazin — pulbere orală"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400008",
+      "name": "Funghibak-IAM — unguent antimicotic",
+      "slug": "funghibak-iam-unguent-antimicotic",
+      "category": "Antibacteriene și antifungice",
+      "description": "Unguent antimicotic de uz extern pentru tratamentul complex la bovine, cabaline, caprine, porcine, câini și pisici: microsporidioză, trihofitie, dermatofitoză și leziuni ale pielii.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-funghibak-iam.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Funghibak-IAM — unguent antimicotic",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Funghibak-IAM — unguent antimicotic"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400009",
+      "name": "Metronidazol 25% pulbere",
+      "slug": "metronidazol-25-pulbere",
+      "category": "Antibacteriene și antifungice",
+      "description": "Preparat antimicrobian și antiprotozoaric pe bază de metronidazol pentru câini, pisici și nurci. Tratamentul diareei provocate de Campylobacter, lambliazei, amoebiazei, giardiozei și gingivitelor ulcerative.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-metronidazol-25.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Metronidazol 25% pulbere",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Metronidazol 25% pulbere"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400010",
+      "name": "Nifulin MOF — pulbere orală",
+      "slug": "nifulin-mof-pulbere-orala",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic intestinal pe bază de nifuruxazim pentru câini, pisici, animale de blană și porumbei decorativi. Boli ale tractului digestiv și prevenirea complicațiilor postoperatorii.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-nifulin.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Nifulin MOF — pulbere orală",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Nifulin MOF — pulbere orală"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400011",
+      "name": "Noredon C — florfenicol comprimate pentru păsări",
+      "slug": "noredon-c-florfenicol-comprimate-pentru-pasari",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic cu florfenicol sub formă de comprimate pentru păsări (găini, broiler, curcani). Tratamentul și profilaxia infecțiilor bacteriene din efectivele cu diagnostic confirmat.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-noredon-c.doc",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Noredon C — florfenicol comprimate pentru păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Noredon C — florfenicol comprimate pentru păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400012",
+      "name": "Norflox 10% soluție orală",
+      "slug": "norflox-10-solutie-orala",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic cu norfloxacină pentru păsările de curte (pui, curcani, gâște, rațe). Tratamentul rinitei infecțioase, enteritei necrozante, colibacilozei și pasteurelozei.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-norflox.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Norflox 10% soluție orală",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Norflox 10% soluție orală"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400013",
+      "name": "Peniprok — penicilină injectabilă",
+      "slug": "peniprok-penicilina-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic pe bază de procaină-penicilină și benzatin-penicilină pentru bovine, porcine, câini și pisici. Omfalite, artrite, mastite, septicemii și infecții ale plagilor.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-peniprok.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Peniprok — penicilină injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Peniprok — penicilină injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400014",
+      "name": "Trimeroxin — pulbere orală",
+      "slug": "trimeroxin-pulbere-orala",
+      "category": "Antibacteriene și antifungice",
+      "description": "Asociation antibacteriană (sulfamidă + trimetoprim) pentru viței, ovine, caprine, porcine, câini și pisici. Infecții ale sistemului respirator și digestiv sensibile la sulfamide.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-trimeroxin.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Trimeroxin — pulbere orală",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Trimeroxin — pulbere orală"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400015",
+      "name": "Trimicozin — soluție orală pentru păsări",
+      "slug": "trimicozin-solutie-orala-pentru-pasari",
+      "category": "Antibacteriene și antifungice",
+      "description": "Soluție orală cu enrofloxacină și tilozină pentru păsări. Tratamentul bolilor infecțioase cauzate de microflora bacteriană sensibilă.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-trimicozin.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Trimicozin — soluție orală pentru păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Trimicozin — soluție orală pentru păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400016",
+      "name": "Bromodox — soluție injectabilă",
+      "slug": "bromodox-solutie-injectabila",
+      "category": "Antibacteriene și antifungice",
+      "description": "Antibiotic injectabil cu doxiciclină pentru bovine, ovine, caprine și porcine. Bronhopneumonii, pneumonii, pneumonia enzootică și alte infecții sensibile la tetracicline.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bromodox-rev-f.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Bromodox — soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antibacteriene și antifungice",
+        "Bromodox — soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400017",
+      "name": "Analghin 50% soluție injectabilă",
+      "slug": "analghin-50-solutie-injectabila",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Analgezic și antipiretic pe bază de metamizolă pentru reducerea durerilor de diverse origini, colici, afecțiuni ale mușchilor și articulațiilor la cabaline, bovine, câini și pisici.",
+      "image": "/hero/horse.webp",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-analghin.docx",
+      "images": [
+        {
+          "url": "/hero/horse.webp",
+          "alt": "Analghin 50% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Analghin 50% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400018",
+      "name": "Ketoline — soluție injectabilă",
+      "slug": "ketoline-solutie-injectabila",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Antiinflamator nesteroidian cu ketoprofen pentru bovine, cabaline și porcine. Mastită și edem mamar, infecții respiratorii, procese inflamatorii ale aparatului locomotor, laminită.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Porcine",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-ketoline.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Ketoline — soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Ketoline — soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400019",
+      "name": "Ecomint — unguent antiinflamator",
+      "slug": "ecomint-unguent-antiinflamator",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Unguent antiinflamator și analgezic de uz veterinar pentru toate speciile. Inflamații puternice și dureri, mastite, leziuni musculare și tendinoase, contuzii, mușcături de insecte.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Toate speciile"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-ecomint.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Ecomint — unguent antiinflamator",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Ecomint — unguent antiinflamator"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400020",
+      "name": "Green Plus — liniment pentru articulații",
+      "slug": "green-plus-liniment-pentru-articulatii",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Liniment verde topic cu mentol, eucalipt și camfor pentru tratarea rapidă a durerilor din afecțiuni inflamatorii ale articulațiilor, mușchilor, ligamentelor și tendoanelor; și în mastite.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-gren-plus.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Green Plus — liniment pentru articulații",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Green Plus — liniment pentru articulații"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400021",
+      "name": "Therma Vet Cream — cremă de masaj",
+      "slug": "therma-vet-cream-crema-de-masaj",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Cremă cu acțiune dublă (răcire urmată de încălzire) pe bază de capsaicin, salicilat de metil și mentol. Reduce stresul muscular și durerea după efort; leziuni ale tendoanelor și ligamentelor.",
+      "image": "/hero/horse.webp",
+      "labels": [
+        "Cabaline",
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-therma.docx",
+      "images": [
+        {
+          "url": "/hero/horse.webp",
+          "alt": "Therma Vet Cream — cremă de masaj",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Therma Vet Cream — cremă de masaj"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400022",
+      "name": "Veyxat Gel — gel contra durerilor",
+      "slug": "veyxat-gel-gel-contra-durerilor",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Gel cu camfor și salicilat de metil pentru durerile asociate cu artrite, miozite și tendinite, abcese, hematoame și mastite. Îmbunătățește circulația locală și grăbește rezorbția proceselor inflamatorii.",
+      "image": "/hero/horse.webp",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-viexat.docx",
+      "images": [
+        {
+          "url": "/hero/horse.webp",
+          "alt": "Veyxat Gel — gel contra durerilor",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "Veyxat Gel — gel contra durerilor"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400023",
+      "name": "EcoCamfora — unguent de masaj 100 g",
+      "slug": "ecocamfora-unguent-de-masaj-100-g",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Unguent suplimentar cu camfor pentru bovine, cabaline, câini și pisici. Inflamații ale glandei mamare (aplicat după muls cu masaj ușor), răni, zgârieturi, luxații, contuzii și inflamații articulare.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-ecocamfora.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "EcoCamfora — unguent de masaj 100 g",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "EcoCamfora — unguent de masaj 100 g"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400024",
+      "name": "AloeGel — gel cu aloe vera și castan",
+      "slug": "aloegel-gel-cu-aloe-vera-si-castan",
+      "category": "Antiinflamatoare și analgezice",
+      "description": "Gel topic cu extracte de aloe vera, castan sălbatic, camfor și salicilat de metil pentru bovine. Reduce edemul ugerului după fătare sau mastită, regenerează țesuturile și susține circulația periferică.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-aloe-gel.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "AloeGel — gel cu aloe vera și castan",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiinflamatoare și analgezice",
+        "AloeGel — gel cu aloe vera și castan"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400025",
+      "name": "AdTab — tablete antiparazitare pentru câini",
+      "slug": "adtab-tablete-antiparazitare-pentru-ciini",
+      "category": "Antiparazitare interne și externe",
+      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la câini. Eliminare imediată și protecție care durează până la 8 săptămâni.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-adtab-caini.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "AdTab — tablete antiparazitare pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "AdTab — tablete antiparazitare pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400026",
+      "name": "AdTab — tablete antiparazitare pentru pisici",
+      "slug": "adtab-tablete-antiparazitare-pentru-pisici",
+      "category": "Antiparazitare interne și externe",
+      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la pisici. Eliminare imediată și protecție de lungă durată.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-adtab-pisici.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "AdTab — tablete antiparazitare pentru pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "AdTab — tablete antiparazitare pentru pisici"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400027",
+      "name": "Arpalit Neo — spray ectoparazitar",
+      "slug": "arpalit-neo-spray-ectoparazitar",
+      "category": "Antiparazitare interne și externe",
+      "description": "Soluție ectoparazitară sub formă de spray pentru animalele nealimentare. Acționează împotriva puricilor, căpușelor, păduchilor și altor ectoparaziți.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici",
+        "Iepuri",
+        "Rozătoare"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-arpalit-neo.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Arpalit Neo — spray ectoparazitar",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Arpalit Neo — spray ectoparazitar"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400028",
+      "name": "Ba-Tick — soluție ectoparaziticidă pour-on",
+      "slug": "ba-tick-solutie-ectoparaziticida-pour-on",
+      "category": "Antiparazitare interne și externe",
+      "description": "Soluție ectoparaziticidă pour-on pentru bovine. Combaterea căpușelor (Rhipicephalus, Hyalomma, Dermacentor), păduchilor, potrvaelurilor și miazelor.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-batik.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Ba-Tick — soluție ectoparaziticidă pour-on",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Ba-Tick — soluție ectoparaziticidă pour-on"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400029",
+      "name": "Bravecto — tablete masticabile pentru câini",
+      "slug": "bravecto-tablete-masticabile-pentru-ciini",
+      "category": "Antiparazitare interne și externe",
+      "description": "Insecticid și acaricid sistemic pentru tratarea infestațiilor cu căpușe și purici la câini. Protecție de până la 12 săptămâni după o singură doză.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bravecta-caini-masticabil.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Bravecto — tablete masticabile pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Bravecto — tablete masticabile pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400030",
+      "name": "Bravecto — suspensie injectabilă pentru câini",
+      "slug": "bravecto-suspensie-injectabila-pentru-ciini",
+      "category": "Antiparazitare interne și externe",
+      "description": "Bravecto 150 mg/ml, pulbere și solvent pentru suspensie injectabilă. Tratamentul infestațiilor cu căpușe și purici la câini, protecție de până la 6 luni.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bravecto-injectabil.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Bravecto — suspensie injectabilă pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Bravecto — suspensie injectabilă pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400031",
+      "name": "Bravecto — soluție spot-on pentru pisici",
+      "slug": "bravecto-solutie-spot-on-pentru-pisici",
+      "category": "Antiparazitare interne și externe",
+      "description": "Bravecto 112,5 mg soluție spot-on pentru pisici (1,2–2,8 kg). Tratamentul infestațiilor cu căpușe și purici.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bravecto-pisici.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Bravecto — soluție spot-on pentru pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Bravecto — soluție spot-on pentru pisici"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400032",
+      "name": "Burdi fipro — spray insecto-acaricid",
+      "slug": "burdi-fipro-spray-insecto-acaricid",
+      "category": "Antiparazitare interne și externe",
+      "description": "Spray cu fipronil pentru prevenirea și tratamentul ectoparaziților la câini și pisici: purici, păduchi, malofage, căpușe.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-burdi-spray.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Burdi fipro — spray insecto-acaricid",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Burdi fipro — spray insecto-acaricid"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400033",
+      "name": "Albendazol 10% suspensie orală",
+      "slug": "albendazol-10-suspensie-orala",
+      "category": "Antiparazitare interne și externe",
+      "description": "Suspensie anthelmintică pentru bovine, ovine și caprine. Deparazitarea nematodelor gastro-intestinale și pulmonare, cestodozelor și trematozelor.",
+      "image": "/cards/ovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-albendazol-10.docx",
+      "images": [
+        {
+          "url": "/cards/ovine.jpeg",
+          "alt": "Albendazol 10% suspensie orală",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Albendazol 10% suspensie orală"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400034",
+      "name": "Fenbendazol granulat",
+      "slug": "fenbendazol-granulat",
+      "category": "Antiparazitare interne și externe",
+      "description": "Anthelmintic cu fenbendazol pentru bovine, ovine, caprine, cabaline, porcine, iepuri și păsări. Tratamentul parazitozelor produse de stadii mature și imature ale nematodelor și cestodelor.",
+      "image": "/cards/ovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări",
+        "Iepuri",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-fenbendazol-granulat.docx",
+      "images": [
+        {
+          "url": "/cards/ovine.jpeg",
+          "alt": "Fenbendazol granulat",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Fenbendazol granulat"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400035",
+      "name": "Fenbendazol pentru păsări (găini)",
+      "slug": "fenbendazol-pentru-pasari-gaini",
+      "category": "Antiparazitare interne și externe",
+      "description": "Anthelmintic pentru păsări (găini). Tratamentul helmintozelor produse de Ascaridia, Heterakis, Capillaria și alți paraziți intestinali.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-fenbendazol.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Fenbendazol pentru păsări (găini)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Fenbendazol pentru păsări (găini)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400036",
+      "name": "Gelmintal T — tablete anthelmintice",
+      "slug": "gelmintal-t-tablete-anthelmintice",
+      "category": "Antiparazitare interne și externe",
+      "description": "Tablete pentru câini și pisici adulte, căței și pisoși, cu scop terapeutic și profilactic în nematodozele și cestodozele intestinale.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-gelmintal-t.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Gelmintal T — tablete anthelmintice",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Gelmintal T — tablete anthelmintice"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400037",
+      "name": "Insectol 1000 — spray pentru câini și pisici",
+      "slug": "insectol-1000-spray-pentru-ciini-si-pisici",
+      "category": "Antiparazitare interne și externe",
+      "description": "Spray insecto-acaricid pentru tratarea și prevenirea infestării cu ectoparaziți (purici, păduchi, căpușe) a câinilor și pisicilor.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-insectol-1000.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Insectol 1000 — spray pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Insectol 1000 — spray pentru câini și pisici"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400038",
+      "name": "Pranatan — suspensie pentru câini",
+      "slug": "pranatan-suspensie-pentru-ciini",
+      "category": "Antiparazitare interne și externe",
+      "description": "Suspensie antiparazitară pentru dehelmintizarea câinilor în cestode (echinococoză, tenioză) și nematode intestinale.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-pranatan-caini.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Pranatan — suspensie pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Pranatan — suspensie pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400039",
+      "name": "Pranatan — suspensie pentru căței și pisoi",
+      "slug": "pranatan-suspensie-pentru-catei-si-pisoi",
+      "category": "Antiparazitare interne și externe",
+      "description": "Suspensie pentru prevenirea și tratamentul nematodelor și cestodelor la căței și pisoși (toxocaroză, ancylostomoză, tricocefaloză).",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-pranatan-catei-si-pisici.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Pranatan — suspensie pentru căței și pisoi",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Pranatan — suspensie pentru căței și pisoi"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400040",
+      "name": "Pranatan — suspensie pentru pisici",
+      "slug": "pranatan-suspensie-pentru-pisici",
+      "category": "Antiparazitare interne și externe",
+      "description": "Suspensie orală cu praziquantel și pirantel pamoat pentru tratarea viermilor intestinali la pisici.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-pranatan-pisici.doc",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Pranatan — suspensie pentru pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Pranatan — suspensie pentru pisici"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400041",
+      "name": "Prantal — comprimate antihelmintice",
+      "slug": "prantal-comprimate-antihelmintice",
+      "category": "Antiparazitare interne și externe",
+      "description": "Comprimate cu pirantel și praziquantel pentru profilaxia și tratamentul parazitozelor (nematode și cestode) la câini și pisici.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-prantal.doc",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Prantal — comprimate antihelmintice",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Prantal — comprimate antihelmintice"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400042",
+      "name": "Rex și Musea — spray insecto-acaricid",
+      "slug": "rex-si-musea-spray-insecto-acaricid",
+      "category": "Antiparazitare interne și externe",
+      "description": "Spray pentru prevenirea și tratamentul câinilor și pisicilor afectate de ectoparaziți: purici, păduchi, malofage, căpușe.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-rex-si-musea.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Rex și Musea — spray insecto-acaricid",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Rex și Musea — spray insecto-acaricid"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400043",
+      "name": "Șampon Antipoux Van Plant",
+      "slug": "sampon-antipoux-van-plant",
+      "category": "Antiparazitare interne și externe",
+      "description": "Șampon veterinar cu extract de pelin și ulei de citronela pentru câini și pisici. Îndepărtează puricii, păduchii și scabia, calmează pruritul provocat de paraziți.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-sampun-antipux.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Șampon Antipoux Van Plant",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Șampon Antipoux Van Plant"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400044",
+      "name": "Vanmectin — soluție orală pentru ovine",
+      "slug": "vanmectin-solutie-orala-pentru-ovine",
+      "category": "Antiparazitare interne și externe",
+      "description": "Soluție orală cu ivermectină 0,8 mg/ml pentru ovine. Tratamentul nematodelor gastro-intestinale și pulmonare, miazelor și ectoparaziților.",
+      "image": "/cards/ovine.jpeg",
+      "labels": [
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vanmectin.docx",
+      "images": [
+        {
+          "url": "/cards/ovine.jpeg",
+          "alt": "Vanmectin — soluție orală pentru ovine",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Vanmectin — soluție orală pentru ovine"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400045",
+      "name": "Zgardă Burdi fipro 2 în 1",
+      "slug": "zgarda-burdi-fipro-2-in-1",
+      "category": "Antiparazitare interne și externe",
+      "description": "Zgardă insecto-acaricidă pentru prevenirea și tratamentul infestațiilor cu purici și căpușe la câini și pisici.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-zgarda-burdi.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Zgardă Burdi fipro 2 în 1",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Zgardă Burdi fipro 2 în 1"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400046",
+      "name": "Profiverm 1% soluție injectabilă",
+      "slug": "profiverm-1-solutie-injectabila",
+      "category": "Antiparazitare interne și externe",
+      "description": "Soluție injectabilă cu ivermectină pentru prevenirea și tratarea bovinelor, ovinelor, caprinelor, porcinelor și câinilor cu nematode gastro-intestinale, pulmonare și ectoparaziți.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-profiverm-1.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Profiverm 1% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Profiverm 1% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400047",
+      "name": "Diazinon 60% — insecto-acaricid emulsionabil",
+      "slug": "diazinon-60-insecto-acaricid-emulsionabil",
+      "category": "Antiparazitare interne și externe",
+      "description": "Insecto-acaricid concentrat emulsionabil de uz veterinar pentru controlul și tratamentul scabiei (sarcoptice, psoroptice, chorioptice), myazelor și insectelor la bovine, ovine, porcine, cabaline și câini.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-diazinon.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Diazinon 60% — insecto-acaricid emulsionabil",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiparazitare interne și externe",
+        "Diazinon 60% — insecto-acaricid emulsionabil"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400048",
+      "name": "Cubatol Pix — spray pentru plăgi",
+      "slug": "cubatol-pix-spray-pentru-plagi",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Spray antiseptic pentru animale agricole și de companie (cu excepția pisicilor). Leziuni ale pielii, răni, zgârieturi, arsuri, după operații, tratarea cornelor și dezectomie.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-cubatol.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Cubatol Pix — spray pentru plăgi",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Cubatol Pix — spray pentru plăgi"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400049",
+      "name": "Dezy Spray — antiseptic pentru plăgi",
+      "slug": "dezy-spray-antiseptic-pentru-plagi",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Spray antiseptic pentru câini și pisici. Tratamentul plăgilor traumatice și chirurgicale (inclusiv după castrare), dermatitelor și leziunilor cutanate.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-dezy-spray.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Dezy Spray — antiseptic pentru plăgi",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Dezy Spray — antiseptic pentru plăgi"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400050",
+      "name": "Hlorțin 500 — unguent antiseptic",
+      "slug": "hlortin-500-unguent-antiseptic",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Unguent de uz extern cu efect antiseptic și antimicotic pentru afecțiuni ale pielii cauzate de microflora bacteriană și fungică: trichofitie la vaci, cai, câini și pisici.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Cabaline"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-hloritin-500.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Hlorțin 500 — unguent antiseptic",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Hlorțin 500 — unguent antiseptic"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400051",
+      "name": "Iodoform 5% pulbere pentru răni",
+      "slug": "iodoform-5-pulbere-pentru-rani",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Pulbere antiseptică pe bază de iodoform pentru tratamentul extern al rănilor infectate și postoperatorii la bovine, cabaline, ovine, caprine, porcine, câini și pisici.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-iodoform.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Iodoform 5% pulbere pentru răni",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Iodoform 5% pulbere pentru răni"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400052",
+      "name": "Xeralxon — pulbere antimicrobiană de uz extern",
+      "slug": "xeralxon-pulbere-antimicrobiana-de-uz-extern",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Pulbere antimicrobiană pentru tratamentul plăgilor cutanate, musculare și podale și prevenirea infecțiilor plăgilor operatorii la câini și pisici.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-xeralxon.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Xeralxon — pulbere antimicrobiană de uz extern",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Xeralxon — pulbere antimicrobiană de uz extern"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400053",
+      "name": "Zabolitvaia — unguent pentru uger și blană",
+      "slug": "zabolitvaia-unguent-pentru-uger-si-blana",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Unguent topic pentru bovine și caprine. Tratamentul zgârieturilor, tăieturilor, arsurilor, crăcăturilor și degerăturilor pielii, ale ugerului și țeiței.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-zabolitvaia.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Zabolitvaia — unguent pentru uger și blană",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Zabolitvaia — unguent pentru uger și blană"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400054",
+      "name": "Unguent Ihtiol 10%",
+      "slug": "unguent-ihtiol-10",
+      "category": "Antiseptice și produse pentru îngrijirea rănilor",
+      "description": "Unguent cu ihtiol pentru uz extern: arsuri, răni, eczeme, dermatite, furunculoză, piodermie și procese inflamatorii ale țesuturilor moi la toate speciile de animale.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-unguent-ihtiol-10-rev-f.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Unguent Ihtiol 10%",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Antiseptice și produse pentru îngrijirea rănilor",
+        "Unguent Ihtiol 10%"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400055",
+      "name": "Kenocox — soluție contra coccidiozei și cryptosporidiozei",
+      "slug": "kenocox-solutie-contra-coccidiozei-si-cryptosporidiozei",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Dezinfectant pentru tratarea și prevenția coccidiozei și cryptosporidiozei la păsări, iepuri și viței. Se aplică pe echipamente și în spațiile de creștere, reducând pierderile economice.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Iepuri",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/preospect-kenokox.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Kenocox — soluție contra coccidiozei și cryptosporidiozei",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Kenocox — soluție contra coccidiozei și cryptosporidiozei"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400056",
+      "name": "DM CID S — soluție spumantă alcalină de curățare și dezinfecție",
+      "slug": "dm-cid-s-solutie-spumanta-alcalina-de-curatare-si-dezinfectie",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Agent de curățare cu efect dezinfectant (bactericid și fungicid) pe bază de hipoclorit de sodiu pentru industria alimentară (carne, lapte, conserve), pereți, pardoseli, mașini și mijloace de transport.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/propect-dmcid-s.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "DM CID S — soluție spumantă alcalină de curățare și dezinfecție",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "DM CID S — soluție spumantă alcalină de curățare și dezinfecție"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400057",
+      "name": "CID 2000 — igiena apei de băut (O2 + acidifiere)",
+      "slug": "cid-2000-igiena-apei-de-baut-o2-acidifiere",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Amestec de peroxid de hidrogen și acid peracetic pentru igiena optimă a sistemelor de apă de băut: curăță biofilmul, îndepărtează depunerile organice și anorganice și optimizează pH-ul.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospe4t-cid-2000.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "CID 2000 — igiena apei de băut (O2 + acidifiere)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "CID 2000 — igiena apei de băut (O2 + acidifiere)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400058",
+      "name": "Kenosan — detergent spumant alcalin zootehnic",
+      "slug": "kenosan-detergent-spumant-alcalin-zootehnic",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Soluție profesională concentrată de curățat incubatoare, grajduri, hale, săli de muls, mijloace auto, anexe și cotețe. Înmoaie și dizolvă murdăria, dejecțiile și grăsimile.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-kenosan.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Kenosan — detergent spumant alcalin zootehnic",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Kenosan — detergent spumant alcalin zootehnic"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400059",
+      "name": "Hatchonet — soluție de curățare pentru incubatoare",
+      "slug": "hatchonet-solutie-de-curatare-pentru-incubatoare",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Soluție universală de curățare specială pentru incubatoare de păsări: îndepărtează impuritățile și reziduurile de pe toate suprafețele fără să fie corozivă, eficientă și în apă dură.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-hatchonet.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Hatchonet — soluție de curățare pentru incubatoare",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Hatchonet — soluție de curățare pentru incubatoare"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400060",
+      "name": "Pho CID — soluție acidă pentru instalații de lapte",
+      "slug": "pho-cid-solutie-acida-pentru-instalatii-de-lapte",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Soluție acidă pe bază de acid fosforic și sulfuric pentru instalațiile CIP din industria laptelui: îndepărtează depunerile de calciu și piatra de lapte de pe echipamente și conducte.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-pho-cid.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Pho CID — soluție acidă pentru instalații de lapte",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Pho CID — soluție acidă pentru instalații de lapte"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400061",
+      "name": "Tormax S — soluție acidă spumogenă de curățare",
+      "slug": "tormax-s-solutie-acida-spumogena-de-curatare",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Curățitor acid spumogen puternic, decalcifiant, pentru îndepărtarea proteinelor, varului și depunerilor de fier de pe echipamentele și conductele din industria alimentară.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-tormax-s.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Tormax S — soluție acidă spumogenă de curățare",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Tormax S — soluție acidă spumogenă de curățare"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400062",
+      "name": "Virocid — dezinfectant concentrat cu spectru larg",
+      "slug": "virocid-dezinfectant-concentrat-cu-spectru-larg",
+      "category": "Curățare, igienă și dezinfecție",
+      "description": "Dezinfectant concentrat pe bază de quarternary amonium compounds și glutaraldehidă pentru spitale veterinare, adăposturi, echipamente și vehicule. Spectru larg împotriva bacteriilor, virusurilor, fungilor și algelor.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-virocid.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Virocid — dezinfectant concentrat cu spectru larg",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Curățare, igienă și dezinfecție",
+        "Virocid — dezinfectant concentrat cu spectru larg"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400063",
+      "name": "Cypermethrin 10% EC — insecticid pentru suprafețe",
+      "slug": "cypermethrin-10-ec-insecticid-pentru-suprafete",
+      "category": "Dezinsecție și deratizare",
+      "description": "Insecticid cu spectru larg pentru controlul insectelor zburătoare și târâtoare în interiorul și exteriorul încăperilor zootehnice și industriale (20 ml/1 L apă pentru 10 m²).",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-cypermetrin.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Cypermethrin 10% EC — insecticid pentru suprafețe",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Cypermethrin 10% EC — insecticid pentru suprafețe"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400064",
+      "name": "Istrebiteli — momeală rodenticidă",
+      "slug": "istrebiteli-momeala-rodenticida",
+      "category": "Dezinsecție și deratizare",
+      "description": "Momeală otrăvitoare pe bază de brodifacum pentru distrugerea șobolanilor și șoarecelor de casă în locuințe, depozite, subsoluri și anexe. Conține Bitrex ca agent de descurajare pentru oameni.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-istrebiteli.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Istrebiteli — momeală rodenticidă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Istrebiteli — momeală rodenticidă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400065",
+      "name": "Killer Komarov 300 — insecticid microencapsulat",
+      "slug": "killer-komarov-300-insecticid-microencapsulat",
+      "category": "Dezinsecție și deratizare",
+      "description": "Suspensie microencapsulată cu cipermetrină împotriva insectelor zburătoare (țânțari, muște, molii) și târâtoare (gândaci, furnici, purici, păianjeni, căpușe). Efect de durată până la 6 luni.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-killer-komarov-300.doc",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Killer Komarov 300 — insecticid microencapsulat",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Killer Komarov 300 — insecticid microencapsulat"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400066",
+      "name": "Killer Muh 500 — insecticid microencapsulat contra muștelor",
+      "slug": "killer-muh-500-insecticid-microencapsulat-contra-mustelor",
+      "category": "Dezinsecție și deratizare",
+      "description": "Insecticid microencapsulat pe bază de cipermetrină pentru combaterea muștelor și a altor insecte în spații de igienă publică și grajduri, efect prelungit de până la 6 luni.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-killer-muh-500.doc",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Killer Muh 500 — insecticid microencapsulat contra muștelor",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Killer Muh 500 — insecticid microencapsulat contra muștelor"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400067",
+      "name": "Muhostop — granule solubile contra muștelor",
+      "slug": "muhostop-granule-solubile-contra-mustelor",
+      "category": "Dezinsecție și deratizare",
+      "description": "Granule solubile profesionale cu acetamiprid pentru combaterea muștelor în încăperi și adăposturi. Conține agent amar (benzoat de denatoniu) pentru siguranță.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-muhostop.doc",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Muhostop — granule solubile contra muștelor",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Muhostop — granule solubile contra muștelor"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400068",
+      "name": "Corsar — insecticid lichid emulsionabil",
+      "slug": "corsar-insecticid-lichid-emulsionabil",
+      "category": "Dezinsecție și deratizare",
+      "description": "Insecticid cu cipermetrină și tetrametrină pentru combaterea insectelor zburătoare și târâtoare în sectorul de igienă și sănătate publică, în interiorul și exteriorul clădirilor.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-corsar.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Corsar — insecticid lichid emulsionabil",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Corsar — insecticid lichid emulsionabil"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400069",
+      "name": "Dergall — soluție pentru deparazitarea adăposturilor de păsări",
+      "slug": "dergall-solutie-pentru-deparazitarea-adaposturilor-de-pasari",
+      "category": "Dezinsecție și deratizare",
+      "description": "Concentrat solubil cu acțiune fizică pentru controlul căpușei roșii a păsărilor (Dermanyssus gallinae), gândacului de grajd și alte dăunători ale aviculturii, aplicabil în prezența găinilor ouătoare.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Păsări",
+        "Mediu"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-dergall-rom.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Dergall — soluție pentru deparazitarea adăposturilor de păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Dergall — soluție pentru deparazitarea adăposturilor de păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400070",
+      "name": "Rozaticid — momeală rodenticidă pe bază de grâu",
+      "slug": "rozaticid-momeala-rodenticida-pe-baza-de-griu",
+      "category": "Dezinsecție și deratizare",
+      "description": "Momeală gata de utilizare cu bromadiolon, eficientă împotriva șoarecelui de casă și șobolanilor (cenușiu și negru) în gospodării, depozite și anexe.",
+      "image": "/magazin.jpeg",
+      "labels": [
+        "Mediu",
+        "Rozătoare"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-rozaticid.docx",
+      "images": [
+        {
+          "url": "/magazin.jpeg",
+          "alt": "Rozaticid — momeală rodenticidă pe bază de grâu",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Dezinsecție și deratizare",
+        "Rozaticid — momeală rodenticidă pe bază de grâu"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400071",
+      "name": "ASD fracția 2 — soluție imunostimulantă",
+      "slug": "asd-fractia-2-solutie-imunostimulanta",
+      "category": "Imunostimulatoare",
+      "description": "Stimulator biogenic cu efect antimicrobian, imunomodulator și regenerant pentru animalele de fermă (inclusiv păsări) și câini. Profilaxia și tratamentul afecțiunilor digestive, respiratorii și ale pielii.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Cabaline",
+        "Păsări",
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-asd-2.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "ASD fracția 2 — soluție imunostimulantă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Imunostimulatoare",
+        "ASD fracția 2 — soluție imunostimulantă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400072",
+      "name": "Vita-Biotic Liquid — probiotic pentru păsări",
+      "slug": "vita-biotic-liquid-probiotic-pentru-pasari",
+      "category": "Imunostimulatoare",
+      "description": "Amestec echilibrat de acizi grași, monogliceride, prebiotice și uleiuri esențiale care promovează microflora intestinală benefică și inhibă bacteriile patogene — alternativă eficientă la promotorii de creștere.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-biotic-liquid.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita-Biotic Liquid — probiotic pentru păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Imunostimulatoare",
+        "Vita-Biotic Liquid — probiotic pentru păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400073",
+      "name": "Vita-Start+ FL — prebiotice și acizi grași",
+      "slug": "vita-start-fl-prebiotice-si-acizi-grasi",
+      "category": "Imunostimulatoare",
+      "description": "Amestec de acizi grași cu lanț scurt, acizi tamponați, gliceride ale acidului butiric, prebiotice și uleiuri esențiale pentru sănătatea intestinală și stimularea imunității la păsări și animalele tinere.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-start.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita-Start+ FL — prebiotice și acizi grași",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Imunostimulatoare",
+        "Vita-Start+ FL — prebiotice și acizi grași"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400074",
+      "name": "Amoclox DC — seringi intramamare pentru vaci (repaus mamar)",
+      "slug": "amoclox-dc-seringi-intramamare-pentru-vaci-repaus-mamar",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Suspensie intramamara cu cloxacilină și ampicilină pentru tratamentul mastitei la vaci în perioada de repaus mamar și prevenirea infecțiilor din această perioadă.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-amoclox.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Amoclox DC — seringi intramamare pentru vaci (repaus mamar)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Amoclox DC — seringi intramamare pentru vaci (repaus mamar)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400075",
+      "name": "Mastilong Forte — seringi intramamare",
+      "slug": "mastilong-forte-seringi-intramamare",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Suspensie intramamara pentru tratamentul vacilor cu forme clinice și subclinice de mastită de etiologie bacteriană cauzată de microorganisme sensibile la componentele produsului.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-mastilong.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Mastilong Forte — seringi intramamare",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Mastilong Forte — seringi intramamare"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400076",
+      "name": "Metristar — suspensie intrauterină pentru vaci",
+      "slug": "metristar-suspensie-intrauterina-pentru-vaci",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Suspensie pentru administrare intrauterină în tratamentul vacilor cu endometrită subacută și cronică (la peste 14 zile de la fătare) cauzată de microorganisme sensibile.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-metristar.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Metristar — suspensie intrauterină pentru vaci",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Metristar — suspensie intrauterină pentru vaci"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400077",
+      "name": "Oxitocină — soluție injectabilă",
+      "slug": "oxitocina-solutie-injectabila",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Hormon injectabil pentru animalele femele (vaci, iepe, oi, capre, scroafe, cățele, pisici) care stimulează contracțiile uterine, ejacularea laptelui și involuția uterină.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-oxitocin.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Oxitocină — soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Oxitocină — soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400078",
+      "name": "Estromax — soluție injectabilă",
+      "slug": "estromax-solutie-injectabila",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Prostaglandină injectabilă pentru bovine, suine și cățele: sincronizarea căldurilor, tratamentul afecțiunilor uterine, avortul terapeutic și inducerea fătării.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Porcine",
+        "Câini",
+        "Ovine",
+        "Cabaline",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-estromax.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Estromax — soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Estromax — soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400079",
+      "name": "Castrin — suspensie injectabilă pentru controlul ciclului",
+      "slug": "castrin-suspensie-injectabila-pentru-controlul-ciclului",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Suspensie injectabilă pentru prevenirea sau întreruperea pe termen lung a estrusului la pisici și cățele și prevenirea gestațiilor nedorite.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-castrin.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Castrin — suspensie injectabilă pentru controlul ciclului",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Castrin — suspensie injectabilă pentru controlul ciclului"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400080",
+      "name": "Sexinon — tablete pentru întreruperea estrului",
+      "slug": "sexinon-tablete-pentru-intreruperea-estrului",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Tablete pentru blocarea și amânarea estrului și prevenirea gestației nedorite la cățele și pisici; pentru calmarea câinilor și pisoilor în perioadele de stres.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-sexinon.docx",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Sexinon — tablete pentru întreruperea estrului",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Sexinon — tablete pentru întreruperea estrului"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400081",
+      "name": "Keno Pure — dezinfectant pentru mameloane",
+      "slug": "keno-pure-dezinfectant-pentru-mameloane",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Soluție pe bază de acid lactic cu dublă acțiune: curăță și dezinfectează mameloanele bovinelor, ovinelor și caprinelor înainte de muls, diminuând încărcătura de germeni a glandei mamare.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-kenopur.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Keno Pure — dezinfectant pentru mameloane",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Keno Pure — dezinfectant pentru mameloane"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400082",
+      "name": "Neem Plus — unguent protector pentru uger",
+      "slug": "neem-plus-unguent-protector-pentru-uger",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Unguent topic cu uleiuri esențiale de neem, cuișoare și pin, acid lactic și salicilat de metil pentru protecția ugerului: regenerare, peliculă barieră și efect repelent împotriva muștelor.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-neem-plus.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Neem Plus — unguent protector pentru uger",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Neem Plus — unguent protector pentru uger"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400083",
+      "name": "Profimast — unguent igienic pentru uger",
+      "slug": "profimast-unguent-igienic-pentru-uger",
+      "category": "Produse pentru reproducție și sănătatea glandei mamare",
+      "description": "Unguent cu propolis, ulei de măsline ozonat, gălbenele și vitamina E pentru igiena ugerului. Susține imunitatea locală și reduce edemul mamar după fătare; aplicat după fiecare muls.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/unguent-profimast.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Profimast — unguent igienic pentru uger",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Produse pentru reproducție și sănătatea glandei mamare",
+        "Profimast — unguent igienic pentru uger"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400084",
+      "name": "Clorură de calciu 10% soluție injectabilă",
+      "slug": "clorura-de-calciu-10-solutie-injectabila",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Soluție injectabilă de calciu pentru bovine, cabaline, caprine, ovine, porcine și câini. Tratamentul hipocalcemiilor, alergieși, pneumonii și ca agent antiinflamator.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-clorura-de-calciu-md.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Clorură de calciu 10% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Clorură de calciu 10% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400085",
+      "name": "Borogluconat de calciu soluție injectabilă",
+      "slug": "borogluconat-de-calciu-solutie-injectabila",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Toniant cu calciu pentru prevenirea și tratamentul parezei puerperale, hipocalcemiilor și intoxicațiilor la bovine, cabaline, ovine, porcine, câini și pisici.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-borogluconat-de-ca.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Borogluconat de calciu soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Borogluconat de calciu soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400086",
+      "name": "Calfostar 1000 — soluție injectabilă calciu + fosfor",
+      "slug": "calfostar-1000-solutie-injectabila-calciu-fosfor",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Complex de calciu, fosfor și magneziu pentru tratamentul hipocalciemiei și parezei puerperale, rahitismului și osteomalaciei la animalele de fermă.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-calfostar-1000.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Calfostar 1000 — soluție injectabilă calciu + fosfor",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Calfostar 1000 — soluție injectabilă calciu + fosfor"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400087",
+      "name": "Clorură de sodiu 0,9% soluție injectabilă",
+      "slug": "clorura-de-sodiu-0-9-solutie-injectabila",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Soluție fiziologică pentru rehidratarea animalelor în caz de deshidratare severă, intoxicații, diaree, intervenții chirurgicale și deficit de sodiu.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Porcine",
+        "Câini",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-clorura-de-sodiu.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Clorură de sodiu 0,9% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Clorură de sodiu 0,9% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400088",
+      "name": "Cofeină benzoat de sodiu 20% soluție injectabilă",
+      "slug": "cofeina-benzoat-de-sodiu-20-solutie-injectabila",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Stimulator al sistemului nervos central pentru tratarea bolilor însoțite de inhibarea funcțiilor vitale, colaps și slăbirea activității cardiace la toate speciile.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-cofeina.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Cofeină benzoat de sodiu 20% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Cofeină benzoat de sodiu 20% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400089",
+      "name": "Glucoză 40% soluție injectabilă",
+      "slug": "glucoza-40-solutie-injectabila",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Soluție energetică și rehidratantă pentru terapia complexă a animalelor cu forme severe de boli infecțioase acute, intoxicații și hipoglicemie.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Cabaline",
+        "Porcine",
+        "Păsări",
+        "Câini",
+        "Pisici",
+        "Ovine",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-glucoza-40.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Glucoză 40% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Glucoză 40% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400090",
+      "name": "Bromenghil — soluție orală pentru păsări",
+      "slug": "bromenghil-solutie-orala-pentru-pasari",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Soluție perorală cu bromhexină și mentol pentru pui de carne și păsări de curte de înlocuire: fluidifiant bronșic în bolile respiratorii cu secreții abundente.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-bromenghil-rev-f.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Bromenghil — soluție orală pentru păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "Bromenghil — soluție orală pentru păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400091",
+      "name": "Canvac R — vaccin antirabic pentru câini",
+      "slug": "canvac-r-vaccin-antirabic-pentru-ciini",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Vaccin inactivat suspensie injectabilă pentru imunizarea câinilor împotriva rabiei (virus rabic inactivat, minim 2 UI/doză).",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vaccin-canvac-r.doc",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Canvac R — vaccin antirabic pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Canvac R — vaccin antirabic pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400092",
+      "name": "Canvac 8 DHPPiL — vaccin polivalent pentru câini",
+      "slug": "canvac-8-dhppil-vaccin-polivalent-pentru-ciini",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Liofilizat și solvent pentru suspensie injectabilă. Imunizarea câinilor împotriva cinomozei, leptospirozei, hepatitei infecțioase, parainfluenzei, coronavirozei, parvovirozei și infecției cu Bordetella.",
+      "image": "/cards/animale decomponie.jpeg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vaccin-canvac-8.doc",
+      "images": [
+        {
+          "url": "/cards/animale decomponie.jpeg",
+          "alt": "Canvac 8 DHPPiL — vaccin polivalent pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Canvac 8 DHPPiL — vaccin polivalent pentru câini"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400093",
+      "name": "Vaccin hemoragic viral (RHD) pentru iepuri",
+      "slug": "vaccin-hemoragic-viral-rhd-pentru-iepuri",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Vaccin inactivat suspensie injectabilă pentru imunizarea iepurilor împotriva bolii hemoragice virale (RHD/VHD).",
+      "image": "/hero/rabbit.webp",
+      "labels": [
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vaccin-hemoragic.docx",
+      "images": [
+        {
+          "url": "/hero/rabbit.webp",
+          "alt": "Vaccin hemoragic viral (RHD) pentru iepuri",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Vaccin hemoragic viral (RHD) pentru iepuri"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400094",
+      "name": "Vaccin contra mixomatozei pentru iepuri",
+      "slug": "vaccin-contra-mixomatozei-pentru-iepuri",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Vaccin pentru prevenirea mixomatozei la iepuri, imunizare activă împotriva virusului mixomatozei.",
+      "image": "/hero/rabbit.webp",
+      "labels": [
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vaccin-mixomatoz.docx",
+      "images": [
+        {
+          "url": "/hero/rabbit.webp",
+          "alt": "Vaccin contra mixomatozei pentru iepuri",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Vaccin contra mixomatozei pentru iepuri"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400095",
+      "name": "Vaccin LTF-130 contra tricofitozei la bovine",
+      "slug": "vaccin-ltf-130-contra-tricofitozei-la-bovine",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Vaccin viu liofilizat din cultură atenuată de Trichophyton verrucosum pentru prevenirea și tratamentul tricofitozei (limboneala) la bovine.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vaccina-ltf-130.doc",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Vaccin LTF-130 contra tricofitozei la bovine",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Vaccin LTF-130 contra tricofitozei la bovine"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400096",
+      "name": "Vaccin VR-2 contra rujețului la porcine",
+      "slug": "vaccin-vr-2-contra-rujetului-la-porcine",
+      "category": "Vaccinuri și alte produse biologice",
+      "description": "Vaccin viu liofilizat din tulpina atenuată Erysipelothrix rhusiopathiae VR-2 pentru prevenirea rujețului (erysipelas) la porcine.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/vacin-contra-rujetului.doc",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Vaccin VR-2 contra rujețului la porcine",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vaccinuri și alte produse biologice",
+        "Vaccin VR-2 contra rujețului la porcine"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400097",
+      "name": "Calciu Vitaminizat Aromatizat — pulbere",
+      "slug": "calciu-vitaminizat-aromatizat-pulbere",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Furaj complementar pe bază de calciu (min 39%) cu premix de vitamine A, D3, E, K3, B, microelemente și aminoacizi pentru păsări de curte, păsări exotice și animale de gospodărie.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Cabaline",
+        "Caprine",
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/calciu-vitaminizat.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Calciu Vitaminizat Aromatizat — pulbere",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Calciu Vitaminizat Aromatizat — pulbere"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400098",
+      "name": "Seevit — soluție injectabilă (seleniu + vitamina E)",
+      "slug": "seevit-solutie-injectabila-seleniu-vitamina-e",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Complex de seleniu și vitamina E injectabil pentru prevenirea și tratamentul hiposeleniemiei, distrofiilor musculare și retinerii placentei la toate speciile de animale.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări",
+        "Câini",
+        "Pisici",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-seevit-inj-500.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Seevit — soluție injectabilă (seleniu + vitamina E)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Seevit — soluție injectabilă (seleniu + vitamina E)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400099",
+      "name": "Megavit — soluție injectabilă multivitaminică",
+      "slug": "megavit-solutie-injectabila-multivitaminica",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Complex de vitamine A, D, E și grupa B pentru prevenirea și tratamentul hipovitaminozelor, rahitismului, osteodistrofiei, cetozei și hepatodistrofiei.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Câini",
+        "Cabaline"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-megavit-1000.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Megavit — soluție injectabilă multivitaminică",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Megavit — soluție injectabilă multivitaminică"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400100",
+      "name": "Tetravin — soluție injectabilă (A, D3, E)",
+      "slug": "tetravin-solutie-injectabila-a-d3-e",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Soluție injectabilă cu vitaminele A, D3 și E pentru prevenirea și tratamentul hipovitaminozei, osteodistrofiilor, cetozei, rahitismului și hipocalcemiei la animalele de fermă.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-tetravin-sol-inj-rev-1000.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Tetravin — soluție injectabilă (A, D3, E)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Tetravin — soluție injectabilă (A, D3, E)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400101",
+      "name": "Ferrum + B12 — soluție injectabilă",
+      "slug": "ferrum-b12-solutie-injectabila",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Fier complexat 100 mg/ml cu cianocobalamină pentru tratamentul și profilaxia anemiei feriprive la bovine, ovine, caprine, porcine și cabaline.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-ferrum-b12-rev-f.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Ferrum + B12 — soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Ferrum + B12 — soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400102",
+      "name": "Vetozal 10% soluție injectabilă",
+      "slug": "vetozal-10-solutie-injectabila",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Complex de oligoelemente care stimulează hematopoieza, corectează tulburările metabolice cauzate de hrănirea irațională și sporește rezistența la boli.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări",
+        "Câini",
+        "Pisici",
+        "Cabaline",
+        "Caprine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vetozal-1000.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Vetozal 10% soluție injectabilă",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vetozal 10% soluție injectabilă"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400103",
+      "name": "Ulei de Pește — Omega-3, vitamine A și D",
+      "slug": "ulei-de-peste-omega-3-vitamine-a-si-d",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Sursă naturală de acizi grași polinesaturați Omega-3/Omega-6, iod și vitaminele A și D pentru creștere, lână, plumaj, fertilitate și digestie sănătoasă.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Porcine",
+        "Câini",
+        "Pisici",
+        "Pești"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-ulei-de-peste.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Ulei de Pește — Omega-3, vitamine A și D",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Ulei de Pește — Omega-3, vitamine A și D"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400104",
+      "name": "Făină de Pește Vitaminizată",
+      "slug": "faina-de-peste-vitaminizata",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Aditiv furajer cu 65% proteină brută, vitamine și minerale pentru compensarea insuficienței proteice și minerale din rațiile porcinelor și păsărilor.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-faina-peste.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Făină de Pește Vitaminizată",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Făină de Pește Vitaminizată"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400105",
+      "name": "Drojdie Furajeră — 46% proteină",
+      "slug": "drojdie-furajera-46-proteina",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Aditiv furajer bogat în proteine și vitaminele grupei B care crește conversia hranei, lactația la vaci, producția de carne și ouă.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-drojdie.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Drojdie Furajeră — 46% proteină",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Drojdie Furajeră — 46% proteină"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400106",
+      "name": "Biotan — concentrat de vitamine și minerale",
+      "slug": "biotan-concentrat-de-vitamine-si-minerale",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Amestec concentrat de macroelemente, oligominerale, vitamine și aminoacizi pentru toate speciile de animale în perioada de creștere și reproducție.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări",
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-biotan.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "Biotan — concentrat de vitamine și minerale",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Biotan — concentrat de vitamine și minerale"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400107",
+      "name": "Sulf Furajer",
+      "slug": "sulf-furajer",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Sulf pulbere pentru îmbunătățirea metabolismului, creșterea producției de lână, plumaj și lapte, ca laxativ ușor și antidot în intoxicațiile cu metale grele.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Bovine",
+        "Ovine",
+        "Porcine",
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-sulf-furajer.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Sulf Furajer",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Sulf Furajer"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400108",
+      "name": "ProfiMilk LactoStart — înlocuitor de lapte pentru viței",
+      "slug": "profimilk-lactostart-inlocuitor-de-lapte-pentru-vitei",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Înlocuitor integral de lapte pentru viței de la 10 la 21 de zile, cu probiotice, vitamine și minerale pentru viței sănătoși cu vitalitate crescută.",
+      "image": "/cards/bovine.jpeg",
+      "labels": [
+        "Bovine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-profimilk-lacto.docx",
+      "images": [
+        {
+          "url": "/cards/bovine.jpeg",
+          "alt": "ProfiMilk LactoStart — înlocuitor de lapte pentru viței",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "ProfiMilk LactoStart — înlocuitor de lapte pentru viței"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400109",
+      "name": "Agrocid Super — acidifiant pentru apa de băut",
+      "slug": "agrocid-super-acidifiant-pentru-apa-de-baut",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Amestec de acizi organici (formic, propionic, acetic, lactic) care scade rapid pH-ul apei de băut, reduce proliferarea coccidiilor și bacteriilor patogene și decalcifică sistemele de adăpare.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Porcine",
+        "Iepuri"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-agrocid-super.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Agrocid Super — acidifiant pentru apa de băut",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Agrocid Super — acidifiant pentru apa de băut"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400110",
+      "name": "Vita-Acid — acidifiant pentru hrana animalelor",
+      "slug": "vita-acid-acidifiant-pentru-hrana-animalelor",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Amestec echilibrat de acizi organici (formic, propionic, lactic, fumaric) cu spectru larg de acțiune în hrana pentru animale: previne tulburările bacteriene și optimizează performanța de creștere.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-acid.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita-Acid — acidifiant pentru hrana animalelor",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vita-Acid — acidifiant pentru hrana animalelor"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400111",
+      "name": "Vita-Citrus C200 — polivitaminic pentru păsări",
+      "slug": "vita-citrus-c200-polivitaminic-pentru-pasari",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Complex cu 20% vitamina C și ulei de citrice pentru reducerea stresului termic la păsări, susținerea imunității și potențarea efectului vaccinării.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-citrus-1.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita-Citrus C200 — polivitaminic pentru păsări",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vita-Citrus C200 — polivitaminic pentru păsări"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400112",
+      "name": "Vita-Micotox Plus — binder de micotoxine",
+      "slug": "vita-micotox-plus-binder-de-micotoxine",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Amestec sinergic de adsorbanți puternici de micotoxine (aflatoxine) îmbogățit cu minerale argiloase și conservanți pentru protecția animalelor din efective.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-micotox-plus.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita-Micotox Plus — binder de micotoxine",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vita-Micotox Plus — binder de micotoxine"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400113",
+      "name": "Vita Multi Stress — vitamine + aminoacizi",
+      "slug": "vita-multi-stress-vitamine-aminoacizi",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Combinație echilibrată de vitamine și aminoacizi administrată prin apa de băut în perioade de stres, vaccinări și tratamente pentru menținerea vitalității.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Iepuri",
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-multi-stress.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita Multi Stress — vitamine + aminoacizi",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vita Multi Stress — vitamine + aminoacizi"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400114",
+      "name": "Vita Phoscal — complex polimineral",
+      "slug": "vita-phoscal-complex-polimineral",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Complex stabilizat de fosfor, calciu, magneziu, sodiu și oligoelemente pentru dezvoltarea scheletului, productivitate și recuperare după tratamentele antibacteriene și antiparazitare.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări",
+        "Iepuri",
+        "Porcine",
+        "Bovine",
+        "Ovine",
+        "Caprine",
+        "Cabaline"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/prospect-vita-phoscal.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Vita Phoscal — complex polimineral",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Vita Phoscal — complex polimineral"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400115",
+      "name": "Premix Pui Starter 1% — faza I (0–30 zile)",
+      "slug": "premix-pui-starter-1-faza-i-0-30-zile",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix vitamino-mineral pentru pui broiler în faza de start (0–30 zile), cu vitamine, minerale, antioxidanți și aminoacizi pentru un start bun al creșterii.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-pui-starter.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Pui Starter 1% — faza I (0–30 zile)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Pui Starter 1% — faza I (0–30 zile)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400116",
+      "name": "Premix Pui Creștere 1% — faza II (peste 30 zile)",
+      "slug": "premix-pui-crestere-1-faza-ii-peste-30-zile",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix vitamino-mineral pentru pui de creștere de la 30 de zile, pentru o rație echilibrată și dezvoltare uniformă a efectului.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-pui-crestere.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Pui Creștere 1% — faza II (peste 30 zile)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Pui Creștere 1% — faza II (peste 30 zile)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400117",
+      "name": "Premix Găini Ouătoare",
+      "slug": "premix-gaini-ouatoare",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix vitamino-mineral cu calciu, metionină și fitază pentru găinile ouătoare: coajă rezistentă, vârf de ouare prelungit și producție stabilă.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-gaini-ouatoare.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Găini Ouătoare",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Găini Ouătoare"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400118",
+      "name": "Premix Rațe 1%",
+      "slug": "premix-rate-1",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix pentru rația zilnică a rațelor, cu vitamine (A, D3, E, K3, B), minerale și antioxidanți pentru o alimentație balansată.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-rate.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Rațe 1%",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Rațe 1%"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400119",
+      "name": "Premix Gâște 1%",
+      "slug": "premix-giste-1",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix pentru gâște cu vitamine, minerale și metionină pentru o rație zilnică echilibrată și productivitate crescută.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-giste.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Gâște 1%",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Gâște 1%"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400120",
+      "name": "Premix Prepelițe 2%",
+      "slug": "premix-prepelite-2",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix pentru prepelițe cu vitamine, minerale și antioxidanți pentru o rație echilibrată și producție stabilă de ouă.",
+      "image": "/cards/pasari.jpeg",
+      "labels": [
+        "Păsări"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-prepelite.docx",
+      "images": [
+        {
+          "url": "/cards/pasari.jpeg",
+          "alt": "Premix Prepelițe 2%",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Prepelițe 2%"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400121",
+      "name": "Premix Purcei 1% (0–2 luni)",
+      "slug": "premix-purcei-1-0-2-luni",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix vitamino-mineral pentru purcei de 0–2 luni, bogat în calciu și fosfor pentru un start solid după înțărcare.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-porc-0-2-luni.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Premix Purcei 1% (0–2 luni)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Purcei 1% (0–2 luni)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400122",
+      "name": "Premix Purcei 1% (2–4 luni)",
+      "slug": "premix-purcei-1-2-4-luni",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix pentru rația zilnică a purceilor de la 2 la 4 luni, cu vitamine și minerale pentru creștere armonioasă.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-porc-2-4-luni.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Premix Purcei 1% (2–4 luni)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Purcei 1% (2–4 luni)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400123",
+      "name": "Premix Purcei 1% (peste 4 luni)",
+      "slug": "premix-purcei-1-peste-4-luni",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix vitamino-mineral pentru purcei de la 4 luni până la sacrificare pentru o rație alimentară balansată.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-de-la-4-luni.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Premix Purcei 1% (peste 4 luni)",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Purcei 1% (peste 4 luni)"
+      ],
+      "product_type": ""
+    },
+    {
+      "id": "400124",
+      "name": "Premix Scroafe Gestante",
+      "slug": "premix-scroafe-gestante",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Premix cu vitamine, minerale, lizină și metionină pentru rația scroafelor gestante: sănătatea fătului și viabilitatea purceilor.",
+      "image": "/cards/porcine.jpeg",
+      "labels": [
+        "Porcine"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [],
+      "variants": [],
+      "url": "",
+      "prospect": "/prospecte/premix-scroafe-gestant.docx",
+      "images": [
+        {
+          "url": "/cards/porcine.jpeg",
+          "alt": "Premix Scroafe Gestante",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "Premix Scroafe Gestante"
+      ],
+      "product_type": ""
+    }
+  ]
+}

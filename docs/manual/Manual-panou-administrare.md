@@ -168,9 +168,11 @@ produsului, lângă „Vezi produsul la producător", apare butonul
 - Scriptul leagă automat fiecare prospect de produsele al căror nume
   începe cu numele medicamentului: cele 19 produse **Insektal** și cele
   4 produse **Gelmintal T** au primit deja prospectul lor.
-- Restul prospectelor (Bravecto, Tilozin, unguente, premixuri, vaccinuri
-  etc.) nu au încă un produs în catalog — când adaugi medicamentul
-  respectiv în panou, alege-i prospectul din listă.
+- Celelalte ~120 de medicamente veterinare (Tilozin, Bravecto, unguente,
+  premixuri, vaccinuri etc.) sunt în catalog ca marca **Farmavet**,
+  generată de `node scripts/build-farmavet-catalog.mjs` pe baza
+  clasificării din folderul „SAIT FARMAVET 2026" — fiecare are
+  prospectul, categoria și speciile țintă completate.
 
 ### Unde apare produsul
 
@@ -253,6 +255,7 @@ sursele citite de site:
 | Natura | `scrape/natura_products.json` |
 | Eco Natura Pet | `scrape/econatura_products.json` |
 | Neoterica Inspector / Insektal / Gelmintal / Unitabs / RolfClub 3D și Chistotel | `scrape/ekoprom_products.json` |
+| Farmavet (medicamente veterinare, generate din „SAIT FARMAVET 2026") | `scrape/farmavet_products.json` |
 
 **Consecințe practice:**
 

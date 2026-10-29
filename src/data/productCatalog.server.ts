@@ -67,6 +67,9 @@ function normalizeCategory(value: unknown, name: string): ProductCategory {
   if (category === "rodents" || category === "rozătoare") return "Rozătoare";
   if (category === "poultry" || category === "păsări") return "Păsări";
   if (category === "dogs" || category === "câini") return "Câini";
+  if (category === "bovine") return "Bovine";
+  if (category === "ovine") return "Ovine";
+  if (category === "porcine") return "Porcine";
   return /\b(cat|kitten|pisic)/i.test(name) ? "Pisici" : "Câini";
 }
 
@@ -167,6 +170,9 @@ export function getProducts(): Product[] {
     const ecoNaturaProducts = readCatalog("econatura_products.json").map((product) =>
       normalizeProduct(product, "Eco Natura Pet", "eco-natura"),
     );
+    const farmavetProducts = readCatalog("farmavet_products.json").map((product) =>
+      normalizeProduct(product, "Farmavet", "farmavet"),
+    );
     const ekopromProducts = readCatalog("ekoprom_products.json").map((product) => {
       const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
         "Neoterica Inspector",
@@ -180,6 +186,7 @@ export function getProducts(): Product[] {
       ...ekopromProducts,
       ...naturaProducts,
       ...ecoNaturaProducts,
+      ...farmavetProducts,
     ].filter(
       (product) => product.slug && product.name && product.image,
     );

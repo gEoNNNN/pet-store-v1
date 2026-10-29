@@ -42,7 +42,14 @@ export default function ProductFinder({ products }: { products: ProductSummary[]
   const [age, setAge] = useState<Age>("adult");
 
   const recommendations = useMemo(() => {
-    if (species === "bovine") return [];
+    if (species === "bovine") {
+      // Bovinele nu au hrană în catalog, dar gama veterinară Farmavet are
+      // produse etichetate cu specia „Bovine" în catalog.
+      return products
+        .filter((product) => product.labels.includes("Bovine"))
+        .sort((first, second) => first.name.localeCompare(second.name, "ro"))
+        .slice(0, 6);
+    }
     const category = species === "dog" ? "Câini" : "Pisici";
 
     return products
@@ -124,7 +131,7 @@ export default function ProductFinder({ products }: { products: ProductSummary[]
           </div>
         ) : (
           <div className={styles.empty}>
-            Catalogul actual conține produse Brit și Carnilove pentru câini, pisici și rozătoare, dar încă nu include produse pentru bovine. Contactează echipa Farmavet pentru informații despre gama disponibilă în magazin.
+            Nu am găsit produse potrivite în catalog pentru această selecție. Gama veterinară completă pentru bovine este disponibilă în filtrele „Farmacie veterinară" de pe pagina de produse, sau contactează echipa Farmavet pentru informații despre stoc.
           </div>
         )}
       </section>

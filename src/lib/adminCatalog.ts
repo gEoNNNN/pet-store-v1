@@ -77,6 +77,7 @@ export const brandConfigs: BrandConfig[] = [
     fileName: EKOPROM_FILE,
     subBrandSlug: "chistotel",
   },
+  { brandSlug: "farmavet", brand: "Farmavet", fileName: "farmavet_products.json" },
 ];
 
 const brandConfigBySlug = new Map(brandConfigs.map((config) => [config.brandSlug, config]));
@@ -88,6 +89,9 @@ export function categoryOptions(): string[] {
     "Pisici",
     "Rozătoare",
     "Păsări",
+    "Bovine",
+    "Ovine",
+    "Porcine",
     ...veterinaryCategoryNames,
   ];
 }

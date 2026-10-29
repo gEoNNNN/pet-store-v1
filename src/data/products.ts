@@ -1,4 +1,13 @@
-export const petCategoryNames = ["Toate", "Câini", "Pisici", "Rozătoare", "Păsări"] as const;
+export const petCategoryNames = [
+  "Toate",
+  "Câini",
+  "Pisici",
+  "Rozătoare",
+  "Păsări",
+  "Bovine",
+  "Ovine",
+  "Porcine",
+] as const;
 
 export const veterinaryCategoryNames = [
   "Antibacteriene și antifungice",
@@ -75,6 +84,7 @@ export const productBrandNames = [
   "Chistotel",
   "Natura",
   "Eco Natura Pet",
+  "Farmavet",
 ] as const;
 
 export type ProductCategoryName = (typeof productCategoryNames)[number];
@@ -91,7 +101,8 @@ export type ProductBrandSlug =
   | "neoterica-rolfclub-3d"
   | "chistotel"
   | "natura"
-  | "eco-natura";
+  | "eco-natura"
+  | "farmavet";
 
 export type ProductImage = {
   url: string;
