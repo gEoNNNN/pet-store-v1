@@ -19,6 +19,7 @@ export type ProductFormInitial = {
   labels: string;
   packageSizes: string;
   sourceUrl: string;
+  prospect: string;
 };
 
 export const emptyProduct: ProductFormInitial = {
@@ -32,17 +33,20 @@ export const emptyProduct: ProductFormInitial = {
   labels: "",
   packageSizes: "",
   sourceUrl: "",
+  prospect: "",
 };
 
 export default function ProductForm({
   mode,
   brands,
   categories,
+  prospects,
   initial,
 }: {
   mode: "create" | "edit";
   brands: Array<{ slug: string; label: string }>;
   categories: string[];
+  prospects: Array<{ value: string; label: string }>;
   initial: ProductFormInitial;
 }) {
   const [state, formAction, pending] = useActionState<ActionState, FormData>(
@@ -270,6 +274,30 @@ export default function ProductForm({
               defaultValue={initial.sourceUrl}
               placeholder="https://brit-petfood.com/…"
             />
+          </div>
+
+          <div className={styles.field}>
+            <label className={styles.label} htmlFor="pf-prospect">
+              Prospect (opțional)
+            </label>
+            <select
+              className={styles.select}
+              id="pf-prospect"
+              name="prospect"
+              defaultValue={initial.prospect}
+            >
+              <option value="">— fără prospect —</option>
+              {prospects.map((prospect) => (
+                <option value={prospect.value} key={prospect.value}>
+                  {prospect.label}
+                </option>
+              ))}
+            </select>
+            <p className={styles.helper}>
+              Documentul Word pe care îl poate descărca clientul de pe pagina
+              produsului. Fișierele provin din folderul „SAIT FARMAVET 2026”
+              prin script <code>scripts/prospecte.mjs</code>.
+            </p>
           </div>
 
           <div className={styles.field}>

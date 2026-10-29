@@ -174,6 +174,14 @@
   font-weight: 800;
 }
 
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
 .sourceButton,
 .backLink {
   min-height: 50px;
@@ -190,8 +198,26 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.sourceButton {
-  margin-top: 26px;
+.prospectButton {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding-inline: 22px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 0.84rem;
+  font-weight: 900;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.prospectButton:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary);
+  color: #ffffff;
 }
 
 .sourceButton:hover,
@@ -529,7 +555,8 @@
     grid-template-columns: 1fr;
   }
 
-  .sourceButton {
+  .sourceButton,
+  .prospectButton {
     width: 100%;
   }
 }

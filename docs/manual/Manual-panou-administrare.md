@@ -145,10 +145,32 @@ Apasă **„+ Adaugă produs"**. Formularul se deschide gol:
 
 7. **Etichete și Ambalaje** — liste separate prin virgulă, de ex.
    `Pisici, Așternut` respectiv `10 litri, 5 litri`;
-8. Apasă **„Adaugă în catalog"**. Primești un mesaj verde de confirmare
+8. **Prospect (opțional)** — alege din listă documentul Word care va fi
+   descărcat de pe pagina publică a produsului (detalii mai jos);
+9. Apasă **„Adaugă în catalog"**. Primești un mesaj verde de confirmare
    și ești întors în listă:
 
 ![Salvare reușită](img/08-adaugare-succes.png)
+
+### Prospectul descărcabil
+
+Pentru medicamentele veterinare, câmpul **Prospect** leagă produsul de
+fișa tehnică oficială (prospectul) în format Word. Pe pagina publică a
+produsului, lângă „Vezi produsul la producător", apare butonul
+**„Descarcă prospect (Word)"**:
+
+![Butonul Descarcă prospect pe pagina publică](img/13-prospect-download.png)
+
+- Documentele trăiesc în `public/prospecte/` — 127 de fișiere Word
+  copiate din folderul „SAIT FARMAVET 2026" de scriptul
+  `node scripts/prospecte.mjs`; în listă au rămas o singură copie
+  dintre prospectele cu nume identic (AMOCLOX, MASTILONG, METRISTAR).
+- Scriptul leagă automat fiecare prospect de produsele al căror nume
+  începe cu numele medicamentului: cele 19 produse **Insektal** și cele
+  4 produse **Gelmintal T** au primit deja prospectul lor.
+- Restul prospectelor (Bravecto, Tilozin, unguente, premixuri, vaccinuri
+  etc.) nu au încă un produs în catalog — când adaugi medicamentul
+  respectiv în panou, alege-i prospectul din listă.
 
 ### Unde apare produsul
 
@@ -169,8 +191,8 @@ De pe lista de produse, apasă **„Modifică"** pe rândul ales:
 
 - Marca și slug-ul sunt **blocate** — ele identifică pagina publică; dacă
   vrei un alt slug, șterge produsul și creează unul nou;
-- Tot restul (nume, categorie, imagine, etichete, ambalaje, descriere)
-  poate fi schimbat;
+- Tot restul (nume, categorie, imagine, etichete, ambalaje, descriere,
+  prospect) poate fi schimbat;
 - Apasă **„Salvează modificările"** — confirmarea verde apare tot în
   listă:
 
@@ -241,6 +263,13 @@ sursele citite de site:
 - pagina publică de detaliu a unui produs nou se generează la prima
   accesare — nu trebuie să reconstruiești site-ul.
 
+Prospectele descărcabile sunt un caz aparte: documentele Word stau în
+`public/prospecte/` (sursele rămân în folderul „SAIT FARMAVET 2026",
+neinclus în git), iar legătura spre produs se salvează în câmpul
+`prospect` din JSON — de ex. `/prospecte/prospect-gelmintal-t.docx`.
+Câmpul este scris de panou (formularul de produs) sau de scriptul
+`scripts/prospecte.mjs` la potrivirea automată.
+
 ---
 
 ## 11. Depanare — probleme frecvente
@@ -251,6 +280,7 @@ sursele citite de site:
 | „Parolă incorectă" deși parola pare bună | Verifică spațiile de la marginile variabilei și că editezi fișierul corect `.env.local`. |
 | Imaginea nu se încarcă | Fișierul nu există sub `public/`, sau calea nu începe cu `/products/…`. Previzualizarea din formular te avertizează. |
 | „Există deja un produs cu acest slug" | Slug-ul trebuie să fie unic pe marcă; adaugă un sufix (de ex. `-2`). |
+| Butonul „Descarcă prospect" nu apare pe pagina produsului | Produsul nu are un prospect atașat — alege-l în formularul de produs (câmpul „Prospect (opțional)") și salvează. |
 | Modificarea nu apare pe site | Reîmprospătează cu `Ctrl+Shift+R` (cache-ul browserului). |
 | 404 pe pagina produsului | Verifică slug-ul exact din listă; slug-urile nu conțin diacritice sau spații. |
 
@@ -267,6 +297,10 @@ src/app/admin/ProductForm.tsx      — formularul partajat create/edit
 src/lib/adminAuth.ts               — parolă + sesiune HMAC, cookie 12h
 src/lib/adminCatalog.ts            — citire/scriere cataloage scrape/*.json
 src/lib/slugify.ts                 — generarea slug-urilor (client + server)
+scripts/prospecte.mjs              — copiază prospectele în public/prospecte și
+                                     leagă automat produsele (câmpul prospect)
+scripts/prospecte-screenshot.mjs   — verificare buton + captura img/13 din manual
+public/prospecte/                  — cele 127 de documente Word servite public
 scripts/manual-screenshots.mjs     — screenshoturi automatizate pentru manual
 docs/manual/                       — acest manual + imaginile din img/
 ```

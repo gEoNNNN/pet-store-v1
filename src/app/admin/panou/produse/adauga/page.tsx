@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { brandConfigs, categoryOptions } from "@/lib/adminCatalog";
+import { brandConfigs, categoryOptions, prospectOptions } from "@/lib/adminCatalog";
 import styles from "../../../Admin.module.css";
 import ProductForm, { emptyProduct } from "../../../ProductForm";
 
@@ -28,6 +28,7 @@ export default async function AddProductPage() {
           label: config.brand,
         }))}
         categories={categoryOptions()}
+        prospects={prospectOptions()}
         initial={emptyProduct}
       />
     </>

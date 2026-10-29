@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { ArrowRightIcon, CheckCircleIcon, ChevronRightIcon } from "@/components/icons";
+import { ArrowRightIcon, CheckCircleIcon, ChevronRightIcon, DownloadIcon } from "@/components/icons";
 import { getProduct, getProducts } from "@/data/productCatalog.server";
 import styles from "./ProductDetail.module.css";
 
@@ -144,15 +144,29 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 )}
               </dl>
 
-              <a
-                href={product.sourceUrl}
-                target="_blank"
-                rel="noreferrer"
-                className={styles.sourceButton}
-              >
-                Vezi produsul la producător
-                <ArrowRightIcon className={styles.buttonIcon} />
-              </a>
+              <div className={styles.heroActions}>
+                {product.sourceUrl && (
+                  <a
+                    href={product.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.sourceButton}
+                  >
+                    Vezi produsul la producător
+                    <ArrowRightIcon className={styles.buttonIcon} />
+                  </a>
+                )}
+                {product.prospect && (
+                  <a
+                    href={product.prospect}
+                    download
+                    className={styles.prospectButton}
+                  >
+                    Descarcă prospect (Word)
+                    <DownloadIcon className={styles.buttonIcon} />
+                  </a>
+                )}
+              </div>
             </div>
           </section>
 

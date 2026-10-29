@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { brandConfigs, categoryOptions, findProduct } from "@/lib/adminCatalog";
+import { brandConfigs, categoryOptions, findProduct, prospectOptions } from "@/lib/adminCatalog";
 import styles from "../../../../../Admin.module.css";
 import ProductForm, {
   type ProductFormInitial,
@@ -43,6 +43,7 @@ export default async function EditProductPage({ params }: EditProps) {
     labels: stringList(raw.labels),
     packageSizes,
     sourceUrl: String(raw.url ?? ""),
+    prospect: String(raw.prospect ?? ""),
   };
 
   return (
@@ -64,6 +65,7 @@ export default async function EditProductPage({ params }: EditProps) {
           label: config.brand,
         }))}
         categories={categoryOptions()}
+        prospects={prospectOptions()}
         initial={initial}
       />
     </>

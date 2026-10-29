@@ -124,6 +124,8 @@ export type ProductSummary = {
   labels: string[];
   packageSizes: string[];
   productType: string | null;
+  /** documentul Word descărcabil (ex. /prospecte/prospect-insektal.docx) */
+  prospect: string | null;
 };
 
 export type Product = ProductSummary & {

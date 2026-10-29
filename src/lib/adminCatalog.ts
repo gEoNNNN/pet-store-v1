@@ -1,6 +1,6 @@
 import "server-only";
 
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { veterinaryCategoryNames } from "@/data/products";
 import type { ProductBrand, ProductBrandSlug } from "@/data/products";
@@ -90,6 +90,31 @@ export function categoryOptions(): string[] {
     "Păsări",
     ...veterinaryCategoryNames,
   ];
+}
+
+export type ProspectOption = { value: string; label: string };
+
+/**
+ * Prospectele disponibile din public/prospecte (copiate de
+ * scripts/prospecte.mjs), pentru selectul „Prospect” din formular.
+ */
+export function prospectOptions(): ProspectOption[] {
+  const directory = path.resolve(process.cwd(), "public", "prospecte");
+  if (!existsSync(directory)) return [];
+  return readdirSync(directory)
+    .filter((name) => /\.(docx?|pdf)$/i.test(name))
+    .sort((a, b) => a.localeCompare(b, "ro"))
+    .map((name) => {
+      const stem = name.replace(/\.[a-z0-9]+$/i, "");
+      const withoutPrefix = stem.startsWith("prospect-") ? stem.slice("prospect-".length) : stem;
+      const label =
+        withoutPrefix
+          .split("-")
+          .filter(Boolean)
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ") || stem;
+      return { value: `/prospecte/${name}`, label: `${label} (${name})` };
+    });
 }
 
 function isRecord(value: unknown): value is JsonObject {
@@ -205,6 +230,7 @@ export type ProductInput = {
   labels: string[];
   packageSizes: string[];
   sourceUrl: string;
+  prospect: string;
 };
 
 function toList(raw: FormDataEntryValue | null): string[] {
@@ -246,6 +272,7 @@ export function upsertProduct(input: ProductInput, isEdit: boolean): string | nu
     existing.package_sizes = input.packageSizes;
     existing.variants = input.packageSizes;
     existing.url = input.sourceUrl;
+    existing.prospect = input.prospect;
   } else {
     if (products.some((product) => String(product.slug ?? "") === slug)) {
       return "Există deja un produs cu acest slug. Alege altul.";
@@ -263,6 +290,7 @@ export function upsertProduct(input: ProductInput, isEdit: boolean): string | nu
       package_sizes: input.packageSizes,
       variants: input.packageSizes,
       url: input.sourceUrl,
+      prospect: input.prospect,
       images: [{ url: image, alt: name, role: "main" }],
       breadcrumbs: [category, name],
       product_type: "",
@@ -312,5 +340,6 @@ export function parseProductForm(formData: FormData): ProductInput {
     labels: toList(formData.get("labels")),
     packageSizes: toList(formData.get("packageSizes")),
     sourceUrl: String(formData.get("sourceUrl") ?? "").trim(),
+    prospect: String(formData.get("prospect") ?? "").trim(),
   };
 }

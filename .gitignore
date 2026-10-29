@@ -43,5 +43,8 @@ next-env.d.ts
 # chei api locale pentru scripturile de scrape
 scrape/.api_key
 
+# folderul sursă cu prospectele Word (copiate în public/prospecte)
+SAIT FARMAVET 2026/
+
 # python cache
 __pycache__/

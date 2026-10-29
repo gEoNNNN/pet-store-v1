@@ -143,6 +143,7 @@ function normalizeProduct(raw: JsonObject, brand: ProductBrand, brandSlug: Produ
     freshIngredients: normalizeFreshIngredients(raw.fresh_ingredients),
     metabolizableEnergy: toStringValue(raw.metabolizable_energy) || null,
     rawText: toStringValue(raw.raw_text),
+    prospect: toStringValue(raw.prospect) || null,
   };
 }
 
@@ -208,6 +209,7 @@ export function getProductSummaries(): ProductSummary[] {
     labels: product.labels,
     packageSizes: product.packageSizes,
     productType: product.productType,
+    prospect: product.prospect,
   }));
 }
 
