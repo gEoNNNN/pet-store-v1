@@ -77,7 +77,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     <>
       <Navbar activeItem="products" />
       <main id="main" className={styles.page}>
-        <div className="container">
+        <div className={styles.pageContainer}>
           <nav className={styles.breadcrumbs} aria-label="Fir de navigare">
             <Link href="/">Acasa</Link>
             <ChevronRightIcon className={styles.breadcrumbIcon} />
