@@ -8,13 +8,42 @@
  *
  * Rulare:  node scripts/build-farmavet-catalog.mjs
  */
-import { existsSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
 const sourceDir = path.join(root, "SAIT FARMAVET 2026");
 const targetDir = path.join(root, "public", "prospecte");
 const outFile = path.join(root, "scrape", "farmavet_products.json");
+const brandsFile = path.join(root, "scrape", "farmavet_brands.json");
+const sectionsFile = path.join(root, "scrape", "farmavet_sections.json");
+
+/** slug de producător (brand_slug) → nume afișat; trebuie sincronizat cu
+ *  ProductBrandSlug din src/data/products.ts. */
+export const FARM_BRANDS = {
+  farmavet: "Farmavet",
+  olkar: "O.L.KAR",
+  "hebei-vezong": "Hebei Vezong",
+  biofarm: "Biofarm",
+  vetsintez: "Vetsintez",
+  aveflor: "Aveflor",
+  bavet: "BAVET",
+  msd: "MSD Animal Health",
+  vanellivet: "Vanellivet",
+  ruvera: "RUVERA",
+  "veyx-pharma": "Veyx-Pharma",
+  "cid-lines": "CID Lines",
+  "shandong-luxi": "Shandong Luxi",
+  "icb-pharma": "ICB Pharma",
+  "fgbu-stavropol": "FGBU Stavropol",
+  "biofabrica-armavir": "Biofabrica Armavir",
+  vniivvim: "VNIIVViM",
+  "promark-trade": "Promark Trade",
+  tecro: "Tecro",
+  marel: "Marel",
+  bioceval: "Bioceval",
+  vitafor: "Vitafor",
+};
 
 /* --------------------------------------------------------------- categorii */
 
@@ -150,8 +179,6 @@ const TABEL = [
     desc: "Anthelmintic cu fenbendazol pentru bovine, ovine, caprine, cabaline, porcine, iepuri și păsări. Tratamentul parazitozelor produse de stadii mature și imature ale nematodelor și cestodelor." },
   { key: "prospect fenbendazol", name: "Fenbendazol pentru păsări (găini)", cat: CAT.antip, img: IMG.pasari, sp: ["Păsări"],
     desc: "Anthelmintic pentru păsări (găini). Tratamentul helmintozelor produse de Ascaridia, Heterakis, Capillaria și alți paraziți intestinali." },
-  { key: "prospect gelmintal t", name: "Gelmintal T — tablete anthelmintice", cat: CAT.antip, img: IMG.pets, sp: ["Câini", "Pisici"],
-    desc: "Tablete pentru câini și pisici adulte, căței și pisoși, cu scop terapeutic și profilactic în nematodozele și cestodozele intestinale." },
   { key: "prospect insectol 1000", name: "Insectol 1000 — spray pentru câini și pisici", cat: CAT.antip, img: IMG.pets, sp: ["Câini", "Pisici"],
     desc: "Spray insecto-acaricid pentru tratarea și prevenirea infestării cu ectoparaziți (purici, păduchi, căpușe) a câinilor și pisicilor." },
   { key: "prospect pranatan caini", name: "Pranatan — suspensie pentru câini", cat: CAT.antip, img: IMG.pets, sp: ["Câini"],
@@ -374,6 +401,18 @@ const products = [];
 const warnings = [];
 let nextId = 400000;
 
+const prevCatalog = {};
+try {
+  Object.assign(prevCatalog, existsSync(outFile) ? JSON.parse(readFileSync(outFile, "utf8")) : {});
+} catch {}
+const previousImages = new Map((prevCatalog.products || []).map((p) => [p.slug, p]));
+const imagesDir = path.join(root, "public", "products", "farmavet");
+const downloadedFiles = existsSync(imagesDir) ? readdirSync(imagesDir) : [];
+const brandMap = existsSync(brandsFile) ? JSON.parse(readFileSync(brandsFile, "utf8")) : {};
+const sectionMap = existsSync(sectionsFile) ? JSON.parse(readFileSync(sectionsFile, "utf8")) : {};
+
+const clean = (s) => (s || "").replace(/https?:\/\/\S+/g, "").replace(/\s{2,}/g, " ").trim();
+
 for (const entry of TABEL) {
   const source = sourceFiles.get(entry.key);
   if (!source) {
@@ -381,7 +420,8 @@ for (const entry of TABEL) {
     continue;
   }
   const stem = path.basename(source.name, path.extname(source.name));
-  const prospectFile = `${tokens(stem).join("-")}${source.extension}`;
+  const prospectKey = tokens(stem).join("-");
+  const prospectFile = `${prospectKey}${source.extension}`;
   const prospectUrl = availableProspects.has(prospectFile)
     ? `/prospecte/${prospectFile}`
     : "";
@@ -389,13 +429,31 @@ for (const entry of TABEL) {
 
   const name = entry.name;
   const slug = slugify(name);
+  const brandSlug = brandMap[prospectKey] || "farmavet";
+
+  // descriere: rezumat + compoziție/indicații din prospect
+  const sec = sectionMap[prospectKey] || {};
+  let description = entry.desc;
+  const comp = clean(sec.comp);
+  const ind = clean(sec.ind);
+  if (comp.length > 30) description += `\n\nCompoziție: ${comp.slice(0, 420)}${comp.length > 420 ? "…" : ""}`;
+  if (ind.length > 30) description += `\n\nIndicații: ${ind.slice(0, 560)}${ind.length > 560 ? "…" : ""}`;
+
+  // imagine descărcată anterior se păstrează dacă fișierul există pe disc
+  const prev = previousImages.get(slug);
+  const hasDownloaded =
+    prev && typeof prev.image === "string" && prev.image.startsWith("/products/farmavet/") &&
+    downloadedFiles.some((f) => prev.image.endsWith(f));
+  const image = hasDownloaded ? prev.image : entry.img;
+
   products.push({
     id: String(nextId++),
+    brand_slug: brandSlug,
     name,
     slug,
     category: entry.cat,
-    description: entry.desc,
-    image: entry.img,
+    description,
+    image,
     labels: [...entry.sp],
     features: [],
     benefits: [],
@@ -403,7 +461,7 @@ for (const entry of TABEL) {
     variants: [],
     url: "",
     prospect: prospectUrl,
-    images: [{ url: entry.img, alt: name, role: "main" }],
+    images: [{ url: image, alt: name, role: "main" }],
     breadcrumbs: [entry.cat, name],
     product_type: "",
   });

@@ -2,6 +2,7 @@ import "server-only";
 
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import { farmavetBrandEntries } from "./farmavetBrands";
 import { veterinaryCategoryNames } from "./products";
 import type {
   FreshIngredient,
@@ -170,9 +171,16 @@ export function getProducts(): Product[] {
     const ecoNaturaProducts = readCatalog("econatura_products.json").map((product) =>
       normalizeProduct(product, "Eco Natura Pet", "eco-natura"),
     );
-    const farmavetProducts = readCatalog("farmavet_products.json").map((product) =>
-      normalizeProduct(product, "Farmavet", "farmavet"),
+    const farmavetBrands = new Map(
+      farmavetBrandEntries.map((entry) => [entry.slug, [entry.brand, entry.slug] as [ProductBrand, ProductBrandSlug]]),
     );
+    const farmavetProducts = readCatalog("farmavet_products.json").map((product) => {
+      const [brand, slug] = farmavetBrands.get(toStringValue(product.brand_slug) as ProductBrandSlug) ?? [
+        "Farmavet",
+        "farmavet",
+      ] as [ProductBrand, ProductBrandSlug];
+      return normalizeProduct(product, brand, slug);
+    });
     const ekopromProducts = readCatalog("ekoprom_products.json").map((product) => {
       const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
         "Neoterica Inspector",

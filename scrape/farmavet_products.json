@@ -2,14 +2,15 @@
   "brand": "Farmavet",
   "source": "SAIT FARMAVET 2026",
   "scraped_at": "2026-10-29",
-  "product_count": 125,
+  "product_count": 124,
   "products": [
     {
       "id": "400000",
+      "brand_slug": "farmavet",
       "name": "Tilozină 20% pulbere",
       "slug": "tilozina-20-pulbere",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic macrolidic pe bază de tilozină pentru bovine, ovine, porcine, câini, pisici și găini. Tratamentul infecțiilor respiratorii, genito-urinare și ale glandei mamare produse de bacterii sensibile la tilozină.",
+      "description": "Antibiotic macrolidic pe bază de tilozină pentru bovine, ovine, porcine, câini, pisici și găini. Tratamentul infecțiilor respiratorii, genito-urinare și ale glandei mamare produse de bacterii sensibile la tilozină.\n\nIndicații: În tratamentul infecţiilor aparatului respirator, genito – urinar şi a ugerului, produse de bacteriile menţionate sensibile la tilozină, la bovine, ovine, caprine, porcine, păsări, câini şi pisici; în tratamentul dizenteriei şi pneumoniei enzootice la porci, a leptospirozei la câini şi pisici. Bovine, ovine, caprine, suine, câini, pisici, găini adulte În tratamentul infecţiilor aparatului respirator, urogenital, otite, infecţii secundare, virale şi post-operatorii. În dizenteria şi pneumonia enz",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -41,11 +42,12 @@
     },
     {
       "id": "400001",
+      "brand_slug": "olkar",
       "name": "Amoxacilin — amoxicilină injectabilă",
       "slug": "amoxacilin-amoxicilina-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic cu amoxicilină pentru tratamentul la bovine, ovine, caprine, porcine, câini și pisici al bolilor tractului digestiv și respirator, ale sistemului urogenital, precum și a infecțiilor de plagă.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Antibiotic cu amoxicilină pentru tratamentul la bovine, ovine, caprine, porcine, câini și pisici al bolilor tractului digestiv și respirator, ale sistemului urogenital, precum și a infecțiilor de plagă.\n\nIndicații: Tratamentul la bovine, ovine, caprine, suine, câini și pisici a bolilor tractului digestiv, organelor respiratorii, sistemului urogenital, a bolilor cutanate și ale țesuturilor moi, precum și tratamentul animalelor cu septicemie, artrită și poliartrită, cauzate de microorganisme sensibile la amoxicilină.",
+      "image": "/products/farmavet/amoxacilin-amoxicilina-injectabila.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -62,7 +64,7 @@
       "prospect": "/prospecte/prospect-amoxacilin.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/amoxacilin-amoxicilina-injectabila.jpg",
           "alt": "Amoxacilin — amoxicilină injectabilă",
           "role": "main"
         }
@@ -75,11 +77,12 @@
     },
     {
       "id": "400002",
+      "brand_slug": "olkar",
       "name": "Biovit 80 — clortetraciclină 8% pulbere",
       "slug": "biovit-80-clortetraciclina-8-pulbere",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic pulbere pe bază de clortetraciclină pentru viței, purcei, animale de blană și păsări de curte. Tratament împotriva pasteurelozei, colibacteriozei, salmonelozei, listeriozei și infecțiilor respiratorii.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Antibiotic pulbere pe bază de clortetraciclină pentru viței, purcei, animale de blană și păsări de curte. Tratament împotriva pasteurelozei, colibacteriozei, salmonelozei, listeriozei și infecțiilor respiratorii.\n\nIndicații: Viței, purcei, animale de blană (iepuri, vidre, nutrii, nurci, vulpi, vulpi polare): tratamentul animalelor care suferă de pasteureloză, colibacterioză, salmoneloză, listerioză, leptospiroză, septicemie, gastrită, enterită, bronșită, pneumonie, pleuropneumonie, cauzate de microorganisme sensibile la clortetraciclină. Păsări de curte tinere (găini, curcani, gâște, rațe): tratamentul păsărilor de curte care suferă de pasteureloză, salmoneloză, colisepticemie, cauzate de microorganisme sensibile la",
+      "image": "/products/farmavet/biovit-80-clortetraciclina-8-pulbere.jpg",
       "labels": [
         "Bovine",
         "Porcine",
@@ -94,7 +97,7 @@
       "prospect": "/prospecte/prospect-biovit-80.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/biovit-80-clortetraciclina-8-pulbere.jpg",
           "alt": "Biovit 80 — clortetraciclină 8% pulbere",
           "role": "main"
         }
@@ -107,11 +110,12 @@
     },
     {
       "id": "400003",
+      "brand_slug": "olkar",
       "name": "Biținovet-5 — pulbere pentru suspensie injectabilă",
       "slug": "bitinovet-5-pulbere-pentru-suspensie-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic injectabil pentru câini și nurci. Tratamentul necrobacteriozei, pasteurelozei, pneumoniei, mastitei, metritei, otitei și infecțiilor de plagă cauzate de microorganisme sensibile.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Antibiotic injectabil pentru câini și nurci. Tratamentul necrobacteriozei, pasteurelozei, pneumoniei, mastitei, metritei, otitei și infecțiilor de plagă cauzate de microorganisme sensibile.\n\nCompoziție: Un flacon de medicament conține substanțe active, UI: Benzatină benzilpenicilină sterilă – 1 200 000 UI, Sare de benzilpenicilină novocaină sterilă – 300 000 UI.\n\nIndicații: Tratamentul nurcilor și câinilor care suferă de necrobacterioză, pasteureloză, pneumonie, mastită, metrită, infecție a plăgilor, otită, septicemie, flegmon; actinomicoză, cărbunele emfizematos; stahiobriotoxicoză, streptococoză, stafilococoză, stomatită infecțioasă, rinită, ciuma canină, precum și boli ale tractului urinar cauzate de microorganisme sensibile la benzilpenicilină.",
+      "image": "/products/farmavet/bitinovet-5-pulbere-pentru-suspensie-injectabila.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -124,7 +128,7 @@
       "prospect": "/prospecte/prospect-bitinovet-5.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/bitinovet-5-pulbere-pentru-suspensie-injectabila.jpg",
           "alt": "Biținovet-5 — pulbere pentru suspensie injectabilă",
           "role": "main"
         }
@@ -137,10 +141,11 @@
     },
     {
       "id": "400004",
+      "brand_slug": "hebei-vezong",
       "name": "Ceftiofur — suspensie injectabilă",
       "slug": "ceftiofur-suspensie-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic cefalosporinic injectabil pentru porcine și bovine. Tratamentul bolilor respiratorii bacteriene, metrită-magaliță-agalactie (MMA) și infecțiilor produse de bacterii sensibile la ceftiofur.",
+      "description": "Antibiotic cefalosporinic injectabil pentru porcine și bovine. Tratamentul bolilor respiratorii bacteriene, metrită-magaliță-agalactie (MMA) și infecțiilor produse de bacterii sensibile la ceftiofur.\n\nCompoziție: Ceftiofur (sub formă de Ceftiofur Clorhidrat)……50 mg Excipient până la ……………………………….…1 ml INDICAŢII: Infecţii asociate cu bacterii sensibile la ceftiofur: Porcine: În tratamentul bolilor respiratorii bacteriene asociate cu Pasteurella multocida, Actinobacillus pleuropneumoniae şi Streptococcus suis. Bovine: Pentru tratamentul bolilor respiratorii bacteriene asociate cu Mannheimia haemolytica, Pasteurella multocida şi…",
       "image": "/cards/porcine.jpeg",
       "labels": [
         "Porcine",
@@ -168,10 +173,11 @@
     },
     {
       "id": "400005",
+      "brand_slug": "farmavet",
       "name": "Colivetoprim — pulbere hidrosolubilă",
       "slug": "colivetoprim-pulbere-hidrosolubila",
       "category": "Antibacteriene și antifungice",
-      "description": "Asociație de sulfadimidină și trimetoprim pentru viței, miei, iezi, suine, iepuri și păsări. Tratamentul infecțiilor gastro-intestinale determinate de germeni sensibili.",
+      "description": "Asociație de sulfadimidină și trimetoprim pentru viței, miei, iezi, suine, iepuri și păsări. Tratamentul infecțiilor gastro-intestinale determinate de germeni sensibili.\n\nIndicații: Produsul se recomanda la viței, miei, iezi, suine, iepuri și păsări în tratamentul infecților gastro - intestinale determinate de germeni sensibili la colistin și trimetoprim.",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -202,10 +208,11 @@
     },
     {
       "id": "400006",
+      "brand_slug": "olkar",
       "name": "Enrofloxacină 10% soluție injectabilă",
       "slug": "enrofloxacina-10-solutie-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic injectabil cu enrofloxacină, spectru larg, pentru bovine, suine, păsări, câini și pisici. Infecții respiratorii, digestive, urogenitale și ale pielii cauzate de bacterii sensibile la fluoroquinolone.",
+      "description": "Antibiotic injectabil cu enrofloxacină, spectru larg, pentru bovine, suine, păsări, câini și pisici. Infecții respiratorii, digestive, urogenitale și ale pielii cauzate de bacterii sensibile la fluoroquinolone.\n\nIndicații: 4. CONTRAINDICAȚII Nu utilizați produsul în caz de rezistență la chinolone. Nu utilizați produsul în cazul tulburărilor de creștere ale cartilajelor și/sau în timpul lezării aparatului locomotor în special la nivelul articulațiilor suprasolicitate din punct de vedere funcțional sau datorită greutății corporale. Nu se utilizeaza în caz de hipersensibilitate la substanța activă sau la oricare dintre excipienți. Nu se va utiliza la animalele care sunt epileptice sau suferă de convulsii, deoarece en",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -237,11 +244,12 @@
     },
     {
       "id": "400007",
+      "brand_slug": "olkar",
       "name": "Farazin — pulbere orală",
       "slug": "farazin-pulbere-orala",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic pulbere pentru păsări (pui broiler, pui de găină și de curcan) în enterite, artrită infecțioasă, vibrioză și spirochetoză, precum și pentru alte specii de ferme.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Antibiotic pulbere pentru păsări (pui broiler, pui de găină și de curcan) în enterite, artrită infecțioasă, vibrioză și spirochetoză, precum și pentru alte specii de ferme.\n\nIndicații: Produsul se administrează la păsări ( pui broiler, pui de găină, pui de curcan) în enterite, artrita infecțioasă, vibrioză, spirochetoză, sinusită infecțioasă, sinovită, boli respiratorii cronice cauzate de microorganisme sensibile la tilozină. Porcine: tratamentul animalelor care suferă de dizenterie, enterite necrozante, gastroenterocolite cauzate de microorganisme sensibile la tilozină. Vițeii cu vârsta sub 3 luni: tratamentul animalelor cu enterită infecțioasă, bronhopneumonie, micoplasmoză,",
+      "image": "/products/farmavet/farazin-pulbere-orala.jpg",
       "labels": [
         "Păsări",
         "Bovine",
@@ -257,7 +265,7 @@
       "prospect": "/prospecte/prospect-farmazin.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/farazin-pulbere-orala.jpg",
           "alt": "Farazin — pulbere orală",
           "role": "main"
         }
@@ -270,11 +278,12 @@
     },
     {
       "id": "400008",
+      "brand_slug": "olkar",
       "name": "Funghibak-IAM — unguent antimicotic",
       "slug": "funghibak-iam-unguent-antimicotic",
       "category": "Antibacteriene și antifungice",
-      "description": "Unguent antimicotic de uz extern pentru tratamentul complex la bovine, cabaline, caprine, porcine, câini și pisici: microsporidioză, trihofitie, dermatofitoză și leziuni ale pielii.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Unguent antimicotic de uz extern pentru tratamentul complex la bovine, cabaline, caprine, porcine, câini și pisici: microsporidioză, trihofitie, dermatofitoză și leziuni ale pielii.\n\nIndicații: Extern, în tratamentul complex la bovine, cabaline, caprine, porcine, câini și pisici, în microsporidioză, trihofitie, dermatofiloză, leziuni ale copitelor în necrobacterioze la animale domestice, pododermatita ulcerativă, miozite, eczeme, ulcere, miozite reumatice, dermatite și dermatoze. 4. CONTRAINDICAȚII Nu se aplică în cazul animalelor cu sensibilitate individuală crescută (alergie) la medicament, slabe și subnutrite.",
+      "image": "/products/farmavet/funghibak-iam-unguent-antimicotic.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -292,7 +301,7 @@
       "prospect": "/prospecte/prospect-funghibak-iam.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/funghibak-iam-unguent-antimicotic.jpg",
           "alt": "Funghibak-IAM — unguent antimicotic",
           "role": "main"
         }
@@ -305,10 +314,11 @@
     },
     {
       "id": "400009",
+      "brand_slug": "olkar",
       "name": "Metronidazol 25% pulbere",
       "slug": "metronidazol-25-pulbere",
       "category": "Antibacteriene și antifungice",
-      "description": "Preparat antimicrobian și antiprotozoaric pe bază de metronidazol pentru câini, pisici și nurci. Tratamentul diareei provocate de Campylobacter, lambliazei, amoebiazei, giardiozei și gingivitelor ulcerative.",
+      "description": "Preparat antimicrobian și antiprotozoaric pe bază de metronidazol pentru câini, pisici și nurci. Tratamentul diareei provocate de Campylobacter, lambliazei, amoebiazei, giardiozei și gingivitelor ulcerative.\n\nIndicații: La câini, pisici și nurci în tratamentul diareei provocate de Campylobacter spp., gingivitei ulcerative, lambliazei, amoebiazei, giardiozei, tricomoniazei, infecțiilor anaerobe.",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini",
@@ -335,11 +345,12 @@
     },
     {
       "id": "400010",
+      "brand_slug": "olkar",
       "name": "Nifulin MOF — pulbere orală",
       "slug": "nifulin-mof-pulbere-orala",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic intestinal pe bază de nifuruxazim pentru câini, pisici, animale de blană și porumbei decorativi. Boli ale tractului digestiv și prevenirea complicațiilor postoperatorii.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Antibiotic intestinal pe bază de nifuruxazim pentru câini, pisici, animale de blană și porumbei decorativi. Boli ale tractului digestiv și prevenirea complicațiilor postoperatorii.\n\nIndicații: Cîini, pisici: tratamentul animalelor cu boli ale tractului digestiv și prevenirea complicațiilor chirurgicale cauzate de microorganisme sensibile la componentele medicamentului. Animale de blană ( nurcă, vulpe arctică): tratamentul animalelor cu eimerioză (coccidioză), precum și cu boli ale tractului digestiv cauzate de microorganisme sensibile la componentele medicamentului. Porumbei decorativi: tratamentul păsărilor cu histomonoză, eimerioză (coccidioză), salmoneloză, trichomonoză cauzată de",
+      "image": "/products/farmavet/nifulin-mof-pulbere-orala.jpg",
       "labels": [
         "Câini",
         "Pisici",
@@ -353,7 +364,7 @@
       "prospect": "/prospecte/prospect-nifulin.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/nifulin-mof-pulbere-orala.jpg",
           "alt": "Nifulin MOF — pulbere orală",
           "role": "main"
         }
@@ -366,10 +377,11 @@
     },
     {
       "id": "400011",
+      "brand_slug": "olkar",
       "name": "Noredon C — florfenicol comprimate pentru păsări",
       "slug": "noredon-c-florfenicol-comprimate-pentru-pasari",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic cu florfenicol sub formă de comprimate pentru păsări (găini, broiler, curcani). Tratamentul și profilaxia infecțiilor bacteriene din efectivele cu diagnostic confirmat.",
+      "description": "Antibiotic cu florfenicol sub formă de comprimate pentru păsări (găini, broiler, curcani). Tratamentul și profilaxia infecțiilor bacteriene din efectivele cu diagnostic confirmat.\n\nIndicații: 4. CONTRAINDICAȚII A nu se administra la animalele cu hipersensibilitate la florfenicol sau la oricare dintre excipienţi. Nu se utilizează în caz de rezistenţă cunoscută la florfenicol. 5. REACȚII ADVERSE Cele mai des observate reacţii adverse sunt diareea, inflamaţia perianală şi prolapsul rectal. Aceste efecte sunt tranzitorii şi dispar după întreruperea tratamentului.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -395,10 +407,11 @@
     },
     {
       "id": "400012",
+      "brand_slug": "olkar",
       "name": "Norflox 10% soluție orală",
       "slug": "norflox-10-solutie-orala",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic cu norfloxacină pentru păsările de curte (pui, curcani, gâște, rațe). Tratamentul rinitei infecțioase, enteritei necrozante, colibacilozei și pasteurelozei.",
+      "description": "Antibiotic cu norfloxacină pentru păsările de curte (pui, curcani, gâște, rațe). Tratamentul rinitei infecțioase, enteritei necrozante, colibacilozei și pasteurelozei.\n\nIndicații: Tratamentul păsărilor bolnave cu rinită infecțioasă aviară, enterită necrozantă, stafilococoză, streptococoză, colibaciloză, pasteureloză, salmoneloză, colibaciloză, infecții cu colibacilare, campilobacterioză, ), coriză infecţioasă aviară, pseudomonoză, micoplasmoză și alte boli, sensibile la enrofloxacină.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -424,11 +437,12 @@
     },
     {
       "id": "400013",
+      "brand_slug": "olkar",
       "name": "Peniprok — penicilină injectabilă",
       "slug": "peniprok-penicilina-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic pe bază de procaină-penicilină și benzatin-penicilină pentru bovine, porcine, câini și pisici. Omfalite, artrite, mastite, septicemii și infecții ale plagilor.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Antibiotic pe bază de procaină-penicilină și benzatin-penicilină pentru bovine, porcine, câini și pisici. Omfalite, artrite, mastite, septicemii și infecții ale plagilor.\n\nIndicații: În tratamentul la bovine, porcine, câini și pisici în omfalite, artrite, mastite, septicemie și infecții secundare, precum în afecțiuni ale căilor respiratorii și ale tractului urinar cauzate de microorganisme sensibile la penicilină și dihidrostreptomicină: Campylobacter spp., Clostridium spp., Corynebacterium spp., E. colt, Erysipelothrix spp., Haemophilus spp., Klebsiella spp., Listeria spp., Pasteurella spp, Salmonella spp., Staphylococcus Spp. și StreploeoCcus spp..",
+      "image": "/products/farmavet/peniprok-penicilina-injectabila.jpg",
       "labels": [
         "Bovine",
         "Porcine",
@@ -444,7 +458,7 @@
       "prospect": "/prospecte/prospect-peniprok.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/peniprok-penicilina-injectabila.jpg",
           "alt": "Peniprok — penicilină injectabilă",
           "role": "main"
         }
@@ -457,11 +471,12 @@
     },
     {
       "id": "400014",
+      "brand_slug": "olkar",
       "name": "Trimeroxin — pulbere orală",
       "slug": "trimeroxin-pulbere-orala",
       "category": "Antibacteriene și antifungice",
-      "description": "Asociation antibacteriană (sulfamidă + trimetoprim) pentru viței, ovine, caprine, porcine, câini și pisici. Infecții ale sistemului respirator și digestiv sensibile la sulfamide.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Asociation antibacteriană (sulfamidă + trimetoprim) pentru viței, ovine, caprine, porcine, câini și pisici. Infecții ale sistemului respirator și digestiv sensibile la sulfamide.\n\nIndicații: Tratamentul vițeilor (până la vârsta de 3 luni), ovinelor, caprinelor, porcinelor, câinilor și pisicilor pentru bolile sistemului respirator, ale tractului digestiv și ale sistemului genito-urinar cauzate de microorganisme sensibile la trimetoprim și sulfadimetoxină. Bovine: tratamentul diareei, bronhopneumoniei catarale, eimerozei, colisepticemiei, salmonelozei, pasteurelozei, pneumoniei, abceselor stafilococice cauzate de microorganisme sensibile la trimetoprim și sulfadimetoxină. Ovine, capri",
+      "image": "/products/farmavet/trimeroxin-pulbere-orala.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -478,7 +493,7 @@
       "prospect": "/prospecte/prospect-trimeroxin.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/trimeroxin-pulbere-orala.jpg",
           "alt": "Trimeroxin — pulbere orală",
           "role": "main"
         }
@@ -491,10 +506,11 @@
     },
     {
       "id": "400015",
+      "brand_slug": "biofarm",
       "name": "Trimicozin — soluție orală pentru păsări",
       "slug": "trimicozin-solutie-orala-pentru-pasari",
       "category": "Antibacteriene și antifungice",
-      "description": "Soluție orală cu enrofloxacină și tilozină pentru păsări. Tratamentul bolilor infecțioase cauzate de microflora bacteriană sensibilă.",
+      "description": "Soluție orală cu enrofloxacină și tilozină pentru păsări. Tratamentul bolilor infecțioase cauzate de microflora bacteriană sensibilă.\n\nIndicații: Medicamentul este indicat pentru tratarea bolilor infecțioase ale păsărilor cauzate de microflora bacteriană sensibilă la enrofloxacină, tilmicosin și trimetoprim: micoplasmoză, coliinfecție, salmoneloză, enterită necrozantă, streptococoză, etc.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -520,10 +536,11 @@
     },
     {
       "id": "400016",
+      "brand_slug": "vetsintez",
       "name": "Bromodox — soluție injectabilă",
       "slug": "bromodox-solutie-injectabila",
       "category": "Antibacteriene și antifungice",
-      "description": "Antibiotic injectabil cu doxiciclină pentru bovine, ovine, caprine și porcine. Bronhopneumonii, pneumonii, pneumonia enzootică și alte infecții sensibile la tetracicline.",
+      "description": "Antibiotic injectabil cu doxiciclină pentru bovine, ovine, caprine și porcine. Bronhopneumonii, pneumonii, pneumonia enzootică și alte infecții sensibile la tetracicline.\n\nCompoziție: 1 ml de preparat conține, mg: Doxiciclină hiclat - 200; Clorhidrat de bromhexină - 5. Excipienți: 1,2-propilen glicol, apă pentru injecții.\n\nIndicații: Tratamentul bovinelor, ovinelor, caprinelor și porcinelor în infecții ale sistemului respirator (bronhopneumonie, pneumonie, pneumonia enzootică a porcinelor, rinita atrofică etc.), ale tractului digestiv (colibaciloză, salmoneloză), precum și în cheratoconjunctivită, pododermatită, stafilococoză, erizipel (rujet), chlamidioză, plăgi contaminate, artrită și alte boli cauzate de microorganisme sensibile la doxiciclină.",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -552,10 +569,11 @@
     },
     {
       "id": "400017",
+      "brand_slug": "olkar",
       "name": "Analghin 50% soluție injectabilă",
       "slug": "analghin-50-solutie-injectabila",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Analgezic și antipiretic pe bază de metamizolă pentru reducerea durerilor de diverse origini, colici, afecțiuni ale mușchilor și articulațiilor la cabaline, bovine, câini și pisici.",
+      "description": "Analgezic și antipiretic pe bază de metamizolă pentru reducerea durerilor de diverse origini, colici, afecțiuni ale mușchilor și articulațiilor la cabaline, bovine, câini și pisici.\n\nIndicații: Tratamentul cîinilor cu afecțiuni ale mușchilor și articulațiilor, pentru reducerea durerilor de diverse origini, în special în afecțiunile tractului digestiv, ca tratament simptomatic în stări de febră. Medicamentul este utilizat în procesul de extracție a obiectelor străine din faringe și esofag la cîini.",
       "image": "/hero/horse.webp",
       "labels": [
         "Bovine",
@@ -584,11 +602,12 @@
     },
     {
       "id": "400018",
+      "brand_slug": "olkar",
       "name": "Ketoline — soluție injectabilă",
       "slug": "ketoline-solutie-injectabila",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Antiinflamator nesteroidian cu ketoprofen pentru bovine, cabaline și porcine. Mastită și edem mamar, infecții respiratorii, procese inflamatorii ale aparatului locomotor, laminită.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Antiinflamator nesteroidian cu ketoprofen pentru bovine, cabaline și porcine. Mastită și edem mamar, infecții respiratorii, procese inflamatorii ale aparatului locomotor, laminită.\n\nIndicații: Bovine ca antiinflamator, analgezic și antipiretic pentru tratamentul: - mastită, edem mamar; - infecție respiratorie; - procese inflamatorii în sistemul musculo-scheletic (artrită, șchiopătare); - distonie, pentru a facilita perioada postpartum. Cabaline ca antiinflamator, analgezic și antipiretic pentru tratamentul: - artrită, artroză - șchiopătarea de origine traumatică; - leziuni articulare (entorse, sinovite); - tendinite, bursite; - miozite; - fracturi osoase; - procese inflamatorii după o",
+      "image": "/products/farmavet/ketoline-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -603,7 +622,7 @@
       "prospect": "/prospecte/prospect-ketoline.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/ketoline-solutie-injectabila.jpg",
           "alt": "Ketoline — soluție injectabilă",
           "role": "main"
         }
@@ -616,11 +635,12 @@
     },
     {
       "id": "400019",
+      "brand_slug": "ruvera",
       "name": "Ecomint — unguent antiinflamator",
       "slug": "ecomint-unguent-antiinflamator",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Unguent antiinflamator și analgezic de uz veterinar pentru toate speciile. Inflamații puternice și dureri, mastite, leziuni musculare și tendinoase, contuzii, mușcături de insecte.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Unguent antiinflamator și analgezic de uz veterinar pentru toate speciile. Inflamații puternice și dureri, mastite, leziuni musculare și tendinoase, contuzii, mușcături de insecte.\n\nCompoziție: Indicaţii: Se recomandã ca mãsurã terapeuticã suplimentarã în inflamaţii puternice, şi dureri; în caz de mastite, leziuni musculare, ale tendoanelor, cutanate (contuzii, tumefacţii, edeme) precum şi pentru a îmbunãtãţi procesele fiziologice locale. Stimuleazã regenerarea tisularã. Este eficient şi în cazul muşcãturilor de insecte.",
+      "image": "/products/farmavet/ecomint-unguent-antiinflamator.jpg",
       "labels": [
         "Toate speciile"
       ],
@@ -632,7 +652,7 @@
       "prospect": "/prospecte/unguent-ecomint.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/ecomint-unguent-antiinflamator.jpg",
           "alt": "Ecomint — unguent antiinflamator",
           "role": "main"
         }
@@ -641,15 +661,17 @@
         "Antiinflamatoare și analgezice",
         "Ecomint — unguent antiinflamator"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.vetexpert.ro/medicamente-veterinare/antiinflamatorii-uz-extern/antiinflamatorii-uz-extern-c133/ecomint-p1098.html"
     },
     {
       "id": "400020",
+      "brand_slug": "ruvera",
       "name": "Green Plus — liniment pentru articulații",
       "slug": "green-plus-liniment-pentru-articulatii",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Liniment verde topic cu mentol, eucalipt și camfor pentru tratarea rapidă a durerilor din afecțiuni inflamatorii ale articulațiilor, mușchilor, ligamentelor și tendoanelor; și în mastite.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Liniment verde topic cu mentol, eucalipt și camfor pentru tratarea rapidă a durerilor din afecțiuni inflamatorii ale articulațiilor, mușchilor, ligamentelor și tendoanelor; și în mastite.\n\nCompoziție: Green plus este de neînlocuit în tratarea rapidă și eficientă a durerii produse de afecțiuni inflamatorii ale articulațiilor (entorse), mușchilor, ligamentelor și tendoanelor. Se recomandă în caz de artrite, bursite, tenosinovite, edeme tisulare, inflamații acute ( mastite) și în alte tipuri de afecțiuni ( reumatism). Principiul de acțiune al acestui produs se bazează pe proprietățile ingredienților și anume: acțiune…",
+      "image": "/products/farmavet/green-plus-liniment-pentru-articulatii.jpg",
       "labels": [
         "Bovine",
         "Cabaline"
@@ -662,7 +684,7 @@
       "prospect": "/prospecte/unguent-gren-plus.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/green-plus-liniment-pentru-articulatii.jpg",
           "alt": "Green Plus — liniment pentru articulații",
           "role": "main"
         }
@@ -671,15 +693,17 @@
         "Antiinflamatoare și analgezice",
         "Green Plus — liniment pentru articulații"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://ruvera.lt/produktai/zalias-plius-linimentas-180ml-500ml-1l/"
     },
     {
       "id": "400021",
+      "brand_slug": "ruvera",
       "name": "Therma Vet Cream — cremă de masaj",
       "slug": "therma-vet-cream-crema-de-masaj",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Cremă cu acțiune dublă (răcire urmată de încălzire) pe bază de capsaicin, salicilat de metil și mentol. Reduce stresul muscular și durerea după efort; leziuni ale tendoanelor și ligamentelor.",
-      "image": "/hero/horse.webp",
+      "description": "Cremă cu acțiune dublă (răcire urmată de încălzire) pe bază de capsaicin, salicilat de metil și mentol. Reduce stresul muscular și durerea după efort; leziuni ale tendoanelor și ligamentelor.\n\nCompoziție: Păstrare: A se păstra ermetic închis într-un loc uscat ferit de lumină directă a soarelui la o temperatură de +2+250 C. A nu se lăsa la îndemâna copiilor! Nu utilizați dacă animalul este alergic la ingredientele cremei. PRODUCĂTOR: RUVERA UAB, strada Pakruojo. 10, LT-76126 Šiauliai, Lituania, voi. +370 41 596076, +370 41 598124, export@inobio.com, www.inobio.com IMPORTATOR: S.A. Farmavet, Rep. Moldova, Chisinau 2059,…",
+      "image": "/products/farmavet/therma-vet-cream-crema-de-masaj.jpg",
       "labels": [
         "Cabaline",
         "Câini"
@@ -692,7 +716,7 @@
       "prospect": "/prospecte/unguent-therma.docx",
       "images": [
         {
-          "url": "/hero/horse.webp",
+          "url": "/products/farmavet/therma-vet-cream-crema-de-masaj.jpg",
           "alt": "Therma Vet Cream — cremă de masaj",
           "role": "main"
         }
@@ -705,11 +729,12 @@
     },
     {
       "id": "400022",
+      "brand_slug": "veyx-pharma",
       "name": "Veyxat Gel — gel contra durerilor",
       "slug": "veyxat-gel-gel-contra-durerilor",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Gel cu camfor și salicilat de metil pentru durerile asociate cu artrite, miozite și tendinite, abcese, hematoame și mastite. Îmbunătățește circulația locală și grăbește rezorbția proceselor inflamatorii.",
-      "image": "/hero/horse.webp",
+      "description": "Gel cu camfor și salicilat de metil pentru durerile asociate cu artrite, miozite și tendinite, abcese, hematoame și mastite. Îmbunătățește circulația locală și grăbește rezorbția proceselor inflamatorii.\n\nCompoziție: INDICATIIPentru dureri asociate cu artrite, miozite, tendinite asociate cu sensibilitate crescută, abcese, panaritiu, hematoame rezultate în urma lovirii cu diferite obiecte, în mastite. DESCRIEREPrin aplicarea VEYXAT GEL se poate diminua rapid durerea. Îmbunătăţind circulaţia sangvină locală creşte absorbţia produselor inflamatorii, astfel procesul inflamator se va desfăşura mai rapid.VEYXAT GEL are efect în blocare…\n\nIndicații: DESCRIEREPrin aplicarea VEYXAT GEL se poate diminua rapid durerea. Îmbunătăţind circulaţia sangvină locală creşte absorbţia produselor inflamatorii, astfel procesul inflamator se va desfăşura mai rapid.VEYXAT GEL are efect în blocarea proceselor inflamatorii, este germicid şi calmant al inflamaţiilor, astfel el putându-se aplica în procesele inflamatorii ale aparatului locomotor, în abcese, precum şi pentru tratamentul de panaritiu.În cazul formelor uşoare de mastite aplicarea de VEYXAT GEL de m",
+      "image": "/products/farmavet/veyxat-gel-gel-contra-durerilor.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -723,7 +748,7 @@
       "prospect": "/prospecte/unguent-viexat.docx",
       "images": [
         {
-          "url": "/hero/horse.webp",
+          "url": "/products/farmavet/veyxat-gel-gel-contra-durerilor.jpg",
           "alt": "Veyxat Gel — gel contra durerilor",
           "role": "main"
         }
@@ -732,15 +757,17 @@
         "Antiinflamatoare și analgezice",
         "Veyxat Gel — gel contra durerilor"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vet.md/medicamente/unguent-veyxat-gel-100g.html"
     },
     {
       "id": "400023",
+      "brand_slug": "ruvera",
       "name": "EcoCamfora — unguent de masaj 100 g",
       "slug": "ecocamfora-unguent-de-masaj-100-g",
       "category": "Antiinflamatoare și analgezice",
-      "description": "Unguent suplimentar cu camfor pentru bovine, cabaline, câini și pisici. Inflamații ale glandei mamare (aplicat după muls cu masaj ușor), răni, zgârieturi, luxații, contuzii și inflamații articulare.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Unguent suplimentar cu camfor pentru bovine, cabaline, câini și pisici. Inflamații ale glandei mamare (aplicat după muls cu masaj ușor), răni, zgârieturi, luxații, contuzii și inflamații articulare.\n\nIndicații: Ecocamfora este un ajutor suplimentar, deosebit pentru bovine, cabaline, câini și pisici. Este indicat în inflamații ale glandei mamare, răni, zgîrîeturi, luxații, afecțiuni ale țesuturilor moi, inflamații ale articulațiilor, contuzii și alte afecțiuni.",
+      "image": "/products/farmavet/ecocamfora-unguent-de-masaj-100-g.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -755,7 +782,7 @@
       "prospect": "/prospecte/unguent-ecocamfora.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/ecocamfora-unguent-de-masaj-100-g.jpg",
           "alt": "EcoCamfora — unguent de masaj 100 g",
           "role": "main"
         }
@@ -768,6 +795,7 @@
     },
     {
       "id": "400024",
+      "brand_slug": "ruvera",
       "name": "AloeGel — gel cu aloe vera și castan",
       "slug": "aloegel-gel-cu-aloe-vera-si-castan",
       "category": "Antiinflamatoare și analgezice",
@@ -797,11 +825,12 @@
     },
     {
       "id": "400025",
+      "brand_slug": "farmavet",
       "name": "AdTab — tablete antiparazitare pentru câini",
       "slug": "adtab-tablete-antiparazitare-pentru-ciini",
       "category": "Antiparazitare interne și externe",
-      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la câini. Eliminare imediată și protecție care durează până la 8 săptămâni.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la câini. Eliminare imediată și protecție care durează până la 8 săptămâni.\n\nCompoziție: Fiecare comprimat masticabil conține: AdTab comprimate masticabile lotilaner (mg) pentru câini (1,3–2,5 kg) 56,25 pentru câini (>2,5–5,5 kg) 112,5 pentru câini (>5,5–11 kg) 225 pentru câini (>11–22 kg) 450 pentru câini (>22–45 kg) 900 Comprimate masticabile rotunde, de culoare alb-bej, cu puncte maronii.\n\nIndicații: Tratamentul infestării cu purici și căpușe la câini. Produsul medicinal veterinar are activitate de eliminare imediată și persistentă până la o lună pentru purici (Ctenocephalides felis și C. canis) și căpușe (Rhipicephalus sanguineus, Ixodes ricinus, I. hexagonus și Dermacentor reticulatus). Puricii și căpușele trebuie să se fixeze de gazdă și să înceapă să se hrănească pentru a se expune la substanța activă.",
+      "image": "/products/farmavet/adtab-tablete-antiparazitare-pentru-ciini.jpg",
       "labels": [
         "Câini"
       ],
@@ -813,7 +842,7 @@
       "prospect": "/prospecte/prospect-adtab-caini.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/adtab-tablete-antiparazitare-pentru-ciini.jpg",
           "alt": "AdTab — tablete antiparazitare pentru câini",
           "role": "main"
         }
@@ -822,14 +851,16 @@
         "Antiparazitare interne și externe",
         "AdTab — tablete antiparazitare pentru câini"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.happypets.ro/cumpara/adtab-caine-1-tableta-antiparazitara-2018"
     },
     {
       "id": "400026",
+      "brand_slug": "farmavet",
       "name": "AdTab — tablete antiparazitare pentru pisici",
       "slug": "adtab-tablete-antiparazitare-pentru-pisici",
       "category": "Antiparazitare interne și externe",
-      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la pisici. Eliminare imediată și protecție de lungă durată.",
+      "description": "Tablete cu lotilaner pentru tratamentul infestării cu purici și căpușe la pisici. Eliminare imediată și protecție de lungă durată.\n\nCompoziție: Fiecare comprimat masticabil conține: AdTab comprimate masticabile: lotilaner (mg) pentru pisici (0,5–2,0 kg) 12 pentru pisici (>2–8,0 kg) 48 Comprimate masticabile rotunde, de culoare alb-maro, cu puncte maronii.\n\nIndicații: Pentru tratamentul infestării cu purici și căpușe la pisici. Produsul medicinal veterinar are activitate de eliminare imediată și persistentă până la o lună împotriva puricilor (Ctenocephalides felis și C. canis) și a căpușelor (Ixodes ricinus). Puricii și căpușele trebuie să se fixeze de gazdă și să înceapă să se hrănească pentru a se expune la substanța activă.",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Pisici"
@@ -855,11 +886,12 @@
     },
     {
       "id": "400027",
+      "brand_slug": "aveflor",
       "name": "Arpalit Neo — spray ectoparazitar",
       "slug": "arpalit-neo-spray-ectoparazitar",
       "category": "Antiparazitare interne și externe",
-      "description": "Soluție ectoparazitară sub formă de spray pentru animalele nealimentare. Acționează împotriva puricilor, căpușelor, păduchilor și altor ectoparaziți.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Soluție ectoparazitară sub formă de spray pentru animalele nealimentare. Acționează împotriva puricilor, căpușelor, păduchilor și altor ectoparaziți.\n\nIndicații: Tratamentul ectoparazitozelor la animalele nealimentare. Produsul acționează împotriva puricilor (Ctenocephalides spp.), căpușelor (Ixodes spp., Dermacentor spp., Haemaphysalis spp.), păduchilor (Linognathus setosus, Haematopinus spp.), păduchilor malofagi (Trichodectes canis, Mallophaga spp), acarienilor (Acari spp.) și a stadiilor de dezvoltare ale acestora. Produsul poate fi utilizat pentru dezinfectarea adăposturilor pentru animale.",
+      "image": "/products/farmavet/arpalit-neo-spray-ectoparazitar.png",
       "labels": [
         "Câini",
         "Pisici",
@@ -874,7 +906,7 @@
       "prospect": "/prospecte/prospect-arpalit-neo.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/arpalit-neo-spray-ectoparazitar.png",
           "alt": "Arpalit Neo — spray ectoparazitar",
           "role": "main"
         }
@@ -883,14 +915,16 @@
         "Antiparazitare interne și externe",
         "Arpalit Neo — spray ectoparazitar"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.arpalit.cz/en/product/arpalit-neo-spray"
     },
     {
       "id": "400028",
+      "brand_slug": "bavet",
       "name": "Ba-Tick — soluție ectoparaziticidă pour-on",
       "slug": "ba-tick-solutie-ectoparaziticida-pour-on",
       "category": "Antiparazitare interne și externe",
-      "description": "Soluție ectoparaziticidă pour-on pentru bovine. Combaterea căpușelor (Rhipicephalus, Hyalomma, Dermacentor), păduchilor, potrvaelurilor și miazelor.",
+      "description": "Soluție ectoparaziticidă pour-on pentru bovine. Combaterea căpușelor (Rhipicephalus, Hyalomma, Dermacentor), păduchilor, potrvaelurilor și miazelor.\n\nIndicații: Speciile ectoparazitare sensibile sunt căpușele: Amblyomma sp., Boophilus sp., Hyalomma sp., Rhipicephalus sp., Ixodes ricinus, Dermacentor sp. Scabie: Psoroptes sp. Soluția pour-on Ba-tick este utilizată pentru tratamentul scabiei cauzate de Demodex canis la câini.",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -918,10 +952,11 @@
     },
     {
       "id": "400029",
+      "brand_slug": "msd",
       "name": "Bravecto — tablete masticabile pentru câini",
       "slug": "bravecto-tablete-masticabile-pentru-ciini",
       "category": "Antiparazitare interne și externe",
-      "description": "Insecticid și acaricid sistemic pentru tratarea infestațiilor cu căpușe și purici la câini. Protecție de până la 12 săptămâni după o singură doză.",
+      "description": "Insecticid și acaricid sistemic pentru tratarea infestațiilor cu căpușe și purici la câini. Protecție de până la 12 săptămâni după o singură doză.\n\nCompoziție: Fiecare comprimat masticabil conţine: Bravecto tabletă masticabilă Fluralaner (mg) Pentru câini de talie foarte mică (2 - 4,5 kg) 112,5 Pentru câini de talie mică (>4,5 - 10 kg) 250 Pentru câini de talie medie (>10 - 20 kg) 500 Pentru câini de talie mare (>20 - 40 kg) 1000 Pentru câini de talie foarte mare (>40 - 56 kg) 1400 Comprimate cu diferite nuanțe de maro cu suprafață neteda sau ușor rugoasă și formă circulară…\n\nIndicații: Pentru tratamentul infestațiilor cu căpuşe şi purici la câini. Acest produs medicinal veterinar este un insecticid sistemic şi acaricid care oferă: activitatea de omorâre imediată şi persistentă pentru purici (Ctenocephalides felis) timp de 12 săptămâni, activitatea de omorâre imediată şi persistentă pentru căpuşe timp de 12 săptămâni pentru Ixodes ricinus, Dermacentor reticulatus şi D. variabilis activitatea de omorâre imediată şi persistentă pentru căpuşe timp de 8 săptămâni pentru Rhiphicepha",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini"
@@ -947,10 +982,11 @@
     },
     {
       "id": "400030",
+      "brand_slug": "msd",
       "name": "Bravecto — suspensie injectabilă pentru câini",
       "slug": "bravecto-suspensie-injectabila-pentru-ciini",
       "category": "Antiparazitare interne și externe",
-      "description": "Bravecto 150 mg/ml, pulbere și solvent pentru suspensie injectabilă. Tratamentul infestațiilor cu căpușe și purici la câini, protecție de până la 6 luni.",
+      "description": "Bravecto 150 mg/ml, pulbere și solvent pentru suspensie injectabilă. Tratamentul infestațiilor cu căpușe și purici la câini, protecție de până la 6 luni.\n\nCompoziție: Flacon cu pulbere: Flacon cu solvent: Suspensie reconstituită: Fiecare flacon conține: Substanță activă: Fluralaner 2,51 g Fiecare ml conține: Excipienți: Alcool benzilic - 22,3 mg Fiecare ml conține: Substanță activă: Fluralaner 150 mg Excipients: Benzyl alcohol 20 mg Pulbere albă până la galben pal Soluție clară până la opacă. Suspensie ușor vâscoasă, opacă albă până la galben pal.\n\nIndicații: Pentru tratamentul infestațiilor cu căpușe și purici la câini. Acest produs medicinal veterinar este un insecticid și acaricid sistemic care asigură: - activitate imediată și persistentă de ucidere a puricilor (Ctenocephalides felis și Ctenocephalides canis) timp de 12 luni - activitate persistentă de ucidere a căpușelor de la 3 zile până la 12 luni după tratament pentru Ixodes ricinus, Ixodes hexagonus și Dermacentor reticulatus, - activitate persistentă de ucidere a căpușelor din ziua 4 timp d",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini"
@@ -976,10 +1012,11 @@
     },
     {
       "id": "400031",
+      "brand_slug": "msd",
       "name": "Bravecto — soluție spot-on pentru pisici",
       "slug": "bravecto-solutie-spot-on-pentru-pisici",
       "category": "Antiparazitare interne și externe",
-      "description": "Bravecto 112,5 mg soluție spot-on pentru pisici (1,2–2,8 kg). Tratamentul infestațiilor cu căpușe și purici.",
+      "description": "Bravecto 112,5 mg soluție spot-on pentru pisici (1,2–2,8 kg). Tratamentul infestațiilor cu căpușe și purici.\n\nCompoziție: Fiecare ml conține 280 mg fluralaner. Fiecare pipetă furnizează: Greutate corporală a pisicii Pipeta conține (ml) Fluralaner (mg) pentru pisici mici 1,2 - 2,8 kg 0,4 112,5 pentru pisici de talie medie > 2,8 – 6,25 kg 0,89 250 Soluție limpede, incoloră până la galben.\n\nIndicații: Pentru tratamentul infestațiilor cu căpuşe şi purici la pisici. Acest produs medicinal veterinar este un insecticid şi acaricid sistemic care oferă activitatea de omorâre imediată şi persistentă pentru purici (Ctenocephalides felis) si căpuşe (I. Ricinus) timp de 12 săptămâni. Puricii şi căpuşele trebuie să fie ataşate la gazdă şi să se hrănească cu scopul de a fi expuse la substanţa activă. Produsul medicinal veterinar se poate utiliza ca parte a strategiei de tratament pentru controlul dermati",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Pisici"
@@ -1005,11 +1042,12 @@
     },
     {
       "id": "400032",
+      "brand_slug": "olkar",
       "name": "Burdi fipro — spray insecto-acaricid",
       "slug": "burdi-fipro-spray-insecto-acaricid",
       "category": "Antiparazitare interne și externe",
       "description": "Spray cu fipronil pentru prevenirea și tratamentul ectoparaziților la câini și pisici: purici, păduchi, malofage, căpușe.",
-      "image": "/cards/animale decomponie.jpeg",
+      "image": "/products/farmavet/burdi-fipro-spray-insecto-acaricid.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1022,7 +1060,7 @@
       "prospect": "/prospecte/prospect-burdi-spray.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/burdi-fipro-spray-insecto-acaricid.jpg",
           "alt": "Burdi fipro — spray insecto-acaricid",
           "role": "main"
         }
@@ -1035,11 +1073,12 @@
     },
     {
       "id": "400033",
+      "brand_slug": "olkar",
       "name": "Albendazol 10% suspensie orală",
       "slug": "albendazol-10-suspensie-orala",
       "category": "Antiparazitare interne și externe",
-      "description": "Suspensie anthelmintică pentru bovine, ovine și caprine. Deparazitarea nematodelor gastro-intestinale și pulmonare, cestodozelor și trematozelor.",
-      "image": "/cards/ovine.jpeg",
+      "description": "Suspensie anthelmintică pentru bovine, ovine și caprine. Deparazitarea nematodelor gastro-intestinale și pulmonare, cestodozelor și trematozelor.\n\nIndicații: Deparazitarea bovinelor, ovinelor și caprinelor de nematode gastrointestinale și pulmonare, cestodoze și trematode: Bovine, ovine, caprine: - nematode pulmonare și gastrointestinale - haemonhuses (Haemonchus placei, H. contortus), nematode (Nematodirus filicollis, N. spathiger), habertioză (Chabertia ovina), bunostomoză (Bunostomum trigonocephalum, B.phlebotom vengo), (Oesophagostomum columbianum, O. radiatum, O. venulosum), trichuroza (Trichuris ovis, T. skrjabini), strongiloidoză (Strongyloide",
+      "image": "/products/farmavet/albendazol-10-suspensie-orala.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1053,7 +1092,7 @@
       "prospect": "/prospecte/prospect-albendazol-10.docx",
       "images": [
         {
-          "url": "/cards/ovine.jpeg",
+          "url": "/products/farmavet/albendazol-10-suspensie-orala.jpg",
           "alt": "Albendazol 10% suspensie orală",
           "role": "main"
         }
@@ -1066,10 +1105,11 @@
     },
     {
       "id": "400034",
+      "brand_slug": "farmavet",
       "name": "Fenbendazol granulat",
       "slug": "fenbendazol-granulat",
       "category": "Antiparazitare interne și externe",
-      "description": "Anthelmintic cu fenbendazol pentru bovine, ovine, caprine, cabaline, porcine, iepuri și păsări. Tratamentul parazitozelor produse de stadii mature și imature ale nematodelor și cestodelor.",
+      "description": "Anthelmintic cu fenbendazol pentru bovine, ovine, caprine, cabaline, porcine, iepuri și păsări. Tratamentul parazitozelor produse de stadii mature și imature ale nematodelor și cestodelor.\n\nIndicații: La bovine, ovine, caprine, cabaline, în tratamentul parazitozelor produse de stadii mature şi imature ale nematodelor tractusului gastro-intestinal sau respirator. Are efect ovocid la viermii lați. De asemenea are efect asupra cestodelor la bovine. Cabaline: Strongili mari și mici, ascarizi, oxiuri și specii de strongiloizi. Bovine: Haemonchus spp., Ostertagia spp., Trichostrongylus spp., Cooperia spp., Nematodirus spp., Bunostomum spp., Trichuris spp., Strongyloides spp., Oesophagostomum spp.,",
       "image": "/cards/ovine.jpeg",
       "labels": [
         "Bovine",
@@ -1101,11 +1141,12 @@
     },
     {
       "id": "400035",
+      "brand_slug": "farmavet",
       "name": "Fenbendazol pentru păsări (găini)",
       "slug": "fenbendazol-pentru-pasari-gaini",
       "category": "Antiparazitare interne și externe",
-      "description": "Anthelmintic pentru păsări (găini). Tratamentul helmintozelor produse de Ascaridia, Heterakis, Capillaria și alți paraziți intestinali.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Anthelmintic pentru păsări (găini). Tratamentul helmintozelor produse de Ascaridia, Heterakis, Capillaria și alți paraziți intestinali.\n\nCompoziție: 1 comprimat conține: Substanța activă: Fenbendazol - 22,2 mg\n\nIndicații: Se recomandă în tratamentul helmintozelor produse la păsări (găini) de următorii paraziţi: Ascaridia galli, Heterakis gallinae, Trichostrongylus spp. și Syngamus trachea.",
+      "image": "/products/farmavet/fenbendazol-pentru-pasari-gaini.png",
       "labels": [
         "Păsări"
       ],
@@ -1117,7 +1158,7 @@
       "prospect": "/prospecte/prospect-fenbendazol.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/fenbendazol-pentru-pasari-gaini.png",
           "alt": "Fenbendazol pentru păsări (găini)",
           "role": "main"
         }
@@ -1126,45 +1167,17 @@
         "Antiparazitare interne și externe",
         "Fenbendazol pentru păsări (găini)"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vanellivet.info/products/vanbendazol"
     },
     {
       "id": "400036",
-      "name": "Gelmintal T — tablete anthelmintice",
-      "slug": "gelmintal-t-tablete-anthelmintice",
-      "category": "Antiparazitare interne și externe",
-      "description": "Tablete pentru câini și pisici adulte, căței și pisoși, cu scop terapeutic și profilactic în nematodozele și cestodozele intestinale.",
-      "image": "/cards/animale decomponie.jpeg",
-      "labels": [
-        "Câini",
-        "Pisici"
-      ],
-      "features": [],
-      "benefits": [],
-      "package_sizes": [],
-      "variants": [],
-      "url": "",
-      "prospect": "/prospecte/prospect-gelmintal-t.docx",
-      "images": [
-        {
-          "url": "/cards/animale decomponie.jpeg",
-          "alt": "Gelmintal T — tablete anthelmintice",
-          "role": "main"
-        }
-      ],
-      "breadcrumbs": [
-        "Antiparazitare interne și externe",
-        "Gelmintal T — tablete anthelmintice"
-      ],
-      "product_type": ""
-    },
-    {
-      "id": "400037",
+      "brand_slug": "olkar",
       "name": "Insectol 1000 — spray pentru câini și pisici",
       "slug": "insectol-1000-spray-pentru-ciini-si-pisici",
       "category": "Antiparazitare interne și externe",
-      "description": "Spray insecto-acaricid pentru tratarea și prevenirea infestării cu ectoparaziți (purici, păduchi, căpușe) a câinilor și pisicilor.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Spray insecto-acaricid pentru tratarea și prevenirea infestării cu ectoparaziți (purici, păduchi, căpușe) a câinilor și pisicilor.\n\nIndicații: Tratamentul și prevenirea infectării cu ectoparaziți a câinilor și a pisicilor: - purici (Ctenocephalus canis, Ctenocephalus felis); - păduchi (Linognathus setosus); - malofagi (Trichodectes canis, Felicola subrostratus); - acarienii scabiei (Otodectes spp.); - căpușe parazitiforme (ixodide) (Dermacentor pictus, Dermacentor marginatus, Rhipicephalus sanguineus, Ixodes ricinus).",
+      "image": "/products/farmavet/insectol-1000-spray-pentru-ciini-si-pisici.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1177,7 +1190,7 @@
       "prospect": "/prospecte/prospect-insectol-1000.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/insectol-1000-spray-pentru-ciini-si-pisici.jpg",
           "alt": "Insectol 1000 — spray pentru câini și pisici",
           "role": "main"
         }
@@ -1189,12 +1202,13 @@
       "product_type": ""
     },
     {
-      "id": "400038",
+      "id": "400037",
+      "brand_slug": "olkar",
       "name": "Pranatan — suspensie pentru câini",
       "slug": "pranatan-suspensie-pentru-ciini",
       "category": "Antiparazitare interne și externe",
-      "description": "Suspensie antiparazitară pentru dehelmintizarea câinilor în cestode (echinococoză, tenioză) și nematode intestinale.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Suspensie antiparazitară pentru dehelmintizarea câinilor în cestode (echinococoză, tenioză) și nematode intestinale.\n\nCompoziție: 1 ml de preparat conține substanțe active: Praziquantel - 15 mg; Pirantel pamoat - 45 mg. Excipienți: polisorbat 80, benzoat de sodiu, gumă de xantan, ciclamat de sodiu, acid citric, propilenglicol, apă distilată (până la 1 ml).\n\nIndicații: Dehelmintizarea câinilor în cazul bolilor invazive: cestode: echinococoză (formele mature de Echinococcus granulosus), teniidoză (Taenia spp.), dipilidioză (Dipylidium caninum – formele tinere și mature), difilobotriază (Diphyllobothrium latum), mezocestoidoză (Mesocestoides spp.); trematode: opistorhoză (Opisthorchis felineus); nematode: toxocaroză (Toxocara canis), toxascaroză (Toxascaris leonina), trichuroză (Trichuris spp.), anchilostomoză (Ancylostoma caninum), uncinarioză (Uncinaria stenoc",
+      "image": "/products/farmavet/pranatan-suspensie-pentru-ciini.jpg",
       "labels": [
         "Câini"
       ],
@@ -1206,7 +1220,7 @@
       "prospect": "/prospecte/prospect-pranatan-caini.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/pranatan-suspensie-pentru-ciini.jpg",
           "alt": "Pranatan — suspensie pentru câini",
           "role": "main"
         }
@@ -1218,12 +1232,13 @@
       "product_type": ""
     },
     {
-      "id": "400039",
+      "id": "400038",
+      "brand_slug": "olkar",
       "name": "Pranatan — suspensie pentru căței și pisoi",
       "slug": "pranatan-suspensie-pentru-catei-si-pisoi",
       "category": "Antiparazitare interne și externe",
-      "description": "Suspensie pentru prevenirea și tratamentul nematodelor și cestodelor la căței și pisoși (toxocaroză, ancylostomoză, tricocefaloză).",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Suspensie pentru prevenirea și tratamentul nematodelor și cestodelor la căței și pisoși (toxocaroză, ancylostomoză, tricocefaloză).\n\nCompoziție: 1 ml de preparat conține substanțe active: Praziquantel - 5 mg; Pirantel pamoat - 15 mg. Excipienți: polisorbat 80, benzoat de sodiu, gumă de xantan, ciclamat de sodiu, acid citric, propilenglicol, apă distilată (până la 1 ml).\n\nIndicații: Prevenirea și tratamentul nematodelor canine și feline (toxocaroză, toxascaridoză, uncinarioză, anchilostomoză, tricocefaloză), cestodozelor (echinococoză, teniidoză, difilobotriază, dipilidioză, mezocestoidoză), precum și a invaziilor combinate nematode-cestodice la pisoiași și căței, începând cu vârsta de 2 săptămâni.",
+      "image": "/products/farmavet/pranatan-suspensie-pentru-catei-si-pisoi.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1236,7 +1251,7 @@
       "prospect": "/prospecte/prospect-pranatan-catei-si-pisici.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/pranatan-suspensie-pentru-catei-si-pisoi.jpg",
           "alt": "Pranatan — suspensie pentru căței și pisoi",
           "role": "main"
         }
@@ -1248,12 +1263,13 @@
       "product_type": ""
     },
     {
-      "id": "400040",
+      "id": "400039",
+      "brand_slug": "olkar",
       "name": "Pranatan — suspensie pentru pisici",
       "slug": "pranatan-suspensie-pentru-pisici",
       "category": "Antiparazitare interne și externe",
       "description": "Suspensie orală cu praziquantel și pirantel pamoat pentru tratarea viermilor intestinali la pisici.",
-      "image": "/cards/animale decomponie.jpeg",
+      "image": "/products/farmavet/pranatan-suspensie-pentru-pisici.jpg",
       "labels": [
         "Pisici"
       ],
@@ -1265,7 +1281,7 @@
       "prospect": "/prospecte/prospect-pranatan-pisici.doc",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/pranatan-suspensie-pentru-pisici.jpg",
           "alt": "Pranatan — suspensie pentru pisici",
           "role": "main"
         }
@@ -1274,14 +1290,16 @@
         "Antiparazitare interne și externe",
         "Pranatan — suspensie pentru pisici"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/en/production/pranatan-suspenziya-dlya-koshek/"
     },
     {
-      "id": "400041",
+      "id": "400040",
+      "brand_slug": "farmavet",
       "name": "Prantal — comprimate antihelmintice",
       "slug": "prantal-comprimate-antihelmintice",
       "category": "Antiparazitare interne și externe",
-      "description": "Comprimate cu pirantel și praziquantel pentru profilaxia și tratamentul parazitozelor (nematode și cestode) la câini și pisici.",
+      "description": "Comprimate cu pirantel și praziquantel pentru profilaxia și tratamentul parazitozelor (nematode și cestode) la câini și pisici.\n\nIndicații: comprimate de uz veterinar, se recomandă pentru profilaxia și tratamentul parazitozelor la câini și pisici provocate de: nematode gastrointestinale (Ancylostoma caninum, Ancylosloma tubaeforme, Uncinaria sfenocephala, Toxocara canis, Toxocara cati, Toxocara leonina) și cestode (Echinococcus granulosus, Echinococcus multilocularis, Dipylidium caninum, Tenia spp., Mesocestoides spp.). 4. CONTRAINDICAȚII Nu se administrează în caz de hipersensibilitate la substanțele active sau la oricare dintre ex",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini",
@@ -1307,12 +1325,13 @@
       "product_type": ""
     },
     {
-      "id": "400042",
+      "id": "400041",
+      "brand_slug": "olkar",
       "name": "Rex și Musea — spray insecto-acaricid",
       "slug": "rex-si-musea-spray-insecto-acaricid",
       "category": "Antiparazitare interne și externe",
-      "description": "Spray pentru prevenirea și tratamentul câinilor și pisicilor afectate de ectoparaziți: purici, păduchi, malofage, căpușe.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Spray pentru prevenirea și tratamentul câinilor și pisicilor afectate de ectoparaziți: purici, păduchi, malofage, căpușe.\n\nIndicații: Prevenirea și tratamentul câinilor și pisicilor afectate de ectoparaziți: purici (Ctenocephalus spp.), păduchi (Linognathus setosus), malofage la etapele de dezvoltare imago și larvă (Trichodectidae spp.), acarienii scabiei și parazitiformi (Dermacentor spp., Ixodes spp., Rhipicephalus spp.), acarieni acariformi (Sarcoptidae, Psoroptidae). Preparatul este eficient în tratamentul scabiei de urechi la carnivore – otodectoză (Otodeсtes сynotis).",
+      "image": "/products/farmavet/rex-si-musea-spray-insecto-acaricid.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1325,7 +1344,7 @@
       "prospect": "/prospecte/prospect-rex-si-musea.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/rex-si-musea-spray-insecto-acaricid.jpg",
           "alt": "Rex și Musea — spray insecto-acaricid",
           "role": "main"
         }
@@ -1337,12 +1356,13 @@
       "product_type": ""
     },
     {
-      "id": "400043",
+      "id": "400042",
+      "brand_slug": "olkar",
       "name": "Șampon Antipoux Van Plant",
       "slug": "sampon-antipoux-van-plant",
       "category": "Antiparazitare interne și externe",
-      "description": "Șampon veterinar cu extract de pelin și ulei de citronela pentru câini și pisici. Îndepărtează puricii, păduchii și scabia, calmează pruritul provocat de paraziți.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Șampon veterinar cu extract de pelin și ulei de citronela pentru câini și pisici. Îndepărtează puricii, păduchii și scabia, calmează pruritul provocat de paraziți.\n\nCompoziție: UTILIZARE: Extractul natural de pelin și uleiul esențial de citronela au efectul de a îndepărta paraziții externi (purici, păduchi, scabie) și insectele ce produc disconfort (ţânţari, muşte, ploşniţe, etc). Produsul are proprietatea de a calma iritaţiile şi pruritul cutanat provocate de paraziţi şi se poate folosi la toate categoriile de vârstă, ori de câte ori este nevoie. După umectarea completă a blănii, aceasta s…",
+      "image": "/products/farmavet/sampon-antipoux-van-plant.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1355,7 +1375,7 @@
       "prospect": "/prospecte/prospect-sampun-antipux.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/sampon-antipoux-van-plant.jpg",
           "alt": "Șampon Antipoux Van Plant",
           "role": "main"
         }
@@ -1367,12 +1387,13 @@
       "product_type": ""
     },
     {
-      "id": "400044",
+      "id": "400043",
+      "brand_slug": "vanellivet",
       "name": "Vanmectin — soluție orală pentru ovine",
       "slug": "vanmectin-solutie-orala-pentru-ovine",
       "category": "Antiparazitare interne și externe",
-      "description": "Soluție orală cu ivermectină 0,8 mg/ml pentru ovine. Tratamentul nematodelor gastro-intestinale și pulmonare, miazelor și ectoparaziților.",
-      "image": "/cards/ovine.jpeg",
+      "description": "Soluție orală cu ivermectină 0,8 mg/ml pentru ovine. Tratamentul nematodelor gastro-intestinale și pulmonare, miazelor și ectoparaziților.\n\nCompoziție: 1 ml soluție orală conţine: Substanța activă: Ivermectină ....................................................... 0,8 mg Excipienți : glicerol formal, propilen glicol.......ad 1 ml\n\nIndicații: Se recomanda la ovine în tratamentul următoarelor infestații parazitare: -Nematode gastrointestinale: Haemonchus contortus (adulți și stadiul 4 larvar), Haemonchus placei (adulți), Ostertagia circumcincta (adulți și stadiul 4 larvar), Trichostrongylus axei (adulti și stadiul 4 larvar), Trichostrongylus colubriformis (adulți și stadiul 4 larvar), Cooperia curtitei (adulți și stadiul 4 larvar), Cooperia oncophora (adulți), Nematodirus spathiger (adulti si stadiul 4 larvar), Nematodirus battus (adu",
+      "image": "/products/farmavet/vanmectin-solutie-orala-pentru-ovine.jpg",
       "labels": [
         "Ovine"
       ],
@@ -1384,7 +1405,7 @@
       "prospect": "/prospecte/prospect-vanmectin.docx",
       "images": [
         {
-          "url": "/cards/ovine.jpeg",
+          "url": "/products/farmavet/vanmectin-solutie-orala-pentru-ovine.jpg",
           "alt": "Vanmectin — soluție orală pentru ovine",
           "role": "main"
         }
@@ -1396,12 +1417,13 @@
       "product_type": ""
     },
     {
-      "id": "400045",
+      "id": "400044",
+      "brand_slug": "olkar",
       "name": "Zgardă Burdi fipro 2 în 1",
       "slug": "zgarda-burdi-fipro-2-in-1",
       "category": "Antiparazitare interne și externe",
-      "description": "Zgardă insecto-acaricidă pentru prevenirea și tratamentul infestațiilor cu purici și căpușe la câini și pisici.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Zgardă insecto-acaricidă pentru prevenirea și tratamentul infestațiilor cu purici și căpușe la câini și pisici.\n\nIndicații: Prevenirea și tratamentul câinilor și pisicilor afectate de ectoparaziți: purici (Ctenocephalus spp.), păduchi (Linognathus setosus), malofage la etapele de dezvoltare imago și larvă (Trichodectidae spp.), acarienii scabiei și parazitiformi (Dermacentor spp., Ixodes spp., Rhipicephalus spp.), căpușe acariforme (Sarcoptidae, Psoroptidae). 4. CONTRAINDICAȚII Nu utilizați zgarda la pui și pisoi sub sub 10 săptămâni. Nu se recomandă utilizarea la animale bolnave și subnutrite, animale sensibile la f",
+      "image": "/products/farmavet/zgarda-burdi-fipro-2-in-1.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1414,7 +1436,7 @@
       "prospect": "/prospecte/prospect-zgarda-burdi.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/zgarda-burdi-fipro-2-in-1.jpg",
           "alt": "Zgardă Burdi fipro 2 în 1",
           "role": "main"
         }
@@ -1426,12 +1448,13 @@
       "product_type": ""
     },
     {
-      "id": "400046",
+      "id": "400045",
+      "brand_slug": "farmavet",
       "name": "Profiverm 1% soluție injectabilă",
       "slug": "profiverm-1-solutie-injectabila",
       "category": "Antiparazitare interne și externe",
       "description": "Soluție injectabilă cu ivermectină pentru prevenirea și tratarea bovinelor, ovinelor, caprinelor, porcinelor și câinilor cu nematode gastro-intestinale, pulmonare și ectoparaziți.",
-      "image": "/cards/bovine.jpeg",
+      "image": "/products/farmavet/profiverm-1-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1447,7 +1470,7 @@
       "prospect": "/prospecte/prospect-profiverm-1.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/profiverm-1-solutie-injectabila.jpg",
           "alt": "Profiverm 1% soluție injectabilă",
           "role": "main"
         }
@@ -1456,14 +1479,16 @@
         "Antiparazitare interne și externe",
         "Profiverm 1% soluție injectabilă"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/ru/production/profiverm-1-o-l-kar-inektsionnyj/"
     },
     {
-      "id": "400047",
+      "id": "400046",
+      "brand_slug": "shandong-luxi",
       "name": "Diazinon 60% — insecto-acaricid emulsionabil",
       "slug": "diazinon-60-insecto-acaricid-emulsionabil",
       "category": "Antiparazitare interne și externe",
-      "description": "Insecto-acaricid concentrat emulsionabil de uz veterinar pentru controlul și tratamentul scabiei (sarcoptice, psoroptice, chorioptice), myazelor și insectelor la bovine, ovine, porcine, cabaline și câini.",
+      "description": "Insecto-acaricid concentrat emulsionabil de uz veterinar pentru controlul și tratamentul scabiei (sarcoptice, psoroptice, chorioptice), myazelor și insectelor la bovine, ovine, porcine, cabaline și câini.\n\nCompoziție: Excipient până la………... .100 ml DESCRIERE: Produsul prezintă o soluţie transparentă de culoare galben până la galben- maroniu. PROPRIETĂȚI FARMACOLOGICE: Substanţa activă, diazinonul, este un insecticid, compus organofosforic de sinteză, ce acţionează prin contact şi ingestie asupra paraziţiilor externi prin blocarea acetilcolinesterazei. Diazinonul se leagă stabil de enzimă producând blocarea ireversibilă a acesteia…",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -1492,12 +1517,13 @@
       "product_type": ""
     },
     {
-      "id": "400048",
+      "id": "400047",
+      "brand_slug": "aveflor",
       "name": "Cubatol Pix — spray pentru plăgi",
       "slug": "cubatol-pix-spray-pentru-plagi",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Spray antiseptic pentru animale agricole și de companie (cu excepția pisicilor). Leziuni ale pielii, răni, zgârieturi, arsuri, după operații, tratarea cornelor și dezectomie.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Spray antiseptic pentru animale agricole și de companie (cu excepția pisicilor). Leziuni ale pielii, răni, zgârieturi, arsuri, după operații, tratarea cornelor și dezectomie.\n\nIndicații: Kubatol® Pix spray este indicat la animalele agricole și animalele de companie (cu excepția pisicilor) pentru diferite leziuni ale pielii, cum ar fi afecțiunile copitei și ghearelor, în cazul în care este indicat tratamentul cu gudron, chirurgia copitei, tratamentul afecțiunilor copitei, tratament după curățarea regulată a copitelor, fixarea bandajelor și pansamentelor la nivelul copitei. Dermatomicoze la animale, în special în stadiile incipiente sau în timpul terapiei secvențiale, atunci când",
+      "image": "/products/farmavet/cubatol-pix-spray-pentru-plagi.png",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1511,7 +1537,7 @@
       "prospect": "/prospecte/prospect-cubatol.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/cubatol-pix-spray-pentru-plagi.png",
           "alt": "Cubatol Pix — spray pentru plăgi",
           "role": "main"
         }
@@ -1520,15 +1546,17 @@
         "Antiseptice și produse pentru îngrijirea rănilor",
         "Cubatol Pix — spray pentru plăgi"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.arpalit.cz/en/product/kubatol-pix-spray"
     },
     {
-      "id": "400049",
+      "id": "400048",
+      "brand_slug": "olkar",
       "name": "Dezy Spray — antiseptic pentru plăgi",
       "slug": "dezy-spray-antiseptic-pentru-plagi",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Spray antiseptic pentru câini și pisici. Tratamentul plăgilor traumatice și chirurgicale (inclusiv după castrare), dermatitelor și leziunilor cutanate.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Spray antiseptic pentru câini și pisici. Tratamentul plăgilor traumatice și chirurgicale (inclusiv după castrare), dermatitelor și leziunilor cutanate.\n\nIndicații: Indicat la câini și pisici: în tratamentul plăgilor traumatice și chirurgicale (inclusiv după castrare, amputarea urechilor sau cozilor), dermatită interdigitale, piodermite, eczeme, zgâriere, mușcături, contuzii, ulcere și abcese deschise de diferite etiologii sensibile la oxitetraciclină. 4. CONTRAINDICAȚII Nu se utilizează în caz de hipersensibilitate la substanțele active sau la oricare dintre excipenți.",
+      "image": "/products/farmavet/dezy-spray-antiseptic-pentru-plagi.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -1541,7 +1569,7 @@
       "prospect": "/prospecte/prospect-dezy-spray.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/dezy-spray-antiseptic-pentru-plagi.jpg",
           "alt": "Dezy Spray — antiseptic pentru plăgi",
           "role": "main"
         }
@@ -1553,12 +1581,13 @@
       "product_type": ""
     },
     {
-      "id": "400050",
+      "id": "400049",
+      "brand_slug": "olkar",
       "name": "Hlorțin 500 — unguent antiseptic",
       "slug": "hlortin-500-unguent-antiseptic",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Unguent de uz extern cu efect antiseptic și antimicotic pentru afecțiuni ale pielii cauzate de microflora bacteriană și fungică: trichofitie la vaci, cai, câini și pisici.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Unguent de uz extern cu efect antiseptic și antimicotic pentru afecțiuni ale pielii cauzate de microflora bacteriană și fungică: trichofitie la vaci, cai, câini și pisici.\n\nIndicații: Extern, preparatul este indicat în caz de afecţiuni ale pielii cauzate de microflora bacteriană și fungică, și anume: trichofitia la vaci, câini, pisici, răni purulente la cabaline, abcese superficiale al bovinelor, cabalinelor, porcinelor, câinilor și pisicilor. 4.CONTRAINDICAȚII A nu se utiliza pentru dermatite, alergii, hipersensibilitate individuală la digluconatul de clorhexidină. Nu utilizați simultan cu preparatele de iod.",
+      "image": "/products/farmavet/hlortin-500-unguent-antiseptic.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1575,7 +1604,7 @@
       "prospect": "/prospecte/prospect-hloritin-500.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/hlortin-500-unguent-antiseptic.jpg",
           "alt": "Hlorțin 500 — unguent antiseptic",
           "role": "main"
         }
@@ -1587,12 +1616,13 @@
       "product_type": ""
     },
     {
-      "id": "400051",
+      "id": "400050",
+      "brand_slug": "olkar",
       "name": "Iodoform 5% pulbere pentru răni",
       "slug": "iodoform-5-pulbere-pentru-rani",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Pulbere antiseptică pe bază de iodoform pentru tratamentul extern al rănilor infectate și postoperatorii la bovine, cabaline, ovine, caprine, porcine, câini și pisici.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Pulbere antiseptică pe bază de iodoform pentru tratamentul extern al rănilor infectate și postoperatorii la bovine, cabaline, ovine, caprine, porcine, câini și pisici.\n\nCompoziție: 1 g de medicament conține substanțe active: Iodoform - 50 mg; Streptocid - 50 mg; Oxid de zinc - 50 mg; Lista excipienților: talc, amidon (porumb sau cartofi).\n\nIndicații: Extern pentru tratamentul: bovinelor, cabalinelor, ovinelor, caprinelor, porcinelor, câinilor și pisicilor cu răni infectate și postoperatorii, ulcere, fistule, eczeme umede, dermatite, tendovaginite, flegmon, limfadenite, plăgi cu vindecare îndelungată.",
+      "image": "/products/farmavet/iodoform-5-pulbere-pentru-rani.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1610,7 +1640,7 @@
       "prospect": "/prospecte/prospect-iodoform.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/iodoform-5-pulbere-pentru-rani.jpg",
           "alt": "Iodoform 5% pulbere pentru răni",
           "role": "main"
         }
@@ -1622,11 +1652,12 @@
       "product_type": ""
     },
     {
-      "id": "400052",
+      "id": "400051",
+      "brand_slug": "farmavet",
       "name": "Xeralxon — pulbere antimicrobiană de uz extern",
       "slug": "xeralxon-pulbere-antimicrobiana-de-uz-extern",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Pulbere antimicrobiană pentru tratamentul plăgilor cutanate, musculare și podale și prevenirea infecțiilor plăgilor operatorii la câini și pisici.",
+      "description": "Pulbere antimicrobiană pentru tratamentul plăgilor cutanate, musculare și podale și prevenirea infecțiilor plăgilor operatorii la câini și pisici.\n\nCompoziție: Compoziția produsului pentru 100 g: Oxitetraciclină - 8 g Streptocidă - 2 g Xeroform - 1 g\n\nIndicații: Extern pentru tratamentul plăgilor accidentale cutanate, musculare și podale, precum și prevenirea infecțiilor plăgilor operatorii (ablația de tumori, castrări la masculi, diverse intervenții chirurgicale) la câini și pisici.",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini",
@@ -1652,12 +1683,13 @@
       "product_type": ""
     },
     {
-      "id": "400053",
+      "id": "400052",
+      "brand_slug": "olkar",
       "name": "Zabolitvaia — unguent pentru uger și blană",
       "slug": "zabolitvaia-unguent-pentru-uger-si-blana",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
-      "description": "Unguent topic pentru bovine și caprine. Tratamentul zgârieturilor, tăieturilor, arsurilor, crăcăturilor și degerăturilor pielii, ale ugerului și țeiței.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Unguent topic pentru bovine și caprine. Tratamentul zgârieturilor, tăieturilor, arsurilor, crăcăturilor și degerăturilor pielii, ale ugerului și țeiței.\n\nIndicații: Tratamentul topic pentru bovine și caprine cu zgârieturi, tăieturi, arsuri, crăpături, degerături ale pielii, ale ugerului și tetinei, ca un tratament suplimentar pentru dermatita cauzată de deficit de vitamina A, eczeme, cauzate de tulburări metabolice. Unguent este aplicat pentru îngrijirea zilnică a ugerul animalelor în lactație ca mijloac igienic pentru prevenirea mastitei, fisuri ale ugerului, păstrând elasticitatea pielii ugerului și mameloanelor; se va folosi în timpul masajului muşchiilo",
+      "image": "/products/farmavet/zabolitvaia-unguent-pentru-uger-si-blana.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -1671,7 +1703,7 @@
       "prospect": "/prospecte/prospect-zabolitvaia.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/zabolitvaia-unguent-pentru-uger-si-blana.jpg",
           "alt": "Zabolitvaia — unguent pentru uger și blană",
           "role": "main"
         }
@@ -1683,12 +1715,13 @@
       "product_type": ""
     },
     {
-      "id": "400054",
+      "id": "400053",
+      "brand_slug": "farmavet",
       "name": "Unguent Ihtiol 10%",
       "slug": "unguent-ihtiol-10",
       "category": "Antiseptice și produse pentru îngrijirea rănilor",
       "description": "Unguent cu ihtiol pentru uz extern: arsuri, răni, eczeme, dermatite, furunculoză, piodermie și procese inflamatorii ale țesuturilor moi la toate speciile de animale.",
-      "image": "/cards/bovine.jpeg",
+      "image": "/products/farmavet/unguent-ihtiol-10.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -1706,7 +1739,7 @@
       "prospect": "/prospecte/prospect-unguent-ihtiol-10-rev-f.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/unguent-ihtiol-10.jpg",
           "alt": "Unguent Ihtiol 10%",
           "role": "main"
         }
@@ -1715,10 +1748,12 @@
         "Antiseptice și produse pentru îngrijirea rănilor",
         "Unguent Ihtiol 10%"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/ru/production/maz-ihtiolova-10/"
     },
     {
-      "id": "400055",
+      "id": "400054",
+      "brand_slug": "cid-lines",
       "name": "Kenocox — soluție contra coccidiozei și cryptosporidiozei",
       "slug": "kenocox-solutie-contra-coccidiozei-si-cryptosporidiozei",
       "category": "Curățare, igienă și dezinfecție",
@@ -1750,11 +1785,12 @@
       "product_type": ""
     },
     {
-      "id": "400056",
+      "id": "400055",
+      "brand_slug": "cid-lines",
       "name": "DM CID S — soluție spumantă alcalină de curățare și dezinfecție",
       "slug": "dm-cid-s-solutie-spumanta-alcalina-de-curatare-si-dezinfectie",
       "category": "Curățare, igienă și dezinfecție",
-      "description": "Agent de curățare cu efect dezinfectant (bactericid și fungicid) pe bază de hipoclorit de sodiu pentru industria alimentară (carne, lapte, conserve), pereți, pardoseli, mașini și mijloace de transport.",
+      "description": "Agent de curățare cu efect dezinfectant (bactericid și fungicid) pe bază de hipoclorit de sodiu pentru industria alimentară (carne, lapte, conserve), pereți, pardoseli, mașini și mijloace de transport.\n\nCompoziție: - Hipoclorit de Na ……………….4,225 % - Hidroxid de Na………………... 7 % - Tenside cation-active ………….5 % - Inhibitori de coroziune ………...2,6 % - Apă până la………………….... 100 %. INDICAȚII Agent de curăţare ideal cu efect dezinfectant, pentru industria alimentară (carne, lapte, conserve, etc.), pereţi şi pardoseli care pot fi spălate, maşini, diferite instalaţii şi pentru mijloace de transport. Încăperi pentru creşterea şi explo…\n\nIndicații: Agent de curăţare ideal cu efect dezinfectant, pentru industria alimentară (carne, lapte, conserve, etc.), pereţi şi pardoseli care pot fi spălate, maşini, diferite instalaţii şi pentru mijloace de transport. Încăperi pentru creşterea şi exploatarea animalelor, grajduri, coteţe, diferite instalaţii, mijloace de transport.",
       "image": "/magazin.jpeg",
       "labels": [
         "Mediu"
@@ -1779,12 +1815,13 @@
       "product_type": ""
     },
     {
-      "id": "400057",
+      "id": "400056",
+      "brand_slug": "cid-lines",
       "name": "CID 2000 — igiena apei de băut (O2 + acidifiere)",
       "slug": "cid-2000-igiena-apei-de-baut-o2-acidifiere",
       "category": "Curățare, igienă și dezinfecție",
-      "description": "Amestec de peroxid de hidrogen și acid peracetic pentru igiena optimă a sistemelor de apă de băut: curăță biofilmul, îndepărtează depunerile organice și anorganice și optimizează pH-ul.",
-      "image": "/magazin.jpeg",
+      "description": "Amestec de peroxid de hidrogen și acid peracetic pentru igiena optimă a sistemelor de apă de băut: curăță biofilmul, îndepărtează depunerile organice și anorganice și optimizează pH-ul.\n\nCompoziție: Peroxid de hidrogen - 210 g/l, Acid peracetic - 55 g/l, Acid acetic - 10 g/l. Conceput special pentru igiena optimă a apei potabile. Cid 2000 este compus din peroxid de hidrogen (H2O2) care se descompune în apă (H2O) și oxigen (O2). Oxigenul gazos va peria stratul de biofilm de-a lungul sistemului de apă, îl va elibera și dizolva. Cid 2000 are o acțiune triplă: Curățarea sistemului de apă potabilă Îndepărtarea depune…",
+      "image": "/products/farmavet/cid-2000-igiena-apei-de-baut-o2-acidifiere.jpg",
       "labels": [
         "Mediu"
       ],
@@ -1796,7 +1833,7 @@
       "prospect": "/prospecte/prospe4t-cid-2000.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/cid-2000-igiena-apei-de-baut-o2-acidifiere.jpg",
           "alt": "CID 2000 — igiena apei de băut (O2 + acidifiere)",
           "role": "main"
         }
@@ -1808,12 +1845,13 @@
       "product_type": ""
     },
     {
-      "id": "400058",
+      "id": "400057",
+      "brand_slug": "cid-lines",
       "name": "Kenosan — detergent spumant alcalin zootehnic",
       "slug": "kenosan-detergent-spumant-alcalin-zootehnic",
       "category": "Curățare, igienă și dezinfecție",
       "description": "Soluție profesională concentrată de curățat incubatoare, grajduri, hale, săli de muls, mijloace auto, anexe și cotețe. Înmoaie și dizolvă murdăria, dejecțiile și grăsimile.",
-      "image": "/magazin.jpeg",
+      "image": "/products/farmavet/kenosan-detergent-spumant-alcalin-zootehnic.png",
       "labels": [
         "Mediu"
       ],
@@ -1825,7 +1863,7 @@
       "prospect": "/prospecte/prospect-kenosan.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/kenosan-detergent-spumant-alcalin-zootehnic.png",
           "alt": "Kenosan — detergent spumant alcalin zootehnic",
           "role": "main"
         }
@@ -1834,15 +1872,17 @@
         "Curățare, igienă și dezinfecție",
         "Kenosan — detergent spumant alcalin zootehnic"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.drugs.com/vet/kenosan.html"
     },
     {
-      "id": "400059",
+      "id": "400058",
+      "brand_slug": "cid-lines",
       "name": "Hatchonet — soluție de curățare pentru incubatoare",
       "slug": "hatchonet-solutie-de-curatare-pentru-incubatoare",
       "category": "Curățare, igienă și dezinfecție",
       "description": "Soluție universală de curățare specială pentru incubatoare de păsări: îndepărtează impuritățile și reziduurile de pe toate suprafețele fără să fie corozivă, eficientă și în apă dură.",
-      "image": "/magazin.jpeg",
+      "image": "/products/farmavet/hatchonet-solutie-de-curatare-pentru-incubatoare.jpg",
       "labels": [
         "Mediu",
         "Păsări"
@@ -1855,7 +1895,7 @@
       "prospect": "/prospecte/prospect-hatchonet.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/hatchonet-solutie-de-curatare-pentru-incubatoare.jpg",
           "alt": "Hatchonet — soluție de curățare pentru incubatoare",
           "role": "main"
         }
@@ -1867,12 +1907,13 @@
       "product_type": ""
     },
     {
-      "id": "400060",
+      "id": "400059",
+      "brand_slug": "cid-lines",
       "name": "Pho CID — soluție acidă pentru instalații de lapte",
       "slug": "pho-cid-solutie-acida-pentru-instalatii-de-lapte",
       "category": "Curățare, igienă și dezinfecție",
-      "description": "Soluție acidă pe bază de acid fosforic și sulfuric pentru instalațiile CIP din industria laptelui: îndepărtează depunerile de calciu și piatra de lapte de pe echipamente și conducte.",
-      "image": "/magazin.jpeg",
+      "description": "Soluție acidă pe bază de acid fosforic și sulfuric pentru instalațiile CIP din industria laptelui: îndepărtează depunerile de calciu și piatra de lapte de pe echipamente și conducte.\n\nCompoziție: - acid sulfuric; - inhibitori de spumare; - substanţe de umezire. INDICAŢII: A se utiliza în instalaţiile CIP din industria laptelui şi în industria altor băuturi, folosit zi de zi. A se utiliza pentru decalcificarea maşinilor de spălat cu cuve. PROPRIETĂŢI Amestecul de acizi îndepărtează eficient depunerile de calciu si de piatra de lapte. Surfactanti asigură penetrarea temeinică. Pho Cid este silicat liber. Pho Cid…",
+      "image": "/products/farmavet/pho-cid-solutie-acida-pentru-instalatii-de-lapte.png",
       "labels": [
         "Mediu"
       ],
@@ -1884,7 +1925,7 @@
       "prospect": "/prospecte/prospect-pho-cid.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/pho-cid-solutie-acida-pentru-instalatii-de-lapte.png",
           "alt": "Pho CID — soluție acidă pentru instalații de lapte",
           "role": "main"
         }
@@ -1893,14 +1934,16 @@
         "Curățare, igienă și dezinfecție",
         "Pho CID — soluție acidă pentru instalații de lapte"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.drugs.com/vet/pho-cid.html"
     },
     {
-      "id": "400061",
+      "id": "400060",
+      "brand_slug": "cid-lines",
       "name": "Tormax S — soluție acidă spumogenă de curățare",
       "slug": "tormax-s-solutie-acida-spumogena-de-curatare",
       "category": "Curățare, igienă și dezinfecție",
-      "description": "Curățitor acid spumogen puternic, decalcifiant, pentru îndepărtarea proteinelor, varului și depunerilor de fier de pe echipamentele și conductele din industria alimentară.",
+      "description": "Curățitor acid spumogen puternic, decalcifiant, pentru îndepărtarea proteinelor, varului și depunerilor de fier de pe echipamentele și conductele din industria alimentară.\n\nCompoziție: - acid citric 5 %; - acid fosforic 30 %; - surfactant neionic 5 %; - apă până la 100 %. CARACTERISTICI: soluţia de 1% are pH: 2,2 densitate 20°C: 1,220 kg/l temperatura de îngheţ: - 10°C. Punct de fierbere 100 ° C Solubilitate în apă 100%. PROPRIETĂȚI: Eficiență ridicată de curățare, se realizează prin formula de formarea a spumei persistente care cuprinde un amestec de acizi și o combinație de umectare, dispersare ș…",
       "image": "/magazin.jpeg",
       "labels": [
         "Mediu"
@@ -1925,11 +1968,12 @@
       "product_type": ""
     },
     {
-      "id": "400062",
+      "id": "400061",
+      "brand_slug": "cid-lines",
       "name": "Virocid — dezinfectant concentrat cu spectru larg",
       "slug": "virocid-dezinfectant-concentrat-cu-spectru-larg",
       "category": "Curățare, igienă și dezinfecție",
-      "description": "Dezinfectant concentrat pe bază de quarternary amonium compounds și glutaraldehidă pentru spitale veterinare, adăposturi, echipamente și vehicule. Spectru larg împotriva bacteriilor, virusurilor, fungilor și algelor.",
+      "description": "Dezinfectant concentrat pe bază de quarternary amonium compounds și glutaraldehidă pentru spitale veterinare, adăposturi, echipamente și vehicule. Spectru larg împotriva bacteriilor, virusurilor, fungilor și algelor.\n\nCompoziție: Clorură de alchildimetilbenzil-amoniu ……………….. 170,60 g Clorură de didecildimetil-amoniu …………………….. 78,00 g, Glutaraldehidă …………………………………………. 107,25 g. Alcool - isopropanol ………………..……………….…. 146,25 g Derivați de terebentină - Ulei de pin…………….….... 20,00 g PROPRIETĂȚI FARMACOLOGICE: VIROCID are un spectru larg de activitate împotriva bacteriilor gram-pozitive și gram-negative (inclusiv sporulate și nesporulate), viru…\n\nIndicații: pentru dezinfecţia suprafeţelor (pereţi şi podele) în spitale şi alte spaţii pentru îngrijirea sănătăţii; pentru dezinfecţia suprafeţelor, echipamentelor şi ustensilelor în halele pentru creşterea animalelor, în cabinete şi clinici veterinare; pentru dezinfecţia asupra mijloacelor de transport care sunt utilizate pentru transportul animalelor și transportul produselor alimentare, abatoare, incubatoare; pentru dezinfecţia, echipamentelor şi ustensilelor în industria alimentară, piscicultură şi in",
       "image": "/magazin.jpeg",
       "labels": [
         "Mediu"
@@ -1954,7 +1998,8 @@
       "product_type": ""
     },
     {
-      "id": "400063",
+      "id": "400062",
+      "brand_slug": "shandong-luxi",
       "name": "Cypermethrin 10% EC — insecticid pentru suprafețe",
       "slug": "cypermethrin-10-ec-insecticid-pentru-suprafete",
       "category": "Dezinsecție și deratizare",
@@ -1983,12 +2028,13 @@
       "product_type": ""
     },
     {
-      "id": "400064",
+      "id": "400063",
+      "brand_slug": "olkar",
       "name": "Istrebiteli — momeală rodenticidă",
       "slug": "istrebiteli-momeala-rodenticida",
       "category": "Dezinsecție și deratizare",
-      "description": "Momeală otrăvitoare pe bază de brodifacum pentru distrugerea șobolanilor și șoarecelor de casă în locuințe, depozite, subsoluri și anexe. Conține Bitrex ca agent de descurajare pentru oameni.",
-      "image": "/magazin.jpeg",
+      "description": "Momeală otrăvitoare pe bază de brodifacum pentru distrugerea șobolanilor și șoarecelor de casă în locuințe, depozite, subsoluri și anexe. Conține Bitrex ca agent de descurajare pentru oameni.\n\nCompoziție: Excipienți – 100 g BITREX și agenți de colorare vizibile, reducând riscul de intoxicații accidentale la oameni. Indicații: o momeală otrăvitoare concepută pentru a distruge șobolani gri și negri, șoarecii de casă în locuințe și alte spații: depozite, subsoluri, anexe etc. Nu lăsați momeala la îndemâna copiilor și a animalelor ! Proprietățile specifice ale agenților biologici: momeala este atractivă și foarte eficient…\n\nIndicații: Nu lăsați momeala la îndemâna copiilor și a animalelor ! Proprietățile specifice ale agenților biologici: momeala este atractivă și foarte eficientă împotriva șobolanilor și a șoarecilor. Proprietățile rodenticide se datorează substanței brodifacumului – anticoagulant de a doua generație, consumul dublu are efect cumulativ ridicat, întrerupe formarea vitaminei K1, în prezența căreia sunt produse proteine ​​complexe de protrombină. La o zi după folosirea unei doze letale de brodifacum, nivelul co",
+      "image": "/products/farmavet/istrebiteli-momeala-rodenticida.jpg",
       "labels": [
         "Mediu"
       ],
@@ -2000,7 +2046,7 @@
       "prospect": "/prospecte/prospect-istrebiteli.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/istrebiteli-momeala-rodenticida.jpg",
           "alt": "Istrebiteli — momeală rodenticidă",
           "role": "main"
         }
@@ -2012,12 +2058,13 @@
       "product_type": ""
     },
     {
-      "id": "400065",
+      "id": "400064",
+      "brand_slug": "olkar",
       "name": "Killer Komarov 300 — insecticid microencapsulat",
       "slug": "killer-komarov-300-insecticid-microencapsulat",
       "category": "Dezinsecție și deratizare",
       "description": "Suspensie microencapsulată cu cipermetrină împotriva insectelor zburătoare (țânțari, muște, molii) și târâtoare (gândaci, furnici, purici, păianjeni, căpușe). Efect de durată până la 6 luni.",
-      "image": "/magazin.jpeg",
+      "image": "/products/farmavet/killer-komarov-300-insecticid-microencapsulat.jpg",
       "labels": [
         "Mediu"
       ],
@@ -2029,7 +2076,7 @@
       "prospect": "/prospecte/prospect-killer-komarov-300.doc",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/killer-komarov-300-insecticid-microencapsulat.jpg",
           "alt": "Killer Komarov 300 — insecticid microencapsulat",
           "role": "main"
         }
@@ -2038,10 +2085,12 @@
         "Dezinsecție și deratizare",
         "Killer Komarov 300 — insecticid microencapsulat"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/en/production/russkyj-kyller-komarov/"
     },
     {
-      "id": "400066",
+      "id": "400065",
+      "brand_slug": "olkar",
       "name": "Killer Muh 500 — insecticid microencapsulat contra muștelor",
       "slug": "killer-muh-500-insecticid-microencapsulat-contra-mustelor",
       "category": "Dezinsecție și deratizare",
@@ -2070,7 +2119,8 @@
       "product_type": ""
     },
     {
-      "id": "400067",
+      "id": "400066",
+      "brand_slug": "olkar",
       "name": "Muhostop — granule solubile contra muștelor",
       "slug": "muhostop-granule-solubile-contra-mustelor",
       "category": "Dezinsecție și deratizare",
@@ -2099,12 +2149,13 @@
       "product_type": ""
     },
     {
-      "id": "400068",
+      "id": "400067",
+      "brand_slug": "vanellivet",
       "name": "Corsar — insecticid lichid emulsionabil",
       "slug": "corsar-insecticid-lichid-emulsionabil",
       "category": "Dezinsecție și deratizare",
-      "description": "Insecticid cu cipermetrină și tetrametrină pentru combaterea insectelor zburătoare și târâtoare în sectorul de igienă și sănătate publică, în interiorul și exteriorul clădirilor.",
-      "image": "/magazin.jpeg",
+      "description": "Insecticid cu cipermetrină și tetrametrină pentru combaterea insectelor zburătoare și târâtoare în sectorul de igienă și sănătate publică, în interiorul și exteriorul clădirilor.\n\nCompoziție: 100 g produs conţin: Cipermetrina (CAS: 52315-07-8; CE: 257-842-9) 5 g Tetrametrina (CAS: 7696-12-0; CE: 231-711-6) 1,6 g Spectru de acţiune Produsul are un spectru larg de activitate fiind eficient asupra insectelor zburatoare şi tȃrătoare, cum ar fi: gȃndaci de bucătărie, muşte, ţȃnţari, viespi, căpuşe, ploşniţe, păduchi, purici, molii, paianjeni, scorpioni. Indicaţii de utilizare: Insecticid utilizat în sectorul d…",
+      "image": "/products/farmavet/corsar-insecticid-lichid-emulsionabil.jpg",
       "labels": [
         "Mediu"
       ],
@@ -2116,7 +2167,7 @@
       "prospect": "/prospecte/prospect-corsar.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/corsar-insecticid-lichid-emulsionabil.jpg",
           "alt": "Corsar — insecticid lichid emulsionabil",
           "role": "main"
         }
@@ -2125,15 +2176,17 @@
         "Dezinsecție și deratizare",
         "Corsar — insecticid lichid emulsionabil"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vanellivet.info/products/corsar"
     },
     {
-      "id": "400069",
+      "id": "400068",
+      "brand_slug": "icb-pharma",
       "name": "Dergall — soluție pentru deparazitarea adăposturilor de păsări",
       "slug": "dergall-solutie-pentru-deparazitarea-adaposturilor-de-pasari",
       "category": "Dezinsecție și deratizare",
-      "description": "Concentrat solubil cu acțiune fizică pentru controlul căpușei roșii a păsărilor (Dermanyssus gallinae), gândacului de grajd și alte dăunători ale aviculturii, aplicabil în prezența găinilor ouătoare.",
-      "image": "/magazin.jpeg",
+      "description": "Concentrat solubil cu acțiune fizică pentru controlul căpușei roșii a păsărilor (Dermanyssus gallinae), gândacului de grajd și alte dăunători ale aviculturii, aplicabil în prezența găinilor ouătoare.\n\nCompoziție: Conceput pentru controlul și prevenirea infestării cu căpușa roșie a păsărilor (Dermanyssus Gallinae), gândacul de grajd roscat (Alphitobius diaperinus) și râia varoasa (Cnemidocoptes mutans) căpușa Tropicala a sobolanului (Ornitronyssus bacoti), căpușa americană a păsărilor (Ornithonyssus sylviarum) și alți dăunatori specifici aviculturii aviculturii și protecția împotriva și protecția împotriva contaminării microbi…",
+      "image": "/products/farmavet/dergall-solutie-pentru-deparazitarea-adaposturilor-de-pasari.jpg",
       "labels": [
         "Păsări",
         "Mediu"
@@ -2146,7 +2199,7 @@
       "prospect": "/prospecte/prospect-dergall-rom.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/dergall-solutie-pentru-deparazitarea-adaposturilor-de-pasari.jpg",
           "alt": "Dergall — soluție pentru deparazitarea adăposturilor de păsări",
           "role": "main"
         }
@@ -2158,12 +2211,13 @@
       "product_type": ""
     },
     {
-      "id": "400070",
+      "id": "400069",
+      "brand_slug": "farmavet",
       "name": "Rozaticid — momeală rodenticidă pe bază de grâu",
       "slug": "rozaticid-momeala-rodenticida-pe-baza-de-griu",
       "category": "Dezinsecție și deratizare",
-      "description": "Momeală gata de utilizare cu bromadiolon, eficientă împotriva șoarecelui de casă și șobolanilor (cenușiu și negru) în gospodării, depozite și anexe.",
-      "image": "/magazin.jpeg",
+      "description": "Momeală gata de utilizare cu bromadiolon, eficientă împotriva șoarecelui de casă și șobolanilor (cenușiu și negru) în gospodării, depozite și anexe.\n\nCompoziție: Bromadiolon..........................22,0 ml CARACTERISTICI ROZATICID este o momeală rodenticidă gata de utilizare ce conține o substanță activă anticoagulantă, cunoscută sub numele de bromadiolon, eficientă împotriva șoarecelui de casă (Mus musculus), a Șobolanului cenușiu (Rattus norvegicus) și a șobolanului negru (Rattus rattus). Conține Bromadiolon, cel mai folosit anticoagulant în lupta împotriva șoarecilor și ș…",
+      "image": "/products/farmavet/rozaticid-momeala-rodenticida-pe-baza-de-griu.jpg",
       "labels": [
         "Mediu",
         "Rozătoare"
@@ -2176,7 +2230,7 @@
       "prospect": "/prospecte/prospect-rozaticid.docx",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/rozaticid-momeala-rodenticida-pe-baza-de-griu.jpg",
           "alt": "Rozaticid — momeală rodenticidă pe bază de grâu",
           "role": "main"
         }
@@ -2185,14 +2239,16 @@
         "Dezinsecție și deratizare",
         "Rozaticid — momeală rodenticidă pe bază de grâu"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vet.md/medicamente/momeala--pe-baza-de-cereale-.html"
     },
     {
-      "id": "400071",
+      "id": "400070",
+      "brand_slug": "biofabrica-armavir",
       "name": "ASD fracția 2 — soluție imunostimulantă",
       "slug": "asd-fractia-2-solutie-imunostimulanta",
       "category": "Imunostimulatoare",
-      "description": "Stimulator biogenic cu efect antimicrobian, imunomodulator și regenerant pentru animalele de fermă (inclusiv păsări) și câini. Profilaxia și tratamentul afecțiunilor digestive, respiratorii și ale pielii.",
+      "description": "Stimulator biogenic cu efect antimicrobian, imunomodulator și regenerant pentru animalele de fermă (inclusiv păsări) și câini. Profilaxia și tratamentul afecțiunilor digestive, respiratorii și ale pielii.\n\nCompoziție: Substanfe active: Compuși organici cu greutate moleculară mică, inclusiv acizi carboxilici inferiori, amide și sărurile lor de amoniu, esteri de colină ai acizilor carboxilici, colină, amine primare și secundare, peptide, precum și compuși azotați anorganici (săruri de carbonat de amoniu, acetat de amoniu). Excipienți: apă.\n\nIndicații: Medicamentul ASD fracția 2, este prescris animalelor de fermă (inclusiv păsărilor de curte) și câinilor, în scop terapeutic și profilactic în boli ale: tractului gastro-intestinal,sistemului respirator, sistemului genito-urinar, leziuni ale pielii, tulburări metabolice. Pentru a stimula activitatea sistemului central și sistemul nervos vegetativ, crescând rezistența naturală la animalele slăbite și recuperate de boli infecțioase și parazitare, precum și pentru a stimula creșterea și dezvoltarea",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -2222,7 +2278,8 @@
       "product_type": ""
     },
     {
-      "id": "400072",
+      "id": "400071",
+      "brand_slug": "vitafor",
       "name": "Vita-Biotic Liquid — probiotic pentru păsări",
       "slug": "vita-biotic-liquid-probiotic-pentru-pasari",
       "category": "Imunostimulatoare",
@@ -2251,12 +2308,13 @@
       "product_type": ""
     },
     {
-      "id": "400073",
+      "id": "400072",
+      "brand_slug": "vitafor",
       "name": "Vita-Start+ FL — prebiotice și acizi grași",
       "slug": "vita-start-fl-prebiotice-si-acizi-grasi",
       "category": "Imunostimulatoare",
       "description": "Amestec de acizi grași cu lanț scurt, acizi tamponați, gliceride ale acidului butiric, prebiotice și uleiuri esențiale pentru sănătatea intestinală și stimularea imunității la păsări și animalele tinere.",
-      "image": "/cards/pasari.jpeg",
+      "image": "/products/farmavet/vita-start-fl-prebiotice-si-acizi-grasi.jpg",
       "labels": [
         "Păsări",
         "Porcine"
@@ -2269,7 +2327,7 @@
       "prospect": "/prospecte/prospect-vita-start.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/vita-start-fl-prebiotice-si-acizi-grasi.jpg",
           "alt": "Vita-Start+ FL — prebiotice și acizi grași",
           "role": "main"
         }
@@ -2281,12 +2339,13 @@
       "product_type": ""
     },
     {
-      "id": "400074",
+      "id": "400073",
+      "brand_slug": "olkar",
       "name": "Amoclox DC — seringi intramamare pentru vaci (repaus mamar)",
       "slug": "amoclox-dc-seringi-intramamare-pentru-vaci-repaus-mamar",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Suspensie intramamara cu cloxacilină și ampicilină pentru tratamentul mastitei la vaci în perioada de repaus mamar și prevenirea infecțiilor din această perioadă.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Suspensie intramamara cu cloxacilină și ampicilină pentru tratamentul mastitei la vaci în perioada de repaus mamar și prevenirea infecțiilor din această perioadă.\n\nIndicații: Tratamentul mastitei la vaci în perioada de repaus mamar și pentru prevenirea posibilelor infecții în perioada de repaus mamar.",
+      "image": "/products/farmavet/amoclox-dc-seringi-intramamare-pentru-vaci-repaus-mamar.jpg",
       "labels": [
         "Bovine",
         "Ovine"
@@ -2299,7 +2358,7 @@
       "prospect": "/prospecte/prospect-amoclox.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/amoclox-dc-seringi-intramamare-pentru-vaci-repaus-mamar.jpg",
           "alt": "Amoclox DC — seringi intramamare pentru vaci (repaus mamar)",
           "role": "main"
         }
@@ -2311,12 +2370,13 @@
       "product_type": ""
     },
     {
-      "id": "400075",
+      "id": "400074",
+      "brand_slug": "olkar",
       "name": "Mastilong Forte — seringi intramamare",
       "slug": "mastilong-forte-seringi-intramamare",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Suspensie intramamara pentru tratamentul vacilor cu forme clinice și subclinice de mastită de etiologie bacteriană cauzată de microorganisme sensibile la componentele produsului.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Suspensie intramamara pentru tratamentul vacilor cu forme clinice și subclinice de mastită de etiologie bacteriană cauzată de microorganisme sensibile la componentele produsului.\n\nIndicații: Tratamentul vacilor cu forme clinice și subclinice de mastită cu etiologie bacteriană, cauzată de microorganisme sensibile la componentele medicamentului în timpul perioadei de lactaţie.",
+      "image": "/products/farmavet/mastilong-forte-seringi-intramamare.jpg",
       "labels": [
         "Bovine",
         "Ovine"
@@ -2329,7 +2389,7 @@
       "prospect": "/prospecte/prospect-mastilong.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/mastilong-forte-seringi-intramamare.jpg",
           "alt": "Mastilong Forte — seringi intramamare",
           "role": "main"
         }
@@ -2338,15 +2398,17 @@
         "Produse pentru reproducție și sănătatea glandei mamare",
         "Mastilong Forte — seringi intramamare"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/en/production/mastilong-forte/"
     },
     {
-      "id": "400076",
+      "id": "400075",
+      "brand_slug": "olkar",
       "name": "Metristar — suspensie intrauterină pentru vaci",
       "slug": "metristar-suspensie-intrauterina-pentru-vaci",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Suspensie pentru administrare intrauterină în tratamentul vacilor cu endometrită subacută și cronică (la peste 14 zile de la fătare) cauzată de microorganisme sensibile.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Suspensie pentru administrare intrauterină în tratamentul vacilor cu endometrită subacută și cronică (la peste 14 zile de la fătare) cauzată de microorganisme sensibile.\n\nIndicații: În tratamentul vacilor cu endometrită subacută și cronică (care pot fi prezente după 14 zile după fătare) cauzată de microorganisme sensibile la cefapirină.",
+      "image": "/products/farmavet/metristar-suspensie-intrauterina-pentru-vaci.jpg",
       "labels": [
         "Bovine"
       ],
@@ -2358,7 +2420,7 @@
       "prospect": "/prospecte/prospect-metristar.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/metristar-suspensie-intrauterina-pentru-vaci.jpg",
           "alt": "Metristar — suspensie intrauterină pentru vaci",
           "role": "main"
         }
@@ -2370,12 +2432,13 @@
       "product_type": ""
     },
     {
-      "id": "400077",
+      "id": "400076",
+      "brand_slug": "olkar",
       "name": "Oxitocină — soluție injectabilă",
       "slug": "oxitocina-solutie-injectabila",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Hormon injectabil pentru animalele femele (vaci, iepe, oi, capre, scroafe, cățele, pisici) care stimulează contracțiile uterine, ejacularea laptelui și involuția uterină.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Hormon injectabil pentru animalele femele (vaci, iepe, oi, capre, scroafe, cățele, pisici) care stimulează contracțiile uterine, ejacularea laptelui și involuția uterină.\n\nIndicații: Preparatul este indicat la animalele femele (vaci, iepe, oi, capre, scroafe, cățelele, pisici), pentru a stimula sau de a spori contractile uterine în timpul travaliului (în hipotensiune sau atonie uterină), pentru tratamentul post-partum în retenția placentei, în tratamentul complex al metritei pentru a accelera involuția uterului după travaliu, precum și pentru stimularea laptelui în agalaxie, hemoragii uterine, pentru eliberarea laptelui matern sau exudatul inflamator în tratamentul mastitei.",
+      "image": "/products/farmavet/oxitocina-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -2393,7 +2456,7 @@
       "prospect": "/prospecte/prospect-oxitocin.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/oxitocina-solutie-injectabila.jpg",
           "alt": "Oxitocină — soluție injectabilă",
           "role": "main"
         }
@@ -2405,12 +2468,13 @@
       "product_type": ""
     },
     {
-      "id": "400078",
+      "id": "400077",
+      "brand_slug": "olkar",
       "name": "Estromax — soluție injectabilă",
       "slug": "estromax-solutie-injectabila",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Prostaglandină injectabilă pentru bovine, suine și cățele: sincronizarea căldurilor, tratamentul afecțiunilor uterine, avortul terapeutic și inducerea fătării.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Prostaglandină injectabilă pentru bovine, suine și cățele: sincronizarea căldurilor, tratamentul afecțiunilor uterine, avortul terapeutic și inducerea fătării.\n\nIndicații: Bovine (vaci, junici, vițele): pentru a mări contracțiile uterului în fătări complicate, accelerarea involuție uterului, în retenția-învelitorilor fetale, tratamentul endometritei în asociere cu agenți antimicrobieni, pentru regresia corpului galben persistent, în regresia chistului, pentru a stimula și de a sincroniza căldurile în timpul inseminării. Scroafe: pentru a stimula și sincroniza fătarea. Iepe: pentru a stimula estru și regresia corpului galben persistent. Cățea, pisică: terapia compl",
+      "image": "/products/farmavet/estromax-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Porcine",
@@ -2427,7 +2491,7 @@
       "prospect": "/prospecte/prospect-estromax.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/estromax-solutie-injectabila.jpg",
           "alt": "Estromax — soluție injectabilă",
           "role": "main"
         }
@@ -2439,12 +2503,13 @@
       "product_type": ""
     },
     {
-      "id": "400079",
+      "id": "400078",
+      "brand_slug": "olkar",
       "name": "Castrin — suspensie injectabilă pentru controlul ciclului",
       "slug": "castrin-suspensie-injectabila-pentru-controlul-ciclului",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Suspensie injectabilă pentru prevenirea sau întreruperea pe termen lung a estrusului la pisici și cățele și prevenirea gestațiilor nedorite.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Suspensie injectabilă pentru prevenirea sau întreruperea pe termen lung a estrusului la pisici și cățele și prevenirea gestațiilor nedorite.\n\nIndicații: Pentru prevenirea sau întreruperea pe termen lung a estrusului la pisici și cățele și prevenirea gestațiilor nedorite; tratamentul gestației imaginare și pseudo-lactației cățelelor; tratamentul nimfomaniei la pisici.",
+      "image": "/products/farmavet/castrin-suspensie-injectabila-pentru-controlul-ciclului.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -2457,7 +2522,7 @@
       "prospect": "/prospecte/prospect-castrin.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/castrin-suspensie-injectabila-pentru-controlul-ciclului.jpg",
           "alt": "Castrin — suspensie injectabilă pentru controlul ciclului",
           "role": "main"
         }
@@ -2469,12 +2534,13 @@
       "product_type": ""
     },
     {
-      "id": "400080",
+      "id": "400079",
+      "brand_slug": "olkar",
       "name": "Sexinon — tablete pentru întreruperea estrului",
       "slug": "sexinon-tablete-pentru-intreruperea-estrului",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Tablete pentru blocarea și amânarea estrului și prevenirea gestației nedorite la cățele și pisici; pentru calmarea câinilor și pisoilor în perioadele de stres.",
-      "image": "/cards/animale decomponie.jpeg",
+      "description": "Tablete pentru blocarea și amânarea estrului și prevenirea gestației nedorite la cățele și pisici; pentru calmarea câinilor și pisoilor în perioadele de stres.\n\nIndicații: Pentru blocarea (întreruperea) și amânarea estrului, prevenirea gestației nedorite la câțele și pisici; pentru calmarea câinilor și pisoilor în călduri, care prezintă modificări de comportament (satiriazis) și pentru a suprima dorința sexuala la pisoi și câini.",
+      "image": "/products/farmavet/sexinon-tablete-pentru-intreruperea-estrului.jpg",
       "labels": [
         "Câini",
         "Pisici"
@@ -2487,7 +2553,7 @@
       "prospect": "/prospecte/prospect-sexinon.docx",
       "images": [
         {
-          "url": "/cards/animale decomponie.jpeg",
+          "url": "/products/farmavet/sexinon-tablete-pentru-intreruperea-estrului.jpg",
           "alt": "Sexinon — tablete pentru întreruperea estrului",
           "role": "main"
         }
@@ -2499,11 +2565,12 @@
       "product_type": ""
     },
     {
-      "id": "400081",
+      "id": "400080",
+      "brand_slug": "cid-lines",
       "name": "Keno Pure — dezinfectant pentru mameloane",
       "slug": "keno-pure-dezinfectant-pentru-mameloane",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
-      "description": "Soluție pe bază de acid lactic cu dublă acțiune: curăță și dezinfectează mameloanele bovinelor, ovinelor și caprinelor înainte de muls, diminuând încărcătura de germeni a glandei mamare.",
+      "description": "Soluție pe bază de acid lactic cu dublă acțiune: curăță și dezinfectează mameloanele bovinelor, ovinelor și caprinelor înainte de muls, diminuând încărcătura de germeni a glandei mamare.\n\nCompoziție: Surfactant ionic și non ionic, glicerină și apă până la 1000 ml. KENO PURE este un produs cu acțiune dublă - curăță, dezinfectează mameloanele și asigură o bună întreținere a igienei ugerului. KENO PURE se folosește cu scopul diminuării încărcăturii de germeni existenți la nivelul glandei mamare și stimularea ejecției laptelui. Igienizarea mamelonului se face prin cufundarea mamelonului în dezinfectant KENO PURE. Spă…",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -2529,12 +2596,13 @@
       "product_type": ""
     },
     {
-      "id": "400082",
+      "id": "400081",
+      "brand_slug": "ruvera",
       "name": "Neem Plus — unguent protector pentru uger",
       "slug": "neem-plus-unguent-protector-pentru-uger",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
       "description": "Unguent topic cu uleiuri esențiale de neem, cuișoare și pin, acid lactic și salicilat de metil pentru protecția ugerului: regenerare, peliculă barieră și efect repelent împotriva muștelor.",
-      "image": "/cards/bovine.jpeg",
+      "image": "/products/farmavet/neem-plus-unguent-protector-pentru-uger.jpg",
       "labels": [
         "Bovine"
       ],
@@ -2546,7 +2614,7 @@
       "prospect": "/prospecte/unguent-neem-plus.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/neem-plus-unguent-protector-pentru-uger.jpg",
           "alt": "Neem Plus — unguent protector pentru uger",
           "role": "main"
         }
@@ -2555,10 +2623,12 @@
         "Produse pentru reproducție și sănătatea glandei mamare",
         "Neem Plus — unguent protector pentru uger"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://ruvera.lt/produktai/neem-plus-tepalas-gyvunu-odos-prieziurai-200g-400g-900g/"
     },
     {
-      "id": "400083",
+      "id": "400082",
+      "brand_slug": "ruvera",
       "name": "Profimast — unguent igienic pentru uger",
       "slug": "profimast-unguent-igienic-pentru-uger",
       "category": "Produse pentru reproducție și sănătatea glandei mamare",
@@ -2587,12 +2657,13 @@
       "product_type": ""
     },
     {
-      "id": "400084",
+      "id": "400083",
+      "brand_slug": "olkar",
       "name": "Clorură de calciu 10% soluție injectabilă",
       "slug": "clorura-de-calciu-10-solutie-injectabila",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Soluție injectabilă de calciu pentru bovine, cabaline, caprine, ovine, porcine și câini. Tratamentul hipocalcemiilor, alergieși, pneumonii și ca agent antiinflamator.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Soluție injectabilă de calciu pentru bovine, cabaline, caprine, ovine, porcine și câini. Tratamentul hipocalcemiilor, alergieși, pneumonii și ca agent antiinflamator.\n\nCompoziție: Substanța activă: 100 ml de medicament conține: Clorură de calciu - 10 g Excipient: Apă pentru preparate injectabile.\n\nIndicații: Soluția de clorură de calciu 10% injectabilă este utilizată ca agent antiinflamator pentru tratamentul animalelor cu pneumonie, pleurezie, peritonită, leziuni hepatice toxice, hepatită parenchimoasă, nefrită, radiații, edem pulmonar toxic, boli de edem, boli de edem, edem, ca agent hemostatic pentru sângerări nazale, gastrointestinale, pulmonare, uterine și postoperatorii. Ca agent desensibilizant pentru boli alergice (astm, boala serului, mâncărimi ale pielii, urticarie cronică la cabaline și b",
+      "image": "/products/farmavet/clorura-de-calciu-10-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -2609,7 +2680,7 @@
       "prospect": "/prospecte/prospect-clorura-de-calciu-md.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/clorura-de-calciu-10-solutie-injectabila.jpg",
           "alt": "Clorură de calciu 10% soluție injectabilă",
           "role": "main"
         }
@@ -2621,11 +2692,12 @@
       "product_type": ""
     },
     {
-      "id": "400085",
+      "id": "400084",
+      "brand_slug": "farmavet",
       "name": "Borogluconat de calciu soluție injectabilă",
       "slug": "borogluconat-de-calciu-solutie-injectabila",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Toniant cu calciu pentru prevenirea și tratamentul parezei puerperale, hipocalcemiilor și intoxicațiilor la bovine, cabaline, ovine, porcine, câini și pisici.",
+      "description": "Toniant cu calciu pentru prevenirea și tratamentul parezei puerperale, hipocalcemiilor și intoxicațiilor la bovine, cabaline, ovine, porcine, câini și pisici.\n\nCompoziție: 100 ml de medicament conține (g): Gluconat de calciu - 38,00 g. Acid boric - 6,50 g. Clorură de magneziu x 6H2O - 6,00g. Edetat disodic - 0,05 g Metabisulfit de sodiu - 0,05g. Excipient: hidroxid de sodiu ad, apă distilată pentru preparate injectabile pînă la - 100 ml.\n\nIndicații: Borgluconatul de calciu este utilizat pentru prevenirea și tratamentul animalelor în următoarele boli și stări patologice: pareze şi paraplegii ante- şi postpartum, hipocalcemie, tetanie, alergii, eclampsia scroafelor şi carnasierelor, tulburări metabolice, rahitism, osteomalacie, acetonurile, stări hemoragice, anemii, animale slăbite, accidente postvaccinale, ateropatii, după distocii, avorturi, prolaps vaginal şi uterin, operaţii cezariene, laparatomii, afecțiuni toxice ale ficatului.",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -2656,12 +2728,13 @@
       "product_type": ""
     },
     {
-      "id": "400086",
+      "id": "400085",
+      "brand_slug": "olkar",
       "name": "Calfostar 1000 — soluție injectabilă calciu + fosfor",
       "slug": "calfostar-1000-solutie-injectabila-calciu-fosfor",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Complex de calciu, fosfor și magneziu pentru tratamentul hipocalciemiei și parezei puerperale, rahitismului și osteomalaciei la animalele de fermă.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Complex de calciu, fosfor și magneziu pentru tratamentul hipocalciemiei și parezei puerperale, rahitismului și osteomalaciei la animalele de fermă.\n\nIndicații: Preparatul se administrează animalelor în tratamentul hipocalcemiei și a formei sale clinice – pareză puerperală, în tratamentul rahitismului, osteodistrofiei, hipofosfatemiei puerperale, bolilor alergice, hipomagnezemiei (tetanie de iarbă), proceselor inflamatorii exudative, hemoragiilor și a diatezei hemoragice, paraplegiei pre- și postpartum, subinvoluției uterine.",
+      "image": "/products/farmavet/calfostar-1000-solutie-injectabila-calciu-fosfor.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -2677,7 +2750,7 @@
       "prospect": "/prospecte/prospect-calfostar-1000.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/calfostar-1000-solutie-injectabila-calciu-fosfor.jpg",
           "alt": "Calfostar 1000 — soluție injectabilă calciu + fosfor",
           "role": "main"
         }
@@ -2689,12 +2762,13 @@
       "product_type": ""
     },
     {
-      "id": "400087",
+      "id": "400086",
+      "brand_slug": "farmavet",
       "name": "Clorură de sodiu 0,9% soluție injectabilă",
       "slug": "clorura-de-sodiu-0-9-solutie-injectabila",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Soluție fiziologică pentru rehidratarea animalelor în caz de deshidratare severă, intoxicații, diaree, intervenții chirurgicale și deficit de sodiu.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Soluție fiziologică pentru rehidratarea animalelor în caz de deshidratare severă, intoxicații, diaree, intervenții chirurgicale și deficit de sodiu.\n\nCompoziție: Substanța acticvă: Cloura de sodiu - 9 mg Excipient: Apă distilată pentru preparate injectabile până la 1 ml.\n\nIndicații: Se indică în tratamentul animalelor în cazul deshidratărilor semnificative (intoxicații, diaree, intervenții chirurgicale, dificit de sodiu, arsuri, dispepsie, hipovolemie, stare de șoc). Se folosește la sanarea plăgilor, cavității bucale sau nazale, mucoasei oculare și ca diluant pentru medicamente compatibile sau biopreparate. În intoxicaţii pentru epurarea toxinelor din organism. Mai poate fi folosită în calitate de diluant pentrua antibiotice şi a altor medicamente.",
+      "image": "/products/farmavet/clorura-de-sodiu-0-9-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -2711,7 +2785,7 @@
       "prospect": "/prospecte/prospect-clorura-de-sodiu.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/clorura-de-sodiu-0-9-solutie-injectabila.jpg",
           "alt": "Clorură de sodiu 0,9% soluție injectabilă",
           "role": "main"
         }
@@ -2720,15 +2794,17 @@
         "Tonice și produse pentru rehidratare",
         "Clorură de sodiu 0,9% soluție injectabilă"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/ru/production/sodium-chloride-0-9/"
     },
     {
-      "id": "400088",
+      "id": "400087",
+      "brand_slug": "olkar",
       "name": "Cofeină benzoat de sodiu 20% soluție injectabilă",
       "slug": "cofeina-benzoat-de-sodiu-20-solutie-injectabila",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Stimulator al sistemului nervos central pentru tratarea bolilor însoțite de inhibarea funcțiilor vitale, colaps și slăbirea activității cardiace la toate speciile.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Stimulator al sistemului nervos central pentru tratarea bolilor însoțite de inhibarea funcțiilor vitale, colaps și slăbirea activității cardiace la toate speciile.\n\nCompoziție: Substanța activă: 100 ml de medicament conține substanța activă: cofeină-benzoat de sodiu - 20,0 g. Excipient: apă pentru preparate injectabile.\n\nIndicații: Soluția este utilizată pentru a trata bovine, cabaline, ovine, caprine, porcine, câini, pisici pentru boli însoțite de inhibarea funcțiilor sistemului nervos central și cardiovascular, pentru a slăbi efectul hipnoticelor și narcoticelor, pentru a stimula sistemul respirator și vascular, centrii motorii și cu o scădere a substanțelor metabolice, pareza nașterii, pentru ameliorarea oboselii fizice și creșterea performanței animalelor.",
+      "image": "/products/farmavet/cofeina-benzoat-de-sodiu-20-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -2746,7 +2822,7 @@
       "prospect": "/prospecte/prospect-cofeina.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/cofeina-benzoat-de-sodiu-20-solutie-injectabila.jpg",
           "alt": "Cofeină benzoat de sodiu 20% soluție injectabilă",
           "role": "main"
         }
@@ -2758,12 +2834,13 @@
       "product_type": ""
     },
     {
-      "id": "400089",
+      "id": "400088",
+      "brand_slug": "olkar",
       "name": "Glucoză 40% soluție injectabilă",
       "slug": "glucoza-40-solutie-injectabila",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Soluție energetică și rehidratantă pentru terapia complexă a animalelor cu forme severe de boli infecțioase acute, intoxicații și hipoglicemie.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Soluție energetică și rehidratantă pentru terapia complexă a animalelor cu forme severe de boli infecțioase acute, intoxicații și hipoglicemie.\n\nCompoziție: Substanța activă: 100 ml de medicament conține (g): glucoză cristalină - 40,0. Excipient: apă pentru preparate injectabile.\n\nIndicații: Soluția de glucoză 40% este utilizată în terapia complexă pentru a trata animalele cu forme severe de boli infecțioase acute și parazitare ale sângelui, insuficiență cardiovasculară cronică și tensiune arterială scăzută. Glucoza face parte din fluidele anti-șoc și de înlocuire a sângelui, care sunt prescrise animalelor în stare de șoc, colaps sau cu pierderi mari de sânge. O soluție de glucoză 40% este utilizată la animale pentru infecții toxice, otrăviri cu medicamente, monoxid de carbon, mercu",
+      "image": "/products/farmavet/glucoza-40-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Cabaline",
@@ -2782,7 +2859,7 @@
       "prospect": "/prospecte/prospect-glucoza-40.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/glucoza-40-solutie-injectabila.jpg",
           "alt": "Glucoză 40% soluție injectabilă",
           "role": "main"
         }
@@ -2794,11 +2871,12 @@
       "product_type": ""
     },
     {
-      "id": "400090",
+      "id": "400089",
+      "brand_slug": "vetsintez",
       "name": "Bromenghil — soluție orală pentru păsări",
       "slug": "bromenghil-solutie-orala-pentru-pasari",
       "category": "Tonice și produse pentru rehidratare",
-      "description": "Soluție perorală cu bromhexină și mentol pentru pui de carne și păsări de curte de înlocuire: fluidifiant bronșic în bolile respiratorii cu secreții abundente.",
+      "description": "Soluție perorală cu bromhexină și mentol pentru pui de carne și păsări de curte de înlocuire: fluidifiant bronșic în bolile respiratorii cu secreții abundente.\n\nCompoziție: 1 ml de preparat conține, mg: Clorhidrat de bromhexină – 20,0; Mentol – 8,0. Excipienți: alcool benzilic, alcool butilic, acid fosforic, propilen glicol.\n\nIndicații: Tratamentul (într-un complex de măsuri terapeutice) puilor de carne și păsărilor de curte de înlocuire pentru boli respiratorii de diverse etiologii cauzate de bacterii și viruși, însoțite de secreție crescută de mucus și dificultăți respiratorii.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -2823,11 +2901,12 @@
       "product_type": ""
     },
     {
-      "id": "400091",
+      "id": "400090",
+      "brand_slug": "olkar",
       "name": "Canvac R — vaccin antirabic pentru câini",
       "slug": "canvac-r-vaccin-antirabic-pentru-ciini",
       "category": "Vaccinuri și alte produse biologice",
-      "description": "Vaccin inactivat suspensie injectabilă pentru imunizarea câinilor împotriva rabiei (virus rabic inactivat, minim 2 UI/doză).",
+      "description": "Vaccin inactivat suspensie injectabilă pentru imunizarea câinilor împotriva rabiei (virus rabic inactivat, minim 2 UI/doză).\n\nIndicații: 4. CONTRAINDICAȚII A nu se utiliza în caz de boli infecțioase acute, boli de organe și febră, în caz de detectare a unei reacții nefavorabile post-vaccinare sau alergii la vaccinări anterioare și după stresul impus animalelor (transport, temperaturi ridicate). A nu se utiliza la animalele gestante la un termen mare și imediat după parturiţie. Este interzisă imunizarea animalelor bolnave cu rabie sau a animalelor care au intrat în contact sau au fost rănite de animalele care suferă de rabie. Anim",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini"
@@ -2852,11 +2931,12 @@
       "product_type": ""
     },
     {
-      "id": "400092",
+      "id": "400091",
+      "brand_slug": "olkar",
       "name": "Canvac 8 DHPPiL — vaccin polivalent pentru câini",
       "slug": "canvac-8-dhppil-vaccin-polivalent-pentru-ciini",
       "category": "Vaccinuri și alte produse biologice",
-      "description": "Liofilizat și solvent pentru suspensie injectabilă. Imunizarea câinilor împotriva cinomozei, leptospirozei, hepatitei infecțioase, parainfluenzei, coronavirozei, parvovirozei și infecției cu Bordetella.",
+      "description": "Liofilizat și solvent pentru suspensie injectabilă. Imunizarea câinilor împotriva cinomozei, leptospirozei, hepatitei infecțioase, parainfluenzei, coronavirozei, parvovirozei și infecției cu Bordetella.\n\nIndicații: 4. CONTRAINDICAȚII A nu se utiliza în caz de boli infecțioase acute, boli de organe și febră, în caz de detectare a unei reacții nefavorabile post-vaccinare sau alergii la vaccinări anterioare și după stresul impus animalelor (transport, temperaturi ridicate). A nu se utiliza la animalele gestante la un termen mare și imediat după parturiţie. 5. REACȚII ADVERSE În cazuri rare (mai mult de 1 animal dar mai puţin de 10 animale din 10 000) administrarea vaccinului poate induce o uşoară stare subfeb",
       "image": "/cards/animale decomponie.jpeg",
       "labels": [
         "Câini"
@@ -2881,7 +2961,8 @@
       "product_type": ""
     },
     {
-      "id": "400093",
+      "id": "400092",
+      "brand_slug": "vniivvim",
       "name": "Vaccin hemoragic viral (RHD) pentru iepuri",
       "slug": "vaccin-hemoragic-viral-rhd-pentru-iepuri",
       "category": "Vaccinuri și alte produse biologice",
@@ -2910,12 +2991,13 @@
       "product_type": ""
     },
     {
-      "id": "400094",
+      "id": "400093",
+      "brand_slug": "vniivvim",
       "name": "Vaccin contra mixomatozei pentru iepuri",
       "slug": "vaccin-contra-mixomatozei-pentru-iepuri",
       "category": "Vaccinuri și alte produse biologice",
       "description": "Vaccin pentru prevenirea mixomatozei la iepuri, imunizare activă împotriva virusului mixomatozei.",
-      "image": "/hero/rabbit.webp",
+      "image": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.jpg",
       "labels": [
         "Iepuri"
       ],
@@ -2927,7 +3009,7 @@
       "prospect": "/prospecte/vaccin-mixomatoz.docx",
       "images": [
         {
-          "url": "/hero/rabbit.webp",
+          "url": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.jpg",
           "alt": "Vaccin contra mixomatozei pentru iepuri",
           "role": "main"
         }
@@ -2939,7 +3021,8 @@
       "product_type": ""
     },
     {
-      "id": "400095",
+      "id": "400094",
+      "brand_slug": "fgbu-stavropol",
       "name": "Vaccin LTF-130 contra tricofitozei la bovine",
       "slug": "vaccin-ltf-130-contra-tricofitozei-la-bovine",
       "category": "Vaccinuri și alte produse biologice",
@@ -2968,7 +3051,8 @@
       "product_type": ""
     },
     {
-      "id": "400096",
+      "id": "400095",
+      "brand_slug": "fgbu-stavropol",
       "name": "Vaccin VR-2 contra rujețului la porcine",
       "slug": "vaccin-vr-2-contra-rujetului-la-porcine",
       "category": "Vaccinuri și alte produse biologice",
@@ -2997,11 +3081,12 @@
       "product_type": ""
     },
     {
-      "id": "400097",
+      "id": "400096",
+      "brand_slug": "promark-trade",
       "name": "Calciu Vitaminizat Aromatizat — pulbere",
       "slug": "calciu-vitaminizat-aromatizat-pulbere",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Furaj complementar pe bază de calciu (min 39%) cu premix de vitamine A, D3, E, K3, B, microelemente și aminoacizi pentru păsări de curte, păsări exotice și animale de gospodărie.",
+      "description": "Furaj complementar pe bază de calciu (min 39%) cu premix de vitamine A, D3, E, K3, B, microelemente și aminoacizi pentru păsări de curte, păsări exotice și animale de gospodărie.\n\nCompoziție: CaO – Min 54%; MgO – Max 0,8 %; Fe2O3 – Max 0,01%; SiO2 – Max 0,01%; Al2O3 – Max 0,1 %; CaCO3 – Min 98%; Na2O5 – Max 0,01 %; P2O5 – Max 0,01%; K2O – Max 0,005 %; Ca – Min 39%; premix cu lisină, metionină, cisteină, treonină, Ca, P, Fe, Zn, Mn, Cu, Se, Co, I, Vitamina A, D3, E, К3, B1, B2, В6, B12, Pantotenat Ca D, antioxidant, aromă.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări",
@@ -3032,12 +3117,13 @@
       "product_type": ""
     },
     {
-      "id": "400098",
+      "id": "400097",
+      "brand_slug": "olkar",
       "name": "Seevit — soluție injectabilă (seleniu + vitamina E)",
       "slug": "seevit-solutie-injectabila-seleniu-vitamina-e",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Complex de seleniu și vitamina E injectabil pentru prevenirea și tratamentul hiposeleniemiei, distrofiilor musculare și retinerii placentei la toate speciile de animale.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Complex de seleniu și vitamina E injectabil pentru prevenirea și tratamentul hiposeleniemiei, distrofiilor musculare și retinerii placentei la toate speciile de animale.\n\nCompoziție: 1 ml de medicament conține substanțe active: Acetat de tocoferol (vitamina E) - 50 mg; Selenit de sodiu - 0,5 mg. Excipienți: alcool benzilic, apă pentru preparate injectabile.\n\nIndicații: Prevenirea și tratamentul bovinelor, cabalinelor, ovinelor, caprinelor, porcinelor, câinilor, pisicilor, animalelor de blană, păsărilor de curte cu dereglări ale funcției de reproducere și dezvoltării fetale, boli ale mușchilor albi, miozită traumatică și cardiopatie, distrofie hepatică toxică, întârziere de creștere, infecții și boli invazive, vaccinări preventive și deparazitare, otrăviri cu nitriți, metale grele și micotoxine, situații stresante; pentru a stimula productivitatea, creșterea și",
+      "image": "/products/farmavet/seevit-solutie-injectabila-seleniu-vitamina-e.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3056,7 +3142,7 @@
       "prospect": "/prospecte/prospect-seevit-inj-500.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/seevit-solutie-injectabila-seleniu-vitamina-e.jpg",
           "alt": "Seevit — soluție injectabilă (seleniu + vitamina E)",
           "role": "main"
         }
@@ -3068,12 +3154,13 @@
       "product_type": ""
     },
     {
-      "id": "400099",
+      "id": "400098",
+      "brand_slug": "olkar",
       "name": "Megavit — soluție injectabilă multivitaminică",
       "slug": "megavit-solutie-injectabila-multivitaminica",
       "category": "Vitamine, minerale și premixuri",
       "description": "Complex de vitamine A, D, E și grupa B pentru prevenirea și tratamentul hipovitaminozelor, rahitismului, osteodistrofiei, cetozei și hepatodistrofiei.",
-      "image": "/cards/bovine.jpeg",
+      "image": "/products/farmavet/megavit-solutie-injectabila-multivitaminica.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3089,7 +3176,7 @@
       "prospect": "/prospecte/prospect-megavit-1000.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/megavit-solutie-injectabila-multivitaminica.jpg",
           "alt": "Megavit — soluție injectabilă multivitaminică",
           "role": "main"
         }
@@ -3101,12 +3188,13 @@
       "product_type": ""
     },
     {
-      "id": "400100",
+      "id": "400099",
+      "brand_slug": "olkar",
       "name": "Tetravin — soluție injectabilă (A, D3, E)",
       "slug": "tetravin-solutie-injectabila-a-d3-e",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Soluție injectabilă cu vitaminele A, D3 și E pentru prevenirea și tratamentul hipovitaminozei, osteodistrofiilor, cetozei, rahitismului și hipocalcemiei la animalele de fermă.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Soluție injectabilă cu vitaminele A, D3 și E pentru prevenirea și tratamentul hipovitaminozei, osteodistrofiilor, cetozei, rahitismului și hipocalcemiei la animalele de fermă.\n\nIndicații: Prevenirea și tratamentul hipovitaminozei A, D și E, osteodistrofii alimentare și secundare, cetoză, rahitism, hipocalcemie și hipofosfatemie postpartum, distocii postpartum, urolitiază, bronhopneumonii, boli gastrointestinale, boala muşchilor albi, metrită, fracturi osoase, stimularea creșterii și dezvoltării animalelor tinere, precum și a funcției reproductive la masculii reproducători.",
+      "image": "/products/farmavet/tetravin-solutie-injectabila-a-d3-e.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3122,7 +3210,7 @@
       "prospect": "/prospecte/prospect-tetravin-sol-inj-rev-1000.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/tetravin-solutie-injectabila-a-d3-e.jpg",
           "alt": "Tetravin — soluție injectabilă (A, D3, E)",
           "role": "main"
         }
@@ -3134,11 +3222,12 @@
       "product_type": ""
     },
     {
-      "id": "400101",
+      "id": "400100",
+      "brand_slug": "farmavet",
       "name": "Ferrum + B12 — soluție injectabilă",
       "slug": "ferrum-b12-solutie-injectabila",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Fier complexat 100 mg/ml cu cianocobalamină pentru tratamentul și profilaxia anemiei feriprive la bovine, ovine, caprine, porcine și cabaline.",
+      "description": "Fier complexat 100 mg/ml cu cianocobalamină pentru tratamentul și profilaxia anemiei feriprive la bovine, ovine, caprine, porcine și cabaline.\n\nCompoziție: 1 ml de preparat conține: Substanțe active: Fier (III) (sub formă de fier complexat) – 100 mg; Vitamina B12 (cianocobalamină) - 4 µg Excipienți: Apă până la 1ml.\n\nIndicații: Ferrum+B12 este utilizat la animale ca preparat în scop terapeutic și profilactic în anemia cauzată de deficitul de fier (anemia feriprivă).",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -3167,12 +3256,13 @@
       "product_type": ""
     },
     {
-      "id": "400102",
+      "id": "400101",
+      "brand_slug": "olkar",
       "name": "Vetozal 10% soluție injectabilă",
       "slug": "vetozal-10-solutie-injectabila",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Complex de oligoelemente care stimulează hematopoieza, corectează tulburările metabolice cauzate de hrănirea irațională și sporește rezistența la boli.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Complex de oligoelemente care stimulează hematopoieza, corectează tulburările metabolice cauzate de hrănirea irațională și sporește rezistența la boli.\n\nIndicații: Are indicaţii în tulburări metabolice cauzate de hrănirea irațională a animalelor, malnutriție, stimulează hematopoeza, în anemii de diferite etiologii, în patologii ale glandei mamare, mastite, boli obstreticale, afecțiuni gastrointestinal și respiratorii, hipocalcemii, deficit de magneziu, pentru stimularea dezvoltării la tineret și întărirea imunității, surmenaj și epuizarea la animale; pentru a crește rezistența organismului la acțiunea unei varietăți de agenți patogeni; pentru a promova cre",
+      "image": "/products/farmavet/vetozal-10-solutie-injectabila.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3191,7 +3281,7 @@
       "prospect": "/prospecte/prospect-vetozal-1000.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/vetozal-10-solutie-injectabila.jpg",
           "alt": "Vetozal 10% soluție injectabilă",
           "role": "main"
         }
@@ -3203,12 +3293,13 @@
       "product_type": ""
     },
     {
-      "id": "400103",
+      "id": "400102",
+      "brand_slug": "bioceval",
       "name": "Ulei de Pește — Omega-3, vitamine A și D",
       "slug": "ulei-de-peste-omega-3-vitamine-a-si-d",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Sursă naturală de acizi grași polinesaturați Omega-3/Omega-6, iod și vitaminele A și D pentru creștere, lână, plumaj, fertilitate și digestie sănătoasă.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Sursă naturală de acizi grași polinesaturați Omega-3/Omega-6, iod și vitaminele A și D pentru creștere, lână, plumaj, fertilitate și digestie sănătoasă.\n\nCompoziție: Conține un amestec de grăsimi rafinate de pești marini bogate în acizi grași polinesaturați de Omega-3, Omega-6 si vitaminele A și D. Este o substanță uleioasă lichid din galben deschis la galben la culoare, cu un miros caracteristic de pește mai mult sau mai puțin ușoară și gust la fel. Proprietăți farmacologice Uleiul de pește este o sursă naturală de vitamine A, D și E, acizi grași polinesaturați, iod, brom, fosfo…\n\nIndicații: Indicat pentru prevenirea si tratamentul de vitamina A, rahitism, osteomalacie, infecții cronice, anemie, alergii, tulburări gastrointestinale, ulcerații gastrice, tulburări sexuale. Folosit ca un tonic general, precum și pentru a accelera vindecarea ranilor si fracturi osoase despicare. Pe plan extern prescris pentru tratamentul sistemic al leziunilor pielii și a mucoaselor, pentru tratamentul dermatitei seboreice, eczeme, degerături, arsuri, răni și ulcere hardhealed, irită, conjunctivită, și",
+      "image": "/products/farmavet/ulei-de-peste-omega-3-vitamine-a-si-d.jpg",
       "labels": [
         "Păsări",
         "Porcine",
@@ -3224,7 +3315,7 @@
       "prospect": "/prospecte/prospect-ulei-de-peste.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/ulei-de-peste-omega-3-vitamine-a-si-d.jpg",
           "alt": "Ulei de Pește — Omega-3, vitamine A și D",
           "role": "main"
         }
@@ -3236,11 +3327,12 @@
       "product_type": ""
     },
     {
-      "id": "400104",
+      "id": "400103",
+      "brand_slug": "bioceval",
       "name": "Făină de Pește Vitaminizată",
       "slug": "faina-de-peste-vitaminizata",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Aditiv furajer cu 65% proteină brută, vitamine și minerale pentru compensarea insuficienței proteice și minerale din rațiile porcinelor și păsărilor.",
+      "description": "Aditiv furajer cu 65% proteină brută, vitamine și minerale pentru compensarea insuficienței proteice și minerale din rațiile porcinelor și păsărilor.\n\nCompoziție: Umiditate - 6,8 %. Vitamine: A, D3, E, K3, B1, B2, B6, B12, Acid pantotenic, Acid nicotinic. Minerale: Calciu, Mangan, Fier, Cupru, Zinc, Cobalt, Potasiu, Iod, Seleniu, Fosfor.\n\nIndicații: Adaosul se foloseşte pentru a compensa insuficienţa de proteine, substanţe minerale şi vitamine din raţiile porcinelor şi păsărilor. Hrana complet echilibrată ce asigură o dezvoltare optimă a musculaturii, creşterea rapidă în greutate, creşterea rezistenţei la boli, măreşte apetitul.Făina de pește se va folosi în rație din prima zi de viață, asigurînd o digestie optimă pe toată perioada alimentației. Are un nivel ridicat de proteină ușor digestibilă, cu conținut ridicat de aminoacizi și carbohid",
       "image": "/cards/porcine.jpeg",
       "labels": [
         "Porcine",
@@ -3266,12 +3358,13 @@
       "product_type": ""
     },
     {
-      "id": "400105",
+      "id": "400104",
+      "brand_slug": "marel",
       "name": "Drojdie Furajeră — 46% proteină",
       "slug": "drojdie-furajera-46-proteina",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Aditiv furajer bogat în proteine și vitaminele grupei B care crește conversia hranei, lactația la vaci, producția de carne și ouă.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Aditiv furajer bogat în proteine și vitaminele grupei B care crește conversia hranei, lactația la vaci, producția de carne și ouă.\n\nIndicații: Benefiiciile folosirii drojdiei în hrana animalelor: -Crește rata de conversie a hranei; -Mărește aportul de hrană; -Mărește lactația la vaci și scroafe; -Îmbunătățește producția de ouă -Aport ridicat în greutate; -Reglează digestia; -Scade rata mortalității; -Reduce stresul de călduri și transport; Administrare:Bovine : de la 2% - 6% Porcine : de la 2%-4% Păsări : de la 3% - 5% Iepuri : de la 3% PRODUCĂTOR: Marel Animal Nutricion, Ioshcar-Ola Rusia DISTRIBUITOR: S.A \"Farmavet\",MD-2059, Republic",
+      "image": "/products/farmavet/drojdie-furajera-46-proteina.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3286,7 +3379,7 @@
       "prospect": "/prospecte/prospect-drojdie.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/drojdie-furajera-46-proteina.jpg",
           "alt": "Drojdie Furajeră — 46% proteină",
           "role": "main"
         }
@@ -3298,11 +3391,12 @@
       "product_type": ""
     },
     {
-      "id": "400106",
+      "id": "400105",
+      "brand_slug": "tecro",
       "name": "Biotan — concentrat de vitamine și minerale",
       "slug": "biotan-concentrat-de-vitamine-si-minerale",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Amestec concentrat de macroelemente, oligominerale, vitamine și aminoacizi pentru toate speciile de animale în perioada de creștere și reproducție.",
+      "description": "Amestec concentrat de macroelemente, oligominerale, vitamine și aminoacizi pentru toate speciile de animale în perioada de creștere și reproducție.\n\nCompoziție: CARACTERISTICA Biotan- amestec concentrat pentru animale ,care conţine macro- elemente oligominerale , vitamine şi aminoacizi ,destinate pentru toate speciile de animale de diferite vârste în perioada de creştere şi reproducere. Componenţii de calciu, fosfor, magniu şi mangan acţionează la procesul de mineralizare a oaselor. Cuprul, zincul, magniul şi vitaminele din grupa B sporeşte imunitatea organismului, stimuleaz…\n\nIndicații: Acest amestec concentrat asigură creşterea, dezvoltarea şi funcţionarea normală a organismului animalelor, sporeşte surplusul zilnic de masă corporală şi în consecinţă, productivitatea animalelor, are o importanţă hotărâtoare la formarea şi întărirea coajei de ouă la găinile ouătoare, evitind fisurile si spargerile. Participă activ la procesele metabolice. Este recomandat animalelor supuse îngrăşării intensive, animalelor cu carenţă în substanţe minerale şi vitamine şi celor aflate în recovalesc",
       "image": "/cards/bovine.jpeg",
       "labels": [
         "Bovine",
@@ -3331,12 +3425,13 @@
       "product_type": ""
     },
     {
-      "id": "400107",
+      "id": "400106",
+      "brand_slug": "olkar",
       "name": "Sulf Furajer",
       "slug": "sulf-furajer",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Sulf pulbere pentru îmbunătățirea metabolismului, creșterea producției de lână, plumaj și lapte, ca laxativ ușor și antidot în intoxicațiile cu metale grele.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Sulf pulbere pentru îmbunătățirea metabolismului, creșterea producției de lână, plumaj și lapte, ca laxativ ușor și antidot în intoxicațiile cu metale grele.\n\nIndicații: În dermatologie, este utilizat pentru a trata scabie, eczeme, dermatite, furunculoză, tricofitoză și alte leziuni ale pielii sub formă de unguente, linimente și praf. Este prescris ca laxativ ușor și antidot pentru otrăvirea acută și cronică cu mercur, plumb și alte metale grele. Ca expectorant pentru boli ale plămânilor și tractului respirator, împreună cu expectorante. Este utilizat pentru îmbunătățirea metabolismului, accelerarea creșterii, îmbunătățirea fermentației bacteriene, formarea anum",
+      "image": "/products/farmavet/sulf-furajer.jpg",
       "labels": [
         "Bovine",
         "Ovine",
@@ -3351,7 +3446,7 @@
       "prospect": "/prospecte/prospect-sulf-furajer.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/sulf-furajer.jpg",
           "alt": "Sulf Furajer",
           "role": "main"
         }
@@ -3363,12 +3458,13 @@
       "product_type": ""
     },
     {
-      "id": "400108",
+      "id": "400107",
+      "brand_slug": "olkar",
       "name": "ProfiMilk LactoStart — înlocuitor de lapte pentru viței",
       "slug": "profimilk-lactostart-inlocuitor-de-lapte-pentru-vitei",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Înlocuitor integral de lapte pentru viței de la 10 la 21 de zile, cu probiotice, vitamine și minerale pentru viței sănătoși cu vitalitate crescută.",
-      "image": "/cards/bovine.jpeg",
+      "description": "Înlocuitor integral de lapte pentru viței de la 10 la 21 de zile, cu probiotice, vitamine și minerale pentru viței sănătoși cu vitalitate crescută.\n\nCompoziție: Beneficiile utilizării: - elimină complet riscul de infecții, agenții patogeni care sunt transmiși în timpul hrănirii vițeilor și garantează sănătatea excelentă; - asigură obţinerea unor viţei sănătoşi, rezistenţi, cu vitalitate crescută; - probiotice pentru reglarea florei intestinale şi eliminarea bacteriilor din tractul intestinal; - proteine din lapte uşor digerabile; - stimulează dezvoltarea precoce datorită înt…",
+      "image": "/products/farmavet/profimilk-lactostart-inlocuitor-de-lapte-pentru-vitei.jpg",
       "labels": [
         "Bovine"
       ],
@@ -3380,7 +3476,7 @@
       "prospect": "/prospecte/prospect-profimilk-lacto.docx",
       "images": [
         {
-          "url": "/cards/bovine.jpeg",
+          "url": "/products/farmavet/profimilk-lactostart-inlocuitor-de-lapte-pentru-vitei.jpg",
           "alt": "ProfiMilk LactoStart — înlocuitor de lapte pentru viței",
           "role": "main"
         }
@@ -3392,12 +3488,13 @@
       "product_type": ""
     },
     {
-      "id": "400109",
+      "id": "400108",
+      "brand_slug": "cid-lines",
       "name": "Agrocid Super — acidifiant pentru apa de băut",
       "slug": "agrocid-super-acidifiant-pentru-apa-de-baut",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Amestec de acizi organici (formic, propionic, acetic, lactic) care scade rapid pH-ul apei de băut, reduce proliferarea coccidiilor și bacteriilor patogene și decalcifică sistemele de adăpare.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Amestec de acizi organici (formic, propionic, acetic, lactic) care scade rapid pH-ul apei de băut, reduce proliferarea coccidiilor și bacteriilor patogene și decalcifică sistemele de adăpare.\n\nCompoziție: Acid formic: >50%, Acid propionic: >10%, Acid acetic: >10%. Proprietăţi: AGROCID SUPER este o mixtură pe bază de acizi organici. AGROCID SUPER micşorează pH- apei de băut astfel: • Măreşte digestibilitatea furajelor, • Dizolvă depunerile organice, • Produce decalcificarea în sistemele de adăpare.",
+      "image": "/products/farmavet/agrocid-super-acidifiant-pentru-apa-de-baut.jpg",
       "labels": [
         "Păsări",
         "Porcine",
@@ -3411,7 +3508,7 @@
       "prospect": "/prospecte/prospect-agrocid-super.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/agrocid-super-acidifiant-pentru-apa-de-baut.jpg",
           "alt": "Agrocid Super — acidifiant pentru apa de băut",
           "role": "main"
         }
@@ -3423,11 +3520,12 @@
       "product_type": ""
     },
     {
-      "id": "400110",
+      "id": "400109",
+      "brand_slug": "vitafor",
       "name": "Vita-Acid — acidifiant pentru hrana animalelor",
       "slug": "vita-acid-acidifiant-pentru-hrana-animalelor",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Amestec echilibrat de acizi organici (formic, propionic, lactic, fumaric) cu spectru larg de acțiune în hrana pentru animale: previne tulburările bacteriene și optimizează performanța de creștere.",
+      "description": "Amestec echilibrat de acizi organici (formic, propionic, lactic, fumaric) cu spectru larg de acțiune în hrana pentru animale: previne tulburările bacteriene și optimizează performanța de creștere.\n\nCompoziție: Acid formic…………………….....300 000 mg Acid propionic…………………....100 000 mg Acid lactic………………………..50 000 mg Acid fumaric……………………..50 000 mg Acid silicic precipitat …………....20 000 mg Magneziu silicat hidratat……..…...208 000 mg Cadmiu (Cd) ……………….….…15 mg / kg Plumb (Pb)……………..……..…..200 mg / kg Dioxine……………………..……1.00 ng WHO-PCDD/F-TEQ/kg Suma dioxină + Dioxină cum ar fi PCB ….1.0 ng WHO-PCDD/F-PCB-TEQ/kg. Aplicare: VITA –…",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări",
@@ -3453,12 +3551,13 @@
       "product_type": ""
     },
     {
-      "id": "400111",
+      "id": "400110",
+      "brand_slug": "vitafor",
       "name": "Vita-Citrus C200 — polivitaminic pentru păsări",
       "slug": "vita-citrus-c200-polivitaminic-pentru-pasari",
       "category": "Vitamine, minerale și premixuri",
       "description": "Complex cu 20% vitamina C și ulei de citrice pentru reducerea stresului termic la păsări, susținerea imunității și potențarea efectului vaccinării.",
-      "image": "/cards/pasari.jpeg",
+      "image": "/products/farmavet/vita-citrus-c200-polivitaminic-pentru-pasari.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3470,7 +3569,7 @@
       "prospect": "/prospecte/prospect-vita-citrus-1.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/vita-citrus-c200-polivitaminic-pentru-pasari.jpg",
           "alt": "Vita-Citrus C200 — polivitaminic pentru păsări",
           "role": "main"
         }
@@ -3482,11 +3581,12 @@
       "product_type": ""
     },
     {
-      "id": "400112",
+      "id": "400111",
+      "brand_slug": "vitafor",
       "name": "Vita-Micotox Plus — binder de micotoxine",
       "slug": "vita-micotox-plus-binder-de-micotoxine",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Amestec sinergic de adsorbanți puternici de micotoxine (aflatoxine) îmbogățit cu minerale argiloase și conservanți pentru protecția animalelor din efective.",
+      "description": "Amestec sinergic de adsorbanți puternici de micotoxine (aflatoxine) îmbogățit cu minerale argiloase și conservanți pentru protecția animalelor din efective.\n\nCompoziție: Acid formic…………………………………………………………. 15 000 mg Acid propionic………………………………………………………..60 000 mg Acid acetic……………………………………………………...…… 15 000 mg Acid lactic…………………………………………………………… 5000 mg Acid sorbic ……………………………………………….….…….…5000 mg Acid fumaric…………………………………………….…..……...... 10 000 mg Acid citric …………………………………………………………… 5000 mg Silicat de magneziu hidratat………………………….……………… 150 000 mg Potasiu hidratat, calciu și magneziu alu…",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări",
@@ -3512,11 +3612,12 @@
       "product_type": ""
     },
     {
-      "id": "400113",
+      "id": "400112",
+      "brand_slug": "vitafor",
       "name": "Vita Multi Stress — vitamine + aminoacizi",
       "slug": "vita-multi-stress-vitamine-aminoacizi",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Combinație echilibrată de vitamine și aminoacizi administrată prin apa de băut în perioade de stres, vaccinări și tratamente pentru menținerea vitalității.",
+      "description": "Combinație echilibrată de vitamine și aminoacizi administrată prin apa de băut în perioade de stres, vaccinări și tratamente pentru menținerea vitalității.\n\nIndicații: Soluție pentru administrare orală prin intermediul sistemelor de alimentare cu apă potabilă. VITA MULTI VITA STRESS este o combinație echilibrată de vitamine, minerale, oligoelemente și aminoacizi creat cu scopuri nutriționale speciale pentru: bovine, ovine, caprine, porcine, cabaline, cămile, iepuri și păsări. VITA- MULTI VITA STRESS este utilizat pentru: Prevenirea sau tratamentul deficiențelor de vitamine, minerale și aminoacizi, la animalele de fermă și păsări. Prevenirea sau tratamentul str",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări",
@@ -3543,11 +3644,12 @@
       "product_type": ""
     },
     {
-      "id": "400114",
+      "id": "400113",
+      "brand_slug": "vitafor",
       "name": "Vita Phoscal — complex polimineral",
       "slug": "vita-phoscal-complex-polimineral",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Complex stabilizat de fosfor, calciu, magneziu, sodiu și oligoelemente pentru dezvoltarea scheletului, productivitate și recuperare după tratamentele antibacteriene și antiparazitare.",
+      "description": "Complex stabilizat de fosfor, calciu, magneziu, sodiu și oligoelemente pentru dezvoltarea scheletului, productivitate și recuperare după tratamentele antibacteriene și antiparazitare.\n\nCompoziție: Choline Chlorid - 82 500 mg Cupru (Cu) - 2 500 mg Mangan (Mn) - 10 800 mg Zinc (Zn) - 10 000 mg Fier (Fe) - 9 700 mg. INDICAȚII: VITA-MINERAL COMPLEX este un supliment complementar, compus din minerale esențiale și oligoelemente, care au o importanță vitală pentru creștere, dezvoltarea scheletului și îmbunătățește starea generală a animalelor. Completează necesarul zilnic de minerale la animale ce favorizează mărirea…\n\nIndicații: VITA-MINERAL COMPLEX este un supliment complementar, compus din minerale esențiale și oligoelemente, care au o importanță vitală pentru creștere, dezvoltarea scheletului și îmbunătățește starea generală a animalelor. Completează necesarul zilnic de minerale la animale ce favorizează mărirea productivității la toate speciile de animale și păsări. Crește viabilitatea și rezistența față de boli, deasemenea este indicat după tratamentele antibacteriene și antiparazitare la animale.",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări",
@@ -3578,12 +3680,13 @@
       "product_type": ""
     },
     {
-      "id": "400115",
+      "id": "400114",
+      "brand_slug": "tecro",
       "name": "Premix Pui Starter 1% — faza I (0–30 zile)",
       "slug": "premix-pui-starter-1-faza-i-0-30-zile",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix vitamino-mineral pentru pui broiler în faza de start (0–30 zile), cu vitamine, minerale, antioxidanți și aminoacizi pentru un start bun al creșterii.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Premix vitamino-mineral pentru pui broiler în faza de start (0–30 zile), cu vitamine, minerale, antioxidanți și aminoacizi pentru un start bun al creșterii.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 38 000,00 Lizină % 3,0 Metionină % 1,5 Calciu % 28,00 Vit. A i.u./kg 1 500 000,00 Vit. D3 i.u./kg 375 000,00 Vit. E i.u./kg 5000,00 Vit. K3 mg/kg 250,00 Vit. B1 mg/kg 250,00 Vit. B2 mg /kg 875,00 Vit. B6 mg/kg 500,00 Vit. Bc μg/kg 188 000,00 Vit. B12 μg/kg 2500,00 Vit. B5 mg /kg 6250,00 Vit. B3 mg/kg 1875,00 Vit. H μg/kg 18750,00 Zn mg/kg 7 800 Mn mg/kg …",
+      "image": "/products/farmavet/premix-pui-starter-1-faza-i-0-30-zile.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3595,7 +3698,7 @@
       "prospect": "/prospecte/premix-pui-starter.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/premix-pui-starter-1-faza-i-0-30-zile.jpg",
           "alt": "Premix Pui Starter 1% — faza I (0–30 zile)",
           "role": "main"
         }
@@ -3607,11 +3710,12 @@
       "product_type": ""
     },
     {
-      "id": "400116",
+      "id": "400115",
+      "brand_slug": "tecro",
       "name": "Premix Pui Creștere 1% — faza II (peste 30 zile)",
       "slug": "premix-pui-crestere-1-faza-ii-peste-30-zile",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix vitamino-mineral pentru pui de creștere de la 30 de zile, pentru o rație echilibrată și dezvoltare uniformă a efectului.",
+      "description": "Premix vitamino-mineral pentru pui de creștere de la 30 de zile, pentru o rație echilibrată și dezvoltare uniformă a efectului.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 38 000,00 Lizină % 2,0 Metionină % 1,0 Calciu % 29,00 Vit. A i.u./kg 1 312 500,00 Vit. D3 i.u./kg 328 125,00 Vit. E i.u./kg 4375,00 Vit. K3 mg 220 Vit. B1 mg 220 Vit. B2 mg 766 Vit. B6 mg 440 Vit. Bc μg/kg 165 00 Vit. B12 μg/kg 2190 Vit. B5 mg 5470 Vit. B3 mg 1650 Vit. H μg/kg 16410 Zn mg/kg 6720 Mn mg/kg 9000 Fe mg/kg 4500 Cu mg/kg 720 J mg/kg 90 Co mg/…",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -3636,12 +3740,13 @@
       "product_type": ""
     },
     {
-      "id": "400117",
+      "id": "400116",
+      "brand_slug": "tecro",
       "name": "Premix Găini Ouătoare",
       "slug": "premix-gaini-ouatoare",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix vitamino-mineral cu calciu, metionină și fitază pentru găinile ouătoare: coajă rezistentă, vârf de ouare prelungit și producție stabilă.",
-      "image": "/cards/pasari.jpeg",
+      "description": "Premix vitamino-mineral cu calciu, metionină și fitază pentru găinile ouătoare: coajă rezistentă, vârf de ouare prelungit și producție stabilă.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 25 800,00 Fitaza FTU/kg 30 000 SP % 25,85 SP - abs % 21,25 Lizină % 0,65 Metionină % 5,25 MC % 5,30 Calciu % 16,20 Vit. A i.u./kg 755 232,50 Vit. D3 i.u./kg 177 842,50 Vit. E i.u./kg 3317,90 Vit. K3 mg 98,15 Vit. B1 mg 89,60 Vit. B2 mg 243,60 Vit. B6 mg 96,15 Vit. Bc μg/kg 59,75 Vit. B12 μg/kg 1,30 Vit. B5 mg 1337,05 Vit. B3 mg 370,50 Vit. H μg/kg 11,95 …",
+      "image": "/products/farmavet/premix-gaini-ouatoare.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3653,7 +3758,7 @@
       "prospect": "/prospecte/premix-gaini-ouatoare.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/premix-gaini-ouatoare.jpg",
           "alt": "Premix Găini Ouătoare",
           "role": "main"
         }
@@ -3662,14 +3767,16 @@
         "Vitamine, minerale și premixuri",
         "Premix Găini Ouătoare"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vet.md/medicamente/premix-g-ini-ou-toare-1000gr.html"
     },
     {
-      "id": "400118",
+      "id": "400117",
+      "brand_slug": "tecro",
       "name": "Premix Rațe 1%",
       "slug": "premix-rate-1",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix pentru rația zilnică a rațelor, cu vitamine (A, D3, E, K3, B), minerale și antioxidanți pentru o alimentație balansată.",
+      "description": "Premix pentru rația zilnică a rațelor, cu vitamine (A, D3, E, K3, B), minerale și antioxidanți pentru o alimentație balansată.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 50 000,00 Calciu % 28,31 Vit. A i.u./kg 1 440 000,00 Vit. D3 i.u./kg 300 000,00 Vit. E i.u./kg 7400,00 Vit. K3 mg 240 Vit. B1 mg 120 Vit. B2 mg 960 Vit. B6 mg 240 Vit. Bc μg/kg 240 Vit. B12 μg/kg 1.20 Vit. B5 mg 9000 Vit. B3 mg 1200 Vit. H μg/kg 6 Zn mg/kg 10 000 Mn mg/kg 10 000 Fe mg/kg 2000 Cu mg/kg 500 J mg/kg 200 Se mg/kg 15 Antioxidanţi mg/kg 12 509…",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -3694,11 +3801,12 @@
       "product_type": ""
     },
     {
-      "id": "400119",
+      "id": "400118",
+      "brand_slug": "tecro",
       "name": "Premix Gâște 1%",
       "slug": "premix-giste-1",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix pentru gâște cu vitamine, minerale și metionină pentru o rație zilnică echilibrată și productivitate crescută.",
+      "description": "Premix pentru gâște cu vitamine, minerale și metionină pentru o rație zilnică echilibrată și productivitate crescută.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Metionină g/kg 160,0 Vit. A i.u./kg 1 400 000 Vit. D3 i.u./kg 350 000 Vit. E Mg/kg 4 000 Vit. K3 Mg/kg 400 Vit. B1 Mg/kg 300 Vit. B2 Mg/kg 1000 Vit. B6 Mg/kg 500 Vit. B12 Mg//kg 4.00 Vit. B3 Mg/kg 1000 Vit. Bc Mg/kg 120 Vit. H Mg/kg 12 Zn Mg/kg 9792 Mn Mg/kg 9792 Cu Mg/kg 652 J Mg/kg 64 Se Mg/kg 48 Butylhydroxytoluen Mg/kg 400 Ethoxyquin Mg/kg 180 Piatră de var mg Nu mai …",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -3723,11 +3831,12 @@
       "product_type": ""
     },
     {
-      "id": "400120",
+      "id": "400119",
+      "brand_slug": "tecro",
       "name": "Premix Prepelițe 2%",
       "slug": "premix-prepelite-2",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix pentru prepelițe cu vitamine, minerale și antioxidanți pentru o rație echilibrată și producție stabilă de ouă.",
+      "description": "Premix pentru prepelițe cu vitamine, minerale și antioxidanți pentru o rație echilibrată și producție stabilă de ouă.\n\nCompoziție: Compoziția produsului Unit. De măs. Cantitatea Metionin % 2,5 Calciu % 2,2 Vit. A IU/kg 600000 Vit. D3 IU/kg 120000 Vit.E mg/kg 1750 Vit. K3 mg/kg 120 Vit. B1 mg/kg 100 Vit. B2 mg/kg 300 Vit. B6 mg/kg 240 Vit. B12 mg/kg 1,2 Vit. B3 mg/kg 600 Vit. B5 mg/kg 1800 Vit. H mg/kg 12,5 Vit. Bc mg/kg 50 Vit. B4 mg/kg 15000 Betain mg/kg 5625 Zinc mg/kg 6050 Fier mg/kg 3675 Mangan mg/kg 8075 Cupru mg/kg 706,25 Iod mg/kg 75 Coba…",
       "image": "/cards/pasari.jpeg",
       "labels": [
         "Păsări"
@@ -3752,11 +3861,12 @@
       "product_type": ""
     },
     {
-      "id": "400121",
+      "id": "400120",
+      "brand_slug": "tecro",
       "name": "Premix Purcei 1% (0–2 luni)",
       "slug": "premix-purcei-1-0-2-luni",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix vitamino-mineral pentru purcei de 0–2 luni, bogat în calciu și fosfor pentru un start solid după înțărcare.",
+      "description": "Premix vitamino-mineral pentru purcei de 0–2 luni, bogat în calciu și fosfor pentru un start solid după înțărcare.\n\nCompoziție: Compoziția produsului Unit. De măs. Cantitatea Fosfor % 4,0 Calciu % 16,0 Vit. A IU/kg 1 200 000 Vit. D3 IU/kg 200 000 Vit.E mg/kg 4 000 Vit. K3 mg/kg 50 Vit. B1 mg/kg 200 Vit. B2 mg/kg 450 Vit. B6 mg/kg 276 Vit. B12 mg/kg 2 000 Vit. B3 mg/kg 1 500 Vit. B5 mg/kg 2 500 Vit. H mg/kg 1 500 Vit. Bc mg/kg 50 Lizin % 3,0 Metionin % 1,0 Zinc mg/kg 6000 Fier mg/kg 4000 Mangan mg/kg 4000 Cupru mg/kg 5000 Iod mg/kg 100 Cobalt …",
       "image": "/cards/porcine.jpeg",
       "labels": [
         "Porcine"
@@ -3781,12 +3891,13 @@
       "product_type": ""
     },
     {
-      "id": "400122",
+      "id": "400121",
+      "brand_slug": "tecro",
       "name": "Premix Purcei 1% (2–4 luni)",
       "slug": "premix-purcei-1-2-4-luni",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix pentru rația zilnică a purceilor de la 2 la 4 luni, cu vitamine și minerale pentru creștere armonioasă.",
-      "image": "/cards/porcine.jpeg",
+      "description": "Premix pentru rația zilnică a purceilor de la 2 la 4 luni, cu vitamine și minerale pentru creștere armonioasă.\n\nCompoziție: Compoziția produsului Unit. De măs. Cantitatea Fosfor % 7,0 Calciu % 15,0 Vit. A IU/kg 1 000 000 Vit. D3 IU/kg 120 000 Vit.E mg/kg 2 500 Vit. K3 mg/kg 100 Vit. B1 mg/kg 100 Vit. B2 mg/kg 370 Vit. B6 mg/kg 100 Vit. B12 mg/kg 2 000 Vit. B3 mg/kg 1 200 Vit. B5 mg/kg 2 000 Vit. H mg/kg 0 Vit. Bc mg/kg 20 Lizin % 2,0 Metionin % 1,0 Zinc mg/kg 7000 Fier mg/kg 10 000 Mangan mg/kg 3 900 Cupru mg/kg 1 500 Iod mg/kg 75 Cobalt …",
+      "image": "/products/farmavet/premix-purcei-1-2-4-luni.jpg",
       "labels": [
         "Porcine"
       ],
@@ -3798,7 +3909,7 @@
       "prospect": "/prospecte/premix-porc-2-4-luni.docx",
       "images": [
         {
-          "url": "/cards/porcine.jpeg",
+          "url": "/products/farmavet/premix-purcei-1-2-4-luni.jpg",
           "alt": "Premix Purcei 1% (2–4 luni)",
           "role": "main"
         }
@@ -3810,11 +3921,12 @@
       "product_type": ""
     },
     {
-      "id": "400123",
+      "id": "400122",
+      "brand_slug": "tecro",
       "name": "Premix Purcei 1% (peste 4 luni)",
       "slug": "premix-purcei-1-peste-4-luni",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix vitamino-mineral pentru purcei de la 4 luni până la sacrificare pentru o rație alimentară balansată.",
+      "description": "Premix vitamino-mineral pentru purcei de la 4 luni până la sacrificare pentru o rație alimentară balansată.\n\nCompoziție: Compoziția produsului Unit. De măs. Cantitatea Fosfor % 4,0 Calciu % 7,0 Vit. A IU/kg 630 000 Vit. D3 IU/kg 120 000 Vit.E mg/kg 2 400 Vit. K3 mg/kg 100 Vit. B1 mg/kg 140 Vit. B2 mg/kg 260 Vit. B6 mg/kg 160 Vit. B12 mg/kg 1 600 Vit. B3 mg/kg 600 Vit. B5 mg/kg 2 000 Vit. H mg/kg 0 Vit. Bc mg/kg 21 Lizin % 3,0 Metionin % 1,0 Zinc mg/kg 7000 Fier mg/kg 3 000 Mangan mg/kg 2 500 Cupru mg/kg 2000 Iod mg/kg 40 Cobalt mg/kg 2…",
       "image": "/cards/porcine.jpeg",
       "labels": [
         "Porcine"
@@ -3839,11 +3951,12 @@
       "product_type": ""
     },
     {
-      "id": "400124",
+      "id": "400123",
+      "brand_slug": "tecro",
       "name": "Premix Scroafe Gestante",
       "slug": "premix-scroafe-gestante",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix cu vitamine, minerale, lizină și metionină pentru rația scroafelor gestante: sănătatea fătului și viabilitatea purceilor.",
+      "description": "Premix cu vitamine, minerale, lizină și metionină pentru rația scroafelor gestante: sănătatea fătului și viabilitatea purceilor.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Lizină % 3,0 Metionină % 3,0 Vit. A i.u. 1 500 000 Vit. D3 i.u. 250 000 Vit. E mg 10 000 Vit. K3 mg 250 Vit. B1 mg 130 Vit. B2 mg 500 Vit. B6 mg 300 Vit. Bc mg 250 Vit. B5 mg 2500 Vit. B3 mg 1500 Vit. H mg 50 Zn mg 17000 Mn mg 10000 Fe mg 17500 Cu mg 2000 J mg 150 Co mg 70 Se mg 40 Antioxidant (Endox) mg 10000 Natufos 10 000 mg 5000 Piatră de var mg Nu mai mult de 1 Acest…",
       "image": "/cards/porcine.jpeg",
       "labels": [
         "Porcine"
