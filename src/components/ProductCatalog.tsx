@@ -468,7 +468,6 @@ export default function ProductCatalog({
                 items={petCategoryNames.filter((item) => item !== "Toate")}
                 value={category}
                 counts={filterCounts}
-                defaultOpen
                 labelOf={(item) => filterLabel("species", item)}
                 onSelect={(item) => {
                   setCategory(item);
@@ -483,7 +482,6 @@ export default function ProductCatalog({
                   items={group.items}
                   value={category}
                   counts={filterCounts}
-                  defaultOpen={group.items.includes(category as never)}
                   labelOf={(item) => filterLabel("productType", item)}
                   onSelect={(item) => {
                     setCategory(item);
@@ -497,7 +495,6 @@ export default function ProductCatalog({
                 items={veterinaryCategoryNames}
                 value={category}
                 counts={filterCounts}
-                defaultOpen={veterinaryCategoryNames.includes(category as never)}
                 labelOf={(item) => filterLabel("vetCategory", item)}
                 onSelect={(item) => {
                   setCategory(item);
@@ -505,7 +502,7 @@ export default function ProductCatalog({
                 }}
               />
 
-              <details className={styles.filterGroup} open>
+              <details className={styles.filterGroup}>
                 <summary className={styles.filterGroupSummary}>
                   {t("catalog.groupBrand")}
                   <ChevronIcon className={styles.filterChevron} />
@@ -658,7 +655,6 @@ type FilterGroupProps = {
   items: readonly string[];
   value: string;
   counts: Map<string, number>;
-  defaultOpen?: boolean;
   labelOf?: (item: string) => string;
   onSelect: (item: string) => void;
 };
@@ -668,12 +664,11 @@ function FilterGroup({
   items,
   value,
   counts,
-  defaultOpen = false,
   labelOf,
   onSelect,
 }: FilterGroupProps) {
   return (
-    <details className={styles.filterGroup} open={defaultOpen}>
+    <details className={styles.filterGroup}>
       <summary className={styles.filterGroupSummary}>
         {title}
         <ChevronIcon className={styles.filterChevron} />
