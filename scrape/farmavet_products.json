@@ -1341,7 +1341,7 @@
         "Prantal — comprimate antihelmintice"
       ],
       "product_type": "",
-      "sourcePage": "https://vet.md/img/products/1624-prantal.jpg"
+      "sourcePage": "manual"
     },
     {
       "id": "400041",
@@ -3038,7 +3038,7 @@
       "slug": "vaccin-contra-mixomatozei-pentru-iepuri",
       "category": "Vaccinuri și alte produse biologice",
       "description": "Vaccin pentru prevenirea mixomatozei la iepuri, imunizare activă împotriva virusului mixomatozei.",
-      "image": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.webp",
+      "image": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.jpg",
       "labels": [
         "Iepuri"
       ],
@@ -3050,7 +3050,7 @@
       "prospect": "/prospecte/vaccin-mixomatoz.docx",
       "images": [
         {
-          "url": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.webp",
+          "url": "/products/farmavet/vaccin-contra-mixomatozei-pentru-iepuri.jpg",
           "alt": "Vaccin contra mixomatozei pentru iepuri",
           "role": "main"
         }
@@ -3764,7 +3764,8 @@
         "Vitamine, minerale și premixuri",
         "Premix Pui Starter 1% — faza I (0–30 zile)"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "manual"
     },
     {
       "id": "400115",
@@ -3773,7 +3774,7 @@
       "slug": "premix-pui-crestere-1-faza-ii-peste-30-zile",
       "category": "Vitamine, minerale și premixuri",
       "description": "Premix vitamino-mineral pentru pui de creștere de la 30 de zile, pentru o rație echilibrată și dezvoltare uniformă a efectului.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 38 000,00 Lizină % 2,0 Metionină % 1,0 Calciu % 29,00 Vit. A i.u./kg 1 312 500,00 Vit. D3 i.u./kg 328 125,00 Vit. E i.u./kg 4375,00 Vit. K3 mg 220 Vit. B1 mg 220 Vit. B2 mg 766 Vit. B6 mg 440 Vit. Bc μg/kg 165 00 Vit. B12 μg/kg 2190 Vit. B5 mg 5470 Vit. B3 mg 1650 Vit. H μg/kg 16410 Zn mg/kg 6720 Mn mg/kg 9000 Fe mg/kg 4500 Cu mg/kg 720 J mg/kg 90 Co mg/…",
-      "image": "/products/farmavet/premix-pui-crestere-1-faza-ii-peste-30-zile.webp",
+      "image": "/products/farmavet/premix-pui-crestere-1-faza-ii-peste-30-zile.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3785,7 +3786,7 @@
       "prospect": "/prospecte/premix-pui-crestere.docx",
       "images": [
         {
-          "url": "/products/farmavet/premix-pui-crestere-1-faza-ii-peste-30-zile.webp",
+          "url": "/products/farmavet/premix-pui-crestere-1-faza-ii-peste-30-zile.jpg",
           "alt": "Premix Pui Creștere 1% — faza II (peste 30 zile)",
           "role": "main"
         }
@@ -3795,7 +3796,7 @@
         "Premix Pui Creștere 1% — faza II (peste 30 zile)"
       ],
       "product_type": "",
-      "sourcePage": "https://agrovit87.ru/assets/images/products/52/webpb/brojler-lic.webp"
+      "sourcePage": "manual"
     },
     {
       "id": "400116",
