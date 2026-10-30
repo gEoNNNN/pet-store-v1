@@ -3898,7 +3898,7 @@
       "slug": "premix-prepelite-2",
       "category": "Vitamine, minerale și premixuri",
       "description": "Premix pentru prepelițe cu vitamine, minerale și antioxidanți pentru o rație echilibrată și producție stabilă de ouă.\n\nCompoziție: Compoziția produsului Unit. De măs. Cantitatea Metionin % 2,5 Calciu % 2,2 Vit. A IU/kg 600000 Vit. D3 IU/kg 120000 Vit.E mg/kg 1750 Vit. K3 mg/kg 120 Vit. B1 mg/kg 100 Vit. B2 mg/kg 300 Vit. B6 mg/kg 240 Vit. B12 mg/kg 1,2 Vit. B3 mg/kg 600 Vit. B5 mg/kg 1800 Vit. H mg/kg 12,5 Vit. Bc mg/kg 50 Vit. B4 mg/kg 15000 Betain mg/kg 5625 Zinc mg/kg 6050 Fier mg/kg 3675 Mangan mg/kg 8075 Cupru mg/kg 706,25 Iod mg/kg 75 Coba…",
-      "image": "/products/farmavet/premix-prepelite-2.png",
+      "image": "/products/farmavet/premix-prepelite-2.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3910,7 +3910,7 @@
       "prospect": "/prospecte/premix-prepelite.docx",
       "images": [
         {
-          "url": "/products/farmavet/premix-prepelite-2.png",
+          "url": "/products/farmavet/premix-prepelite-2.jpg",
           "alt": "Premix Prepelițe 2%",
           "role": "main"
         }
@@ -3920,7 +3920,7 @@
         "Premix Prepelițe 2%"
       ],
       "product_type": "",
-      "sourcePage": "https://images.prom.ua/6508867936_w640_h640_premiks-dlya-perepelov.jpg"
+      "sourcePage": "manual"
     },
     {
       "id": "400120",
@@ -3951,7 +3951,7 @@
         "Premix Purcei 1% (0–2 luni)"
       ],
       "product_type": "",
-      "sourcePage": "https://images.prom.ua/5284230029_w640_h640_premiks-porosyata-1.jpg"
+      "sourcePage": "manual"
     },
     {
       "id": "400121",
@@ -4043,7 +4043,7 @@
         "Premix Scroafe Gestante"
       ],
       "product_type": "",
-      "sourcePage": "https://www.techkorm.ru/wp-content/uploads/2024/08/premiks_svinomatki__suporosnye_25.jpg"
+      "sourcePage": "manual"
     }
   ]
 }
