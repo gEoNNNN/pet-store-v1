@@ -6,12 +6,14 @@ import { ArrowUpRight, Stethoscope } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import Reveal from "@/components/Reveal";
 import { vetCategories } from "@/data/vetCategories";
+import { useI18n } from "@/i18n/provider";
 import styles from "./VeterinaryCategoriesGrid.module.css";
 
 const EASE_OUT: [number, number, number, number] = [0.23, 1, 0.32, 1];
 
 export default function VeterinaryCategoriesGrid() {
   const prefersReduced = useReducedMotion();
+  const { t } = useI18n();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -49,24 +51,21 @@ export default function VeterinaryCategoriesGrid() {
         <Reveal className={styles.header}>
           <div>
             <h2 className={styles.title} id="vet-categories-title">
-              11 categorii esențiale
+              {t("vetGrid.titleTop")}
               <br />
-              <em>pentru sănătatea animalelor</em>
+              <em>{t("vetGrid.titleEm")}</em>
             </h2>
-            <p className={styles.sub}>
-              Gama completă de produse veterinare autorizate, tratamente profilactice și soluții profesionale de igienă —
-              structurate compact și accesibile direct în catalog.
-            </p>
+            <p className={styles.sub}>{t("vetGrid.sub")}</p>
           </div>
 
           <div className={styles.headerAside}>
             <div className={styles.headerActions}>
               <Link href="/produse" className={styles.primaryBtn}>
-                Vezi toate produsele
+                {t("nav.viewAllProducts")}
                 <ArrowUpRight />
               </Link>
               <Link href="/#contact" className={styles.secondaryBtn}>
-                Consultanță veterinară
+                {t("vetGrid.ctaConsult")}
                 <ArrowUpRight />
               </Link>
             </div>
@@ -90,7 +89,7 @@ export default function VeterinaryCategoriesGrid() {
                 className={styles.cardWrapper}
                 whileHover={hoverLift}
               >
-                <Link href={cat.href} className={styles.card} title={cat.title}>
+                <Link href={cat.href} className={styles.card} title={t(["vetCard", cat.id, "title"])}>
                   <div className={styles.cardTop}>
                     <div className={styles.cardIconWrap}>
                       <Icon aria-hidden="true" />
@@ -99,14 +98,14 @@ export default function VeterinaryCategoriesGrid() {
                   </div>
 
                   <div className={styles.cardContent}>
-                    <span className={styles.cardTag}>{cat.tag}</span>
-                    <h3 className={styles.cardTitle}>{cat.title}</h3>
-                    <p className={styles.cardDesc}>{cat.description}</p>
+                    <span className={styles.cardTag}>{t(["vetCard", cat.id, "tag"])}</span>
+                    <h3 className={styles.cardTitle}>{t(["vetCard", cat.id, "title"])}</h3>
+                    <p className={styles.cardDesc}>{t(["vetCard", cat.id, "desc"])}</p>
                   </div>
 
                   <div className={styles.cardFooter}>
                     <span className={styles.cardCta}>
-                      Vezi gama
+                      {t("vetGrid.cardCta")}
                       <ArrowUpRight />
                     </span>
                   </div>

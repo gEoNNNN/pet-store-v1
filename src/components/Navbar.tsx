@@ -4,16 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { CloseIcon, MenuIcon } from "./icons";
 import { vetCategories } from "@/data/vetCategories";
+import { useI18n } from "@/i18n/provider";
 import styles from "./Navbar.module.css";
 
-const navLinks = [
-  { label: "Acasa", href: "/#home" },
-  { label: "Despre noi", href: "/#about" },
-  { label: "Produse", href: "/produse" },
-  { label: "Instrumente", href: "/instrumente" },
-];
+const navHrefs = ["/#home", "/#about", "/produse", "/instrumente"];
 
 type NavbarProps = {
   activeItem?: "home" | "products" | "tools";
@@ -23,6 +20,19 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useI18n();
+
+  const navLinks = navHrefs.map((href) => ({
+    href,
+    label:
+      href === "/#home"
+        ? t("nav.home")
+        : href === "/#about"
+          ? t("nav.about")
+          : href === "/produse"
+            ? t("nav.products")
+            : t("nav.tools"),
+  }));
 
   useEffect(() => {
     let idleTimer: ReturnType<typeof setTimeout> | null = null;
@@ -51,15 +61,15 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
   return (
     <>
       <a href="#main" className="skip-link">
-        Sari la conținut
+        {t("common.skipToContent")}
       </a>
       <header className={`${styles.navbar} ${scrolled || menuOpen ? styles.scrolled : ""}`}>
         <div className={`container ${styles.inner}`}>
-          <Link href="/#home" className={styles.brand} aria-label="Farmavet — pagina principală" onClick={closeMenu}>
+          <Link href="/#home" className={styles.brand} aria-label={t("nav.brandAria")} onClick={closeMenu}>
             <Logo size="lg" />
           </Link>
 
-          <nav className={styles.desktopNav} aria-label="Navigare principală">
+          <nav className={styles.desktopNav} aria-label={t("nav.mainNav")}>
             <ul>
               {navLinks.map((link) => {
                 const isActive =
@@ -84,7 +94,7 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
                     {link.href === "/produse" && (
                       <div className={styles.dropdown}>
                         <div className={styles.dropdownPanel}>
-                          <span className={styles.dropdownLabel}>Categorii de produse</span>
+                          <span className={styles.dropdownLabel}>{t("nav.categoriesLabel")}</span>
                           <div className={styles.dropdownGrid}>
                             {vetCategories.map((cat) => {
                               const Icon = cat.icon;
@@ -94,15 +104,15 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
                                     <Icon />
                                   </span>
                                   <span className={styles.dropdownText}>
-                                    <strong>{cat.title}</strong>
-                                    <small>{cat.tag}</small>
+                                    <strong>{t(["vetCard", cat.id, "title"])}</strong>
+                                    <small>{t(["vetCard", cat.id, "tag"])}</small>
                                   </span>
                                 </Link>
                               );
                             })}
                           </div>
                           <Link href="/produse" className={styles.dropdownAll}>
-                            Vezi toate produsele
+                            {t("nav.viewAllProducts")}
                           </Link>
                         </div>
                       </div>
@@ -113,14 +123,18 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
             </ul>
           </nav>
 
-          <Link href="/#contact" className={styles.cta}>
-            Contactează-ne
-          </Link>
+          <div className={styles.actions}>
+            <LanguageSwitcher />
+
+            <Link href="/#contact" className={styles.cta}>
+              {t("nav.contact")}
+            </Link>
+          </div>
 
           <button
             type="button"
             className={styles.burger}
-            aria-label={menuOpen ? "Închide meniul" : "Deschide meniul"}
+            aria-label={menuOpen ? t("nav.closeMenu") : t("nav.openMenu")}
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
             onClick={() => setMenuOpen((open) => !open)}
@@ -130,7 +144,7 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
         </div>
 
         {menuOpen && (
-          <nav className={styles.mobileMenu} id="mobile-nav" aria-label="Navigare mobilă">
+          <nav className={styles.mobileMenu} id="mobile-nav" aria-label={t("nav.mobileNav")}>
             <ul>
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -140,8 +154,11 @@ export default function Navbar({ activeItem = "home" }: NavbarProps) {
                 </li>
               ))}
               <li>
+                <LanguageSwitcher stacked onPick={closeMenu} />
+              </li>
+              <li>
                 <Link href="/#contact" className={styles.mobileCta} onClick={closeMenu}>
-                  Contactează-ne
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>

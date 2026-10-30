@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { ProductSummary } from "@/data/products";
+import { applyOverlay } from "@/i18n/catalog";
+import { useI18n } from "@/i18n/provider";
 import styles from "./PetTools.module.css";
 
 type Species = "dog" | "cat" | "bovine";
@@ -40,6 +42,7 @@ export default function ProductFinder({ products }: { products: ProductSummary[]
   const [species, setSpecies] = useState<Species>("dog");
   const [goal, setGoal] = useState<Goal>("daily");
   const [age, setAge] = useState<Age>("adult");
+  const { t, tOr, catalog } = useI18n();
 
   const recommendations = useMemo(() => {
     if (species === "bovine") {
@@ -72,36 +75,36 @@ export default function ProductFinder({ products }: { products: ProductSummary[]
     <div>
       <div className={styles.quiz}>
         <fieldset className={styles.quizStep}>
-          <legend><span className={styles.quizNumber}>01</span>Pentru ce animal?</legend>
+          <legend><span className={styles.quizNumber}>01</span>{t("finder.q1")}</legend>
           <div className={styles.options}>
             {(["dog", "cat", "bovine"] as const).map((value) => (
               <label className={styles.option} key={value}>
                 <input type="radio" name="quiz-species" checked={species === value} onChange={() => setSpecies(value)} />
-                <span>{{ dog: "Câine", cat: "Pisică", bovine: "Bovine" }[value]}</span>
+                <span>{{ dog: t("foodTool.dog"), cat: t("foodTool.cat"), bovine: t("finder.bovine") }[value]}</span>
               </label>
             ))}
           </div>
         </fieldset>
 
         <fieldset className={styles.quizStep}>
-          <legend><span className={styles.quizNumber}>02</span>Care este scopul?</legend>
+          <legend><span className={styles.quizNumber}>02</span>{t("finder.q2")}</legend>
           <div className={styles.options}>
             {(["daily", "growth", "energy", "health"] as const).map((value) => (
               <label className={styles.option} key={value}>
                 <input type="radio" name="quiz-goal" checked={goal === value} onChange={() => setGoal(value)} />
-                <span>{{ daily: "Hrană zilnică", growth: "Creștere", energy: "Energie", health: "Sănătate" }[value]}</span>
+                <span>{{ daily: t("finder.daily"), growth: t("finder.growth"), energy: t("finder.energy"), health: t("finder.health") }[value]}</span>
               </label>
             ))}
           </div>
         </fieldset>
 
         <fieldset className={styles.quizStep}>
-          <legend><span className={styles.quizNumber}>03</span>Ce vârstă are?</legend>
+          <legend><span className={styles.quizNumber}>03</span>{t("finder.q3")}</legend>
           <div className={styles.options}>
             {(["junior", "adult", "senior"] as const).map((value) => (
               <label className={styles.option} key={value}>
                 <input type="radio" name="quiz-age" checked={age === value} onChange={() => setAge(value)} />
-                <span>{{ junior: "Junior", adult: "Adult", senior: "Senior" }[value]}</span>
+                <span>{{ junior: t("finder.junior"), adult: t("finder.adult"), senior: t("finder.senior") }[value]}</span>
               </label>
             ))}
           </div>
@@ -110,29 +113,30 @@ export default function ProductFinder({ products }: { products: ProductSummary[]
 
       <section className={styles.products} aria-live="polite">
         <div className={styles.productsHeader}>
-          <h2>Produse recomandate</h2>
-          <span className={styles.hint}>Potrivire orientativă după denumirea și descrierea produselor.</span>
+          <h2>{t("finder.resultsTitle")}</h2>
+          <span className={styles.hint}>{t("finder.resultsHint")}</span>
         </div>
         {recommendations.length ? (
           <div className={styles.productGrid}>
-            {recommendations.map((product) => (
+            {recommendations.map((product) => {
+              const view = applyOverlay(product, catalog ? catalog[product.id] : undefined);
+              return (
               <article className={styles.productCard} key={product.id}>
                 <Link href={product.href}>
                   <span className={styles.productImage}>
-                    <Image src={product.image} alt={product.name} fill sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+                    <Image src={product.image} alt={view.name} fill sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
                   </span>
                   <span className={styles.productCopy}>
-                    <small>{product.brand} · {product.category}</small>
-                    <strong>{product.name}</strong>
+                    <small>{product.brand} · {tOr(["filters", "species", product.category], product.category)}</small>
+                    <strong>{view.name}</strong>
                   </span>
                 </Link>
               </article>
-            ))}
+              );
+            })}
           </div>
         ) : (
-          <div className={styles.empty}>
-            Nu am găsit produse potrivite în catalog pentru această selecție. Gama veterinară completă pentru bovine este disponibilă în filtrele „Farmacie veterinară" de pe pagina de produse, sau contactează echipa Farmavet pentru informații despre stoc.
-          </div>
+          <div className={styles.empty}>{t("finder.empty")}</div>
         )}
       </section>
     </div>

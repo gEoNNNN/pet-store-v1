@@ -247,6 +247,18 @@
   transform: translateY(-1px);
 }
 
+/* Grupul din dreapta: comutator limbă + CTA. Stă deasupra meniului central
+   absolut poziționat, ca butoanele să rămână mereu click-uibile. */
+.actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  position: relative;
+  z-index: 70;
+}
+
 .burger {
   width: 44px;
   height: 44px;

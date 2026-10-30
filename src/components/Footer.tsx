@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Logo from "./Logo";
 import Reveal from "./Reveal";
@@ -8,42 +10,36 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "./icons";
+import { useI18n } from "@/i18n/provider";
 import styles from "./Footer.module.css";
 
-const productLinks = [
-  "Produse veterinare",
-  "Nutriție animală",
-  "Suplimente",
-  "Îngrijire și prevenție",
-];
-
-const speciesLinks = ["Animale de companie", "Bovine", "Ovine", "Păsări", "Porcine"];
-
-const informationLinks = [
-  { label: "Despre noi", href: "/#about" },
-  { label: "Branduri", href: "/#brands" },
-  { label: "Instrumente", href: "/instrumente" },
-  { label: "Contact", href: "/#contact" },
-];
-
-const socials = [
-  { icon: FacebookIcon, label: "Farmavet pe Facebook", href: "https://www.facebook.com/farmavet.md/about/" },
-  { icon: InstagramIcon, label: "Farmavet pe Instagram", href: "https://www.instagram.com/farmavet_moldova/" },
-];
-
 export default function Footer() {
+  const { t, list } = useI18n();
+
+  const productLinks = list("footer.productLinks");
+  const speciesLinks = list("footer.speciesLinks");
+
+  const informationLinks = [
+    { label: t("footer.infoAbout"), href: "/#about" },
+    { label: t("footer.infoBrands"), href: "/#brands" },
+    { label: t("footer.infoTools"), href: "/instrumente" },
+    { label: t("footer.infoContact"), href: "/#contact" },
+  ];
+
+  const socials = [
+    { icon: FacebookIcon, label: t("contact.socialFacebook"), href: "https://www.facebook.com/farmavet.md/about/" },
+    { icon: InstagramIcon, label: t("contact.socialInstagram"), href: "https://www.instagram.com/farmavet_moldova/" },
+  ];
+
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.top}>
           <Reveal className={styles.brand}>
-            <Link href="/#home" aria-label="Farmavet — pagina principală">
+            <Link href="/#home" aria-label={t("nav.brandAria")}>
               <Logo variant="light" />
             </Link>
-            <p className={styles.brandText}>
-              Produse veterinare certificate, consultanță profesională și servicii construite în
-              jurul sănătății animalelor.
-            </p>
+            <p className={styles.brandText}>{t("footer.blurb")}</p>
             <div className={styles.socials}>
               {socials.map((social) => (
                 <a
@@ -59,8 +55,8 @@ export default function Footer() {
           </Reveal>
 
           <Reveal delay={80}>
-            <nav className={styles.col} aria-label="Produse">
-              <h2 className={styles.colTitle}>Produse</h2>
+            <nav className={styles.col} aria-label={t("footer.colProducts")}>
+              <h2 className={styles.colTitle}>{t("footer.colProducts")}</h2>
               <ul className={styles.linkList}>
                 {productLinks.map((label) => (
                   <li key={label}>
@@ -74,8 +70,8 @@ export default function Footer() {
           </Reveal>
 
           <Reveal delay={140}>
-            <nav className={styles.col} aria-label="Specii animale">
-              <h2 className={styles.colTitle}>Specii animale</h2>
+            <nav className={styles.col} aria-label={t("footer.colSpecies")}>
+              <h2 className={styles.colTitle}>{t("footer.colSpecies")}</h2>
               <ul className={styles.linkList}>
                 {speciesLinks.map((label) => (
                   <li key={label}>
@@ -89,8 +85,8 @@ export default function Footer() {
           </Reveal>
 
           <Reveal delay={200}>
-            <nav className={styles.col} aria-label="Informații">
-              <h2 className={styles.colTitle}>Informații</h2>
+            <nav className={styles.col} aria-label={t("footer.colInfo")}>
+              <h2 className={styles.colTitle}>{t("footer.colInfo")}</h2>
               <ul className={styles.linkList}>
                 {informationLinks.map((link) => (
                   <li key={link.label}>
@@ -105,11 +101,11 @@ export default function Footer() {
 
           <Reveal delay={260}>
             <div className={styles.col}>
-              <h2 className={styles.colTitle}>Contact</h2>
+              <h2 className={styles.colTitle}>{t("footer.colContact")}</h2>
               <ul className={styles.contactList}>
                 <li>
                   <MapPinIcon className={styles.contactIcon} />
-                  <span>Petricani 198, Chișinău, Moldova</span>
+                  <span>{t("common.address")}</span>
                 </li>
                 <li>
                   <PhoneIcon className={styles.contactIcon} />
@@ -131,13 +127,13 @@ export default function Footer() {
 
       <div className={styles.bottomBar}>
         <div className={`container ${styles.bottom}`}>
-          <p>© 2026 Farmavet. Toate drepturile rezervate.</p>
+          <p>{t("footer.copyright")}</p>
           <div className={styles.legal}>
             <a href="#" className={styles.link}>
-              Politica de confidențialitate
+              {t("footer.privacy")}
             </a>
             <a href="#" className={styles.link}>
-              Termeni și condiții
+              {t("footer.terms")}
             </a>
           </div>
         </div>

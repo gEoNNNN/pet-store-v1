@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useLayoutEffect, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import type { ProductCategory } from "@/data/categories";
+import { useI18n } from "@/i18n/provider";
 import styles from "./SpeciesStackInteractor.module.css";
 
 type SpeciesItem = ProductCategory & {
@@ -15,6 +16,7 @@ type SpeciesStackInteractorProps = {
 };
 
 export default function SpeciesStackInteractor({ items }: SpeciesStackInteractorProps) {
+  const { t } = useI18n();
   const [activeIndex, setActiveIndex] = useState(0);
   const activeIndexRef = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -123,7 +125,7 @@ export default function SpeciesStackInteractor({ items }: SpeciesStackInteractor
 
   return (
     <div className={styles.interactor} ref={containerRef}>
-      <nav className={styles.menu} aria-label="Categorii de animale">
+      <nav className={styles.menu} aria-label={t("common.speciesNav")}>
         <ul>
           {items.map((item, index) => (
             <li key={item.title}>

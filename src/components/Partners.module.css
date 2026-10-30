@@ -76,6 +76,12 @@
   opacity: 1;
 }
 
+/* Siglele marcate „mare” primesc doar o înălțime mai mare; cardul, marja
+   interioară și restul rămân identice cu celelalte carduri. */
+.loopWrap :global(.logoloop__item.logo-mare .logoloop__image) {
+  height: 74px;
+}
+
 @media (max-width: 680px) {
   .header {
     margin-bottom: 30px;
@@ -88,5 +94,9 @@
   .loopWrap :global(.logoloop__item) {
     width: 128px;
     padding: 20px;
+  }
+
+  .loopWrap :global(.logoloop__item.logo-mare .logoloop__image) {
+    height: 62px;
   }
 }

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import { useI18n } from "@/i18n/provider";
 import styles from "./testimonials-columns-1.module.css";
 
 export type Testimonial = {
@@ -20,8 +21,9 @@ type TestimonialsColumnProps = {
 };
 
 function Stars() {
+  const { t } = useI18n();
   return (
-    <span className={styles.stars} aria-label="5 din 5 stele">
+    <span className={styles.stars} aria-label={t("common.starsAria")}>
       {Array.from({ length: 5 }).map((_, index) => (
         <svg key={index} viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.3 5.9 20.4l1.5-6.8L2.2 9l6.9-.7L12 2z" />

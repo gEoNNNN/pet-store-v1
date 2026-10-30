@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { CheckCircleIcon } from "./icons";
+import { useI18n } from "@/i18n/provider";
 import styles from "./Contact.module.css";
 
 type FormStatus = "idle" | "sending" | "sent";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
+  const { t } = useI18n();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -24,27 +26,27 @@ export default function ContactForm() {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} aria-label="Formular de contact">
+    <form className={styles.form} onSubmit={handleSubmit} aria-label={t("form.aria")}>
       <div className={styles.row}>
         <div className={styles.field}>
-          <label htmlFor="contact-name">Nume</label>
+          <label htmlFor="contact-name">{t("form.name")}</label>
           <input
             id="contact-name"
             name="name"
             type="text"
             autoComplete="name"
-            placeholder="Maria Popescu"
+            placeholder={t("form.namePlaceholder")}
             required
           />
         </div>
         <div className={styles.field}>
-          <label htmlFor="contact-email">Email</label>
+          <label htmlFor="contact-email">{t("form.email")}</label>
           <input
             id="contact-email"
             name="email"
             type="email"
             autoComplete="email"
-            placeholder="maria@exemplu.com"
+            placeholder={t("form.emailPlaceholder")}
             required
           />
         </div>
@@ -52,45 +54,45 @@ export default function ContactForm() {
 
       <div className={styles.row}>
         <div className={styles.field}>
-          <label htmlFor="contact-phone">Telefon</label>
+          <label htmlFor="contact-phone">{t("form.phone")}</label>
           <input
             id="contact-phone"
             name="phone"
             type="tel"
             autoComplete="tel"
-            placeholder="+373 79 000 000"
+            placeholder={t("form.phonePlaceholder")}
           />
         </div>
         <div className={styles.field}>
-          <label htmlFor="contact-subject">Subiect</label>
+          <label htmlFor="contact-subject">{t("form.subject")}</label>
           <input
             id="contact-subject"
             name="subject"
             type="text"
-            placeholder="Întrebare despre un produs"
+            placeholder={t("form.subjectPlaceholder")}
           />
         </div>
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="contact-message">Mesaj</label>
+        <label htmlFor="contact-message">{t("form.message")}</label>
         <textarea
           id="contact-message"
           name="message"
-          placeholder="Cum te putem ajuta pe tine și animalul tău?"
+          placeholder={t("form.messagePlaceholder")}
           required
         />
       </div>
 
       <button type="submit" className={styles.submit} disabled={status === "sending"}>
-        {status === "sending" ? "Se trimite…" : "Trimite mesajul"}
+        {status === "sending" ? t("form.sending") : t("form.submit")}
       </button>
 
       <p className={styles.status} aria-live="polite">
         {status === "sent" && (
           <>
             <CheckCircleIcon className={styles.statusIcon} />
-            Îți mulțumim! Îți vom răspunde în cel mult o zi lucrătoare.
+            {t("form.success")}
           </>
         )}
       </p>

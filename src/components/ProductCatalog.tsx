@@ -11,6 +11,8 @@ import {
   veterinaryCategoryNames,
   type ProductSummary,
 } from "@/data/products";
+import { useI18n, type TranslateParams } from "@/i18n/provider";
+import { applyOverlay } from "@/i18n/catalog";
 import {
   ArrowRightIcon,
   CloseIcon,
@@ -173,12 +175,15 @@ type SearchEntry = {
   nameStems: Set<string>;
 };
 
-function buildSearchEntry(product: ProductSummary): SearchEntry {
+function buildSearchEntry(product: ProductSummary, translated?: ProductSummary): SearchEntry {
+  const extra = translated && translated !== product
+    ? ` ${translated.name} ${translated.description} ${translated.labels.join(" ")} ${translated.packageSizes.join(" ")}`
+    : "";
   const blob = normalizeText(
-    `${product.name} ${product.brand} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}`,
+    `${product.name} ${product.brand} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}` + extra,
   );
   const words = Array.from(new Set(blob.split(/[^a-z0-9]+/g).filter(Boolean)));
-  const nameBlob = normalizeText(product.name);
+  const nameBlob = normalizeText(`${product.name}${translated && translated !== product ? " " + translated.name : ""}`);
   const nameWords = nameBlob.split(/[^a-z0-9]+/g).filter(Boolean);
   return {
     blob,
@@ -216,6 +221,8 @@ function scoreSearchEntry(entry: SearchEntry, token: string) {
   return score;
 }
 
+const speciesSet = petCategoryNames.filter((item) => item !== "Toate") as readonly string[];
+
 type ProductCatalogProps = {
   products: ProductSummary[];
   initialCategory?: string;
@@ -235,6 +242,15 @@ export default function ProductCatalog({
   const [sortBy, setSortBy] = useState("name-asc");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_PRODUCTS);
 
+  const { t, tOr, plural, catalog } = useI18n();
+
+  // Etichetă tradusă pentru o valoare de filtru (valoarea internă rămâne română).
+  const filterLabel = (ns: string, value: string) => tOr(["filters", ns, value], displayLabel(value));
+  const categoryLabel = (value: string) =>
+    speciesSet.includes(value)
+      ? tOr(["filters", "species", value], displayLabel(value))
+      : tOr(["filters", "vetCategory", value], displayLabel(value));
+
   // Navigarea /produse?cat=... / ?brand=... pastreaza componenta montata si
   // scroll-ul la fel — sincronizam filtrele din URL si urcam la inceput.
   const searchParams = useSearchParams();
@@ -252,7 +268,20 @@ export default function ProductCatalog({
 
   const isVetCategory = (veterinaryCategoryNames as readonly string[]).includes(category);
 
-  const searchIndex = useMemo(() => products.map(buildSearchEntry), [products]);
+  // Produsele afișate primesc traducerea (când e încărcată); potrivirea filtrelor
+  // și sortarea rămân pe valorile originale în română.
+  const viewById = useMemo(() => {
+    if (!catalog) return null;
+    return new Map(products.map((product) => [product.id, applyOverlay(product, catalog[product.id])]));
+  }, [products, catalog]);
+
+  const searchIndex = useMemo(
+    () =>
+      products.map((product) =>
+        buildSearchEntry(product, viewById ? viewById.get(product.id) : undefined),
+      ),
+    [products, viewById],
+  );
 
   const matchesFilterValue = (product: ProductSummary, value: string) =>
     product.category === value ||
@@ -340,20 +369,35 @@ export default function ProductCatalog({
     resetVisibleProducts();
   };
 
+  const resultsCount = filteredProducts.length;
+  const countText = t(`catalog.count.${plural(resultsCount)}`, { n: resultsCount });
+
+  const resultsTitle =
+    category === "Toate"
+      ? t("catalog.resultsAll")
+      : isVetCategory
+        ? tOr(["filters", "vetCategory", category], displayLabel(category))
+        : speciesSet.includes(category)
+          ? t(["catalog", "forSpecies", category])
+          : tOr(["filters", "productType", category], displayLabel(category));
+
+  const resultsKicker = isVetCategory
+    ? t("catalog.kickerVet")
+    : brand === "Toate"
+      ? t("catalog.kickerCatalog")
+      : brand;
+
   return (
     <div className={styles.catalog}>
       <header className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
             <h1 className={styles.title}>
-              Nutriție premium,
+              {t("catalog.titleTop")}
               <br />
-              <em>pentru câini și pisici</em>
+              <em>{t("catalog.titleEm")}</em>
             </h1>
-            <p className={styles.intro}>
-              Descoperă gamele complete Brit și Carnilove, cu ingrediente, valori nutriționale,
-              gramaje și ghiduri de hrănire pentru fiecare produs în parte.
-            </p>
+            <p className={styles.intro}>{t("catalog.intro")}</p>
           </div>
         </div>
       </header>
@@ -362,7 +406,7 @@ export default function ProductCatalog({
         <div className={styles.catalogContainer}>
           <div className={styles.controls}>
             <label className={styles.searchField}>
-              <span className={styles.visuallyHidden}>Caută produse</span>
+              <span className={styles.visuallyHidden}>{t("catalog.searchAria")}</span>
               <SearchIcon className={styles.searchIcon} />
               <input
                 type="search"
@@ -371,7 +415,7 @@ export default function ProductCatalog({
                   setQuery(event.target.value);
                   resetVisibleProducts();
                 }}
-                placeholder="Caută după nume, ingredient, gramaj..."
+                placeholder={t("catalog.searchPlaceholder")}
               />
               {query && (
                 <button
@@ -381,7 +425,7 @@ export default function ProductCatalog({
                     setQuery("");
                     resetVisibleProducts();
                   }}
-                  aria-label="Șterge căutarea"
+                  aria-label={t("catalog.clearSearch")}
                 >
                   <CloseIcon className={styles.clearIcon} />
                 </button>
@@ -389,7 +433,7 @@ export default function ProductCatalog({
             </label>
 
             <label className={styles.sortField}>
-              <span>Sortează</span>
+              <span>{t("catalog.sortLabel")}</span>
               <select
                 value={sortBy}
                 onChange={(event) => {
@@ -397,34 +441,35 @@ export default function ProductCatalog({
                   resetVisibleProducts();
                 }}
               >
-                <option value="name-asc">Nume: A–Z</option>
-                <option value="name-desc">Nume: Z–A</option>
-                <option value="brand">După brand</option>
+                <option value="name-asc">{t("catalog.sortNameAsc")}</option>
+                <option value="name-desc">{t("catalog.sortNameDesc")}</option>
+                <option value="brand">{t("catalog.sortBrand")}</option>
               </select>
             </label>
           </div>
 
           <div className={styles.catalogLayout}>
-            <aside className={styles.sidebar} aria-label="Filtre produse">
+            <aside className={styles.sidebar} aria-label={t("catalog.filtersTitle")}>
               <div className={styles.sidebarHeader}>
-                <span className={styles.sidebarTitle}>Filtre</span>
+                <span className={styles.sidebarTitle}>{t("catalog.filtersTitle")}</span>
                 {(category !== "Toate" || brand !== "Toate" || query) && (
                   <button
                     type="button"
                     className={styles.clearAll}
                     onClick={clearFilters}
                   >
-                    Reseteaza
+                    {t("catalog.reset")}
                   </button>
                 )}
               </div>
 
               <FilterGroup
-                title="Specie"
+                title={t("catalog.groupSpecies")}
                 items={petCategoryNames.filter((item) => item !== "Toate")}
                 value={category}
                 counts={filterCounts}
                 defaultOpen
+                labelOf={(item) => filterLabel("species", item)}
                 onSelect={(item) => {
                   setCategory(item);
                   resetVisibleProducts();
@@ -434,11 +479,12 @@ export default function ProductCatalog({
               {productTypeFilterGroups.map((group) => (
                 <FilterGroup
                   key={group.title}
-                  title={group.title}
+                  title={tOr(["filters", "group", group.title], group.title)}
                   items={group.items}
                   value={category}
                   counts={filterCounts}
                   defaultOpen={group.items.includes(category as never)}
+                  labelOf={(item) => filterLabel("productType", item)}
                   onSelect={(item) => {
                     setCategory(item);
                     resetVisibleProducts();
@@ -447,13 +493,12 @@ export default function ProductCatalog({
               ))}
 
               <FilterGroup
-                title="Farmacie veterinară"
+                title={t("catalog.groupPharmacy")}
                 items={veterinaryCategoryNames}
                 value={category}
                 counts={filterCounts}
-                defaultOpen={veterinaryCategoryNames.includes(
-                  category as never,
-                )}
+                defaultOpen={veterinaryCategoryNames.includes(category as never)}
+                labelOf={(item) => filterLabel("vetCategory", item)}
                 onSelect={(item) => {
                   setCategory(item);
                   resetVisibleProducts();
@@ -462,7 +507,7 @@ export default function ProductCatalog({
 
               <details className={styles.filterGroup} open>
                 <summary className={styles.filterGroupSummary}>
-                  Brand
+                  {t("catalog.groupBrand")}
                   <ChevronIcon className={styles.filterChevron} />
                 </summary>
                 <div className={styles.filterOptions}>
@@ -484,7 +529,7 @@ export default function ProductCatalog({
                         aria-pressed={active}
                       >
                         <span className={styles.filterOptionLabel}>
-                          {item === "Toate" ? "Toate brandurile" : displayLabel(item)}
+                          {item === "Toate" ? t("catalog.allBrands") : displayLabel(item)}
                         </span>
                         <span className={styles.filterCount}>{count}</span>
                       </button>
@@ -497,42 +542,32 @@ export default function ProductCatalog({
             <div className={styles.catalogMain}>
           <div className={styles.resultsHeader}>
             <div>
-              <p className={styles.resultsKicker}>
-                {isVetCategory
-                  ? "Farmacie Veterinară"
-                  : brand === "Toate"
-                  ? "Catalog complet"
-                  : brand}
-              </p>
+              <p className={styles.resultsKicker}>{resultsKicker}</p>
               <h2 className={styles.resultsTitle} id="catalog-heading">
-                {category === "Toate"
-                  ? "Toate produsele"
-                  : isVetCategory
-                  ? category
-                  : (petCategoryNames as readonly string[]).includes(category)
-                  ? `Produse pentru ${category.toLowerCase()}`
-                  : category}
+                {resultsTitle}
               </h2>
             </div>
-            <p className={styles.resultsCount}>
-              {filteredProducts.length} {filteredProducts.length === 1 ? "produs găsit" : "produse găsite"}
-            </p>
+            <p className={styles.resultsCount}>{countText}</p>
           </div>
 
           {isVetCategory && (
             <div className={styles.vetNoticeCard}>
-              <span className={styles.vetNoticeBadge}>Farmacie Veterinară Farmavet</span>
-              <h3 className={styles.vetNoticeTitle}>{category}</h3>
+              <span className={styles.vetNoticeBadge}>{t("catalog.vetBadge")}</span>
+              <h3 className={styles.vetNoticeTitle}>
+                {tOr(["filters", "vetCategory", category], displayLabel(category))}
+              </h3>
               <p className={styles.vetNoticeText}>
-                Gama completă de medicamente, tratamente și produse autorizate pentru <strong>{category}</strong> este disponibilă direct în farmacia fizică Farmavet din Chișinău (str. Petricani 198). Pentru comenzi, verificarea stocurilor sau recomandarea unui medic veterinar, contactați-ne telefonic sau lăsați-ne un mesaj.
+                {t("catalog.vetNoticeText", {
+                  category: tOr(["filters", "vetCategory", category], displayLabel(category)),
+                })}
               </p>
               <div className={styles.vetNoticeActions}>
                 <a href="tel:+37379536508" className={styles.vetNoticeCall}>
                   <PhoneIcon className={styles.vetNoticeIcon} />
-                  Comandă telefonic: 0795 36 508
+                  {t("catalog.vetCall")}
                 </a>
                 <Link href="/#contact" className={styles.vetNoticeContact}>
-                  Solicită informații stoc
+                  {t("catalog.vetStock")}
                 </Link>
               </div>
             </div>
@@ -541,45 +576,48 @@ export default function ProductCatalog({
           {visibleProducts.length > 0 ? (
             <>
               <div className={styles.productGrid}>
-                {visibleProducts.map((product) => (
+                {visibleProducts.map((product) => {
+                  const view = viewById?.get(product.id) ?? product;
+                  return (
                   <article className={styles.productCard} key={product.id}>
-                    <Link href={product.href} className={styles.imageWrap} aria-label={`Vezi ${product.name}`}>
+                    <Link href={product.href} className={styles.imageWrap} aria-label={t("catalog.viewProductAria", { name: view.name } as TranslateParams)}>
                       <Image
                         src={product.image}
-                        alt={product.name}
+                        alt={view.name}
                         fill
                         sizes="(max-width: 860px) 50vw, (max-width: 1120px) 30vw, 21vw"
                         className={styles.productImage}
                       />
                       <span className={styles.badge}>{product.brand}</span>
-                      <span className={styles.quickCategory}>{product.category}</span>
+                      <span className={styles.quickCategory}>{categoryLabel(product.category)}</span>
                     </Link>
 
                     <div className={styles.cardBody}>
                       <p className={styles.cardMeta}>
                         <span>{product.brand}</span>
                         <span aria-hidden="true">·</span>
-                        <span>{product.category}</span>
+                        <span>{categoryLabel(product.category)}</span>
                       </p>
                       <h3 className={styles.productName}>
-                        <Link href={product.href}>{product.name}</Link>
+                        <Link href={product.href}>{view.name}</Link>
                       </h3>
-                      <p className={styles.productDescription}>{product.description}</p>
+                      <p className={styles.productDescription}>{view.description}</p>
 
                       <div className={styles.cardFooter}>
                         <span className={styles.sizeInfo}>
-                          {product.packageSizes.length
-                            ? product.packageSizes.slice(0, 2).join(" · ")
-                            : "Detalii complete"}
+                          {view.packageSizes.length
+                            ? view.packageSizes.slice(0, 2).join(" · ")
+                            : t("catalog.fullDetails")}
                         </span>
                         <Link href={product.href} className={styles.detailsButton}>
-                          Vezi produsul
+                          {t("catalog.viewProduct")}
                           <ArrowRightIcon className={styles.addButtonIcon} />
                         </Link>
                       </div>
                     </div>
                   </article>
-                ))}
+                  );
+                })}
               </div>
 
               {hasMore && (
@@ -589,10 +627,10 @@ export default function ProductCatalog({
                     className={styles.loadMore}
                     onClick={() => setVisibleCount((count) => count + LOAD_MORE_COUNT)}
                   >
-                    Încarcă mai multe produse
+                    {t("catalog.loadMore")}
                   </button>
                   <span>
-                    Ai văzut {visibleProducts.length} din {filteredProducts.length}
+                    {t("catalog.loadMoreShown", { seen: visibleProducts.length, total: resultsCount })}
                   </span>
                 </div>
               )}
@@ -600,10 +638,10 @@ export default function ProductCatalog({
           ) : (
             <div className={styles.emptyState}>
               <SearchIcon className={styles.emptyIcon} />
-              <h2>Nu am găsit produse</h2>
-              <p>Încearcă un alt termen de căutare sau elimină filtrele active.</p>
+              <h2>{t("catalog.emptyTitle")}</h2>
+              <p>{t("catalog.emptyText")}</p>
               <button type="button" onClick={clearFilters}>
-                Resetează filtrele
+                {t("catalog.emptyReset")}
               </button>
             </div>
           )}
@@ -621,6 +659,7 @@ type FilterGroupProps = {
   value: string;
   counts: Map<string, number>;
   defaultOpen?: boolean;
+  labelOf?: (item: string) => string;
   onSelect: (item: string) => void;
 };
 
@@ -630,12 +669,13 @@ function FilterGroup({
   value,
   counts,
   defaultOpen = false,
+  labelOf,
   onSelect,
 }: FilterGroupProps) {
   return (
     <details className={styles.filterGroup} open={defaultOpen}>
       <summary className={styles.filterGroupSummary}>
-        {displayLabel(title)}
+        {title}
         <ChevronIcon className={styles.filterChevron} />
       </summary>
       <div className={styles.filterOptions}>
@@ -650,7 +690,7 @@ function FilterGroup({
               onClick={() => onSelect(item)}
               aria-pressed={active}
             >
-              <span className={styles.filterOptionLabel}>{displayLabel(item)}</span>
+              <span className={styles.filterOptionLabel}>{labelOf ? labelOf(item) : displayLabel(item)}</span>
               <span className={styles.filterCount}>{count}</span>
             </button>
           );

@@ -1,29 +1,32 @@
-import { CategoryList, type Category } from "./ui/category-list";
+"use client";
 
-const tools: Category[] = [
+import { CategoryList, type Category } from "./ui/category-list";
+import { useI18n } from "@/i18n/provider";
+
+const toolMeta = [
   {
     id: "food",
-    title: "Calculator de hrană",
-    subtitle: "Estimează necesarul zilnic de energie și cantitatea orientativă de hrană pentru câine sau pisică.",
     href: "/instrumente/calculator-hrana",
     icon: "bowl",
     featured: true,
   },
   {
     id: "health",
-    title: "Nivel de sănătate",
-    subtitle: "Evaluează condiția corporală, greutatea ideală și nivelul general de sănătate al animalului tău.",
     href: "/instrumente/nivel-sanatate",
     icon: "heart",
   },
   {
     id: "finder",
-    title: "Găsește produsul potrivit",
-    subtitle: "Răspunde la trei întrebări și descoperă produse reale din catalog potrivite nevoilor animalului.",
     href: "/instrumente/recomandare-produse",
     icon: "compass",
   },
-];
+] as const;
+
+const anchorIds: Record<string, string> = {
+  food: "calculator-hrana",
+  health: "nivel-sanatate",
+  finder: "recomandare-produse",
+};
 
 export default function ToolsSection({
   headingLevel = "home",
@@ -34,26 +37,24 @@ export default function ToolsSection({
   isPage?: boolean;
   useAnchorLinks?: boolean;
 }) {
-  const categories = useAnchorLinks
-    ? tools.map((t) => ({
-        ...t,
-        href: `#${
-          t.id === "food"
-            ? "calculator-hrana"
-            : t.id === "health"
-            ? "nivel-sanatate"
-            : "recomandare-produse"
-        }`,
-      }))
-    : tools;
+  const { t } = useI18n();
+
+  const tools: Category[] = toolMeta.map((tool) => ({
+    id: tool.id,
+    title: t(["tools", "list", tool.id, "title"]),
+    subtitle: t(["tools", "list", tool.id, "subtitle"]),
+    href: useAnchorLinks ? `#${anchorIds[tool.id]}` : tool.href,
+    icon: tool.icon,
+    featured: "featured" in tool ? tool.featured : undefined,
+  }));
 
   const shouldUsePageWrapper = isPage !== undefined ? isPage : headingLevel === "page";
 
   return (
     <CategoryList
-      title="Alegeri mai simple"
-      subtitle="pentru îngrijirea animalului tău"
-      categories={categories}
+      title={t("tools.sectionTitle")}
+      subtitle={t("tools.sectionEm")}
+      categories={tools}
       headingLevel="h2"
       isPage={shouldUsePageWrapper}
     />

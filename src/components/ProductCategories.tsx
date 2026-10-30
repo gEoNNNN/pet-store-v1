@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useI18n } from "@/i18n/provider";
 import { productCategories } from "@/data/categories";
 import Reveal from "./Reveal";
 import SpeciesStackInteractor from "./ui/SpeciesStackInteractor";
@@ -13,30 +16,31 @@ const clipIds = [
   "species-focus",
 ];
 
-const speciesItems = productCategories.map((category, index) => ({
-  ...category,
-  clipId: clipIds[index],
-}));
-
 export default function ProductCategories() {
+  const { t } = useI18n();
+
+  const speciesItems = productCategories.map((category, index) => ({
+    ...category,
+    title: t(["species", category.title, "title"]),
+    description: t(["species", category.title, "desc"]),
+    clipId: clipIds[index],
+  }));
+
   return (
     <section className={styles.section} id="products" aria-labelledby="products-heading">
       <div className="container">
         <Reveal className={styles.header}>
           <div>
             <h2 className={styles.title} id="products-heading">
-              Soluții veterinare
+              {t("cats.titleTop")}
               <br />
-              <em>pentru fiecare specie</em>
+              <em>{t("cats.titleEm")}</em>
             </h2>
           </div>
           <div className={styles.headerAside}>
-            <p className={styles.sub}>
-              Explorează categoriile disponibile și descoperă informațiile complete pentru
-              produsele din catalogul Farmavet.
-            </p>
+            <p className={styles.sub}>{t("cats.sub")}</p>
             <Link href="/produse" className={styles.allProducts}>
-              Vezi toate produsele
+              {t("nav.viewAllProducts")}
               <ArrowRightIcon className={styles.allProductsIcon} />
             </Link>
           </div>

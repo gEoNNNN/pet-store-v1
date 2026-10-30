@@ -12,11 +12,7 @@ export default function ProductFinderPage() {
   const products = getProductSummaries();
 
   return (
-    <ToolPageShell
-      eyebrow="Recomandare produse"
-      title="Găsește produsul potrivit"
-      description="Selectează animalul, scopul și etapa de viață. Recomandările sunt alese din produsele reale disponibile în catalog."
-    >
+    <ToolPageShell k="toolPages.finder">
       <ProductFinder products={products} />
     </ToolPageShell>
   );

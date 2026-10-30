@@ -5,6 +5,7 @@ import FoodCalculator from "@/components/FoodCalculator";
 import HealthLevelCalculator from "@/components/HealthLevelCalculator";
 import ProductFinder from "@/components/ProductFinder";
 import Reveal from "@/components/Reveal";
+import T from "@/i18n/T";
 import { getProductSummaries } from "@/data/productCatalog.server";
 import styles from "./InstrumentePage.module.css";
 
@@ -33,12 +34,12 @@ export default function ToolsPage() {
         >
           <div className="container">
             <Reveal className={styles.toolHeader}>
-              <span className={styles.kicker}>Calculator nutrițional</span>
+              <span className={styles.kicker}><T k="instrumente.food.kicker" /></span>
               <h2 className={styles.title} id="calculator-hrana-heading">
-                Calculator de hrană
+                <T k="instrumente.food.title" />
               </h2>
               <p className={styles.description}>
-                Introdu greutatea, vârsta, nivelul de activitate și conținutul caloric al hranei pentru a estima porția optimă zilnică.
+                <T k="instrumente.food.description" />
               </p>
             </Reveal>
 
@@ -58,12 +59,12 @@ export default function ToolsPage() {
         >
           <div className="container">
             <Reveal className={styles.toolHeader}>
-              <span className={styles.kicker}>Evaluare corporală</span>
+              <span className={styles.kicker}><T k="instrumente.health.kicker" /></span>
               <h2 className={styles.title} id="nivel-sanatate-heading">
-                Nivel de sănătate (Scor BCS)
+                <T k="instrumente.health.title" />
               </h2>
               <p className={styles.description}>
-                Evaluează condiția corporală actuală a animalului tău, greutatea recomandată și primește sfaturi orientative de nutriție.
+                <T k="instrumente.health.description" />
               </p>
             </Reveal>
 
@@ -83,12 +84,12 @@ export default function ToolsPage() {
         >
           <div className="container">
             <Reveal className={styles.toolHeader}>
-              <span className={styles.kicker}>Ghid de recomandare</span>
+              <span className={styles.kicker}><T k="instrumente.finder.kicker" /></span>
               <h2 className={styles.title} id="recomandare-produse-heading">
-                Găsește produsul potrivit
+                <T k="instrumente.finder.title" />
               </h2>
               <p className={styles.description}>
-                Răspunde la trei întrebări simple pentru a descoperi recomandări personalizate din catalogul real Farmavet.
+                <T k="instrumente.finder.description" />
               </p>
             </Reveal>
 

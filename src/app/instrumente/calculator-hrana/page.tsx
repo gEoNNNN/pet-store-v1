@@ -9,11 +9,7 @@ export const metadata: Metadata = {
 
 export default function FoodCalculatorPage() {
   return (
-    <ToolPageShell
-      eyebrow="Calculator de hrană"
-      title="Câtă hrană îi trebuie zilnic?"
-      description="Introdu greutatea, vârsta, activitatea și energia hranei pentru a obține un punct de plecare adaptat animalului tău."
-    >
+    <ToolPageShell k="toolPages.food">
       <FoodCalculator />
     </ToolPageShell>
   );

@@ -19,6 +19,8 @@ export type LogoItem = {
   alt?: string;
   title?: string;
   href?: string;
+  /** clasă suplimentară pe cardul siglei (ex. pentru a mări doar câteva logo-uri) */
+  className?: string;
 };
 
 export type LogoLoopProps = {
@@ -322,7 +324,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
         );
 
         return (
-          <li className="logoloop__item" key={key}>
+          <li className={item.className ? `logoloop__item ${item.className}` : "logoloop__item"} key={key}>
             {inner}
           </li>
         );

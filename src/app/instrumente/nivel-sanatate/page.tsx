@@ -9,11 +9,7 @@ export const metadata: Metadata = {
 
 export default function HealthLevelPage() {
   return (
-    <ToolPageShell
-      eyebrow="Nivel de sănătate"
-      title="Ce nivel de sănătate are animalul tău?"
-      description="Introdu greutatea actuală și scorul corporal BCS pentru a afla nivelul de sănătate, greutatea ideală și recomandările orientative."
-    >
+    <ToolPageShell k="toolPages.health">
       <HealthLevelCalculator />
     </ToolPageShell>
   );
