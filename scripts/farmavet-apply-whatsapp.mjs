@@ -12,10 +12,9 @@ const dstDir = path.join(root, "public", "products", "farmavet");
 const catalogFile = path.join(root, "scrape", "farmavet_products.json");
 
 const MAP = [
-  { file: "WhatsApp Image 2026-10-30 at 14.30.43.jpeg", slug: "premix-scroafe-gestante" },
-  { file: "WhatsApp Image 2026-10-30 at 14.30.43 (1).jpeg", slug: "premix-prepelite-2" },
-  { file: "WhatsApp Image 2026-10-30 at 14.30.44.jpeg", slug: "premix-purcei-1-0-2-luni" },
-  { file: "WhatsApp Image 2026-10-30 at 14.30.44 (1).jpeg", slug: "sulf-furajer" },
+  { file: "WhatsApp Image 2026-10-30 at 14.37.21.jpeg", slug: "premix-purcei-1-2-4-luni" },
+  { file: "WhatsApp Image 2026-10-30 at 14.37.22.jpeg", slug: "premix-purcei-1-peste-4-luni" },
+  { file: "WhatsApp Image 2026-10-30 at 14.40.20.jpeg", slug: "killer-muh-500-insecticid-microencapsulat-contra-mustelor" },
 ];
 
 const catalog = JSON.parse(readFileSync(catalogFile, "utf8"));

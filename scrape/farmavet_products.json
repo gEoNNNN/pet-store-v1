@@ -2123,7 +2123,7 @@
       "slug": "killer-muh-500-insecticid-microencapsulat-contra-mustelor",
       "category": "Dezinsecție și deratizare",
       "description": "Insecticid microencapsulat pe bază de cipermetrină pentru combaterea muștelor și a altor insecte în spații de igienă publică și grajduri, efect prelungit de până la 6 luni.",
-      "image": "/products/farmavet/killer-muh-500-insecticid-microencapsulat-contra-mustelor.webp",
+      "image": "/products/farmavet/killer-muh-500-insecticid-microencapsulat-contra-mustelor.jpg",
       "labels": [
         "Mediu"
       ],
@@ -2135,7 +2135,7 @@
       "prospect": "/prospecte/prospect-killer-muh-500.doc",
       "images": [
         {
-          "url": "/products/farmavet/killer-muh-500-insecticid-microencapsulat-contra-mustelor.webp",
+          "url": "/products/farmavet/killer-muh-500-insecticid-microencapsulat-contra-mustelor.jpg",
           "alt": "Killer Muh 500 — insecticid microencapsulat contra muștelor",
           "role": "main"
         }
@@ -3981,7 +3981,8 @@
         "Vitamine, minerale și premixuri",
         "Premix Purcei 1% (2–4 luni)"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "manual"
     },
     {
       "id": "400122",
@@ -4012,7 +4013,7 @@
         "Premix Purcei 1% (peste 4 luni)"
       ],
       "product_type": "",
-      "sourcePage": "https://ir-3.ozone.ru/s3/multimedia-d/c1000/6881559889.jpg"
+      "sourcePage": "manual"
     },
     {
       "id": "400123",
