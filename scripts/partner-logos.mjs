@@ -63,6 +63,7 @@ const MANIFEST = [
   { file: "logo 14.png", slug: "natura", mare: true },
   { file: "logo 15.png", slug: "vanelli", mare: true },
   { file: "logo 16.png", slug: "icb-pharma" },
+  { file: "logo 17.png", slug: "cfs-vitafor", mare: true },
 ];
 
 /** SVG-urile care trebuie recolorite înainte de rasterizare: fill vechi → nou */

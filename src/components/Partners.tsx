@@ -31,6 +31,7 @@ const partnerLogoSrcs: Array<Omit<LogoItem, "alt">> = [
   { src: "/logos/partners/natura.png", className: "logo-mare" },
   { src: "/logos/partners/vanelli.png", className: "logo-mare" },
   { src: "/logos/partners/icb-pharma.png" },
+  { src: "/logos/partners/cfs-vitafor.png", className: "logo-mare" },
 ];
 
 const partnerLogoAlts = [
@@ -50,6 +51,7 @@ const partnerLogoAlts = [
   "Natura",
   "Vanelli Group",
   "ICB Pharma",
+  "CFS Vitafor Belgium",
 ];
 
 export default function Partners() {
