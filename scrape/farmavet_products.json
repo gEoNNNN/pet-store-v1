@@ -3556,7 +3556,7 @@
       "slug": "vita-acid-acidifiant-pentru-hrana-animalelor",
       "category": "Vitamine, minerale și premixuri",
       "description": "Amestec echilibrat de acizi organici (formic, propionic, lactic, fumaric) cu spectru larg de acțiune în hrana pentru animale: previne tulburările bacteriene și optimizează performanța de creștere.\n\nCompoziție: Acid formic…………………….....300 000 mg Acid propionic…………………....100 000 mg Acid lactic………………………..50 000 mg Acid fumaric……………………..50 000 mg Acid silicic precipitat …………....20 000 mg Magneziu silicat hidratat……..…...208 000 mg Cadmiu (Cd) ……………….….…15 mg / kg Plumb (Pb)……………..……..…..200 mg / kg Dioxine……………………..……1.00 ng WHO-PCDD/F-TEQ/kg Suma dioxină + Dioxină cum ar fi PCB ….1.0 ng WHO-PCDD/F-PCB-TEQ/kg. Aplicare: VITA –…",
-      "image": "/cards/pasari.jpeg",
+      "image": "/products/farmavet/vita-acid-acidifiant-pentru-hrana-animalelor.jpg",
       "labels": [
         "Păsări",
         "Porcine"
@@ -3569,7 +3569,7 @@
       "prospect": "/prospecte/prospect-vita-acid.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/vita-acid-acidifiant-pentru-hrana-animalelor.jpg",
           "alt": "Vita-Acid — acidifiant pentru hrana animalelor",
           "role": "main"
         }
@@ -3578,7 +3578,8 @@
         "Vitamine, minerale și premixuri",
         "Vita-Acid — acidifiant pentru hrana animalelor"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.vitafor.com/admin/uploads/1749118508_Vita-Acid.jpg"
     },
     {
       "id": "400110",
@@ -3617,7 +3618,7 @@
       "slug": "vita-micotox-plus-binder-de-micotoxine",
       "category": "Vitamine, minerale și premixuri",
       "description": "Amestec sinergic de adsorbanți puternici de micotoxine (aflatoxine) îmbogățit cu minerale argiloase și conservanți pentru protecția animalelor din efective.\n\nCompoziție: Acid formic…………………………………………………………. 15 000 mg Acid propionic………………………………………………………..60 000 mg Acid acetic……………………………………………………...…… 15 000 mg Acid lactic…………………………………………………………… 5000 mg Acid sorbic ……………………………………………….….…….…5000 mg Acid fumaric…………………………………………….…..……...... 10 000 mg Acid citric …………………………………………………………… 5000 mg Silicat de magneziu hidratat………………………….……………… 150 000 mg Potasiu hidratat, calciu și magneziu alu…",
-      "image": "/cards/pasari.jpeg",
+      "image": "/products/farmavet/vita-micotox-plus-binder-de-micotoxine.jpg",
       "labels": [
         "Păsări",
         "Porcine"
@@ -3630,7 +3631,7 @@
       "prospect": "/prospecte/prospect-vita-micotox-plus.docx",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/vita-micotox-plus-binder-de-micotoxine.jpg",
           "alt": "Vita-Micotox Plus — binder de micotoxine",
           "role": "main"
         }
@@ -3639,7 +3640,8 @@
         "Vitamine, minerale și premixuri",
         "Vita-Micotox Plus — binder de micotoxine"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://www.vitafor.com/admin/uploads/1749124889_Vita-Mycotox-extra.jpg"
     },
     {
       "id": "400112",
