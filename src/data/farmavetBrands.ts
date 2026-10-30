@@ -1,27 +1,30 @@
-import type { ProductBrand, ProductBrandSlug } from "./products";
-
-/** mărci extras din prospectele SAIT FARMAVET (producători reali, nu doar distribuitorul) */
-export const farmavetBrandEntries: Array<{ slug: ProductBrandSlug; brand: ProductBrand }> = [
-  { slug: "farmavet", brand: "Farmavet" },
-  { slug: "olkar", brand: "O.L.KAR" },
-  { slug: "hebei-vezong", brand: "Hebei Vezong" },
-  { slug: "biofarm", brand: "Biofarm" },
-  { slug: "vetsintez", brand: "Vetsintez" },
-  { slug: "aveflor", brand: "Aveflor" },
-  { slug: "bavet", brand: "BAVET" },
-  { slug: "msd", brand: "MSD Animal Health" },
-  { slug: "vanellivet", brand: "Vanellivet" },
-  { slug: "ruvera", brand: "RUVERA" },
-  { slug: "veyx-pharma", brand: "Veyx-Pharma" },
-  { slug: "cid-lines", brand: "CID Lines" },
-  { slug: "shandong-luxi", brand: "Shandong Luxi" },
-  { slug: "icb-pharma", brand: "ICB Pharma" },
-  { slug: "fgbu-stavropol", brand: "FGBU Stavropol" },
-  { slug: "biofabrica-armavir", brand: "Biofabrica Armavir" },
-  { slug: "vniivvim", brand: "VNIIVViM" },
-  { slug: "promark-trade", brand: "Promark Trade" },
-  { slug: "tecro", brand: "Tecro" },
-  { slug: "marel", brand: "Marel" },
-  { slug: "bioceval", brand: "Bioceval" },
-  { slug: "vitafor", brand: "Vitafor" },
-];
+/**
+ * Producătorul real extras din prospectul „SAIT FARMAVET 2026" (câmpul
+ * `brand_slug` din scrape/farmavet_products.json). NU sunt mărci de filtrare:
+ * în magazin produsele rămân marca „Farmavet", iar aici apar ca rândul
+ * „Producător" în pagina produsului.
+ */
+export const farmavetManufacturers: Record<string, string> = {
+  farmavet: "Farmavet",
+  olkar: "O.L.KAR",
+  "hebei-vezong": "Hebei Vezong",
+  biofarm: "Biofarm",
+  vetsintez: "Vetsintez",
+  aveflor: "Aveflor",
+  bavet: "BAVET",
+  msd: "MSD Animal Health",
+  vanellivet: "Vanellivet",
+  ruvera: "RUVERA",
+  "veyx-pharma": "Veyx-Pharma",
+  "cid-lines": "CID Lines",
+  "shandong-luxi": "Shandong Luxi",
+  "icb-pharma": "ICB Pharma",
+  "fgbu-stavropol": "FGBU Stavropol",
+  "biofabrica-armavir": "Biofabrica Armavir",
+  vniivvim: "VNIIVViM",
+  "promark-trade": "Promark Trade",
+  tecro: "Tecro",
+  marel: "Marel",
+  bioceval: "Bioceval",
+  vitafor: "Vitafor",
+};

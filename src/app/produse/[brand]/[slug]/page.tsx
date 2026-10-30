@@ -126,6 +126,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <dt>Brand</dt>
                   <dd>{product.brand}</dd>
                 </div>
+                {product.manufacturer && product.manufacturer !== product.brand && (
+                  <div>
+                    <dt>Producător</dt>
+                    <dd>{product.manufacturer}</dd>
+                  </div>
+                )}
                 <div>
                   <dt>Categorie</dt>
                   <dd>{product.category}</dd>

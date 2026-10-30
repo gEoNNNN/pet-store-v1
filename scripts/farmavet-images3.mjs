@@ -208,7 +208,7 @@ for (const product of catalog.products) {
   const prospectKey = (product.prospect || "").replace("/prospecte/", "").replace(/\.[a-z]+$/i, "");
   let pageUrl = sources[prospectKey] || null;
 
-  if (!pageUrl) {
+  if (!pageUrl && !process.env.SKIP_INDEX) {
     const inVet = product.brand_slug === "farmavet" || product.brand_slug === "ruvera" || true;
     const mVet = inVet ? bestMatch(product, vetmdIndex) : null;
     const mAgro = bestMatch(product, agroIndex, true);

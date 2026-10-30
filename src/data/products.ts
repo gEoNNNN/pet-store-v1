@@ -85,27 +85,6 @@ export const productBrandNames = [
   "Natura",
   "Eco Natura Pet",
   "Farmavet",
-  "O.L.KAR",
-  "Hebei Vezong",
-  "Biofarm",
-  "Vetsintez",
-  "Aveflor",
-  "BAVET",
-  "MSD Animal Health",
-  "Vanellivet",
-  "RUVERA",
-  "Veyx-Pharma",
-  "CID Lines",
-  "Shandong Luxi",
-  "ICB Pharma",
-  "FGBU Stavropol",
-  "Biofabrica Armavir",
-  "VNIIVViM",
-  "Promark Trade",
-  "Tecro",
-  "Marel",
-  "Bioceval",
-  "Vitafor",
 ] as const;
 
 export type ProductCategoryName = (typeof productCategoryNames)[number];
@@ -123,28 +102,7 @@ export type ProductBrandSlug =
   | "chistotel"
   | "natura"
   | "eco-natura"
-  | "farmavet"
-  | "olkar"
-  | "hebei-vezong"
-  | "biofarm"
-  | "vetsintez"
-  | "aveflor"
-  | "bavet"
-  | "msd"
-  | "vanellivet"
-  | "ruvera"
-  | "veyx-pharma"
-  | "cid-lines"
-  | "shandong-luxi"
-  | "icb-pharma"
-  | "fgbu-stavropol"
-  | "biofabrica-armavir"
-  | "vniivvim"
-  | "promark-trade"
-  | "tecro"
-  | "marel"
-  | "bioceval"
-  | "vitafor";
+  | "farmavet";
 
 export type ProductImage = {
   url: string;
@@ -184,6 +142,8 @@ export type ProductSummary = {
 export type Product = ProductSummary & {
   sourceUrl: string;
   productType: string | null;
+  /** producător real extras din prospect (ex. „O.L.KAR"), afișat ca „Producător" */
+  manufacturer: string | null;
   breadcrumbs: string[];
   features: string[];
   ingredientTags: string[];

@@ -2,7 +2,6 @@ import "server-only";
 
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { farmavetBrandEntries } from "@/data/farmavetBrands";
 import { veterinaryCategoryNames } from "@/data/products";
 import type { ProductBrand, ProductBrandSlug } from "@/data/products";
 import { slugifyName } from "@/lib/slugify";
@@ -79,12 +78,7 @@ export const brandConfigs: BrandConfig[] = [
     fileName: EKOPROM_FILE,
     subBrandSlug: "chistotel",
   },
-  ...farmavetBrandEntries.map((entry) => ({
-    brandSlug: entry.slug,
-    brand: entry.brand,
-    fileName: FARM_FILE,
-    subBrandSlug: entry.slug,
-  })),
+  { brandSlug: "farmavet", brand: "Farmavet", fileName: FARM_FILE },
 ];
 
 const brandConfigBySlug = new Map(brandConfigs.map((config) => [config.brandSlug, config]));
@@ -162,7 +156,8 @@ function readRawCatalog(fileName: string): {
 }
 
 function matchesBrand(config: BrandConfig, raw: JsonObject): boolean {
-  if (config.fileName !== EKOPROM_FILE && config.fileName !== FARM_FILE) return true;
+  if (config.fileName === FARM_FILE) return true; // fișier mono-marcă; brand_slug e doar producător
+  if (config.fileName !== EKOPROM_FILE) return true;
   if (!config.subBrandSlug) return !raw.brand_slug;
   return raw.brand_slug === config.subBrandSlug;
 }
@@ -307,7 +302,7 @@ export function upsertProduct(input: ProductInput, isEdit: boolean): string | nu
       product_type: "",
     };
     if (config.fileName === EKOPROM_FILE || config.fileName === FARM_FILE) {
-      fresh.brand_slug = config.subBrandSlug ?? "";
+      fresh.brand_slug = config.subBrandSlug ?? (config.fileName === FARM_FILE ? "farmavet" : "");
     }
     products.push(fresh);
   }

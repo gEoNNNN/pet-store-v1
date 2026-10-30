@@ -382,7 +382,7 @@
       "slug": "noredon-c-florfenicol-comprimate-pentru-pasari",
       "category": "Antibacteriene și antifungice",
       "description": "Antibiotic cu florfenicol sub formă de comprimate pentru păsări (găini, broiler, curcani). Tratamentul și profilaxia infecțiilor bacteriene din efectivele cu diagnostic confirmat.\n\nIndicații: 4. CONTRAINDICAȚII A nu se administra la animalele cu hipersensibilitate la florfenicol sau la oricare dintre excipienţi. Nu se utilizează în caz de rezistenţă cunoscută la florfenicol. 5. REACȚII ADVERSE Cele mai des observate reacţii adverse sunt diareea, inflamaţia perianală şi prolapsul rectal. Aceste efecte sunt tranzitorii şi dispar după întreruperea tratamentului.",
-      "image": "/cards/pasari.jpeg",
+      "image": "/products/farmavet/noredon-c-florfenicol-comprimate-pentru-pasari.png",
       "labels": [
         "Păsări"
       ],
@@ -394,7 +394,7 @@
       "prospect": "/prospecte/prospect-noredon-c.doc",
       "images": [
         {
-          "url": "/cards/pasari.jpeg",
+          "url": "/products/farmavet/noredon-c-florfenicol-comprimate-pentru-pasari.png",
           "alt": "Noredon C — florfenicol comprimate pentru păsări",
           "role": "main"
         }
@@ -403,7 +403,8 @@
         "Antibacteriene și antifungice",
         "Noredon C — florfenicol comprimate pentru păsări"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://vanellivet.info/products/noredon-c-comprimate"
     },
     {
       "id": "400012",
@@ -2125,7 +2126,7 @@
       "slug": "muhostop-granule-solubile-contra-mustelor",
       "category": "Dezinsecție și deratizare",
       "description": "Granule solubile profesionale cu acetamiprid pentru combaterea muștelor în încăperi și adăposturi. Conține agent amar (benzoat de denatoniu) pentru siguranță.",
-      "image": "/magazin.jpeg",
+      "image": "/products/farmavet/muhostop-granule-solubile-contra-mustelor.jpg",
       "labels": [
         "Mediu"
       ],
@@ -2137,7 +2138,7 @@
       "prospect": "/prospecte/prospect-muhostop.doc",
       "images": [
         {
-          "url": "/magazin.jpeg",
+          "url": "/products/farmavet/muhostop-granule-solubile-contra-mustelor.jpg",
           "alt": "Muhostop — granule solubile contra muștelor",
           "role": "main"
         }
@@ -2146,7 +2147,8 @@
         "Dezinsecție și deratizare",
         "Muhostop — granule solubile contra muștelor"
       ],
-      "product_type": ""
+      "product_type": "",
+      "sourcePage": "https://agroolkar.com.ua/en/production/muhostop/"
     },
     {
       "id": "400067",

@@ -2,7 +2,7 @@ import "server-only";
 
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { farmavetBrandEntries } from "./farmavetBrands";
+import { farmavetManufacturers } from "./farmavetBrands";
 import { veterinaryCategoryNames } from "./products";
 import type {
   FreshIngredient,
@@ -117,7 +117,12 @@ function normalizeFreshIngredients(value: unknown): FreshIngredient[] {
   });
 }
 
-function normalizeProduct(raw: JsonObject, brand: ProductBrand, brandSlug: ProductBrandSlug): Product {
+function normalizeProduct(
+  raw: JsonObject,
+  brand: ProductBrand,
+  brandSlug: ProductBrandSlug,
+  manufacturer?: string | null,
+): Product {
   const slug = toStringValue(raw.slug);
   const name = toStringValue(raw.name);
   const rawId = toStringValue(raw.id) || slug;
@@ -138,6 +143,7 @@ function normalizeProduct(raw: JsonObject, brand: ProductBrand, brandSlug: Produ
     packageSizes: toStringArray(isBrit ? raw.variants : raw.package_sizes),
     sourceUrl: toStringValue(raw.url),
     productType: toStringValue(raw.product_type) || null,
+    manufacturer: manufacturer ?? null,
     breadcrumbs: toStringArray(raw.breadcrumbs),
     features: toStringArray(isBrit ? raw.benefits : raw.features),
     ingredientTags: toStringArray(raw.ingredient_tags),
@@ -171,16 +177,14 @@ export function getProducts(): Product[] {
     const ecoNaturaProducts = readCatalog("econatura_products.json").map((product) =>
       normalizeProduct(product, "Eco Natura Pet", "eco-natura"),
     );
-    const farmavetBrands = new Map(
-      farmavetBrandEntries.map((entry) => [entry.slug, [entry.brand, entry.slug] as [ProductBrand, ProductBrandSlug]]),
-    );
-    const farmavetProducts = readCatalog("farmavet_products.json").map((product) => {
-      const [brand, slug] = farmavetBrands.get(toStringValue(product.brand_slug) as ProductBrandSlug) ?? [
+    const farmavetProducts = readCatalog("farmavet_products.json").map((product) =>
+      normalizeProduct(
+        product,
         "Farmavet",
         "farmavet",
-      ] as [ProductBrand, ProductBrandSlug];
-      return normalizeProduct(product, brand, slug);
-    });
+        farmavetManufacturers[toStringValue(product.brand_slug)] ?? "Farmavet",
+      ),
+    );
     const ekopromProducts = readCatalog("ekoprom_products.json").map((product) => {
       const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
         "Neoterica Inspector",
