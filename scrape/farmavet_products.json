@@ -3836,7 +3836,7 @@
       "slug": "premix-rate-1",
       "category": "Vitamine, minerale și premixuri",
       "description": "Premix pentru rația zilnică a rațelor, cu vitamine (A, D3, E, K3, B), minerale și antioxidanți pentru o alimentație balansată.\n\nCompoziție: 1 kg de produs conține Un. de măs. Cantitatea Colinhlorid Mg/kg 50 000,00 Calciu % 28,31 Vit. A i.u./kg 1 440 000,00 Vit. D3 i.u./kg 300 000,00 Vit. E i.u./kg 7400,00 Vit. K3 mg 240 Vit. B1 mg 120 Vit. B2 mg 960 Vit. B6 mg 240 Vit. Bc μg/kg 240 Vit. B12 μg/kg 1.20 Vit. B5 mg 9000 Vit. B3 mg 1200 Vit. H μg/kg 6 Zn mg/kg 10 000 Mn mg/kg 10 000 Fe mg/kg 2000 Cu mg/kg 500 J mg/kg 200 Se mg/kg 15 Antioxidanţi mg/kg 12 509…",
-      "image": "/products/farmavet/premix-rate-1.png",
+      "image": "/products/farmavet/premix-rate-1.jpg",
       "labels": [
         "Păsări"
       ],
@@ -3848,7 +3848,7 @@
       "prospect": "/prospecte/premix-rate.docx",
       "images": [
         {
-          "url": "/products/farmavet/premix-rate-1.png",
+          "url": "/products/farmavet/premix-rate-1.jpg",
           "alt": "Premix Rațe 1%",
           "role": "main"
         }
@@ -3858,7 +3858,7 @@
         "Premix Rațe 1%"
       ],
       "product_type": "",
-      "sourcePage": "https://s3.timeweb.cloud/152bb5ae-8808470f-2a87-40d5-8ade-f943cb12602b/pvc-6b1c4979-97d9-41e7-a1ef-3db8e1002515/29d2be109fc4b4fccc23a4b91f51cb1054.png"
+      "sourcePage": "manual"
     },
     {
       "id": "400118",
@@ -3889,7 +3889,7 @@
         "Premix Gâște 1%"
       ],
       "product_type": "",
-      "sourcePage": "https://ir.ozone.ru/s3/multimedia-1-i/7399219158.jpg"
+      "sourcePage": "manual"
     },
     {
       "id": "400119",
