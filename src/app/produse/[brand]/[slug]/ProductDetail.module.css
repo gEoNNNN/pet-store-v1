@@ -551,8 +551,14 @@
   }
 
   .imagePanel {
-    max-width: 720px;
+    width: min(100%, 720px);
     margin-inline: auto;
+  }
+
+  /* Pe telefon breadcrumbul într-o linie taie titlul produsului cu „…";
+     butonul „Înapoi la toate produsele" de jos acoperă deja navigarea. */
+  .breadcrumbs {
+    display: none;
   }
 
   .heroContent h1 {
