@@ -9,6 +9,7 @@ export const farmavetManufacturers: Record<string, string> = {
   olkar: "O.L.KAR",
   "hebei-vezong": "Hebei Vezong",
   biofarm: "Biofarm",
+  antibiotice: "Antibiotice Iași",
   vetsintez: "Vetsintez",
   aveflor: "Aveflor",
   bavet: "BAVET",

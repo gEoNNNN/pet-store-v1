@@ -4173,6 +4173,387 @@
       ],
       "product_type": "",
       "sourcePage": "manual"
+    },
+    {
+      "id": "400128",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Cardio — suspensie orală pentru câini și pisici",
+      "slug": "vetaria-cardio",
+      "category": "Tonice și produse pentru rehidratare",
+      "description": "Supliment nutritiv veterinar pentru susținerea funcției cardiace și a metabolismului energetic al inimii. Formula reunește nutrienți și extracte vegetale cu rol antioxidant, pentru sprijinul nutrițional al câinilor și pisicilor cu nevoi cardiovasculare.\n\nPrezentare: 45 ml; suspensie orală palatabilă cu aromă de pui, cu seringă dozatoare de 5 ml.\n\nIngrediente principale: ulei de pește (EPA și DHA), taurină, carnitină, extract de păducel și vitamina C.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-cardio.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "45 ml"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-cardio.jpg",
+          "alt": "VetAria+ Cardio — suspensie orală pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Tonice și produse pentru rehidratare",
+        "VetAria+ Cardio — suspensie orală pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400129",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Urinary Support — gel oral pentru pisici",
+      "slug": "vetaria-urinary-support-pisici",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar destinat confortului urinar al pisicilor. Susține funcționarea normală a tractului urinar și integritatea stratului protector al vezicii. Include ingrediente care contribuie la gestionarea stresului la pisicile predispuse la tulburări urinare.\n\nPrezentare: 30 ml; gel oral palatabil cu aromă de pui, cu seringă dozatoare de 5 ml.\n\nIngrediente principale: DL-metionină, N-acetil-D-glucozamină, acid hialuronic, L-triptofan, extracte de valeriană, merișor și Camellia sinensis, vitamina B6.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-urinary-support-pisici.jpg",
+      "labels": [
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 ml"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-urinary-support-pisici.jpg",
+          "alt": "VetAria+ Urinary Support — gel oral pentru pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Urinary Support — gel oral pentru pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400130",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Renal Plus — pastă pentru câini",
+      "slug": "vetaria-renal-plus-caini",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru susținerea funcției renale la câini. Formula oferă sprijin nutrițional rinichilor, contribuie la menținerea diurezei normale și asigură suport antioxidant. Poate completa îngrijirea câinilor cu afectare renală, la recomandarea medicului veterinar.\n\nPrezentare: 60 ml; pastă palatabilă cu aromă de pește, în seringă preumplută.\n\nIngrediente principale: chitosan, carbonat de calciu, Lespedeza capitata, extract de silimarină, vitaminele E și D3.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-renal-plus-caini.jpg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "60 ml"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-renal-plus-caini.jpg",
+          "alt": "VetAria+ Renal Plus — pastă pentru câini",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Renal Plus — pastă pentru câini"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400131",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Probiotic — capsule pentru câini și pisici",
+      "slug": "vetaria-probiotic",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar care sprijină echilibrul florei intestinale și confortul digestiv. Poate fi utilizat pentru susținerea refacerii microbiotei după administrarea de antibiotice sau antiparazitare, conform recomandării medicului veterinar. Combină microorganisme benefice, prebiotice și nutrienți pentru tractul digestiv.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: Enterococcus faecium, Lactobacillus helveticus, Lacticaseibacillus paracasei, FOS, produse cu drojdie (beta-glucani și MOS), pectină, glutamină și electroliți.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-probiotic.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-probiotic.jpg",
+          "alt": "VetAria+ Probiotic — capsule pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Probiotic — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400132",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Articulații — capsule pentru câini și pisici",
+      "slug": "vetaria-articulatii",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru susținerea cartilajelor și a mobilității articulare. Formula asociază nutrienți structurali cu ingrediente care sprijină confortul în mișcare. Potrivit ca suport nutrițional în planul de îngrijire a articulațiilor, stabilit împreună cu medicul veterinar.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: glucozamină, MSM, sulfat de condroitină, colagen nativ tip II, vitamina C și extract de gheara-diavolului.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-articulatii.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-articulatii.jpg",
+          "alt": "VetAria+ Articulații — capsule pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Articulații — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400133",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Imunitate — capsule pentru câini și pisici",
+      "slug": "vetaria-imunitate",
+      "category": "Imunostimulatoare",
+      "description": "Supliment nutritiv veterinar destinat susținerii mecanismelor naturale de apărare ale organismului. Combină beta-glucani, ciuperci cu rol nutritiv, componente microbiene și propolis. Oferă sprijin nutrițional sistemului imunitar al câinilor și pisicilor.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: beta-glucani, Grifola frondosa, Lentinula edodes, Lactobacillus helveticus, Lacticaseibacillus paracasei și propolis.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-imunitate.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-imunitate.jpg",
+          "alt": "VetAria+ Imunitate — capsule pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Imunostimulatoare",
+        "VetAria+ Imunitate — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400134",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Piele și Blană — capsule pentru câini și pisici",
+      "slug": "vetaria-piele-si-blana",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru îngrijirea pielii și menținerea unei blăni sănătoase. Formula combină uleiuri nutritive, vitamine și zinc, oferind nutrienți importanți pentru bariera cutanată și aspectul blănii. Poate completa îngrijirea dermatologică recomandată de medicul veterinar.\n\nPrezentare: 60 capsule twist-off palatabile, cu aromă de pește.\n\nIngrediente principale: ulei de limba-mielului, ulei de pește, ulei de floarea-soarelui, vitaminele A, D3, C, E, B1, B2, B5, B6 și biotină, zinc.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-piele-si-blana.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "60 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-piele-si-blana.jpg",
+          "alt": "VetAria+ Piele și Blană — capsule pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Piele și Blană — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400135",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Renal — capsule pentru câini și pisici",
+      "slug": "vetaria-renal",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru susținerea funcției renale la câini și pisici. Reunește chitosan, extract vegetal, săruri minerale și vitamine din grupul B. Este destinat suportului nutrițional al animalelor cu nevoi renale și poate completa planul de îngrijire recomandat de medicul veterinar.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: chitosan, păducel, carbonat de calciu, carbonat de magneziu, vitaminele B6, B9 și B12.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-renal.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-renal.jpg",
+          "alt": "VetAria+ Renal — capsule pentru câini și pisici",
+          "role": "main"
+        },
+        {
+          "url": "/products/farmavet/vetaria-renal-2.jpg",
+          "alt": "VetAria+ Renal — capsule pentru câini și pisici",
+          "role": "gallery"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Renal — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400136",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Hepatic — capsule pentru câini de talie medie și mare",
+      "slug": "vetaria-hepatic-talie-medie-mare",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar formulat pentru sprijinirea funcției hepatice la câinii de talie medie și mare. Aportul de nutrienți și antioxidanți susține protecția celulelor hepatice. Se utilizează ca suport nutrițional, inclusiv alături de tratamentul prescris pentru afecțiunile hepatice.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: Saccharomyces cerevisiae, complex de silibină și fosfolipide din armurariu, metionină, taurină, vitaminele E și C, zinc și seleniu.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-hepatic-talie-medie-mare.jpg",
+      "labels": [
+        "Câini"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-hepatic-talie-medie-mare.jpg",
+          "alt": "VetAria+ Hepatic — capsule pentru câini de talie medie și mare",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Hepatic — capsule pentru câini de talie medie și mare"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400137",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Hepatic — capsule pentru câini de talie mică și pisici",
+      "slug": "vetaria-hepatic-talie-mica-pisici",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru susținerea funcției hepatice la pisici și câini de talie mică. Formula furnizează nutrienți cu rol antioxidant și hepatoprotector. Poate fi inclus ca adjuvant în planul de îngrijire hepatică recomandat de medicul veterinar.\n\nPrezentare: 30 capsule twist-off palatabile, cu aromă de pui.\n\nIngrediente principale: metionină, complex de silibină și fosfolipide, taurină, vitaminele E și C, zinc și seleniu.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-hepatic-talie-mica-pisici.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-hepatic-talie-mica-pisici.jpg",
+          "alt": "VetAria+ Hepatic — capsule pentru câini de talie mică și pisici",
+          "role": "main"
+        },
+        {
+          "url": "/products/farmavet/vetaria-hepatic-talie-mica-pisici-2.jpg",
+          "alt": "VetAria+ Hepatic — capsule pentru câini de talie mică și pisici",
+          "role": "gallery"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Hepatic — capsule pentru câini de talie mică și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
+    },
+    {
+      "id": "400138",
+      "brand_slug": "antibiotice",
+      "name": "VetAria+ Urinar — capsule pentru câini și pisici",
+      "slug": "vetaria-urinar",
+      "category": "Vitamine, minerale și premixuri",
+      "description": "Supliment nutritiv veterinar pentru susținerea sănătății tractului urinar la câini și pisici. Formula cu merișor, N-acetil-D-glucozamină și ulei de pește contribuie la protejarea mucoasei urinare și la confortul urinar. Poate completa îngrijirea recomandată pentru animalele cu sensibilitate urinară.\n\nPrezentare: 30 capsule twist-off palatabile.\n\nIngrediente principale: extract de merișor (Vaccinium macrocarpon), ulei de pește și N-acetil-D-glucozamină.\n\nSupliment nutritiv veterinar. Nu înlocuiește alimentația echilibrată sau tratamentul prescris. Nu se administrează în caz de hipersensibilitate la ingrediente. Administrare orală, conform instrucțiunilor de pe ambalaj și recomandării medicului veterinar.",
+      "image": "/products/farmavet/vetaria-urinar.jpg",
+      "labels": [
+        "Câini",
+        "Pisici"
+      ],
+      "features": [],
+      "benefits": [],
+      "package_sizes": [
+        "30 capsule"
+      ],
+      "variants": [],
+      "url": "",
+      "prospect": "",
+      "images": [
+        {
+          "url": "/products/farmavet/vetaria-urinar.jpg",
+          "alt": "VetAria+ Urinar — capsule pentru câini și pisici",
+          "role": "main"
+        }
+      ],
+      "breadcrumbs": [
+        "Vitamine, minerale și premixuri",
+        "VetAria+ Urinar — capsule pentru câini și pisici"
+      ],
+      "product_type": "",
+      "sourcePage": "manual"
     }
   ]
 }
