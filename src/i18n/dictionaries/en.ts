@@ -479,6 +479,7 @@ const en = {
     groupPharmacy: "Veterinary pharmacy",
     groupBrand: "Brand",
     allBrands: "All brands",
+    otherBrands: "Other brands",
     kickerVet: "Veterinary Pharmacy",
     kickerCatalog: "Full catalog",
     resultsAll: "All products",

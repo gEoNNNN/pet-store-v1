@@ -241,6 +241,17 @@ function displayBrandOf(product: ProductSummary): string {
   return product.brand;
 }
 
+/** Valoare internă pentru grupul marcaje cu 1–2 produse. */
+const OTHER_BRANDS_VALUE = "Alte branduri";
+const SMALL_BRAND_MAX_PRODUCTS = 2;
+
+function brandMatches(product: ProductSummary, brandValue: string, smallBrands: Set<string>): boolean {
+  if (brandValue === "Toate") return true;
+  const brand = displayBrandOf(product);
+  if (brandValue === OTHER_BRANDS_VALUE) return smallBrands.has(brand);
+  return brand === brandValue;
+}
+
 export default function ProductCatalog({
   products,
   initialCategory = "Toate",
@@ -301,17 +312,38 @@ export default function ProductCatalog({
 
   // Lista brandurilor din filtru se derivă din produse (inclusiv producătorii
   // Farmavet), ca mărcile noi să apară automat fără editarea unei liste fixe.
-  const brandOptions = useMemo(() => {
-    const names = new Set(products.map(displayBrandOf));
-    return ["Toate", ...Array.from(names).sort((a, b) => a.localeCompare(b, "ro"))];
+  // Marcile cu 1–2 produse intră în grupul „Alte branduri".
+  const brandTotals = useMemo(() => {
+    const totals = new Map<string, number>();
+    for (const product of products) {
+      const brand = displayBrandOf(product);
+      totals.set(brand, (totals.get(brand) ?? 0) + 1);
+    }
+    return totals;
   }, [products]);
+
+  const smallBrands = useMemo(() => {
+    const set = new Set<string>();
+    for (const [brand, total] of brandTotals) {
+      if (total <= SMALL_BRAND_MAX_PRODUCTS) set.add(brand);
+    }
+    return set;
+  }, [brandTotals]);
+
+  const brandOptions = useMemo(() => {
+    const major = Array.from(brandTotals.entries())
+      .filter(([brand, total]) => total > SMALL_BRAND_MAX_PRODUCTS && !smallBrands.has(brand))
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ro"))
+      .map(([brand]) => brand);
+    return ["Toate", ...major, ...(smallBrands.size > 0 ? [OTHER_BRANDS_VALUE] : [])];
+  }, [brandTotals, smallBrands]);
 
   const filterCounts = useMemo(() => {
     const counts = new Map<string, number>();
     const countFor = (value: string) =>
       products.filter(
         (product) =>
-          (brand === "Toate" || displayBrandOf(product) === brand) &&
+          brandMatches(product, brand, smallBrands) &&
           matchesFilterValue(product, value),
       ).length;
     for (const item of petCategoryNames) {
@@ -333,14 +365,14 @@ export default function ProductCatalog({
         b,
         products.filter(
           (product) =>
-            displayBrandOf(product) === b &&
+            brandMatches(product, b, smallBrands) &&
             (category === "Toate" || matchesFilterValue(product, category)),
         ).length,
       );
     }
     return counts;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [products, category, brandOptions]);
+  }, [products, category, brandOptions, smallBrands]);
 
   const filteredProducts = useMemo(() => {
     const queryTokens = normalizeText(query.trim()).split(/\s+/).filter(Boolean);
@@ -350,7 +382,7 @@ export default function ProductCatalog({
       const matchesCategory =
         category === "Toate" ? true : matchesFilterValue(product, category);
 
-      const matchesBrand = brand === "Toate" || displayBrandOf(product) === brand;
+      const matchesBrand = brandMatches(product, brand, smallBrands);
       const matchesQuery = queryTokens.every((token) => matchesSearchToken(entry, token));
       return matchesCategory && matchesBrand && matchesQuery ? [{ product, entry }] : [];
     });
@@ -403,7 +435,9 @@ export default function ProductCatalog({
     ? t("catalog.kickerVet")
     : brand === "Toate"
       ? t("catalog.kickerCatalog")
-      : brand;
+      : brand === OTHER_BRANDS_VALUE
+        ? t("catalog.otherBrands")
+        : brand;
 
   return (
     <div className={styles.catalog}>
@@ -544,7 +578,11 @@ export default function ProductCatalog({
                         aria-pressed={active}
                       >
                         <span className={styles.filterOptionLabel}>
-                          {item === "Toate" ? t("catalog.allBrands") : displayLabel(item)}
+                          {item === "Toate"
+                            ? t("catalog.allBrands")
+                            : item === OTHER_BRANDS_VALUE
+                              ? t("catalog.otherBrands")
+                              : displayLabel(item)}
                         </span>
                         <span className={styles.filterCount}>{count}</span>
                       </button>

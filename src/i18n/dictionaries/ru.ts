@@ -484,6 +484,7 @@ const ru = {
     groupPharmacy: "Ветеринарная аптека",
     groupBrand: "Бренд",
     allBrands: "Все бренды",
+    otherBrands: "Другие бренды",
     kickerVet: "Ветеринарная аптека",
     kickerCatalog: "Полный каталог",
     resultsAll: "Все товары",

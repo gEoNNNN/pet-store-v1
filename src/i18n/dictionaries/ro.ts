@@ -488,6 +488,7 @@ const ro = {
     groupPharmacy: "Farmacie veterinară",
     groupBrand: "Brand",
     allBrands: "Toate brandurile",
+    otherBrands: "Alte branduri",
     kickerVet: "Farmacie Veterinară",
     kickerCatalog: "Catalog complet",
     resultsAll: "Toate produsele",
