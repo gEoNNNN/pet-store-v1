@@ -4052,7 +4052,7 @@
       "name": "Vitaminar Plus — premix multivitaminic și mineral",
       "slug": "vitaminar-plus-premix-multivitaminic",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Premix multivitaminic și mineral LIHUA PHARMA, 15 g. Susține sănătatea generală și productivitatea animalelor prin acoperirea necesarului de vitamine și oligoelemente.\n\nMod de administrare: conform recomandării medicului veterinar sau a schemei indicate pe etichetă.",
+      "description": "Premix multivitaminic și mineral LIHUA PHARMA (Hebei Lihua Pharmaceutical, China), 15 g. Combină vitaminele esențiale cu minerale și oligoelemente, acoperind necesarul zilnic al animalelor.\n\nIndicații: prevenirea și corectarea carențelor de vitamine și minerale, în perioadele de stres (transport, schimbări de hrană sau climatice, vaccinare), în perioadele de producție intensivă (creștere, ouătit) și în convalescență — pentru menținerea sănătății generale și a productivității.\n\nMod de administrare: amestecat în hrană, conform schemei indicate pe etichetă sau recomandării medicului veterinar.",
       "image": "/products/farmavet/vitaminar-plus-premix-multivitaminic.png",
       "labels": [
         "Toate speciile"
@@ -4083,7 +4083,7 @@
       "name": "Amin Total — pulbere multivitaminică pentru păsări",
       "slug": "amin-total-pulbere-multivitaminica-pasari",
       "category": "Vitamine, minerale și premixuri",
-      "description": "Pulbere multivitaminică LIHUA PHARMA, 100 g — vitamine, aminoacizi și oligoelemente pentru păsări.\n\nMod de administrare: conform recomandării medicului veterinar sau a schemei indicate pe etichetă.",
+      "description": "Pulbere multivitaminică cu aminoacizi și oligoelemente LIHUA PHARMA (Hebei Lihua Pharmaceutical, China), 100 g, pentru păsări.\n\nIndicații: carențe de performanță, stres (transport, schimbări de hrană sau climatice, vaccinare), perioadele de producție intensivă (ouătit, creștere) și convalescența după boli sau tratamente.\n\nMod de administrare: conform recomandării medicului veterinar sau a schemei indicate pe etichetă.",
       "image": "/products/farmavet/amin-total-pulbere-multivitaminica-pasari.png",
       "labels": [
         "Păsări"
@@ -4114,7 +4114,7 @@
       "name": "Fluralaner 1% — soluție orală pentru păsări",
       "slug": "fluralaner-solutie-orala-pentru-pasari",
       "category": "Antiparazitare interne și externe",
-      "description": "Soluție orală antiparazitară pentru păsări cu fluralaner 1% (10 mg/ml), Shandong Luxi.\n\nNotă: produs destinat păsărilor — nu se confundă cu variantele Bravecto pentru câini și pisici din același principiu activ. Administrare conform recomandării medicului veterinar.",
+      "description": "Soluție orală antiparazitară pentru păsări cu fluralaner 1% (10 mg/ml), Shandong Luxi (China).\n\nFluralanerul aparține clasei isoxazolinelor și este eficace contra acarienilor care afectează păsările, inclusiv acarianul roșu de la găini (Dermanyssus gallinae) și acarianul nordic de la găini (Ornithonyssus sylviarum), contribuind la controlul de lungă durată al populației de acarieni din adăpost.\n\nMod de administrare: prin apa de băut. Schema de dozare tipică pentru soluția orală de fluralaner la găini constă în două administrări de 0,5 mg/kg greutate corporală, la interval de 7 zile — se respectă prospectul etichetei.\n\nNotă: produs destinat păsărilor — nu se confundă cu variantele Bravecto pentru câini și pisici din același principiu activ.",
       "image": "/products/farmavet/fluralaner-solutie-orala-pentru-pasari.png",
       "labels": [
         "Păsări"
@@ -4145,10 +4145,14 @@
       "name": "Neoverm — soluție pentru administrare orală",
       "slug": "neoverm-solutie-orala",
       "category": "Antiparazitare interne și externe",
-      "description": "Soluție antiparazitară pentru administrare orală Biofarm, 10 fiole × 10 ml, pentru mai multe specii de animale.\n\nAdministrare conform recomandării medicului veterinar.",
+      "description": "Soluție orală cu ivermectină 10 mg/ml (Biofarm, Ucraina), 10 fiole de 10 ml.\n\nIndicații: dehelmintizarea animalelor și controlul insectelor și acarienilor la bovine, ovine, caprine, porcine și păsări (găini, curci) — nematode gastrointestinale și pulmonare (Haemonchus, Ostertagia, Trichostrongylus, Cooperia, Dictyocaulus, Ascaris, Oesophagostomum etc.), larve de muște (Hypoderma, Oestrus, Gastrophilus), acarieni (Sarcoptes, Psoroptes, Chorioptes, Demodex) și păduchi.\n\nDozare (prin apa de băut): bovine, ovine și caprine — 0,2 ml/10 kg greutate corporală, o singură dată; porcine (inclusiv purcei) — 0,25 ml/10 kg, de două ori la interval de 24 de ore.\n\nContraindicat la animalele slăbite sau cu boli infecțioase, la femelele gravide în ultima lună înainte de fătare și la vacile lactate.\n\nTimp de așteptare pentru carne: bovine 24 zile, ovine/caprine 14 zile, porcine 12 zile, păsări 8 zile.",
       "image": "/products/farmavet/neoverm-solutie-orala.png",
       "labels": [
-        "Toate speciile"
+        "Bovine",
+        "Ovine",
+        "Caprine",
+        "Porcine",
+        "Păsări"
       ],
       "features": [],
       "benefits": [],
