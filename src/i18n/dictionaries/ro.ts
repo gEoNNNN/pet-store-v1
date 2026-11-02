@@ -596,7 +596,7 @@ const ro = {
     metabolizableEnergy: "Energie metabolizabilă",
     labelsAria: "Etichete produs",
     btnManufacturer: "Vezi produsul la producător",
-    btnProspect: "Descarcă prospect (Word)",
+    btnProspect: "Descarcă prospect",
     kickerFeatures: "Caracteristici",
     benefitsTitle: "Beneficiile produsului",
     kickerFull: "Fișa completă",

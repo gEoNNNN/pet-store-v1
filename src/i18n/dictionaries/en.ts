@@ -587,7 +587,7 @@ const en = {
     metabolizableEnergy: "Metabolizable energy",
     labelsAria: "Product tags",
     btnManufacturer: "View product at the manufacturer",
-    btnProspect: "Download leaflet (Word)",
+    btnProspect: "Download leaflet",
     kickerFeatures: "Features",
     benefitsTitle: "Product benefits",
     kickerFull: "Full datasheet",

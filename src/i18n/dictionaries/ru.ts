@@ -593,7 +593,7 @@ const ru = {
     metabolizableEnergy: "Метаболизируемая энергия",
     labelsAria: "Метки товара",
     btnManufacturer: "Посмотреть у производителя",
-    btnProspect: "Скачать инструкцию (Word)",
+    btnProspect: "Скачать инструкцию",
     kickerFeatures: "Характеристики",
     benefitsTitle: "Преимущества товара",
     kickerFull: "Полная карточка",
