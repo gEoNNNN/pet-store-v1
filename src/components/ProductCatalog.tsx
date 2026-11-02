@@ -6,13 +6,13 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   petCategoryNames,
-  productBrandNames,
   productTypeFilterGroups,
   veterinaryCategoryNames,
   type ProductSummary,
 } from "@/data/products";
 import { useI18n, type TranslateParams } from "@/i18n/provider";
 import { applyOverlay } from "@/i18n/catalog";
+import { summarizeText } from "@/lib/summarizeText";
 import {
   ArrowRightIcon,
   CloseIcon,
@@ -180,7 +180,7 @@ function buildSearchEntry(product: ProductSummary, translated?: ProductSummary):
     ? ` ${translated.name} ${translated.description} ${translated.labels.join(" ")} ${translated.packageSizes.join(" ")}`
     : "";
   const blob = normalizeText(
-    `${product.name} ${product.brand} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}` + extra,
+    `${product.name} ${displayBrandOf(product)} ${product.category} ${product.description} ${product.labels.join(" ")} ${product.packageSizes.join(" ")}` + extra,
   );
   const words = Array.from(new Set(blob.split(/[^a-z0-9]+/g).filter(Boolean)));
   const nameBlob = normalizeText(`${product.name}${translated && translated !== product ? " " + translated.name : ""}`);
@@ -229,6 +229,17 @@ type ProductCatalogProps = {
   initialBrand?: string;
   initialQuery?: string;
 };
+
+/**
+ * Brandul afișat și filtrabil: produsele Farmavet apar sub marca reală
+ * (producătorul de pe etichetă/prospect), restul își păstrează brandul.
+ */
+function displayBrandOf(product: ProductSummary): string {
+  if (product.brand === "Farmavet" && product.manufacturer && product.manufacturer !== "Farmavet") {
+    return product.manufacturer;
+  }
+  return product.brand;
+}
 
 export default function ProductCatalog({
   products,
@@ -288,12 +299,19 @@ export default function ProductCatalog({
     product.labels.includes(value) ||
     product.productType === value;
 
+  // Lista brandurilor din filtru se derivă din produse (inclusiv producătorii
+  // Farmavet), ca mărcile noi să apară automat fără editarea unei liste fixe.
+  const brandOptions = useMemo(() => {
+    const names = new Set(products.map(displayBrandOf));
+    return ["Toate", ...Array.from(names).sort((a, b) => a.localeCompare(b, "ro"))];
+  }, [products]);
+
   const filterCounts = useMemo(() => {
     const counts = new Map<string, number>();
     const countFor = (value: string) =>
       products.filter(
         (product) =>
-          (brand === "Toate" || product.brand === brand) &&
+          (brand === "Toate" || displayBrandOf(product) === brand) &&
           matchesFilterValue(product, value),
       ).length;
     for (const item of petCategoryNames) {
@@ -309,20 +327,20 @@ export default function ProductCatalog({
 
   const brandCounts = useMemo(() => {
     const counts = new Map<string, number>();
-    for (const b of productBrandNames) {
+    for (const b of brandOptions) {
       if (b === "Toate") continue;
       counts.set(
         b,
         products.filter(
           (product) =>
-            product.brand === b &&
+            displayBrandOf(product) === b &&
             (category === "Toate" || matchesFilterValue(product, category)),
         ).length,
       );
     }
     return counts;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [products, category]);
+  }, [products, category, brandOptions]);
 
   const filteredProducts = useMemo(() => {
     const queryTokens = normalizeText(query.trim()).split(/\s+/).filter(Boolean);
@@ -332,7 +350,7 @@ export default function ProductCatalog({
       const matchesCategory =
         category === "Toate" ? true : matchesFilterValue(product, category);
 
-      const matchesBrand = brand === "Toate" || product.brand === brand;
+      const matchesBrand = brand === "Toate" || displayBrandOf(product) === brand;
       const matchesQuery = queryTokens.every((token) => matchesSearchToken(entry, token));
       return matchesCategory && matchesBrand && matchesQuery ? [{ product, entry }] : [];
     });
@@ -347,7 +365,7 @@ export default function ProductCatalog({
         if (sortBy === "name-desc") return second.product.name.localeCompare(first.product.name, "ro");
         if (sortBy === "brand") {
           return (
-            first.product.brand.localeCompare(second.product.brand, "ro") ||
+            displayBrandOf(first.product).localeCompare(displayBrandOf(second.product), "ro") ||
             first.product.name.localeCompare(second.product.name, "ro")
           );
         }
@@ -508,7 +526,7 @@ export default function ProductCatalog({
                   <ChevronIcon className={styles.filterChevron} />
                 </summary>
                 <div className={styles.filterOptions}>
-                  {productBrandNames.map((item) => {
+                  {brandOptions.map((item) => {
                     const active = brand === item;
                     const count =
                       item === "Toate"
@@ -585,20 +603,20 @@ export default function ProductCatalog({
                         sizes="(max-width: 860px) 50vw, (max-width: 1120px) 30vw, 21vw"
                         className={styles.productImage}
                       />
-                      <span className={styles.badge}>{product.brand}</span>
+                      <span className={styles.badge}>{displayBrandOf(product)}</span>
                       <span className={styles.quickCategory}>{categoryLabel(product.category)}</span>
                     </Link>
 
                     <div className={styles.cardBody}>
                       <p className={styles.cardMeta}>
-                        <span>{product.brand}</span>
+                        <span>{displayBrandOf(product)}</span>
                         <span aria-hidden="true">·</span>
                         <span>{categoryLabel(product.category)}</span>
                       </p>
                       <h3 className={styles.productName}>
                         <Link href={product.href}>{view.name}</Link>
                       </h3>
-                      <p className={styles.productDescription}>{view.description}</p>
+                      <p className={styles.productDescription}>{summarizeText(view.description)}</p>
 
                       <div className={styles.cardFooter}>
                         <span className={styles.sizeInfo}>

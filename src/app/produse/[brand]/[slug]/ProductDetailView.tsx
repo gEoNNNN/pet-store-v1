@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRightIcon, CheckCircleIcon, ChevronRightIcon, DownloadIcon } from "@/components/icons";
 import type { Product } from "@/data/products";
+import { summarizeText } from "@/lib/summarizeText";
 import { applyOverlay } from "@/i18n/catalog";
 import { useI18n } from "@/i18n/provider";
 import styles from "./ProductDetail.module.css";
@@ -104,9 +105,7 @@ export default function ProductDetailView({ product }: { product: Product }) {
             </div>
             <h1>{view.name}</h1>
             <div className={styles.description}>
-              {view.description.split(/\n+/).filter(Boolean).map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+              <p>{summarizeText(view.description, 220)}</p>
             </div>
 
             {view.labels.length > 0 && (
@@ -238,7 +237,18 @@ export default function ProductDetailView({ product }: { product: Product }) {
             </div>
           ) : (
             <div className={styles.infoCard}>
-              <p>{view.rawText}</p>
+              {view.rawText ? (
+                <p>{view.rawText}</p>
+              ) : (
+                view.description
+                  .split(/\n+/)
+                  .filter(Boolean)
+                  .map((paragraph, index) => (
+                    <p className={styles.sectionText} key={index}>
+                      {paragraph}
+                    </p>
+                  ))
+              )}
             </div>
           )}
         </section>

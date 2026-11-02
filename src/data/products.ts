@@ -135,15 +135,14 @@ export type ProductSummary = {
   labels: string[];
   packageSizes: string[];
   productType: string | null;
+  /** producător real extras din prospect (ex. „O.L.KAR"), afișat ca „Producător" */
+  manufacturer: string | null;
   /** documentul Word descărcabil (ex. /prospecte/prospect-insektal.docx) */
   prospect: string | null;
 };
 
 export type Product = ProductSummary & {
   sourceUrl: string;
-  productType: string | null;
-  /** producător real extras din prospect (ex. „O.L.KAR"), afișat ca „Producător" */
-  manufacturer: string | null;
   breadcrumbs: string[];
   features: string[];
   ingredientTags: string[];

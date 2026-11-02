@@ -228,6 +228,7 @@ export function getProductSummaries(): ProductSummary[] {
     labels: product.labels,
     packageSizes: product.packageSizes,
     productType: product.productType,
+    manufacturer: product.manufacturer,
     prospect: product.prospect,
   }));
 }
