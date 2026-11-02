@@ -17,6 +17,7 @@ export const farmavetManufacturers: Record<string, string> = {
   ruvera: "RUVERA",
   "veyx-pharma": "Veyx-Pharma",
   "cid-lines": "CID Lines",
+  "lihua-pharma": "Lihua Pharma",
   "shandong-luxi": "Shandong Luxi",
   "icb-pharma": "ICB Pharma",
   "fgbu-stavropol": "FGBU Stavropol",
