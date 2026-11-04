@@ -1,0 +1,32 @@
+# Farmavet
+
+> Farmavet (S.A. Farmavet) este o farmaciu veterinară din Chișinău, Moldova (Strada Petricani 198), cu program Luni–Sâmbătă 9:00–19:00. Siteul www.farmavet.md prezintă un catalog complet de produse veterinare: medicamente și preparate injectabile, antiparazitare interne și externe, vaccinuri, vitamine, minerale și premixuri, produse pentru igiena rănilor și dezinfecție, hrană superpremium Brit și Carnilove pentru câini și pisici, accesorii Natura și Eco Natura, precum și produse pentru animale de fermă (porcine, bovine, ovine, păsări, iepuri).
+
+## Pagini principale
+
+- [Acasă](https://www.farmavet.md/): prezentare generală, categorii veterinare, contact.
+- [Catalog produse](https://www.farmavet.md/produse): toate produsele, filtrabile după categorie, brand și specii.
+- [Instrumente](https://www.farmavet.md/instrumente): calculator de hrană, evaluare BCS (nivel de sănătate), recomandare de produse.
+
+## Instrumente
+
+- [Calculator de hrană pentru câini și pisici](https://www.farmavet.md/instrumente/calculator-hrana)
+- [Calculator nivel de sănătate (BCS)](https://www.farmavet.md/instrumente/nivel-sanatate)
+- [Recomandare produse](https://www.farmavet.md/instrumente/recomandare-produse)
+
+## Produse remarcabile
+
+Fiecare pagină de produs are URL de forma `https://www.farmavet.md/produse/{brand}/{slug}` și conține denumirea, descrierea, compoziția, tabelul nutrițional, ghidul de hrănire și prospectul PDF/DOCX când este disponibil.
+
+### Branduri din catalog
+
+Brit, Carnilove, Neoterica (Insektal, Gelmintal, Unitabs, RolfClub 3D, Inspector), Chistotel (Ecoprom), Natura, Eco Natura Pet, Farmavet (producător autohton de preparate veterinare).
+
+## Contact
+
+- Adresă: Strada Petricani 198, Chișinău, Moldova
+- Telefon: +373 79 536 508
+- Email: farmavet.mariana@yahoo.com
+- Facebook: https://www.facebook.com/farmavet.md/
+- Instagram: https://www.instagram.com/farmavet_moldova/
+- Google Maps: https://maps.app.goo.gl/zbrmi44MwjviSwvc6

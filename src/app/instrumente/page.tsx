@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import ToolsHero from "@/components/ToolsHero";
 import ToolsSection from "@/components/ToolsSection";
 import FoodCalculator from "@/components/FoodCalculator";
@@ -7,19 +8,30 @@ import ProductFinder from "@/components/ProductFinder";
 import Reveal from "@/components/Reveal";
 import T from "@/i18n/T";
 import { getProductSummaries } from "@/data/productCatalog.server";
+import { breadcrumbSchema } from "@/lib/schema";
+import { site } from "@/lib/site";
 import styles from "./InstrumentePage.module.css";
 
 export const metadata: Metadata = {
-  title: "Instrumente pentru îngrijirea animalelor | Farmavet",
-  description: "Calculatoare orientative de hrană și greutate corporală, plus recomandări de produse din catalogul Farmavet.",
+  title: "Instrumente pentru îngrijirea animalelor",
+  description:
+    "Calculatoare orientative de hrană și greutate corporală, evaluare BCS și recomandări de produse din catalogul Farmavet pentru câini și pisici.",
+  alternates: { canonical: "/instrumente" },
 };
 
 export default function ToolsPage() {
   const products = getProductSummaries();
 
   return (
-    <main id="main">
-      <ToolsHero />
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Acasă", url: `${site.url}/` },
+          { name: "Instrumente", url: `${site.url}/instrumente` },
+        ])}
+      />
+      <main id="main">
+        <ToolsHero />
 
       <div id="instrumente-list">
         <ToolsSection isPage={false} useAnchorLinks={true} />
@@ -99,6 +111,7 @@ export default function ToolsPage() {
           </div>
         </section>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

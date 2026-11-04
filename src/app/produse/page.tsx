@@ -1,13 +1,24 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import Navbar from "@/components/Navbar";
 import ProductCatalog from "@/components/ProductCatalog";
 import { getProductSummaries } from "@/data/productCatalog.server";
+import { collectionSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Produse Brit și Carnilove | Farmavet",
+  title: "Catalog produse veterinare și hrană pentru animale",
   description:
-    "Descoperă catalogul complet de hrană Brit și Carnilove pentru câini, pisici și rozătoare, cu ingrediente și informații nutriționale.",
+    "Catalog complet Farmavet: medicamente veterinare, antiparazitare, vitamine și suplimente, hrană Brit și Carnilove pentru câini, pisici și rozătoare, accesorii pentru animale de fermă.",
+  alternates: {
+    canonical: "/produse",
+  },
+  openGraph: {
+    title: "Catalog produse veterinare și hrană pentru animale | Farmavet",
+    description:
+      "Medicamente veterinare, antiparazitare, vitamine, hrană Brit și Carnilove și accesorii — tot catalogul Farmavet într-un singur loc.",
+    url: "/produse",
+  },
 };
 
 type ProductsPageProps = {
@@ -21,6 +32,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
   return (
     <>
       <Navbar activeItem="products" />
+      <JsonLd data={collectionSchema(products)} />
       <main id="main">
         <ProductCatalog
           products={products}
