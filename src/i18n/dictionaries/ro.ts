@@ -234,6 +234,8 @@ const ro = {
       "Ai întrebări despre un produs sau dieta potrivită pentru animalul tău? Echipa noastră îți stă la dispoziție cu informații și recomandări.",
     labelAddress: "Adresă",
     labelPhone: "Telefon",
+    labelPhonePharmacy: "Farmacia",
+    labelPhoneWarehouse: "Depozit",
     labelEmail: "Email",
     labelProgram: "Program",
     program: "Luni – Sâmbătă: 9:00 – 19:00",
@@ -516,7 +518,7 @@ const ro = {
     vetBadge: "Farmacie Veterinară Farmavet",
     vetNoticeText:
       "Gama completă de medicamente, tratamente și produse autorizate pentru {category} este disponibilă direct în farmacia fizică Farmavet din Chișinău (str. Petricani 198). Pentru comenzi, verificarea stocurilor sau recomandarea unui medic veterinar, contactați-ne telefonic sau lăsați-ne un mesaj.",
-    vetCall: "Comandă telefonic: 0795 36 508",
+    vetCall: "Comandă telefonic: {phone}",
     vetStock: "Solicită informații stoc",
   },
   filters: {

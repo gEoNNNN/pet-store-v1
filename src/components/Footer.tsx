@@ -11,6 +11,7 @@ import {
   PhoneIcon,
 } from "./icons";
 import { useI18n } from "@/i18n/provider";
+import { site } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -109,9 +110,21 @@ export default function Footer() {
                 </li>
                 <li>
                   <PhoneIcon className={styles.contactIcon} />
-                  <a href="tel:+37379536508" className={styles.link}>
-                    0795 36 508
-                  </a>
+                  <span>
+                    <a
+                      href={`tel:${site.contact.phones.pharmacy.tel}`}
+                      className={styles.link}
+                    >
+                      {t("contact.labelPhonePharmacy")}: {site.contact.phones.pharmacy.value}
+                    </a>
+                    <br />
+                    <a
+                      href={`tel:${site.contact.phones.warehouse.tel}`}
+                      className={styles.link}
+                    >
+                      {t("contact.labelPhoneWarehouse")}: {site.contact.phones.warehouse.value}
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <MailIcon className={styles.contactIcon} />

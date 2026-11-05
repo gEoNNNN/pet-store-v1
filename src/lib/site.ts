@@ -21,7 +21,11 @@ export const site = {
     streetAddress: "Strada Petricani 198",
     addressLocality: "Chișinău",
     addressCountry: "MD",
-    phone: "+37379536508",
+    // Numerele oficiale: farmacia (comenzi și consultanță) și depozitul (aprovizionare).
+    phones: {
+      pharmacy: { value: "078 999 289", tel: "+37378999289" },
+      warehouse: { value: "079 773 340", tel: "+37379773340" },
+    },
     email: "farmavet.mariana@yahoo.com",
     // Luni – Sâmbătă: 9:00 – 19:00 (conform dicționarului i18n și Google Maps).
     openingHours: "Mo-Sa 09:00-19:00",

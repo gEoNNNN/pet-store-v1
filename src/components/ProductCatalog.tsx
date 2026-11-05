@@ -12,6 +12,7 @@ import {
 } from "@/data/products";
 import { useI18n, type TranslateParams } from "@/i18n/provider";
 import { applyOverlay } from "@/i18n/catalog";
+import { site } from "@/lib/site";
 import { summarizeText } from "@/lib/summarizeText";
 import {
   ArrowRightIcon,
@@ -615,9 +616,12 @@ export default function ProductCatalog({
                 })}
               </p>
               <div className={styles.vetNoticeActions}>
-                <a href="tel:+37379536508" className={styles.vetNoticeCall}>
+                <a
+                  href={`tel:${site.contact.phones.pharmacy.tel}`}
+                  className={styles.vetNoticeCall}
+                >
                   <PhoneIcon className={styles.vetNoticeIcon} />
-                  {t("catalog.vetCall")}
+                  {t("catalog.vetCall", { phone: site.contact.phones.pharmacy.value })}
                 </a>
                 <Link href="/#contact" className={styles.vetNoticeContact}>
                   {t("catalog.vetStock")}

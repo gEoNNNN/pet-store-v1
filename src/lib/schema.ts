@@ -19,7 +19,7 @@ export function siteGraph(): SchemaObject {
     alternateName: site.name,
     description: site.description,
     url: `${site.url}/`,
-    telephone: site.contact.phone,
+    telephone: site.contact.phones.pharmacy.tel,
     email: site.contact.email,
     address: {
       "@type": "PostalAddress",
@@ -36,13 +36,21 @@ export function siteGraph(): SchemaObject {
     hasMap: site.social.googleMaps,
     sameAs: [site.social.facebook, site.social.instagram],
     areaServed: { "@type": "Country", name: "Moldova" },
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: site.contact.phone,
-      email: site.contact.email,
-      contactType: "customer service",
-      availableLanguage: ["Romanian", "Russian", "English"],
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: site.contact.phones.pharmacy.tel,
+        email: site.contact.email,
+        contactType: "customer service",
+        availableLanguage: ["Romanian", "Russian", "English"],
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: site.contact.phones.warehouse.tel,
+        contactType: "sales",
+        availableLanguage: ["Romanian", "Russian", "English"],
+      },
+    ],
     knowsLanguage: site.inLanguage,
   };
 

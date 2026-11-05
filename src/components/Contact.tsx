@@ -1,5 +1,6 @@
 "use client";
 
+import type { ComponentType } from "react";
 import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 import {
@@ -10,6 +11,7 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "./icons";
+import { site } from "@/lib/site";
 import { useI18n } from "@/i18n/provider";
 import styles from "./Contact.module.css";
 
@@ -17,10 +19,31 @@ const MAPS_LINK = "https://maps.app.goo.gl/zbrmi44MwjviSwvc6";
 const MAPS_EMBED =
   "https://www.google.com/maps?q=Farmavet+SA,Petricani+198,Chi%C8%99in%C4%83u&output=embed";
 
+type ContactDetail = {
+  icon: ComponentType<{ className?: string }>;
+  label: string;
+  value?: string;
+  href?: string;
+  links?: { label: string; value: string; href: string }[];
+};
+
 export default function Contact() {
   const { t } = useI18n();
 
-  const contactDetails = [
+  const phoneLinks = [
+    {
+      label: t("contact.labelPhonePharmacy"),
+      value: site.contact.phones.pharmacy.value,
+      href: `tel:${site.contact.phones.pharmacy.tel}`,
+    },
+    {
+      label: t("contact.labelPhoneWarehouse"),
+      value: site.contact.phones.warehouse.value,
+      href: `tel:${site.contact.phones.warehouse.tel}`,
+    },
+  ];
+
+  const contactDetails: ContactDetail[] = [
     {
       icon: MapPinIcon,
       label: t("contact.labelAddress"),
@@ -30,8 +53,7 @@ export default function Contact() {
     {
       icon: PhoneIcon,
       label: t("contact.labelPhone"),
-      value: "0795 36 508",
-      href: "tel:+37379536508",
+      links: phoneLinks,
     },
     {
       icon: MailIcon,
@@ -67,7 +89,13 @@ export default function Contact() {
                 </span>
                 <div>
                   <span className={styles.detailLabel}>{item.label}</span>
-                  {item.href ? (
+                  {item.links ? (
+                    item.links.map((link) => (
+                      <a key={link.label} href={link.href} className={styles.detailValueLink}>
+                        <span className={styles.phoneKind}>{link.label}</span> {link.value}
+                      </a>
+                    ))
+                  ) : item.href ? (
                     <a href={item.href} className={styles.detailValueLink}>
                       {item.value}
                     </a>
