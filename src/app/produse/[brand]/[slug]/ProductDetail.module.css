@@ -354,6 +354,8 @@
 }
 
 .infoCard {
+  /* Fără asta, tabelele late (ghidul de hrănire) lărgesc cardul și ies din ecran pe telefon. */
+  min-width: 0;
   padding: clamp(24px, 3.5vw, 42px);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
