@@ -1,6 +1,6 @@
 # Farmavet
 
-> Farmavet (S.A. Farmavet) este o farmaciu veterinară din Chișinău, Moldova (Strada Petricani 198), cu program Luni–Sâmbătă 9:00–19:00. Siteul www.farmavet.md prezintă un catalog complet de produse veterinare: medicamente și preparate injectabile, antiparazitare interne și externe, vaccinuri, vitamine, minerale și premixuri, produse pentru igiena rănilor și dezinfecție, hrană superpremium Brit și Carnilove pentru câini și pisici, accesorii Natura și Eco Natura, precum și produse pentru animale de fermă (porcine, bovine, ovine, păsări, iepuri).
+> Farmavet (S.A. Farmavet) este o farmaciu veterinară din Chișinău, Moldova (Strada Petricani 198), cu program Luni–Vineri 8:30–17:00 și Sâmbătă 8:30–15:00. Siteul www.farmavet.md prezintă un catalog complet de produse veterinare: medicamente și preparate injectabile, antiparazitare interne și externe, vaccinuri, vitamine, minerale și premixuri, produse pentru igiena rănilor și dezinfecție, hrană superpremium Brit și Carnilove pentru câini și pisici, accesorii Natura și Eco Natura, precum și produse pentru animale de fermă (porcine, bovine, ovine, păsări, iepuri).
 
 ## Pagini principale
 

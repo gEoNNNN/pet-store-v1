@@ -27,12 +27,20 @@ export function siteGraph(): SchemaObject {
       addressLocality: site.contact.addressLocality,
       addressCountry: site.contact.addressCountry,
     },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "19:00",
-    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:30",
+        closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Saturday"],
+        opens: "08:30",
+        closes: "15:00",
+      },
+    ],
     hasMap: site.social.googleMaps,
     sameAs: [site.social.facebook, site.social.instagram],
     areaServed: { "@type": "Country", name: "Moldova" },

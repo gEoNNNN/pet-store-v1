@@ -238,7 +238,7 @@ const ro = {
     labelPhoneWarehouse: "Depozit",
     labelEmail: "Email",
     labelProgram: "Program",
-    program: "Luni – Sâmbătă: 9:00 – 19:00",
+    program: "Luni – Vineri: 8:30 – 17:00 · Sâmbătă: 8:30 – 15:00",
     mapsTitle: "Locația Farmavet pe Google Maps",
     socialFacebook: "Farmavet pe Facebook",
     socialInstagram: "Farmavet pe Instagram",

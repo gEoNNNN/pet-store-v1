@@ -236,7 +236,7 @@ const en = {
     labelPhoneWarehouse: "Warehouse",
     labelEmail: "Email",
     labelProgram: "Schedule",
-    program: "Monday – Saturday: 9:00 – 19:00",
+    program: "Monday – Friday: 8:30 – 17:00 · Saturday: 8:30 – 15:00",
     mapsTitle: "Farmavet location on Google Maps",
     socialFacebook: "Farmavet on Facebook",
     socialInstagram: "Farmavet on Instagram",

@@ -27,8 +27,8 @@ export const site = {
       warehouse: { value: "079 773 340", tel: "+37379773340" },
     },
     email: "farmavet.mariana@yahoo.com",
-    // Luni – Sâmbătă: 9:00 – 19:00 (conform dicționarului i18n și Google Maps).
-    openingHours: "Mo-Sa 09:00-19:00",
+    // Luni – Vineri: 8:30 – 17:00; Sâmbătă: 8:30 – 15:00.
+    openingHours: "Mo-Fr 08:30-17:00 Sa 08:30-15:00",
   },
   social: {
     facebook: "https://www.facebook.com/farmavet.md/",

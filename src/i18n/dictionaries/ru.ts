@@ -236,7 +236,7 @@ const ru = {
     labelPhoneWarehouse: "Склад",
     labelEmail: "Email",
     labelProgram: "Часы работы",
-    program: "Понедельник – Суббота: 9:00 – 19:00",
+    program: "Понедельник – Пятница: 8:30 – 17:00 · Суббота: 8:30 – 15:00",
     mapsTitle: "Расположение Farmavet на Google Maps",
     socialFacebook: "Farmavet в Facebook",
     socialInstagram: "Farmavet в Instagram",
