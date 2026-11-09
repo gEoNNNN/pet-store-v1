@@ -19,9 +19,10 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["shopping", "health", "pets"],
     icons: [
       {
-        src: "/favicon.ico",
-        sizes: "48x48",
-        type: "image/x-icon",
+        src: "/icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
       },
     ],
   };
