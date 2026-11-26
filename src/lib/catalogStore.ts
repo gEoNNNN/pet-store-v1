@@ -15,8 +15,16 @@ export const CATALOG_TAG = "catalog";
 
 const BLOB_PREFIX = "catalog/";
 
+/**
+ * Blob e disponibil dacă există token read-write (local / proiecte vechi) sau
+ * acreditările OIDC pe care Vercel le injectează când conectezi un store:
+ * BLOB_STORE_ID + VERCEL_OIDC_TOKEN. SDK-ul le citește singur.
+ */
 export function blobEnabled(): boolean {
-  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+  return Boolean(
+    process.env.BLOB_READ_WRITE_TOKEN ||
+      (process.env.BLOB_STORE_ID && process.env.VERCEL_OIDC_TOKEN),
+  );
 }
 
 /** Folderul local cu JSON-urile de catalog (fallback fără Blob). */

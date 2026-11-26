@@ -40,16 +40,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 Panoul (`/admin`) editează cataloagele de produse și urcă imagini. Pe Vercel
 sistemul de fișiere este read-only, deci totul trece prin **Vercel Blob**:
 
-1. **Creează un Blob store**: Project → Storage → Blob → Create. Conectat la
-   proiect, Vercel injectează automat `BLOB_READ_WRITE_TOKEN`.
-2. **Variabile de mediu** în Project → Settings → Environment Variables:
+1. **Creează un Blob store**: Project → Storage → Create Storage → Blob, cu
+   accesul setat pe **Public** (imaginile produselor trebuie să fie publice).
+2. **Conectează store-ul la proiect** (store → Projects → Connect to Project),
+   pentru **Production** și **Preview**. Vercel injectează automat
+   `BLOB_STORE_ID` + `VERCEL_OIDC_TOKEN`; tokenul read-write e opțional.
+3. **Redeploy** după conectare — variabilele de mediu intră în vigoare doar la un
+   deployment nou.
+4. **Variabile de mediu** în Project → Settings → Environment Variables:
    `ADMIN_PASSWORD` și `ADMIN_SECRET` (aceleași valori le folosești și local).
-3. La prima salvare din panou, cataloagele din `scrape/*.json` sunt copiate în
+5. La prima salvare din panou, cataloagele din `scrape/*.json` sunt copiate în
    Blob sub `catalog/*.json`, iar de atunci Blob-ul este sursa de adevăr.
    Imaginile urcate ajung în Blob sub `uploads/`.
-4. Fără `BLOB_READ_WRITE_TOKEN` site-ul funcționează normal, dar panoul nu poate
-   salva. Local, fără token, panoul scrie în continuare în `scrape/` și în
-   `data/uploads/`.
+
+Fără un store conectat site-ul funcționează normal, dar panoul nu poate salva
+(scrie un mesaj clar în formular). Local, fără Blob, panoul scrie în continuare
+în `scrape/` și în `data/uploads/`.
 
 Limita de încărcare este 4 MB (Vercel limitează corpul cererii la 4,5 MB).
 

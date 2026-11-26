@@ -11,14 +11,19 @@ import { slugifyName } from "@/lib/slugify";
 export type ActionState = { error: string } | null;
 
 /**
- * Pe Vercel scrierile merg doar prin Vercel Blob; fără token, disc-ul e
- * read-only și salvarea ar eșua cu o eroare greu de înțeles.
+ * Pe Vercel scrierile merg doar prin Vercel Blob; fără store conectat, disc-ul
+ * e read-only și salvarea ar eșua cu o eroare greu de înțeles.
  */
 function storageError(): string | null {
-  if (process.env.VERCEL && !blobEnabled()) {
-    return "Vercel Blob nu este configurat (BLOB_READ_WRITE_TOKEN), deci modificările nu pot fi salvate.";
-  }
-  return null;
+  if (!process.env.VERCEL || blobEnabled()) return null;
+  const has = [
+    process.env.BLOB_STORE_ID ? "BLOB_STORE_ID" : null,
+    process.env.VERCEL_OIDC_TOKEN ? "VERCEL_OIDC_TOKEN" : null,
+    process.env.BLOB_READ_WRITE_TOKEN ? "BLOB_READ_WRITE_TOKEN" : null,
+  ].filter(Boolean);
+  return has.length
+    ? `Vercel Blob e conectat incomplet (există ${has.join(", ")}). Reconectează store-ul la proiect și fă redeploy.`
+    : "Vercel Blob nu e conectat la proiect. Storage → Blob → Connect to Project, apoi redeploy.";
 }
 
 /** Invalidează cache-ul tuturor paginilor care afișează produse. */
@@ -61,14 +66,19 @@ export async function saveProductAction(
   const brandSlug = data.brandSlug.trim();
 
   // Dacă a fost aleasă o poză, ea înlocuiește calea/linkul din câmpul text.
-  const file = formData.get("imageFile");
-  if (file instanceof File && file.size > 0) {
-    const uploaded = await storeUpload(file, slug || slugifyName(data.name));
-    if ("error" in uploaded) return { error: uploaded.error };
-    data.image = uploaded.url;
+  let error: string | null;
+  try {
+    const file = formData.get("imageFile");
+    if (file instanceof File && file.size > 0) {
+      const uploaded = await storeUpload(file, slug || slugifyName(data.name));
+      if ("error" in uploaded) return { error: uploaded.error };
+      data.image = uploaded.url;
+    }
+    error = await upsertProduct({ ...data, slug, brandSlug }, isEdit);
+  } catch (cause) {
+    // Mesajul API-ului (ex. store privat + access public) e mai util decât un 500.
+    return { error: cause instanceof Error ? cause.message : "Salvarea a eșuat." };
   }
-
-  const error = await upsertProduct({ ...data, slug, brandSlug }, isEdit);
   if (error) return { error };
   revalidateStore(slug, brandSlug);
   const banner = isEdit ? "modificat" : "adaugat";
@@ -81,7 +91,16 @@ export async function deleteProductAction(formData: FormData): Promise<void> {
   if (blocked) redirect(`/admin/panou/produse?eroare=${encodeURIComponent(blocked)}`);
   const brandSlug = String(formData.get("brandSlug") ?? "");
   const slug = String(formData.get("slug") ?? "");
-  const error = await deleteProduct(brandSlug, slug);
+  let error: string | null;
+  try {
+    error = await deleteProduct(brandSlug, slug);
+  } catch (cause) {
+    redirect(
+      `/admin/panou/produse?eroare=${encodeURIComponent(
+        cause instanceof Error ? cause.message : "Ștergerea a eșuat.",
+      )}`,
+    );
+  }
   if (error) {
     redirect(
       `/admin/panou/produse?eroare=${encodeURIComponent(error)}`,
