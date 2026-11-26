@@ -38,7 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Panoul de administrare pe Vercel
 
 Panoul (`/admin`) editează cataloagele de produse și urcă imagini. Pe Vercel
-sistemul de fișiere este read-only, deci totul trece prin **Vercel Blob**:
+sistemul de fișiere este read-only, deci totul trece prin **Vercel Blob**.
+Conectarea unui store injectează `BLOB_STORE_ID` + `VERCEL_OIDC_TOKEN`
+(autentificare OIDC); `BLOB_READ_WRITE_TOKEN` e opțional, doar pentru local.
 
 1. **Creează un Blob store**: Project → Storage → Create Storage → Blob, cu
    accesul setat pe **Public** (imaginile produselor trebuie să fie publice).

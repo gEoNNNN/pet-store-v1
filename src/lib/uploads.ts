@@ -3,6 +3,7 @@ import "server-only";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { put } from "@vercel/blob";
+import { blobEnabled } from "@/lib/catalogStore";
 
 /**
  * Imaginile urcate din panou: pe Vercel ajung în Vercel Blob (URL public), local
@@ -47,13 +48,19 @@ export async function storeUpload(
   const base = slug.replace(/[^a-z0-9-]/gi, "").slice(0, 60) || "produs";
   const name = `${base}-${Date.now()}${ext}`;
 
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
-    const blob = await put(`uploads/${name}`, file, {
-      access: "public",
-      addRandomSuffix: true,
-      contentType: file.type,
-    });
-    return { url: blob.url };
+  if (blobEnabled()) {
+    try {
+      const blob = await put(`uploads/${name}`, file, {
+        access: "public",
+        addRandomSuffix: true,
+        contentType: file.type,
+      });
+      return { url: blob.url };
+    } catch (error) {
+      return {
+        error: `Încărcarea în Vercel Blob a eșuat: ${error instanceof Error ? error.message : String(error)}`,
+      };
+    }
   }
 
   writeFileSync(path.join(uploadDirectory(), name), Buffer.from(await file.arrayBuffer()));

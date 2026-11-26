@@ -2,12 +2,11 @@ import "server-only";
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { BlobNotFoundError, head, put } from "@vercel/blob";
+import { head, put } from "@vercel/blob";
 
 /**
- * Sursa de adevăr pentru cataloagele JSON: Vercel Blob când există token
- * (BLOB_READ_WRITE_TOKEN, injectat automat de Vercel când e conectat un store),
- * altfel fișierele locale din scrape/ — la fel ca înainte, pentru dezvoltare.
+ * Sursa de adevăr pentru cataloagele JSON: Vercel Blob când store-ul e conectat
+ * (sau există token read-write), altfel fișierele locale din scrape/.
  */
 
 /** Tag de cache Next pentru fișierele de catalog; invalidat după fiecare salvare. */
@@ -17,14 +16,11 @@ const BLOB_PREFIX = "catalog/";
 
 /**
  * Blob e disponibil dacă există token read-write (local / proiecte vechi) sau
- * acreditările OIDC pe care Vercel le injectează când conectezi un store:
- * BLOB_STORE_ID + VERCEL_OIDC_TOKEN. SDK-ul le citește singur.
+ * un store conectat prin OIDC: Vercel injectează BLOB_STORE_ID și tokenul
+ * VERCEL_OIDC_TOKEN, pe care SDK-ul le citește singur.
  */
 export function blobEnabled(): boolean {
-  return Boolean(
-    process.env.BLOB_READ_WRITE_TOKEN ||
-      (process.env.BLOB_STORE_ID && process.env.VERCEL_OIDC_TOKEN),
-  );
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID);
 }
 
 /** Folderul local cu JSON-urile de catalog (fallback fără Blob). */
@@ -46,20 +42,18 @@ export function catalogLocalPath(fileName: string): string {
 /** Citește un catalog ca text JSON. */
 export async function readCatalogText(fileName: string): Promise<string> {
   if (blobEnabled()) {
-    const meta = await head(BLOB_PREFIX + fileName).catch((error: unknown) => {
-      // Primul deploy: blob-ul nu există încă, pornim de la fișierul din repo.
-      if (error instanceof BlobNotFoundError) return null;
-      throw error;
-    });
-    if (meta) {
+    try {
+      const meta = await head(BLOB_PREFIX + fileName);
       const response = await fetch(`${meta.url}?v=${new Date(meta.uploadedAt).getTime()}`, {
         cache: "force-cache",
         next: { tags: [CATALOG_TAG] },
       });
-      if (!response.ok) {
-        throw new Error(`Nu am putut citi ${fileName} din Vercel Blob (${response.status}).`);
-      }
-      return response.text();
+      if (response.ok) return await response.text();
+      console.error(`[blob] ${fileName}: răspuns ${response.status}, folosesc copia locală.`);
+    } catch (error) {
+      // Primul deploy (blob-ul nu există încă) sau acreditări indisponibile:
+      // site-ul continuă cu fișierul din repo; salvările semnalează eroarea.
+      console.error(`[blob] ${fileName}:`, error);
     }
   }
   return readFileSync(catalogLocalPath(fileName), "utf8");
@@ -70,12 +64,18 @@ export async function writeCatalogText(fileName: string, text: string): Promise<
   if (blobEnabled()) {
     // Compact, fără indentare: cache-ul de date Next nu păstrează răspunsuri
     // peste 2 MB, iar carnilove depășește limita dacă e scris indentat.
-    await put(BLOB_PREFIX + fileName, JSON.stringify(JSON.parse(text)), {
-      access: "public",
-      addRandomSuffix: false,
-      allowOverwrite: true,
-      contentType: "application/json",
-    });
+    try {
+      await put(BLOB_PREFIX + fileName, JSON.stringify(JSON.parse(text)), {
+        access: "public",
+        addRandomSuffix: false,
+        allowOverwrite: true,
+        contentType: "application/json",
+      });
+    } catch (error) {
+      throw new Error(
+        `Scrierea în Vercel Blob a eșuat: ${error instanceof Error ? error.message : String(error)}`,
+      );
+    }
     return;
   }
   writeFileSync(catalogLocalPath(fileName), text, "utf8");
