@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/instrumente" },
 };
 
-export default function ToolsPage() {
-  const products = getProductSummaries();
+export default async function ToolsPage() {
+  const products = await getProductSummaries();
 
   return (
     <>

@@ -57,6 +57,7 @@ export default function ProductForm({
   const [slug, setSlug] = useState(initial.slug);
   const [slugLocked, setSlugLocked] = useState(mode === "edit");
   const [image, setImage] = useState(initial.image);
+  const [preview, setPreview] = useState<string | null>(null);
   const [imageBroken, setImageBroken] = useState(false);
   const isEdit = mode === "edit";
 
@@ -202,15 +203,37 @@ export default function ProductForm({
           </div>
 
           <div className={styles.field}>
+            <label className={styles.label} htmlFor="pf-image-file">
+              Încarcă o imagine de pe calculator
+            </label>
+            <input
+              className={styles.input}
+              id="pf-image-file"
+              name="imageFile"
+              type="file"
+              accept="image/jpeg,image/png,image/webp,image/avif,image/gif"
+              onChange={(event) => {
+                const file = event.target.files?.[0];
+                if (preview) URL.revokeObjectURL(preview);
+                setPreview(file ? URL.createObjectURL(file) : null);
+                setImageBroken(false);
+              }}
+            />
+            <p className={styles.helper}>
+              Poza aleasă aici înlocuiește calea/linkul de mai jos la salvare. Maxim 8 MB,
+              JPG / PNG / WEBP / AVIF / GIF.
+            </p>
+          </div>
+
+          <div className={styles.field}>
             <label className={styles.label} htmlFor="pf-image">
-              Calea imaginii *
+              Calea imaginii sau link extern
             </label>
             <input
               className={styles.input}
               id="pf-image"
               name="image"
               value={image}
-              required
               onChange={(event) => {
                 setImage(event.target.value);
                 setImageBroken(false);
@@ -218,22 +241,24 @@ export default function ProductForm({
               placeholder="/products/brit/poza-mea.webp sau https://…"
             />
             <p className={styles.helper}>
-              Așază fișierul în <code>public/</code> și folosește calea începând
-              cu <code>/products/…</code> sau un link extern https.
+              Dacă nu încarci un fișier, poți scrie o cale din <code>public/</code> (ex.{" "}
+              <code>/products/…</code>) sau un link extern https.
             </p>
           </div>
 
           <div className={styles.imagePreviewRow}>
             <img
               className={styles.imagePreview}
-              src={previewSrc}
+              src={preview ?? previewSrc}
               alt="Previzualizare imagine produs"
               onError={() => setImageBroken(true)}
             />
             <p className={styles.helper}>
-              {imageBroken && image
-                ? "Imaginea nu s-a putut încărca — verifică calea (fișierul trebuie să existe în public/)."
-                : "Previzualizarea arată exact imaginea salvată."}
+              {preview
+                ? "Previzualizare locală — poza se salvează odată cu produsul."
+                : imageBroken && image
+                  ? "Imaginea nu s-a putut încărca — verifică calea (fișierul trebuie să existe în public/)."
+                  : "Previzualizarea arată exact imaginea salvată."}
             </p>
           </div>
 
@@ -287,6 +312,11 @@ export default function ProductForm({
               defaultValue={initial.prospect}
             >
               <option value="">— fără prospect —</option>
+              {/* Valoarea salvată poate lipsi din listă (pe Vercel, public/prospecte nu e
+                  citibil din funcție); o păstrăm ca opțiune ca să nu se piardă la salvare. */}
+              {initial.prospect && !prospects.some((prospect) => prospect.value === initial.prospect) ? (
+                <option value={initial.prospect}>{initial.prospect}</option>
+              ) : null}
               {prospects.map((prospect) => (
                 <option value={prospect.value} key={prospect.value}>
                   {prospect.label}

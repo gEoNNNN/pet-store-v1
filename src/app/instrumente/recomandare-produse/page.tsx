@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/instrumente/recomandare-produse" },
 };
 
-export default function ProductFinderPage() {
-  const products = getProductSummaries();
+export default async function ProductFinderPage() {
+  const products = await getProductSummaries();
 
   return (
     <>

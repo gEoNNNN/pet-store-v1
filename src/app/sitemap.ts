@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
  * catalog, cu imaginea principală atașată (image sitemap, conform
  * developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps).
  */
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -34,12 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const productPages: MetadataRoute.Sitemap = getProducts().map((product) => ({
+  const productPages: MetadataRoute.Sitemap = (await getProducts()).map((product) => ({
     url: `${site.url}${product.href}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
-    images: [`${site.url}${product.image}`],
+    // Imaginile urcate din panou sunt URL-uri absolute (Vercel Blob).
+    images: [/^https?:\/\//.test(product.image) ? product.image : `${site.url}${product.image}`],
   }));
 
   return [...staticPages, ...productPages];

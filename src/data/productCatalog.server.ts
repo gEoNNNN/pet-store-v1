@@ -1,7 +1,7 @@
 import "server-only";
 
-import { existsSync, readFileSync } from "node:fs";
-import path from "node:path";
+import { cache } from "react";
+import { readCatalogText } from "@/lib/catalogStore";
 import { farmavetManufacturers } from "./farmavetBrands";
 import { veterinaryCategoryNames } from "./products";
 import type {
@@ -17,8 +17,6 @@ import type {
 
 type JsonObject = Record<string, unknown>;
 
-let productCache: Product[] | undefined;
-
 function isObject(value: unknown): value is JsonObject {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
@@ -31,27 +29,8 @@ function toStringArray(value: unknown) {
   return Array.isArray(value) ? value.map(toStringValue).filter(Boolean) : [];
 }
 
-function getScrapeDirectory() {
-  const candidates = [
-    path.resolve(process.cwd(), "scrape"),
-    path.resolve(process.cwd(), "..", "scrape"),
-    path.resolve(__dirname, "..", "..", "..", "scrape"),
-    path.resolve(__dirname, "..", "..", "..", "..", "scrape"),
-    path.resolve(process.cwd(), "public", "scrape"),
-  ];
-  const directory = candidates.find((candidate) => existsSync(path.join(candidate, "products.json")));
-  if (!directory) {
-    throw new Error("Nu am găsit folderul scrape cu fișierele JSON ale produselor.");
-  }
-  return directory;
-}
-
-function readCatalog(filename: string) {
-  const filePath = path.join(getScrapeDirectory(), filename);
-  if (!existsSync(filePath)) {
-    throw new Error(`Fișierul de produse lipsește: ${filePath}`);
-  }
-  const catalog: unknown = JSON.parse(readFileSync(filePath, "utf8"));
+async function readCatalog(filename: string) {
+  const catalog: unknown = JSON.parse(await readCatalogText(filename));
   if (!isObject(catalog) || !Array.isArray(catalog.products)) {
     throw new Error(`Format invalid pentru catalogul ${filename}`);
   }
@@ -157,65 +136,63 @@ function normalizeProduct(
   };
 }
 
-export function getProducts(): Product[] {
-  if (!productCache) {
-    const britProducts = readCatalog("products.json").map((product) =>
-      normalizeProduct(product, "Brit", "brit"),
-    );    const carniloveProducts = readCatalog("carnilove_products.json").map((product) =>
-      normalizeProduct(product, "Carnilove", "carnilove"),
-    );
-    const ekopromBrands: Record<string, [ProductBrand, ProductBrandSlug]> = {
-      "neoterica-insektal": ["Neoterica Insektal", "neoterica-insektal"],
-      "neoterica-gelmintal": ["Neoterica Gelmintal", "neoterica-gelmintal"],
-      "neoterica-unitabs": ["Neoterica Unitabs", "neoterica-unitabs"],
-      "neoterica-rolfclub-3d": ["Neoterica RolfClub 3D", "neoterica-rolfclub-3d"],
-      "chistotel": ["Chistotel", "chistotel"],
-    };
-    const naturaProducts = readCatalog("natura_products.json").map((product) =>
-      normalizeProduct(product, "Natura", "natura"),
-    );
-    const ecoNaturaProducts = readCatalog("econatura_products.json").map((product) =>
+/**
+ * Tot catalogul normalizat. `cache` de la React dedublează citirea în
+ * interiorul aceleiași randări; cache-ul de date Next (tag `CATALOG_TAG`) ține
+ * textul JSON între cereri, deci nu se re-descarcă la fiecare pagină.
+ */
+export const getProducts = cache(async (): Promise<Product[]> => {
+  const [
+    britRaw,
+    carniloveRaw,
+    naturaRaw,
+    ecoNaturaRaw,
+    farmavetRaw,
+    ekopromRaw,
+  ] = await Promise.all([
+    readCatalog("products.json"),
+    readCatalog("carnilove_products.json"),
+    readCatalog("natura_products.json"),
+    readCatalog("econatura_products.json"),
+    readCatalog("farmavet_products.json"),
+    readCatalog("ekoprom_products.json"),
+  ]);
+
+  const ekopromBrands: Record<string, [ProductBrand, ProductBrandSlug]> = {
+    "neoterica-insektal": ["Neoterica Insektal", "neoterica-insektal"],
+    "neoterica-gelmintal": ["Neoterica Gelmintal", "neoterica-gelmintal"],
+    "neoterica-unitabs": ["Neoterica Unitabs", "neoterica-unitabs"],
+    "neoterica-rolfclub-3d": ["Neoterica RolfClub 3D", "neoterica-rolfclub-3d"],
+    "chistotel": ["Chistotel", "chistotel"],
+  };
+
+  return [
+    ...britRaw.map((product) => normalizeProduct(product, "Brit", "brit")),
+    ...carniloveRaw.map((product) => normalizeProduct(product, "Carnilove", "carnilove")),
+    ...ekopromRaw.map((product) => {
+      const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
+        "Neoterica Inspector",
+        "neoterica-inspector",
+      ] as [ProductBrand, ProductBrandSlug];
+      return normalizeProduct(product, brand, slug);
+    }),
+    ...naturaRaw.map((product) => normalizeProduct(product, "Natura", "natura")),
+    ...ecoNaturaRaw.map((product) =>
       normalizeProduct(product, "Eco Natura Pet", "eco-natura"),
-    );
-    const farmavetProducts = readCatalog("farmavet_products.json").map((product) =>
+    ),
+    ...farmavetRaw.map((product) =>
       normalizeProduct(
         product,
         "Farmavet",
         "farmavet",
         farmavetManufacturers[toStringValue(product.brand_slug)] ?? "Farmavet",
       ),
-    );
-    const ekopromProducts = readCatalog("ekoprom_products.json").map((product) => {
-      const [brand, slug] = ekopromBrands[toStringValue(product.brand_slug)] ?? [
-        "Neoterica Inspector",
-        "neoterica-inspector",
-      ] as [ProductBrand, ProductBrandSlug];
-      return normalizeProduct(product, brand, slug);
-    });
-    productCache = [
-      ...britProducts,
-      ...carniloveProducts,
-      ...ekopromProducts,
-      ...naturaProducts,
-      ...ecoNaturaProducts,
-      ...farmavetProducts,
-    ].filter(
-      (product) => product.slug && product.name && product.image,
-    );
-  }
-  return productCache;
-}
+    ),
+  ].filter((product) => product.slug && product.name && product.image);
+});
 
-/**
- * Resetează cache-ul de module al catalogului, ca scrierile din panoul de
- * administrare să ajungă imediat în paginile publice.
- */
-export function invalidateProductCache(): void {
-  productCache = undefined;
-}
-
-export function getProductSummaries(): ProductSummary[] {
-  return getProducts().map((product) => ({
+export async function getProductSummaries(): Promise<ProductSummary[]> {
+  return (await getProducts()).map((product) => ({
     id: product.id,
     brand: product.brand,
     brandSlug: product.brandSlug,
@@ -233,6 +210,8 @@ export function getProductSummaries(): ProductSummary[] {
   }));
 }
 
-export function getProduct(brandSlug: string, slug: string) {
-  return getProducts().find((product) => product.brandSlug === brandSlug && product.slug === slug);
+export async function getProduct(brandSlug: string, slug: string) {
+  return (await getProducts()).find(
+    (product) => product.brandSlug === brandSlug && product.slug === slug,
+  );
 }

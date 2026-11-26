@@ -27,7 +27,7 @@ type ProductsPageProps = {
 
 export default async function ProductsPage({ searchParams }: ProductsPageProps) {
   const resolved = searchParams ? await searchParams : {};
-  const products = getProductSummaries();
+  const products = await getProductSummaries();
 
   return (
     <>

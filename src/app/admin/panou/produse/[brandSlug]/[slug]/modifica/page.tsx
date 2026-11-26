@@ -26,7 +26,7 @@ function stringList(raw: unknown): string {
 
 export default async function EditProductPage({ params }: EditProps) {
   const { brandSlug, slug } = await params;
-  const found = findProduct(brandSlug, slug);
+  const found = await findProduct(brandSlug, slug);
   if (!found) notFound();
 
   const raw = found.raw;

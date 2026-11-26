@@ -11,13 +11,13 @@ type ProductPageProps = {
   params: Promise<{ brand: string; slug: string }>;
 };
 
-export function generateStaticParams() {
-  return getProducts().map((product) => ({ brand: product.brandSlug, slug: product.slug }));
+export async function generateStaticParams() {
+  return (await getProducts()).map((product) => ({ brand: product.brandSlug, slug: product.slug }));
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { brand, slug } = await params;
-  const product = getProduct(brand, slug);
+  const product = await getProduct(brand, slug);
   if (!product) return {};
   const summary = product.description.slice(0, 160);
   // Brandul „Farmavet" nu se repetă în titlu: template-ul din layout adaugă deja „| Farmavet".
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { brand, slug } = await params;
-  const product = getProduct(brand, slug);
+  const product = await getProduct(brand, slug);
   if (!product) notFound();
 
   return (

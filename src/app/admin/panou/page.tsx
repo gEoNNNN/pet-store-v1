@@ -7,8 +7,8 @@ export const metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function AdminDashboardPage() {
-  const overview = catalogOverview();
+export default async function AdminDashboardPage() {
+  const overview = await catalogOverview();
   const total = overview.reduce((sum, item) => sum + item.count, 0);
 
   return (
@@ -54,8 +54,9 @@ export default function AdminDashboardPage() {
           <h2 className={styles.panelTitle}>Bine de știut</h2>
           <ul className={styles.tipsList}>
             <li>
-              Modificările scriu în fișierele <code>scrape/*.json</code> și apar
-              imediat în catalogul public <code>/produse</code>.
+              Modificările intră imediat în catalogul public <code>/produse</code>.
+              Pe Vercel cataloagele sunt salvate în Vercel Blob, local în{" "}
+              <code>scrape/*.json</code>.
             </li>
             <li>
               Parola se schimbă din variabila de mediu{" "}

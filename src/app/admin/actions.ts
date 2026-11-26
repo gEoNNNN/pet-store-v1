@@ -1,18 +1,34 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { revalidatePath, updateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { isAuthenticated, signIn, signOut } from "@/lib/adminAuth";
 import { deleteProduct, parseProductForm, upsertProduct } from "@/lib/adminCatalog";
-import { invalidateProductCache } from "@/data/productCatalog.server";
+import { CATALOG_TAG, blobEnabled } from "@/lib/catalogStore";
+import { storeUpload } from "@/lib/uploads";
+import { slugifyName } from "@/lib/slugify";
 
 export type ActionState = { error: string } | null;
 
+/**
+ * Pe Vercel scrierile merg doar prin Vercel Blob; fără token, disc-ul e
+ * read-only și salvarea ar eșua cu o eroare greu de înțeles.
+ */
+function storageError(): string | null {
+  if (process.env.VERCEL && !blobEnabled()) {
+    return "Vercel Blob nu este configurat (BLOB_READ_WRITE_TOKEN), deci modificările nu pot fi salvate.";
+  }
+  return null;
+}
+
 /** Invalidează cache-ul tuturor paginilor care afișează produse. */
 function revalidateStore(slug?: string, brandSlug?: string) {
-  invalidateProductCache();
+  // Textul cataloagelor stă în cache-ul de date Next (fetch cu tag); updateTag
+  // îl expiră imediat, ca panoul și site-ul să vadă modificarea pe loc.
+  updateTag(CATALOG_TAG);
   revalidatePath("/");
   revalidatePath("/produse");
+  revalidatePath("/sitemap.xml");
   revalidatePath("/admin/panou");
   revalidatePath("/admin/panou/produse");
   if (slug && brandSlug) {
@@ -37,11 +53,22 @@ export async function saveProductAction(
   formData: FormData,
 ): Promise<ActionState> {
   if (!(await isAuthenticated())) redirect("/admin");
+  const blocked = storageError();
+  if (blocked) return { error: blocked };
   const data = parseProductForm(formData);
   const isEdit = String(formData.get("mode") ?? "") === "edit";
   const slug = data.slug.trim();
   const brandSlug = data.brandSlug.trim();
-  const error = upsertProduct({ ...data, slug, brandSlug }, isEdit);
+
+  // Dacă a fost aleasă o poză, ea înlocuiește calea/linkul din câmpul text.
+  const file = formData.get("imageFile");
+  if (file instanceof File && file.size > 0) {
+    const uploaded = await storeUpload(file, slug || slugifyName(data.name));
+    if ("error" in uploaded) return { error: uploaded.error };
+    data.image = uploaded.url;
+  }
+
+  const error = await upsertProduct({ ...data, slug, brandSlug }, isEdit);
   if (error) return { error };
   revalidateStore(slug, brandSlug);
   const banner = isEdit ? "modificat" : "adaugat";
@@ -50,14 +77,16 @@ export async function saveProductAction(
 
 export async function deleteProductAction(formData: FormData): Promise<void> {
   if (!(await isAuthenticated())) redirect("/admin");
+  const blocked = storageError();
+  if (blocked) redirect(`/admin/panou/produse?eroare=${encodeURIComponent(blocked)}`);
   const brandSlug = String(formData.get("brandSlug") ?? "");
   const slug = String(formData.get("slug") ?? "");
-  const error = deleteProduct(brandSlug, slug);
+  const error = await deleteProduct(brandSlug, slug);
   if (error) {
     redirect(
       `/admin/panou/produse?eroare=${encodeURIComponent(error)}`,
     );
   }
-  revalidateStore();
+  revalidateStore(slug, brandSlug);
   redirect("/admin/panou/produse?sters=1");
 }

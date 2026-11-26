@@ -32,7 +32,7 @@ export default async function AdminProductsPage({ searchParams }: ListProps) {
   const brand = params.brand ?? "";
   const page = Math.max(1, Number.parseInt(params.page ?? "1", 10) || 1);
 
-  const all = listAllProducts();
+  const all = await listAllProducts();
   const filtered = all.filter((row) => {
     if (brand && row.brandSlug !== brand) return false;
     if (!query) return true;

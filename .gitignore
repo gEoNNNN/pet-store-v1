@@ -51,3 +51,6 @@ __pycache__/
 
 # cache pentru scripturile de prelucrare a imaginilor
 /.cache/
+
+# imagini urcate din panoul de administrare (continut, nu cod)
+/data/uploads/

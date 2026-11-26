@@ -1,17 +1,16 @@
 import "server-only";
 
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { veterinaryCategoryNames } from "@/data/products";
 import type { ProductBrand, ProductBrandSlug } from "@/data/products";
-import { slugifyName } from "@/lib/slugify";
+import { readCatalogText, writeCatalogText } from "@/lib/catalogStore";
 
 type JsonObject = Record<string, unknown>;
 
 /**
- * Panoul de administrare citește și scrie direct fișierele JSON din folderul
- * scrape — aceleași fișiere citite de productCatalog.server.ts la randarea
- * paginilor publice.
+ * Panoul de administrare citește și scrie cataloagele prin catalogStore: Vercel
+ * Blob când există BLOB_READ_WRITE_TOKEN, altfel fișierele JSON din scrape/.
  */
 
 export type AdminProductRow = {
@@ -126,33 +125,22 @@ function isRecord(value: unknown): value is JsonObject {
   return typeof value === "object" && value !== null;
 }
 
-function getScrapeDirectory(): string {
-  const candidates = [
-    path.resolve(process.cwd(), "scrape"),
-    path.resolve(process.cwd(), "..", "scrape"),
-  ];
-  const found = candidates.find((candidate) =>
-    existsSync(path.join(candidate, "products.json")),
-  );
-  if (!found) {
-    throw new Error("Folderul scrape cu cataloagele JSON nu a fost găsit.");
-  }
-  return found;
-}
-
-function readRawCatalog(fileName: string): {
-  file: string;
+async function readRawCatalog(fileName: string): Promise<{
+  fileName: string;
   data: JsonObject;
   products: JsonObject[];
-} {
-  const file = path.join(getScrapeDirectory(), fileName);
-  const parsed: unknown = JSON.parse(readFileSync(file, "utf8"));
+}> {
+  const parsed: unknown = JSON.parse(await readCatalogText(fileName));
   if (!isRecord(parsed) || !Array.isArray(parsed.products)) {
     throw new Error(`Format invalid pentru ${fileName}`);
   }
   const data = parsed;
   const products = (data.products as unknown[]).filter(isRecord);
-  return { file, data, products };
+  return { fileName, data, products };
+}
+
+async function persistCatalog(fileName: string, data: JsonObject): Promise<void> {
+  await writeCatalogText(fileName, `${JSON.stringify(data, null, 2)}\n`);
 }
 
 function matchesBrand(config: BrandConfig, raw: JsonObject): boolean {
@@ -172,24 +160,28 @@ function nextId(products: JsonObject[]): string {
 }
 
 /** Numărul de produse pe fiecare marcă, pentru dashboard. */
-export function catalogOverview(): Array<{
-  brandSlug: ProductBrandSlug;
-  brand: ProductBrand;
-  count: number;
-  fileName: string;
-}> {
-  return brandConfigs.map((config) => {
-    const { products } = readRawCatalog(config.fileName);
-    const count = products.filter((product) => matchesBrand(config, product)).length;
-    return { brandSlug: config.brandSlug, brand: config.brand, count, fileName: config.fileName };
-  });
+export async function catalogOverview(): Promise<
+  Array<{
+    brandSlug: ProductBrandSlug;
+    brand: ProductBrand;
+    count: number;
+    fileName: string;
+  }>
+> {
+  return Promise.all(
+    brandConfigs.map(async (config) => {
+      const { products } = await readRawCatalog(config.fileName);
+      const count = products.filter((product) => matchesBrand(config, product)).length;
+      return { brandSlug: config.brandSlug, brand: config.brand, count, fileName: config.fileName };
+    }),
+  );
 }
 
 /** Toate produsele din toate cataloagele, pentru tabela din administrare. */
-export function listAllProducts(): AdminProductRow[] {
+export async function listAllProducts(): Promise<AdminProductRow[]> {
   const rows: AdminProductRow[] = [];
   for (const config of brandConfigs) {
-    const { products } = readRawCatalog(config.fileName);
+    const { products } = await readRawCatalog(config.fileName);
     for (const product of products) {
       if (!matchesBrand(config, product)) continue;
       const slug = String(product.slug ?? "").trim();
@@ -211,18 +203,18 @@ export function listAllProducts(): AdminProductRow[] {
 }
 
 /** Detaliile unui produs, pentru formularul de editare. */
-export function findProduct(
+export async function findProduct(
   brandSlug: string,
   slug: string,
-): { config: BrandConfig; raw: JsonObject; file: string } | null {
+): Promise<{ config: BrandConfig; raw: JsonObject; fileName: string } | null> {
   const config = brandConfigBySlug.get(brandSlug as ProductBrandSlug);
   if (!config) return null;
-  const { file, products } = readRawCatalog(config.fileName);
+  const { fileName, products } = await readRawCatalog(config.fileName);
   const raw = products.find(
     (product) => String(product.slug ?? "") === slug && matchesBrand(config, product),
   );
   if (!raw) return null;
-  return { config, raw, file };
+  return { config, raw, fileName };
 }
 
 export type ProductInput = {
@@ -250,7 +242,10 @@ function toList(raw: FormDataEntryValue | null): string[] {
  * Adaugă sau modifică un produs în catalogul mărcii selectate.
  * Întoarce un mesaj de eroare sau null dacă operația a reușit.
  */
-export function upsertProduct(input: ProductInput, isEdit: boolean): string | null {
+export async function upsertProduct(
+  input: ProductInput,
+  isEdit: boolean,
+): Promise<string | null> {
   const config = brandConfigBySlug.get(input.brandSlug as ProductBrandSlug);
   if (!config) return "Marca selectată nu este suportată.";
   const name = input.name.trim();
@@ -262,7 +257,7 @@ export function upsertProduct(input: ProductInput, isEdit: boolean): string | nu
   if (!image) return "Imaginea produsului este obligatorie.";
   if (!category) return "Alege categoria produsului.";
 
-  const { file, data, products } = readRawCatalog(config.fileName);
+  const { data, products } = await readRawCatalog(config.fileName);
 
   if (isEdit) {
     const index = products.findIndex(
@@ -312,15 +307,15 @@ export function upsertProduct(input: ProductInput, isEdit: boolean): string | nu
     data.product_count = products.length;
   }
 
-  writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  await persistCatalog(config.fileName, data);
   return null;
 }
 
 /** Șterge un produs din catalogul mărcii. Întoarce mesaj de eroare sau null. */
-export function deleteProduct(brandSlug: string, slug: string): string | null {
+export async function deleteProduct(brandSlug: string, slug: string): Promise<string | null> {
   const config = brandConfigBySlug.get(brandSlug as ProductBrandSlug);
   if (!config) return "Marca nu este suportată.";
-  const { file, data, products } = readRawCatalog(config.fileName);
+  const { data, products } = await readRawCatalog(config.fileName);
   const next = products.filter(
     (product) => !(String(product.slug ?? "") === slug && matchesBrand(config, product)),
   );
@@ -329,7 +324,7 @@ export function deleteProduct(brandSlug: string, slug: string): string | null {
   if (typeof data.product_count === "number") {
     data.product_count = next.length;
   }
-  writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  await persistCatalog(config.fileName, data);
   return null;
 }
 
