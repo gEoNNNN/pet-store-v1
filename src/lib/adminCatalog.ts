@@ -265,10 +265,18 @@ export async function upsertProduct(
     );
     if (index < 0) return "Produsul căutat nu mai există în catalog.";
     const existing = products[index];
+    const imageChanged = String(existing.image ?? "") !== image;
     existing.name = name;
     existing.category = category;
     existing.description = input.description.trim();
     existing.image = image;
+    // Poza principală apare și în galerie (role "main"); o ținem sincronizată,
+    // altfel vechea poză rămâne afișată sub cea nouă.
+    if (imageChanged && Array.isArray(existing.images)) {
+      for (const item of existing.images) {
+        if (isRecord(item) && item.role === "main") item.url = image;
+      }
+    }
     existing.labels = input.labels;
     existing.package_sizes = input.packageSizes;
     existing.variants = input.packageSizes;
