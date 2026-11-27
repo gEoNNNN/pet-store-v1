@@ -1,12 +1,16 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useRef, useState } from "react";
 import { saveProductAction } from "@/app/admin/actions";
 import type { ActionState } from "@/app/admin/actions";
 import { slugifyName } from "@/lib/slugify";
 import styles from "./Admin.module.css";
 
 const PLACEHOLDER = "/products/placeholder.webp";
+
+/** Aceleași limite ca în server action (lib/uploads.ts). */
+const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
+const ALLOWED_IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp", "image/avif", "image/gif"];
 
 export type ProductFormInitial = {
   brandSlug: string;
@@ -59,9 +63,37 @@ export default function ProductForm({
   const [image, setImage] = useState(initial.image);
   const [preview, setPreview] = useState<string | null>(null);
   const [imageBroken, setImageBroken] = useState(false);
+  const [dragging, setDragging] = useState(false);
+  const [fileError, setFileError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const isEdit = mode === "edit";
 
   const previewSrc = imageBroken || !image ? PLACEHOLDER : image;
+
+  /** Fișierul ales (click sau drag & drop): îl pune în input și arată previzualizarea. */
+  function attachFile(file: File) {
+    const invalid = !ALLOWED_IMAGE_TYPES.includes(file.type)
+      ? "Format acceptat: JPG, PNG, WEBP, AVIF sau GIF."
+      : file.size > MAX_IMAGE_BYTES
+        ? "Imaginea depășește 4 MB. Redimensionează poza și încearcă din nou."
+        : null;
+    if (invalid) {
+      // Golim inputul, ca fișierul respins să nu fie trimis la salvare.
+      if (fileInputRef.current) fileInputRef.current.value = "";
+      setPreview(null);
+      setFileError(invalid);
+      return;
+    }
+    setFileError(null);
+    if (fileInputRef.current) {
+      const transfer = new DataTransfer();
+      transfer.items.add(file);
+      fileInputRef.current.files = transfer.files;
+    }
+    if (preview) URL.revokeObjectURL(preview);
+    setPreview(URL.createObjectURL(file));
+    setImageBroken(false);
+  }
 
   return (
     <div className={styles.formCard}>
@@ -204,25 +236,62 @@ export default function ProductForm({
 
           <div className={styles.field}>
             <label className={styles.label} htmlFor="pf-image-file">
-              Încarcă o imagine de pe calculator
+              Imaginea produsului
             </label>
-            <input
-              className={styles.input}
-              id="pf-image-file"
-              name="imageFile"
-              type="file"
-              accept="image/jpeg,image/png,image/webp,image/avif,image/gif"
-              onChange={(event) => {
-                const file = event.target.files?.[0];
-                if (preview) URL.revokeObjectURL(preview);
-                setPreview(file ? URL.createObjectURL(file) : null);
-                setImageBroken(false);
+            <div
+              className={`${styles.dropZone} ${dragging ? styles.dropZoneActive : ""}`}
+              onDragOver={(event) => {
+                event.preventDefault();
+                setDragging(true);
               }}
-            />
-            <p className={styles.helper}>
-              Poza aleasă aici înlocuiește calea/linkul de mai jos la salvare. Maxim 8 MB,
-              JPG / PNG / WEBP / AVIF / GIF.
-            </p>
+              onDragLeave={() => setDragging(false)}
+              onDrop={(event) => {
+                event.preventDefault();
+                setDragging(false);
+                const file = event.dataTransfer.files?.[0];
+                if (file) attachFile(file);
+              }}
+            >
+              <img
+                className={styles.imagePreview}
+                src={preview ?? previewSrc}
+                alt="Previzualizare imagine produs"
+                onError={() => setImageBroken(true)}
+              />
+              <div className={styles.dropZoneBody}>
+                <strong>Trage poza aici</strong>
+                <span>sau alege un fișier de pe calculator</span>
+                <input
+                  ref={fileInputRef}
+                  id="pf-image-file"
+                  className={styles.fileInput}
+                  name="imageFile"
+                  type="file"
+                  accept={ALLOWED_IMAGE_TYPES.join(",")}
+                  onChange={(event) => {
+                    const file = event.target.files?.[0];
+                    if (file) attachFile(file);
+                  }}
+                />
+                <p className={styles.helper}>
+                  JPG / PNG / WEBP / AVIF / GIF, maxim 4 MB. Poza aleasă aici
+                  înlocuiește calea/linkul de mai jos la salvare.
+                </p>
+                {fileError ? (
+                  <p className={styles.fieldError} role="alert">
+                    {fileError}
+                  </p>
+                ) : preview ? (
+                  <p className={styles.helper}>
+                    Previzualizare locală — poza se salvează odată cu produsul.
+                  </p>
+                ) : imageBroken && image ? (
+                  <p className={styles.helper}>
+                    Imaginea salvată nu s-a putut încărca — verifică calea de mai jos.
+                  </p>
+                ) : null}
+              </div>
+            </div>
           </div>
 
           <div className={styles.field}>
@@ -243,22 +312,6 @@ export default function ProductForm({
             <p className={styles.helper}>
               Dacă nu încarci un fișier, poți scrie o cale din <code>public/</code> (ex.{" "}
               <code>/products/…</code>) sau un link extern https.
-            </p>
-          </div>
-
-          <div className={styles.imagePreviewRow}>
-            <img
-              className={styles.imagePreview}
-              src={preview ?? previewSrc}
-              alt="Previzualizare imagine produs"
-              onError={() => setImageBroken(true)}
-            />
-            <p className={styles.helper}>
-              {preview
-                ? "Previzualizare locală — poza se salvează odată cu produsul."
-                : imageBroken && image
-                  ? "Imaginea nu s-a putut încărca — verifică calea (fișierul trebuie să existe în public/)."
-                  : "Previzualizarea arată exact imaginea salvată."}
             </p>
           </div>
 

@@ -557,13 +557,6 @@
   margin-bottom: 18px;
 }
 
-.imagePreviewRow {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 16px;
-}
-
 .imagePreview {
   width: 84px;
   height: 84px;
@@ -572,6 +565,50 @@
   border: 1px solid var(--color-border);
   background: var(--color-soft);
   flex-shrink: 0;
+}
+
+/* Zona de drag & drop pentru imaginea produsului */
+.dropZone {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-softer);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dropZoneActive {
+  border-color: var(--color-primary);
+  background: var(--color-soft);
+}
+
+.dropZoneBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-muted-strong);
+}
+
+.dropZoneBody strong {
+  color: var(--color-primary-deep);
+}
+
+.fileInput {
+  font-size: 12.5px;
+}
+
+.fileInput::file-selector-button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .backLink {
@@ -589,5 +626,11 @@
 .helper {
   font-size: 12.5px;
   color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.fieldError {
+  font-size: 12.5px;
+  color: #a13232;
   line-height: 1.45;
 }
